@@ -13,6 +13,7 @@ A comprehensive collection of backend engineering interview questions and answer
 | 5 | [Security](./src/05-security.md) | OAuth, JWT, OWASP, API security, encryption, XSS/SQL injection prevention |
 | 6 | [Leadership & Soft Skills](./src/06-leadership-soft-skills.md) | Technical decision making, mentoring, cross-team collaboration, project estimation |
 | 7 | [Deep Technical Knowledge](./src/07-deep-technical-knowledge.md) | Concurrency, memory management, network protocols, performance optimization |
+| 8 | [Code Review](./src/08-review-code.md) | Code review principles, checklists, and best practices |
 
 ## 🎯 Topics Overview
 
@@ -66,6 +67,12 @@ A comprehensive collection of backend engineering interview questions and answer
 - Performance optimization
 - Code review best practices
 
+### 8. Code Review
+- Code review goals and principles
+- Comprehensive backend code review checklists
+- Clean code, architecture, security, and performance considerations
+- Best practices for review communication and collaboration
+
 ## 📖 How to Use
 
 1. Start with the topics you're less confident about
@@ -82,6 +89,7 @@ A comprehensive collection of backend engineering interview questions and answer
 - [Security Questions](./src/05-security.md)
 - [Leadership Questions](./src/06-leadership-soft-skills.md)
 - [Deep Technical Questions](./src/07-deep-technical-knowledge.md)
+- [Code Review](./src/08-review-code.md)
 
 ## 📝 License
 
