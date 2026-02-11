@@ -113,23 +113,40 @@ Write: App writes to DB → invalidate cache
 - **Cons**: Cache miss penalty, potential stale data
 - **Use case**: Read-heavy workloads, general purpose
 
+**Lưu ý khi implement:**
+- Luôn **invalidate trước rồi mới ghi** (hoặc dùng pattern invalidate + small TTL) để tránh đọc stale data.
+- Xử lý **cache stampede**: dùng random TTL, mutex/lock per key, request coalescing.
+- Nếu DB fail sau khi invalidate cache → có thể gây **cache penetration** (nhiều request cùng đập vào DB); dùng bulkhead / fallback hợp lý.
+- Với data quan trọng, nên dùng **version trong key** (`user:123:v2`) để rollout schema mới an toàn.
+
 **2. Write-Through**
 ```
-Write: App writes to cache → cache writes to DB (synchronous)
 Read: Always from cache
+Write: App writes to cache → cache writes to DB (synchronous)
 ```
 - **Pros**: Data consistency, no stale data
 - **Cons**: Write latency, cache filled with unused data
 - **Use case**: Applications requiring strong consistency
 
+**Lưu ý khi implement:**
+- Ghi cache + DB phải là **1 operation logic**: nếu ghi DB fail phải rollback cache (hoặc không update cache).
+- Cần **timeout & retry policy** rõ ràng cho path ghi DB, tránh treo ứng dụng nếu DB chậm.
+- Chỉ dùng cho **data size vừa phải**; dữ liệu ít được đọc nhưng vẫn bị đẩy vào cache gây tốn RAM.
+
 **3. Write-Behind (Write-Back)**
 ```
-Write: App writes to cache → cache async writes to DB (batched)
 Read: Always from cache
+Write: App writes to cache → cache async writes to DB (batched)
 ```
 - **Pros**: Low write latency, reduced DB load
 - **Cons**: Data loss risk if cache fails before sync
 - **Use case**: High write throughput, acceptable eventual consistency
+
+**Lưu ý khi implement:**
+- Cần **durable buffer** (queue, log) giữa cache và DB để hạn chế mất dữ liệu khi cache node chết.
+- Thiết kế **flush policy**: theo thời gian (interval), theo batch size, hoặc combination.
+- Đảm bảo **ordering** cho cùng một key (ví dụ: dùng partition theo key trong queue).
+- Cần cơ chế **graceful shutdown** để flush hết buffer trước khi dừng service.
 
 **4. Read-Through**
 ```
@@ -139,10 +156,21 @@ Read: App reads from cache → cache loads from DB if miss
 - **Cons**: First request always slow
 - **Use case**: Read-heavy with predictable access patterns
 
+**Lưu ý khi implement:**
+- Thường do **library / cache provider** hỗ trợ; cần chuẩn hóa function loader (đảm bảo idempotent, timeout).
+- Nên có cơ chế **warm-up cache** (preload hot keys) để tránh first-request penalty sau deploy.
+- Xử lý **cache penetration** cho key không tồn tại: cache negative results với TTL ngắn.
+
 **Cache Invalidation Strategies:**
 - **TTL (Time-To-Live)**: Simple, but may serve stale data
 - **Event-driven**: Invalidate on data change events
 - **Version-based**: Include version in cache key
+
+**Lưu ý chung khi dùng cache:**
+- Định nghĩa rõ **cache key convention** (`service:entity:id:field`) để dễ debug và tránh collision.
+- Chuẩn hóa **serialization** (JSON, protobuf, msgpack) và quản lý backward compatibility.
+- Thêm **metrics & logging**: hit ratio, latency, error rate, size per key pattern để tối ưu sau này.
+- Luôn thiết kế logic **chịu được cache down** (có fallback vào DB hoặc degrade gracefully).
 
 ---
 
