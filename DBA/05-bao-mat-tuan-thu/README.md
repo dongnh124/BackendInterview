@@ -2,360 +2,153 @@
 
 Bảo vệ dữ liệu với bảo mật nhiều tầng và đáp ứng yêu cầu quy định.
 
-## Các Chủ Đề Cốt Lõi
+## Các Tài Liệu
 
-1. **Kiểm Soát Truy Cập** — Quyền tối thiểu, RBAC
-2. **Mã Hóa** — Lưu trữ và truyền tải
-3. **Ghi Nhật Ký Kiểm Tra** — Tuân thủ và điều tra
-4. **Bảo Mật Mạng** — Firewall, VPN, TLS
-5. **Tuân Thủ GDPR** — Xử lý và xóa PII
-6. **PCI-DSS** — Bảo mật dữ liệu thanh toán
-7. **Quản Lý Bí Mật** — Xoay vòng key, vault
+| Tài liệu | Mô tả |
+|----------|-------|
+| [Kiểm Soát Truy Cập](kiem-soat-truy-cap.md) | Quyền tối thiểu, RBAC, Row-Level Security, phân tách schema |
+| [Mã Hóa](ma-hoa.md) | TLS, mã hóa at-rest, column encryption, quản lý key |
+| [Ghi Nhật Ký Kiểm Tra](ghi-nhat-ky-kiem-tra.md) | pgaudit, audit triggers, SIEM integration, lưu giữ log |
+| [Bảo Mật Mạng](bao-mat-mang.md) | Network segmentation, pg_hba.conf, VPN, firewall, bastion host |
+| [Tuân Thủ GDPR](tuan-thu-gdpr.md) | PII management, quyền data subject, retention policy, breach notification |
+| [Tuân Thủ PCI-DSS](tuan-thu-pci-dss.md) | Tokenization, cardholder data protection, 12 requirements |
+| [Quản Lý Bí Mật](quan-ly-bi-mat.md) | HashiCorp Vault, dynamic secrets, credential rotation |
 
 ---
 
-## Các Tầng Bảo Mật
+## Mô Hình Bảo Mật Nhiều Tầng
 
 ```
 Tầng 5: KIỂM TOÁN & GIÁM SÁT
-  - Thay đổi DDL được ghi log
-  - Kiểm toán truy vấn trên bảng nhạy cảm
-  - Tích hợp SIEM
+  - DDL và DML được ghi log (pgaudit)
+  - Audit triggers cho bảng nhạy cảm
+  - Tích hợp SIEM, alert bất thường
 
 Tầng 4: MÃ HÓA
-  - Lưu trữ (AES-256)
-  - Truyền tải (TLS 1.2+)
-  - Quản lý key (KMS/HSM)
+  - Lưu trữ at-rest (AES-256, disk encryption)
+  - Truyền tải in-transit (TLS 1.2+)
+  - Column encryption cho PII/CHD
+  - Quản lý key (KMS/HSM/Vault)
 
 Tầng 3: PHÂN QUYỀN
-  - Vai trò quyền tối thiểu
+  - Vai trò quyền tối thiểu (RBAC)
   - Phân tách schema
-  - Row-level security (RLS)
+  - Row-Level Security (RLS)
 
 Tầng 2: XÁC THỰC
   - Không mật khẩu dùng chung
-  - Tích hợp IAM/AD
+  - Tích hợp IAM/LDAP
   - MFA cho truy cập DBA
-  - Service account theo ứng dụng
+  - Service account riêng theo ứng dụng
 
 Tầng 1: MẠNG
-  - Mạng con riêng tư
-  - Security groups
-  - Quy tắc firewall
+  - Database trong private subnet
+  - Security groups whitelist-only
+  - VPN + Bastion host cho DBA
+  - TLS bắt buộc (hostssl)
 ```
 
 ---
 
-## Triển Khai
+## Ma Trận Rủi Ro Bảo Mật
 
-### Bảo Mật Mạng
-
-```sql
--- Cấu hình mạng PostgreSQL
--- postgresql.conf:
-listen_addresses = '10.0.1.0/24'  -- Chỉ mạng riêng
-
--- pg_hba.conf:
-# Chỉ cho phép app servers
-host    mydb    app_user    10.0.1.0/24    md5
-
-# Truy cập DBA qua jump host
-host    mydb    dba_user    10.0.2.50/32   md5
 ```
+RỦI RO THẤP (Fix ngay):
+✓ TLS chưa bật → Bật ssl trong postgresql.conf + hostssl trong pg_hba.conf
+✓ Mật khẩu yếu → Enforce strong password policy + Vault rotation
+✓ Superuser cho ứng dụng → Tạo dedicated role với quyền tối thiểu
 
-### Thiết Lập Xác Thực
+RỦI RO TRUNG BÌNH (Lên kế hoạch trong sprint):
+⚠ Không có audit logging → Cài pgaudit, bật log_connections
+⚠ Credentials trong config → Di chuyển sang Vault/Secrets Manager
+⚠ Thiếu network segmentation → Cấu hình Security Groups, pg_hba.conf
 
-```sql
--- Tạo role service (không phải superuser)
-CREATE ROLE myapp_reader WITH LOGIN PASSWORD 'strong_password';
-CREATE ROLE myapp_writer WITH LOGIN PASSWORD 'strong_password';
-
--- Cấp quyền tối thiểu
-GRANT CONNECT ON DATABASE mydb TO myapp_reader;
-GRANT USAGE ON SCHEMA public TO myapp_reader;
-GRANT SELECT ON ALL TABLES IN SCHEMA public TO myapp_reader;
-
--- Writer role nhận INSERT/UPDATE/DELETE
-GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO myapp_writer;
-
--- Không bao giờ dùng superuser trong ứng dụng!
-```
-
-### Thiết Lập Mã Hóa
-
-```sql
--- Kiểm tra mã hóa lưu trữ có được bật không
-SHOW ssl;  -- Phải là 'on'
-SHOW ssl_cert_file;
-
--- PostgreSQL: extension pgcrypto
-CREATE EXTENSION pgcrypto;
-
--- Mã hóa cột nhạy cảm
-ALTER TABLE users ADD COLUMN ssn_encrypted bytea;
-
--- Mã hóa dữ liệu
-UPDATE users SET ssn_encrypted = pgp_sym_encrypt(ssn, 'encryption_key');
-
--- Truy vấn dữ liệu mã hóa (giải mã khi truy xuất)
-SELECT pgp_sym_decrypt(ssn_encrypted, 'encryption_key') AS ssn
-FROM users WHERE id = 123;
-```
-
-### Ghi Nhật Ký Kiểm Tra
-
-```sql
--- PostgreSQL: extension pgaudit
-CREATE EXTENSION pgaudit;
-
--- Log tất cả thay đổi DDL
-ALTER SYSTEM SET pgaudit.log = 'DDL';
-
--- Log SELECT trên bảng nhạy cảm
-ALTER SYSTEM SET pgaudit.log_statement = 'all';
-ALTER SYSTEM SET pgaudit.role = 'audit_role';
-
--- Reload cấu hình
-SELECT pg_reload_conf();
-
--- Xem audit logs
-tail -f /var/log/postgresql/postgresql.log | grep AUDIT
+RỦI RO CAO (Fix trong 24h):
+❌ Database có public IP → Di chuyển vào private subnet ngay
+❌ Không mã hóa truyền tải → Database password đang bị sniff
+❌ PAN/CVV lưu plain text → Vi phạm PCI-DSS, phải fix ngay
+❌ Credentials bị lộ → Rotate ngay, audit access log
 ```
 
 ---
 
-## Khung Tuân Thủ
-
-### GDPR (Quy Định Bảo Vệ Dữ Liệu Chung)
-
-**Yêu cầu chính:**
-
-```
-1. Kiểm kê Dữ liệu
-   - Biết PII nào bạn có
-   - Lưu ở đâu
-   - Ai có quyền truy cập
-
-2. Quyền Xóa (Right to Delete)
-   - Xóa PII khách hàng theo yêu cầu
-   - Chứng minh đã xóa
-   - Tính đến backup/replica
-
-3. Mã Hóa
-   - Dữ liệu nhạy cảm được mã hóa
-   - Trong quá trình truyền (TLS) và lưu trữ
-
-4. Kiểm Soát Truy Cập
-   - Chỉ người cần thiết truy cập PII
-   - Thỏa thuận vendor (data processors)
-
-5. Thông Báo Vi Phạm
-   - Thông báo trong 72 giờ nếu vi phạm
-   - Tài liệu hóa điều tra vi phạm
-```
-
-**Triển Khai:**
-
-```sql
--- Gắn tag bảng nhạy cảm
-COMMENT ON TABLE users IS 'GDPR: Chứa PII';
-COMMENT ON COLUMN users.ssn IS 'GDPR: Nhạy cảm, mã hóa';
-
--- Chính sách lưu giữ dữ liệu
-DELETE FROM deleted_users WHERE deleted_at < NOW() - INTERVAL '90 days';
-
--- Lưu giữ backup để tuân thủ (giữ 7 năm)
--- = 365 * 7 = 2555 ngày lưu giữ tối thiểu
-```
-
-### PCI-DSS (Tiêu Chuẩn Bảo Mật Dữ Liệu Ngành Thẻ)
-
-**Yêu cầu chính:**
-
-```
-1. Cấu hình firewall
-   - Hạn chế truy cập dữ liệu cardholder
-   - VPN cho truy cập từ xa
-
-2. Không hardcode mật khẩu
-   - Xoay vòng thường xuyên
-   - Lưu trong vault
-
-3. Mã hóa dữ liệu cardholder
-   - Lưu trữ và truyền tải
-   - Tokenize khi có thể
-
-4. Phát hiện thay đổi
-   - Cảnh báo thay đổi không phép
-   - Kiểm toán tất cả thay đổi CSDL
-
-5. Kiểm tra
-   - Kiểm tra thâm nhập hàng năm
-   - Quét lỗ hổng hàng quý
-
-6. Kiểm soát truy cập
-   - ID user duy nhất
-   - Hạn chế theo nhu cầu công việc
-
-7. Logs và giám sát
-   - Tất cả truy cập được log
-   - Logs được bảo vệ khỏi bị xóa
-```
-
-**Triển Khai:**
-
-```sql
--- Không bao giờ lưu dữ liệu thẻ đầy đủ!
--- Dùng tokenization thay thế
-
--- Sai:
-CREATE TABLE payments (
-    id SERIAL,
-    card_number VARCHAR(16),  -- Vi phạm PCI-DSS!
-    amount DECIMAL(10,2)
-);
-
--- Đúng:
-CREATE TABLE payments (
-    id SERIAL,
-    card_token VARCHAR(32),   -- Tokenized, không phải thẻ thực
-    amount DECIMAL(10,2)
-);
-
--- Lưu thẻ thực chỉ tại payment processor
-```
-
----
-
-## Quản Lý Bí Mật
-
-### Thiết Lập Vault (HashiCorp Vault)
-
-```bash
-# Lưu thông tin đăng nhập CSDL an toàn
-vault kv put secret/databases/mydb \
-  username=myapp_user \
-  password=GeneratedStrongPassword123!
-
-# Xoay vòng thông tin đăng nhập
-vault read -field=password secret/databases/mydb
-
-# Ứng dụng lấy bí mật lúc runtime
-# (Không lưu trong config files!)
-```
-
-### Lịch Xoay Vòng Key
-
-```
-Thông tin đăng nhập CSDL: Mỗi 90 ngày
-Chứng chỉ TLS: Mỗi 365 ngày
-Khóa mã hóa: Mỗi năm
-Khóa mã hóa backup: Mỗi 2 năm
-```
-
----
-
-## Các Lỗi Bảo Mật Thường Gặp
-
-```
-❌ Mật khẩu dùng chung (nhiều người, nhiều hệ thống)
-❌ Superuser cho kết nối ứng dụng
-❌ Kết nối không mã hóa qua mạng
-❌ PII trong môi trường non-production
-❌ Không có audit logging
-❌ Bảo mật backup yếu
-❌ Kết nối CSDL trực tiếp từ app servers (dùng proxy)
-❌ Cùng mật khẩu cho dev/staging/prod
-❌ Không có chính sách xoay vòng bí mật
-❌ Lưu mật khẩu trong code/config
-
-✓ Thông tin đăng nhập duy nhất cho mỗi ứng dụng
-✓ Vai trò quyền tối thiểu
-✓ TLS ở mọi nơi
-✓ Che giấu dữ liệu trong non-prod
-✓ Audit logs toàn diện
-✓ Backup mã hóa trong tài khoản riêng
-✓ Connection pooler/proxy
-✓ Bí mật đặc thù theo môi trường
-✓ Xoay vòng bí mật tự động
-✓ Thông tin đăng nhập được quản lý bởi Vault
-```
-
----
-
-## Checklist Kiểm Tra Bảo Mật
+## Checklist Tổng Hợp
 
 **Mạng:**
+- [ ] CSDL trong private subnet (không có public IP)
+- [ ] Security groups chỉ whitelist IP đã biết
+- [ ] VPN hoặc bastion host cho DBA access
+- [ ] TLS 1.2+ bắt buộc (hostssl + hostnossl reject)
+- [ ] Connection pooler làm proxy (PgBouncer)
 
-- [ ] CSDL trong mạng con riêng tư
-- [ ] Quy tắc firewall chỉ whitelist IP đã biết
-- [ ] VPN bắt buộc cho truy cập DBA
-- [ ] TLS 1.2+ cho tất cả kết nối
-- [ ] Không có IP công khai trên CSDL
-
-**Kiểm Soát Truy Cập:**
-
-- [ ] Không mật khẩu dùng chung
-- [ ] Service account theo ứng dụng
-- [ ] Quyền tối thiểu theo role
-- [ ] Superuser bị vô hiệu hóa cho ứng dụng
-- [ ] MFA cho truy cập DBA console
-- [ ] Xem xét truy cập hàng quý
+**Xác Thực & Phân Quyền:**
+- [ ] Không shared accounts (mỗi app có account riêng)
+- [ ] Superuser bị vô hiệu hóa cho kết nối ứng dụng
+- [ ] Quyền tối thiểu theo role (RBAC)
+- [ ] MFA cho DBA console access
+- [ ] Access review hàng quý
 
 **Mã Hóa:**
+- [ ] Disk/volume encryption được bật
+- [ ] TLS cho tất cả kết nối (verify-full)
+- [ ] PII và CHD được mã hóa tại cột
+- [ ] Mật khẩu hash với bcrypt/scrypt
+- [ ] Key rotation schedule tự động
 
-- [ ] Mã hóa lưu trữ được bật
-- [ ] Khóa mã hóa trong KMS/HSM
-- [ ] Chính sách xoay vòng key được triển khai
-- [ ] Mã hóa truyền tải (TLS)
-- [ ] Cột nhạy cảm được mã hóa
+**Audit & Logging:**
+- [ ] pgaudit bật cho DDL và WRITE
+- [ ] log_connections = on
+- [ ] Audit log append-only (không thể xóa)
+- [ ] Logs ship ra SIEM ngay lập tức
+- [ ] Retention policy tuân thủ quy định (12 tháng+)
 
-**Kiểm Toán & Logging:**
-
-- [ ] Thay đổi DDL được log
-- [ ] Lần đăng nhập thất bại được log
-- [ ] Kiểm toán truy vấn trên bảng nhạy cảm
-- [ ] Logs được gửi đến SIEM
-- [ ] Chính sách lưu giữ log được đặt
-- [ ] Logs được bảo vệ khỏi giả mạo
+**Secret Management:**
+- [ ] KHÔNG có credentials trong source code
+- [ ] Vault hoặc cloud secret manager
+- [ ] Credential rotation tự động (90 ngày)
+- [ ] Dynamic secrets cho database credentials
+- [ ] Emergency rotation procedure được test
 
 **Tuân Thủ:**
-
-- [ ] Kiểm kê dữ liệu được tài liệu hóa
-- [ ] Chính sách riêng tư phù hợp với thực tiễn dữ liệu
-- [ ] Thỏa thuận vendor được thiết lập
-- [ ] Kế hoạch ứng phó sự cố vi phạm
-- [ ] Đánh giá bảo mật thường xuyên
-- [ ] Kiểm tra thâm nhập hoàn thành
-
----
-
-## Câu Hỏi Phỏng Vấn
-
-1. **Thiết kế CSDL an toàn cho ứng dụng fintech xử lý dữ liệu thanh toán**
-   - Tokenization (không lưu số thẻ đầy đủ)
-   - Tuân thủ PCI-DSS (mã hóa, kiểm toán, kiểm soát truy cập)
-   - TLS cho tất cả kết nối
-   - Vault riêng cho bí mật
-   - Kiểm tra thâm nhập hàng quý
-   - Audit logs bất biến
-
-2. **Xử lý yêu cầu xóa người dùng (GDPR)?**
-   - Tìm tất cả dữ liệu của người dùng đó
-   - Tính đến backup
-   - Xóa từ primary và replica
-   - Xác minh xóa bằng checksum
-   - Tài liệu hóa xóa để tuân thủ
-   - Lưu ý: Một số backup có thể giữ dữ liệu (legal hold)
-
-3. **Phương pháp quản lý bí mật của bạn?**
-   - Không hardcode thông tin đăng nhập
-   - Bí mật được quản lý bởi Vault
-   - Xoay vòng tự động (90 ngày)
-   - Bí mật khác nhau theo môi trường
-   - TTL giới hạn cho thông tin đăng nhập
-   - Log truy cập vào vault
+- [ ] Data inventory được tài liệu hóa
+- [ ] GDPR: Data retention policy tự động hóa
+- [ ] GDPR: Quy trình xóa PII khi có yêu cầu
+- [ ] PCI-DSS: Tokenization (không lưu số thẻ đầy đủ)
+- [ ] PCI-DSS: Không lưu CVV/SAD sau authorization
+- [ ] Penetration test định kỳ (hàng năm)
 
 ---
 
-> **Điểm Mấu Chốt:** Bảo mật không phải là tính năng thêm vào cuối — nó được xây dựng từ đầu. Làm cho dễ dàng để làm đúng (API tốt, tài liệu rõ ràng), và khó để làm sai (không có thông tin đăng nhập trong code, không có truy cập trực tiếp).
+## Câu Hỏi Phỏng Vấn Thường Gặp
+
+**1. Thiết kế CSDL an toàn cho ứng dụng fintech xử lý dữ liệu thanh toán?**
+- Tokenization thay cho lưu số thẻ (Stripe/Braintree)
+- Tuân thủ PCI-DSS (không lưu SAD, mã hóa CHD)
+- TLS cho tất cả kết nối
+- Vault cho secret management
+- Audit logs bất biến
+- Penetration test hàng quý
+
+**2. Xử lý yêu cầu xóa người dùng (GDPR Right to Erasure)?**
+- Tìm tất cả PII trong database (data map)
+- Anonymize hoặc xóa từng bảng có dữ liệu user
+- Tính đến backup (retention policy phải cover)
+- Log xác nhận xóa (chứng minh tuân thủ)
+- Thông báo cho user trong 30 ngày
+
+**3. Phương pháp quản lý bí mật của bạn?**
+- HashiCorp Vault với dynamic database credentials
+- Credentials tự expire sau TTL ngắn
+- Rotation tự động 90 ngày cho static secrets
+- Audit trail mọi truy cập secret
+- AppRole/Kubernetes auth (không hardcode token)
+
+**4. Phát hiện người dùng truy cập dữ liệu nhạy cảm trái phép?**
+- pgaudit với object-level auditing trên bảng nhạy cảm
+- Alert khi query patterns bất thường (nhiều SELECT lúc đêm)
+- Row-Level Security để giới hạn truy cập
+- SIEM integration với rules phát hiện bất thường
+
+---
+
+> **Điểm Mấu Chốt:** Bảo mật không phải là tính năng thêm vào cuối — nó được xây dựng từ đầu ở mọi tầng. Dễ dàng để làm đúng (tooling tốt, tự động hóa) và khó để làm sai (không có thông tin đăng nhập trong code, không có truy cập trực tiếp từ internet) là mục tiêu của kiến trúc bảo mật tốt.
