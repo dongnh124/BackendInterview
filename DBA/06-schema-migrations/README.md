@@ -2,366 +2,188 @@
 
 Thay đổi schema an toàn, không thời gian chết cho CSDL production.
 
-## Các Chủ Đề Cốt Lõi
+## Các Tài Liệu
 
-1. **Công Cụ Migration** — Flyway, Liquibase, sqitch
-2. **Mẫu Expand-Contract** — Thay đổi không thời gian chết
-3. **Chỉ Tiến** — Triết lý không rollback
-4. **Xác Thực** — Kiểm tra toàn vẹn dữ liệu
-5. **Triển Khai** — Phối hợp với ứng dụng
-6. **Chiến Lược Rollback** — Quy trình phục hồi
-7. **Testing** — Xác thực staging
-8. **Giao Tiếp** — Phối hợp nhóm
+| Tài liệu | Mô tả |
+|----------|-------|
+| [Công Cụ Migration](cong-cu-migration.md) | Flyway, Liquibase, sqitch — so sánh và hướng dẫn sử dụng |
+| [Mẫu Expand-Contract](expand-contract.md) | Zero-downtime schema changes — thêm cột, đổi tên, thay đổi type |
+| [Triết Lý Chỉ Tiến](chi-tien-forward-only.md) | Forward-only philosophy — tại sao không rollback schema |
+| [Xác Thực Dữ Liệu](xac-thuc-du-lieu.md) | Row count, backfill completeness, index validity, constraint check |
+| [Triển Khai & Phối Hợp](trien-khai-phoi-hop.md) | Thứ tự deploy, CI/CD pipeline, feature flags, lock management |
+| [Chiến Lược Rollback](chien-luoc-rollback.md) | Phòng ngừa, xử lý sự cố, khôi phục từ backup |
+| [Testing Migration](testing-migration.md) | Staging data, automated tests, performance testing |
+| [Giao Tiếp Nhóm](giao-tiep-nhom.md) | Thông báo, review, war room, post-mortem |
 
 ---
 
-## Các Loại Migration Theo Rủi Ro
+## Nguyên Tắc Cốt Lõi
 
 ```
-RỦI RO THẤP (Có thể làm bất kỳ lúc nào, không lo khóa):
-✓ Thêm cột nullable với default
-✓ Thêm index (có thể khóa ngắn, nhưng online trong CSDL hiện đại)
-✓ Thêm stored procedure/function
-✓ Thêm check constraint (cho hàng mới)
+1. Mọi migration phải backward compatible
+   → Code cũ vẫn chạy sau khi schema mới được deploy
+   → Cho phép rolling deployment và code rollback an toàn
 
-RỦI RO TRUNG BÌNH (Có thể làm nhưng cần phối hợp):
-⚠ Đổi tên cột (với alias)
-⚠ Đổi tên bảng (cần thay đổi ứng dụng)
-⚠ Thêm cột NOT NULL (phải backfill trước)
-⚠ Tăng kích thước cột (thường an toàn)
+2. Database migrate TRƯỚC khi deploy app
+   → Schema sẵn sàng khi code mới cần dùng
 
-RỦI RO CAO (Cần chiến lược không thời gian chết):
-❌ Xóa cột (thay đổi gây phá vỡ)
-❌ Xóa bảng (thay đổi gây phá vỡ)
-❌ Thay đổi kiểu cột (có thể mất dữ liệu)
-❌ Thêm FOREIGN KEY vào bảng lớn
+3. Expand-Contract cho mọi thay đổi breaking
+   → KHÔNG BAO GIỜ: DROP COLUMN / RENAME / CHANGE TYPE trong một bước
+
+4. Forward-only — Không rollback schema
+   → Sửa bằng migration mới, không quay ngược
+
+5. Test trên staging với data production-like
+   → Performance, edge cases, concurrency
+
+6. Xác thực là bắt buộc
+   → Migration chưa xong cho đến khi verification pass
+```
+
+---
+
+## Phân Loại Rủi Ro Migration
+
+```
+RỦI RO THẤP (Làm bất kỳ lúc nào):
+✓ ADD COLUMN nullable với DEFAULT
+✓ CREATE INDEX CONCURRENTLY
+✓ CREATE TABLE mới
+✓ ADD stored procedure/function
+✓ ADD CHECK CONSTRAINT với NOT VALID
+
+RỦI RO TRUNG BÌNH (Cần phối hợp, test kỹ):
+⚠ ADD COLUMN NOT NULL (phải backfill trước)
+⚠ ADD FOREIGN KEY (dùng NOT VALID rồi VALIDATE)
+⚠ RENAME COLUMN (dùng Expand-Contract)
+⚠ RENAME TABLE (dùng trigger sync)
+⚠ Backfill lớn (batch để tránh lock)
+
+RỦI RO CAO (Cần maintenance window hoặc Expand-Contract):
+❌ DROP COLUMN (breaking change)
+❌ DROP TABLE (breaking change)
+❌ ALTER COLUMN TYPE (có thể mất data)
 ❌ Xóa dữ liệu hàng loạt
+❌ CREATE INDEX (không CONCURRENTLY → Khóa bảng)
 ```
 
 ---
 
-## Mẫu Expand-Contract
-
-### Ví dụ: Thêm cột bắt buộc vào bảng users
-
-**Vấn đề:**
+## Luồng Migration Hoàn Chỉnh
 
 ```
-Thêm cột "status" với ràng buộc NOT NULL
-Nếu chỉ ADD COLUMN với NOT NULL, nó khóa bảng cho mọi người
+Bước 1: THIẾT KẾ
+  → Xác định loại thay đổi (Expand-Contract hay trực tiếp?)
+  → Chọn pattern phù hợp
+  → Viết migration SQL
+
+Bước 2: REVIEW
+  → Peer review (DBA + App Engineer)
+  → Kiểm tra backward compatibility
+  → Kiểm tra lock impact
+
+Bước 3: TEST STAGING
+  → Chạy trên staging với data production-like
+  → Đo thời gian thực thi
+  → Test concurrent access
+  → Automated verification tests
+
+Bước 4: CHUẨN BỊ
+  → Tạo backup production
+  → Thông báo team (48h trước)
+  → Runbook sẵn sàng
+
+Bước 5: DEPLOY
+  → Chạy migration (TRƯỚC khi deploy app)
+  → Monitor locks và errors
+  → Verify ngay sau khi xong
+
+Bước 6: VERIFY & THÔNG BÁO
+  → Chạy verification queries
+  → Thông báo completion
+  → App team deploy feature
+
+Bước 7: CONTRACT (Nếu dùng Expand-Contract)
+  → Sprint sau: Xóa schema cũ
+  → Verify không còn code dùng schema cũ
 ```
 
-**Giải Pháp: Cách Tiếp Cận Ba Giai Đoạn**
+---
 
-#### GIAI ĐOẠN 1: EXPAND (Triển khai)
+## Expand-Contract Nhanh
 
 ```sql
--- 1. Thêm cột nullable
-ALTER TABLE users ADD COLUMN status VARCHAR(50);
+-- THÊM CỘT NOT NULL (Ví dụ kinh điển):
 
--- 2. Thêm default cho hàng tương lai
-ALTER TABLE users ALTER COLUMN status SET DEFAULT 'active';
-
--- 3. Tạo index nếu cần (có thể concurrent)
+-- Giai đoạn 1: EXPAND (Migration V10)
+ALTER TABLE users ADD COLUMN status VARCHAR(50) DEFAULT 'active';
 CREATE INDEX CONCURRENTLY idx_users_status ON users(status);
 
--- Ứng dụng tiếp tục hoạt động (code cũ bỏ qua cột mới)
--- Migration script: < 1 giây, không chặn
-```
-
-**Triển khai:**
-- Thay đổi schema: Dễ, không chặn
-- Ứng dụng: Không cần thay đổi (tương thích ngược)
-
-#### GIAI ĐOẠN 2: MIGRATE (Backfill dữ liệu)
-
-```sql
--- 1. Backfill dữ liệu theo batch (tránh khóa toàn bảng)
-BEGIN;
-UPDATE users SET status = 'active' WHERE status IS NULL AND id BETWEEN 1 AND 10000;
-COMMIT;
-
-BEGIN;
-UPDATE users SET status = 'active' WHERE status IS NULL AND id BETWEEN 10001 AND 20000;
-COMMIT;
--- ... lặp lại cho tất cả hàng
-
--- 2. Giám sát hoàn thành
-SELECT COUNT(*) FROM users WHERE status IS NULL;  -- Phải là 0
-
--- 3. Tùy chọn: Thêm check constraint (không khóa hàng hiện có)
-ALTER TABLE users ADD CONSTRAINT users_status_not_null
-  CHECK (status IS NOT NULL) NOT VALID;
-ALTER TABLE users VALIDATE CONSTRAINT users_status_not_null;
-```
-
-**Thời gian:**
-- Backfill xảy ra dần dần (phút đến giờ)
-- Có thể chạy trong giờ hành chính (batch tránh khóa)
-- Ứng dụng vẫn hoạt động
-
-#### GIAI ĐOẠN 3: CONTRACT (Dọn dẹp)
-
-```sql
--- 1. Thêm ràng buộc NOT NULL (chỉ ảnh hưởng hàng mới)
-ALTER TABLE users ALTER COLUMN status SET NOT NULL;
-
--- 2. Xóa dữ liệu/index tạm thời nếu có
--- Ứng dụng được cập nhật để dùng cột mới
-
--- 3. Nếu cần rollback, tạo lại cột từ backup
-```
-
-**Kết quả:**
-- Không có thời gian chết
-- Rollback có thể ở mỗi giai đoạn
-- Ứng dụng có thể được kiểm tra với cột mới
-
----
-
-## Mẫu Runbook Migration
-
-```sql
--- ============================================
--- Migration: YYYY-MM-DD-HH-MM Thêm cột status
--- Tác giả: [Tên]
--- Mức rủi ro: THẤP
--- Thời gian ước tính: 5 phút
--- ============================================
-
--- Đã kiểm tra trên: Môi trường staging ngày 2026-04-26
--- Rollback: Đơn giản (DROP COLUMN nếu cần)
-
-BEGIN;
-
--- Giai đoạn 1: Expand
-ALTER TABLE users ADD COLUMN status VARCHAR(50);
-ALTER TABLE users ALTER COLUMN status SET DEFAULT 'active';
-
--- Xác minh
-SELECT * FROM users LIMIT 1;
-
-COMMIT;
-
--- Giai đoạn 2: Migrate (transaction riêng biệt)
--- Có thể chạy bất đồng bộ
-BEGIN;
+-- Giai đoạn 2: MIGRATE (Migration V11 hoặc script riêng)
 UPDATE users SET status = 'active' WHERE status IS NULL;
-COMMIT;
+-- Batch: WHERE id BETWEEN X AND Y để tránh lock
 
--- Giai đoạn 3: Contract (trong migration tương lai)
--- ALTER TABLE users ALTER COLUMN status SET NOT NULL;
-
--- Các bước xác minh:
--- 1. Kiểm tra row count trước và sau: SELECT COUNT(*) FROM users;
--- 2. Kiểm tra dữ liệu: SELECT DISTINCT status FROM users;
--- 3. Kiểm tra index: SELECT * FROM users WHERE status = 'active' LIMIT 1;
+-- Giai đoạn 3: CONTRACT (Migration V12)
+ALTER TABLE users ADD CONSTRAINT chk_status_not_null
+    CHECK (status IS NOT NULL) NOT VALID;
+ALTER TABLE users VALIDATE CONSTRAINT chk_status_not_null;
+ALTER TABLE users ALTER COLUMN status SET NOT NULL;
+ALTER TABLE users DROP CONSTRAINT chk_status_not_null;
 ```
 
 ---
 
-## Công Cụ Migration
+## Checklist Tổng Hợp
 
-### Flyway
+**Thiết Kế:**
+- [ ] Migration backward compatible (code cũ không bị break)
+- [ ] Expand-Contract được áp dụng nếu là breaking change
+- [ ] Index dùng CONCURRENTLY
+- [ ] FK dùng NOT VALID rồi VALIDATE riêng
+- [ ] Backfill theo batch (không lock toàn bảng)
 
-```bash
-# Khởi tạo
-flyway init
+**Review & Test:**
+- [ ] 2+ approvals (DBA + App Engineer)
+- [ ] Staging test với data production-like
+- [ ] Thời gian thực thi acceptable
+- [ ] Concurrent access test
+- [ ] Automated verification tests pass
 
-# Tạo migration
-# File: V1__Create_users_table.sql
+**Triển Khai:**
+- [ ] Backup trước khi migrate
+- [ ] Thông báo team (48h trước)
+- [ ] Runbook sẵn sàng
+- [ ] Migration TRƯỚC khi deploy app
 
-# Migrate
-flyway migrate
-
-# Thông tin
-flyway info
-```
-
-**Cấu trúc file migration:**
-
-```
-db/migration/
-├── V1__Tao_schema_ban_dau.sql
-├── V2__Them_bang_users.sql
-├── V3__Them_index_tren_email.sql
-├── V4__Mo_rong_cot_status.sql  ← Migration của chúng ta
-└── V5__Them_cot_metadata.sql
-```
-
-### Liquibase
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<databaseChangeLog>
-    <changeSet id="1" author="john">
-        <createTable tableName="users">
-            <column name="id" type="BIGINT" autoIncrement="true">
-                <constraints primaryKey="true"/>
-            </column>
-            <column name="name" type="VARCHAR(255)"/>
-        </createTable>
-    </changeSet>
-
-    <changeSet id="2" author="john">
-        <addColumn tableName="users">
-            <column name="status" type="VARCHAR(50)" defaultValue="active"/>
-        </addColumn>
-    </changeSet>
-</databaseChangeLog>
-```
+**Xác Thực:**
+- [ ] Row count không thay đổi
+- [ ] NULL check (backfill hoàn chỉnh)
+- [ ] Index valid (indisvalid = true)
+- [ ] Smoke tests pass
+- [ ] Thông báo completion
 
 ---
 
-## Triết Lý Chỉ Tiến (Forward-Only)
+## Câu Hỏi Phỏng Vấn Thường Gặp
 
-```
-Cách tiếp cận truyền thống (thân thiện rollback):
-- Có thể hoàn tác bất kỳ thay đổi nào
-- Công cụ phức tạp (versioning lên và xuống)
-- Rủi ro (rollback có thể giới thiệu bug mới)
+**1. Thêm cột NOT NULL vào bảng 100M hàng mà không có downtime?**
+- Giai đoạn 1 (Expand): ADD COLUMN nullable với DEFAULT → Không lock
+- Giai đoạn 2 (Migrate): Backfill theo batch trong business hours
+- Giai đoạn 3 (Contract): ADD CONSTRAINT NOT VALID → VALIDATE → SET NOT NULL
 
-Cách tiếp cận chỉ tiến:
-- Thay đổi chỉ đi về phía trước
-- Versioning đơn giản hơn (không bao giờ hoàn tác)
-- An toàn hơn (deploy fix tiến, không lùi)
-```
+**2. Migration thất bại giữa chừng — làm gì?**
+- Đánh giá blast radius (bao nhiêu hàng bị ảnh hưởng)
+- Nếu trong transaction: PostgreSQL tự rollback → OK
+- Nếu không: Kiểm tra state, sửa thủ công, flyway repair, retry
+- Forward fix với migration mới (không rollback schema)
 
-**Tại sao chỉ tiến?**
-
-```
-Tình huống: Migration xấu được deploy, phải rollback
-- Truyền thống: Rollback schema, ứng dụng vẫn kỳ vọng schema mới → Hỗn loạn
-- Chỉ tiến: Sửa schema với migration mới (thay đổi có kiểm soát an toàn hơn)
-
-Tình huống: Migration mất dữ liệu, muốn hoàn tác
-- Backup vẫn có sẵn (độc lập với versioning schema)
-- Khôi phục từ backup nếu cần phục hồi dữ liệu
-- Versioning schema là mối quan tâm riêng
-```
+**3. Thiết kế chiến lược rename table trong production?**
+- Tạo bảng mới với tên mới (rỗng)
+- Thêm trigger sync write từ bảng cũ sang mới
+- Backfill dữ liệu hiện có
+- Feature flag để chuyển đọc dần sang bảng mới
+- Khi 100% traffic dùng mới: Xóa trigger và bảng cũ
 
 ---
 
-## Kiểm Tra Quy Trình Migration
-
-### Checklist Trước Migration
-
-```
-48 Giờ Trước:
-☐ Migration được kiểm tra trong staging (với dữ liệu production-like)
-☐ Kế hoạch rollback được viết và kiểm tra
-☐ Tác động hiệu suất được đánh giá
-☐ Kế hoạch giao tiếp được tạo
-☐ Kỹ sư on-call được xác định
-
-4 Giờ Trước:
-☐ Backup CSDL hoàn thành
-☐ Migration script được peer review
-☐ Scripts rollback sẵn sàng
-☐ Thành viên nhóm ở vị trí (app eng, DBA, oncall)
-
-Trong Migration:
-☐ Giám sát tranh chấp khóa
-☐ Giám sát tỷ lệ lỗi ứng dụng
-☐ Rollback sẵn sàng thực hiện
-```
-
-### Xác Thực Sau Migration
-
-```sql
--- Kiểm tra toàn vẹn dữ liệu:
-SELECT COUNT(*) AS tong_users FROM users;
--- So với trước: phải khớp
-
-SELECT COUNT(DISTINCT status) FROM users;
--- Phải có các status kỳ vọng
-
-SELECT * FROM users WHERE status IS NULL;
--- Phải rỗng (nếu constraint đã thêm)
-
--- Xác minh index:
-EXPLAIN ANALYZE SELECT * FROM users WHERE status = 'active';
--- Phải dùng index, không phải seq scan
-```
-
----
-
-## Các Mẫu Phổ Biến
-
-### Đổi Tên Cột (Không Thời Gian Chết)
-
-```sql
--- Giai đoạn 1: Thêm cột mới với cùng dữ liệu
-ALTER TABLE users ADD COLUMN email_new VARCHAR(255);
-UPDATE users SET email_new = email;
-CREATE INDEX idx_email_new ON users(email_new);
-
--- Giai đoạn 2: Dual-write (ứng dụng ghi cả hai cột)
--- Code ứng dụng:
-UPDATE users SET email = ?, email_new = ? WHERE id = ?;
-
--- Giai đoạn 3: Chuyển đọc sang cột mới
--- Code ứng dụng:
-SELECT email_new AS email FROM users WHERE id = ?;
-
--- Giai đoạn 4: Xóa cột cũ
-ALTER TABLE users DROP COLUMN email;
-ALTER TABLE users RENAME COLUMN email_new TO email;
-```
-
-### Thêm Foreign Key vào Bảng Lớn
-
-```sql
--- Sai: Add trực tiếp khóa bảng
--- ALTER TABLE orders ADD CONSTRAINT fk_user
--- FOREIGN KEY (user_id) REFERENCES users(id);
-
--- Đúng: NOT VALID, sau đó validate
-ALTER TABLE orders ADD CONSTRAINT fk_user
-FOREIGN KEY (user_id) REFERENCES users(id) NOT VALID;
-
--- Validate riêng (có thể dùng concurrent index)
-ALTER TABLE orders VALIDATE CONSTRAINT fk_user;
-```
-
----
-
-## Câu Hỏi Phỏng Vấn
-
-1. **Làm thế nào thêm cột NOT NULL vào bảng 100M hàng mà không có thời gian chết?**
-   - Dùng mẫu expand-contract
-   - Thêm cột nullable trước
-   - Backfill theo batch trong giờ hành chính
-   - Cuối cùng thêm constraint
-
-2. **Migration thất bại giữa chừng. Bạn làm gì?**
-   - Đánh giá blast radius (hàng nào bị ảnh hưởng?)
-   - Quyết định: Tiếp tục tiến hay khôi phục backup
-   - Nếu tiếp tục: Xác định điều gì thất bại, sửa trong migration mới
-   - Tài liệu hóa nguyên nhân gốc và biện pháp phòng ngừa
-
-3. **Thiết kế chiến lược migration cho đổi tên bảng trong production**
-   - Tạo bảng mới với tên mới (rỗng)
-   - Thêm trigger để sao chép ghi vào cả hai
-   - Backfill dữ liệu hiện có
-   - Chuyển ứng dụng đọc từ mới
-   - Xóa bảng cũ
-
----
-
-## Checklist
-
-- [ ] Công cụ migration thiết lập (Flyway/Liquibase)
-- [ ] Versioning migration trong source control
-- [ ] Kiểm tra trên staging trước
-- [ ] Peer review các thay đổi SQL
-- [ ] Quy trình rollback được tài liệu hóa
-- [ ] Các bước xác thực dữ liệu được viết
-- [ ] Cách tiếp cận tương thích ngược được dùng
-- [ ] Kế hoạch giao tiếp nhóm
-- [ ] Giám sát được bật trong migration
-- [ ] Quy trình post-mortem cho bất kỳ vấn đề nào
-
----
-
-> **Điểm Mấu Chốt:** Migration tốt nhất là migration bạn không bao giờ cần rollback. Thiết kế tương thích ngược, kiểm tra kỹ trong staging, và luôn có cách tiến về phía trước ngay cả khi có vấn đề.
+> **Điểm Mấu Chốt:** Migration tốt nhất là migration bạn không bao giờ cần rollback. Đầu tư vào thiết kế tương thích ngược, test kỹ trên staging, và luôn có cách tiến về phía trước dù có vấn đề.
