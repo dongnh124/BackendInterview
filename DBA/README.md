@@ -31,7 +31,7 @@
 - [ ] Di chuyển Schema & Quản lý Thay đổi
 - [ ] Lập kế hoạch Dung lượng
 - [ ] Xử lý Sự cố & Ứng phó
-- [ ] Quản lý CSDL trên Cloud
+- [ ] Quản lý CSDL trên Cloud (AWS & Azure — SQL & NoSQL)
 
 ### **Giai Đoạn 4: Chuyên Sâu (Tuần 11+)**
 
@@ -116,7 +116,16 @@
 - Xác thực dữ liệu & Checksum
 - Chiến lược rollback
 
-### **7. Phỏng Vấn** (`11-phong-van/`)
+### **7. Cloud Database — AWS & Azure** (`07-cloud-database/`)
+
+- Tổng quan dịch vụ: RDS, Aurora, DynamoDB, ElastiCache vs Azure DB, Cosmos DB, Redis
+- Setup SQL trên Cloud: networking, parameter group, Multi-AZ, RDS Proxy
+- Setup NoSQL trên Cloud: DynamoDB partition key, Cosmos DB RU, Redis eviction
+- Bảo mật & Mạng: VPC/VNet isolation, encryption, IAM auth, secrets rotation
+- Quản lý & Vận hành: monitoring, scaling, maintenance, DR runbook
+- Tối ưu Chi phí: Reserved Instances, right-sizing, storage type, data transfer
+
+### **8. Phỏng Vấn** (`11-phong-van/`)
 
 - Top 20 câu hỏi phỏng vấn DBA
 - Tình huống thiết kế hệ thống
