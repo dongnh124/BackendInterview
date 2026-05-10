@@ -6,17 +6,17 @@ A comprehensive collection of backend engineering interview questions and answer
 
 | #   | Topic                                                                             | Description                                                                                              |
 | --- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| 1   | [System Design](./src/01-system-design.md)                                        | Distributed systems, high availability, scalability, CAP theorem, microservices, caching, message queues |
-| 2   | [Data Structures & Algorithms](./src/02-data-structures-algorithms.md)            | Complexity analysis, trees, graphs, hash tables, dynamic programming, sorting algorithms                 |
-| 3   | [Database](./src/03-database.md)                                                  | SQL optimization, indexing, NoSQL, ACID vs BASE, normalization, replication                              |
-| 3b  | [DBA role](./src/03-database-dba-role.md)                                         | RTO/RPO, backups & restore testing, HA/replication, operations, security, upgrades, compliance           |
-| 3c  | [DBA role 2](./src/03-dba-skills.md)                                              | RTO/RPO, backups & restore testing, HA/replication, operations, security, upgrades, compliance           |
-| 4   | [Infrastructure & DevOps](./src/04-infrastructure-devops.md)                      | Kubernetes, Docker, CI/CD, monitoring, logging, Terraform, cloud services                                |
-| 5   | [Security](./src/05-security.md)                                                  | OAuth, JWT, OWASP, API security, encryption, XSS/SQL injection prevention                                |
-| 6   | [Leadership & Soft Skills](./src/06-leadership-soft-skills.md)                    | Technical decision making, mentoring, cross-team collaboration, project estimation                       |
-| 7   | [Deep Technical Knowledge](./src/07-deep-technical-knowledge.md)                  | Concurrency, memory management, network protocols, performance optimization                              |
-| 8   | [Code Review](./src/08-review-code.md)                                            | Code review principles, checklists, and best practices                                                   |
-| 9   | [Computer Science Fundamentals](./src/09-computer-science-fundamentals/README.md) | OS, networking, concurrency, memory management, compiler basics, distributed systems fundamentals        |
+| 1   | [System Design](./Developer/01-system-design.md)                                        | Distributed systems, high availability, scalability, CAP theorem, microservices, caching, message queues |
+| 2   | [Data Structures & Algorithms](./Developer/02-data-structures-algorithms.md)            | Complexity analysis, trees, graphs, hash tables, dynamic programming, sorting algorithms                 |
+| 3   | [Database](./Developer/03-database.md)                                                  | SQL optimization, indexing, NoSQL, ACID vs BASE, normalization, replication                              |
+| 3b  | [DBA role](./Developer/03-database-dba-role.md)                                         | RTO/RPO, backups & restore testing, HA/replication, operations, security, upgrades, compliance           |
+| 3c  | [DBA role 2](./Developer/03-dba-skills.md)                                              | RTO/RPO, backups & restore testing, HA/replication, operations, security, upgrades, compliance           |
+| 4   | [Infrastructure & DevOps](./Developer/04-infrastructure-devops.md)                      | Kubernetes, Docker, CI/CD, monitoring, logging, Terraform, cloud services                                |
+| 5   | [Security](./Developer/05-security.md)                                                  | OAuth, JWT, OWASP, API security, encryption, XSS/SQL injection prevention                                |
+| 6   | [Leadership & Soft Skills](./Developer/06-leadership-soft-skills.md)                    | Technical decision making, mentoring, cross-team collaboration, project estimation                       |
+| 7   | [Deep Technical Knowledge](./Developer/07-deep-technical-knowledge.md)                  | Concurrency, memory management, network protocols, performance optimization                              |
+| 8   | [Code Review](./Developer/08-review-code.md)                                            | Code review principles, checklists, and best practices                                                   |
+| 9   | [Computer Science Fundamentals](./Developer/09-computer-science-fundamentals/README.md) | OS, networking, concurrency, memory management, compiler basics, distributed systems fundamentals        |
 
 ## 🎯 Topics Overview
 
@@ -45,7 +45,7 @@ A comprehensive collection of backend engineering interview questions and answer
 - ACID vs BASE
 - Data modeling, normalization
 - Transaction isolation levels
-- [DBA role interview topics](./src/03-database-dba-role.md): backups/DR, HA, performance triage, security, upgrades, compliance
+- [DBA role interview topics](./Developer/03-database-dba-role.md): backups/DR, HA, performance triage, security, upgrades, compliance
 
 ### 4. Infrastructure & DevOps
 
@@ -107,16 +107,16 @@ A comprehensive collection of backend engineering interview questions and answer
 
 ## 🔗 Quick Links
 
-- [System Design Questions](./src/01-system-design.md)
-- [DSA Questions](./src/02-data-structures-algorithms.md)
-- [Database Questions](./src/03-database.md)
-- [DBA role questions](./src/03-database-dba-role.md)
-- [DevOps Questions](./src/04-infrastructure-devops.md)
-- [Security Questions](./src/05-security.md)
-- [Leadership Questions](./src/06-leadership-soft-skills.md)
-- [Deep Technical Questions](./src/07-deep-technical-knowledge.md)
-- [Code Review](./src/08-review-code.md)
-- [Computer Science Fundamentals](./src/09-computer-science-fundamentals/README.md)
+- [System Design Questions](./Developer/01-system-design.md)
+- [DSA Questions](./Developer/02-data-structures-algorithms.md)
+- [Database Questions](./Developer/03-database.md)
+- [DBA role questions](./Developer/03-database-dba-role.md)
+- [DevOps Questions](./Developer/04-infrastructure-devops.md)
+- [Security Questions](./Developer/05-security.md)
+- [Leadership Questions](./Developer/06-leadership-soft-skills.md)
+- [Deep Technical Questions](./Developer/07-deep-technical-knowledge.md)
+- [Code Review](./Developer/08-review-code.md)
+- [Computer Science Fundamentals](./Developer/09-computer-science-fundamentals/README.md)
 
 ## 📝 License
 
