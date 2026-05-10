@@ -11,27 +11,27 @@ Devops/k8s/
 │
 ├── 01-architecture/
 │   ├── README.md                           Tổng quan kiến trúc Kubernetes
-│   ├── control-plane.md                    API Server, etcd, Scheduler, Controller Manager
-│   ├── worker-node.md                      kubelet, kube-proxy, container runtime
-│   ├── kubernetes-objects.md               Pod, Deployment, Service, Namespace và các object khác
-│   └── request-flow.md                     Luồng xử lý từ kubectl apply đến Pod chạy
+│   ├── 1-control-plane.md                    API Server, etcd, Scheduler, Controller Manager
+│   ├── 2-worker-node.md                      kubelet, kube-proxy, container runtime
+│   ├── 3-kubernetes-objects.md               Pod, Deployment, Service, Namespace và các object khác
+│   └── 4-request-flow.md                     Luồng xử lý từ kubectl apply đến Pod chạy
 │
 ├── 02-workload/
 │   ├── README.md                           Tổng quan quản lý workload
-│   ├── pod.md                              Pod lifecycle, multi-container, init container
-│   ├── deployment.md                       Rolling update, rollback, strategy
-│   ├── statefulset.md                      Workload có trạng thái, headless service
-│   ├── daemonset.md                        Chạy agent trên mọi node
-│   ├── job-cronjob.md                      Tác vụ một lần và định kỳ
-│   └── health-probes.md                    Liveness, Readiness, Startup Probe
+│   ├── 1-pod.md                              Pod lifecycle, multi-container, init container
+│   ├── 2-deployment.md                       Rolling update, rollback, strategy
+│   ├── 3-statefulset.md                      Workload có trạng thái, headless service
+│   ├── 4-daemonset.md                        Chạy agent trên mọi node
+│   ├── 5-job-cronjob.md                      Tác vụ một lần và định kỳ
+│   └── 6-health-probes.md                    Liveness, Readiness, Startup Probe
 │
 ├── 03-networking/
 │   ├── README.md                           Tổng quan mạng Kubernetes
-│   ├── service-types.md                    ClusterIP, NodePort, LoadBalancer, ExternalName
-│   ├── ingress.md                          Ingress Controller, TLS, routing rules
-│   ├── network-policy.md                   Kiểm soát lưu lượng vào/ra giữa các Pod
-│   ├── dns-coredns.md                      DNS nội bộ cluster, service discovery
-│   └── cni-plugins.md                      Calico, Flannel, Cilium — so sánh và lựa chọn
+│   ├── 1-service-types.md                    ClusterIP, NodePort, LoadBalancer, ExternalName
+│   ├── 2-ingress.md                          Ingress Controller, TLS, routing rules
+│   ├── 3-network-policy.md                   Kiểm soát lưu lượng vào/ra giữa các Pod
+│   ├── 4-dns-coredns.md                      DNS nội bộ cluster, service discovery
+│   └── 5-cni-plugins.md                      Calico, Flannel, Cilium — so sánh và lựa chọn
 │
 ├── 04-storage/
 │   ├── README.md                           Tổng quan lưu trữ Kubernetes
