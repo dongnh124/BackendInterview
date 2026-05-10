@@ -117,14 +117,14 @@ Devops/k8s/
 | ---------------------------------- | -------------------------------- | ---------- | ------------- |
 | **Tổng Quan & Lộ Trình**           | README.md                        | ✅          | Toàn diện     |
 | **Chỉ Mục Tài Liệu**              | INDEX.md                         | ✅          | Toàn diện     |
-| **Kiến Trúc Kubernetes**           | 01-architecture/                 | 🚧          | Đang tạo      |
-| **Quản Lý Workload**               | 02-workload/                     | 🚧          | Đang tạo      |
-| **Networking**                     | 03-networking/                   | 🚧          | Đang tạo      |
-| **Storage**                        | 04-storage/                      | 🚧          | Đang tạo      |
-| **Config & Secret**                | 05-config-secret/                | 🚧          | Đang tạo      |
-| **Bảo Mật**                        | 06-security/                     | 🚧          | Đang tạo      |
-| **Auto Scaling**                   | 07-scaling/                      | 🚧          | Đang tạo      |
-| **Monitoring**                     | 08-monitoring/                   | 🚧          | Đang tạo      |
+| **Kiến Trúc Kubernetes**           | 01-architecture/                 | ✅          | Toàn diện     |
+| **Quản Lý Workload**               | 02-workload/                     | ✅          | Toàn diện     |
+| **Networking**                     | 03-networking/                   | ✅          | Toàn diện     |
+| **Storage**                        | 04-storage/                      | ✅          | Toàn diện     |
+| **Config & Secret**                | 05-config-secret/                | ✅          | Toàn diện     |
+| **Bảo Mật**                        | 06-security/                     | ✅          | Toàn diện     |
+| **Auto Scaling**                   | 07-scaling/                      | ✅          | Toàn diện     |
+| **Monitoring**                     | 08-monitoring/                   | ✅          | Toàn diện     |
 | **CI/CD & GitOps**                 | 09-cicd-gitops/                  | 🚧          | Đang tạo      |
 | **Troubleshooting**                | 10-troubleshooting/              | 🚧          | Đang tạo      |
 | **Cloud Platforms**                | 11-cloud-platforms/              | 🚧          | Đang tạo      |
@@ -136,23 +136,23 @@ Devops/k8s/
 
 ### Ưu Tiên Cao (Kỹ năng cốt lõi — tạo trước)
 
-- [ ] `01-architecture/README.md` — Kiến trúc K8s, Control Plane, Worker Node
-- [ ] `02-workload/README.md` — Pod, Deployment, StatefulSet
-- [ ] `03-networking/README.md` — Service, Ingress, NetworkPolicy
+- [x] `01-architecture/README.md` — Kiến trúc K8s, Control Plane, Worker Node
+- [x] `02-workload/README.md` — Pod, Deployment, StatefulSet
+- [x] `03-networking/README.md` — Service, Ingress, NetworkPolicy
 - [ ] `10-troubleshooting/README.md` — Debug Pod, Node, Network
 - [ ] `12-interview-prep/INTERVIEW_GUIDE.md` — Top 30 câu hỏi phỏng vấn
 
 ### Ưu Tiên Trung Bình (Kỹ năng vận hành)
 
-- [ ] `06-security/README.md` — RBAC, Pod Security, mTLS
-- [ ] `07-scaling/README.md` — HPA, VPA, Cluster Autoscaler, KEDA
-- [ ] `08-monitoring/README.md` — Prometheus, Grafana, Loki
+- [x] `06-security/README.md` — RBAC, Pod Security, mTLS
+- [x] `07-scaling/README.md` — HPA, VPA, Cluster Autoscaler, KEDA
+- [x] `08-monitoring/README.md` — Prometheus, Grafana, Loki
 - [ ] `09-cicd-gitops/README.md` — Helm, ArgoCD, Flux
-- [ ] `04-storage/README.md` — PV, PVC, StorageClass
+- [x] `04-storage/README.md` — PV, PVC, StorageClass
 
 ### Ưu Tiên Thấp (Tham khảo nâng cao)
 
-- [ ] `05-config-secret/README.md` — External Secrets, Sealed Secrets
+- [x] `05-config-secret/README.md` — External Secrets, Sealed Secrets
 - [ ] `11-cloud-platforms/README.md` — EKS, GKE, AKS
 - [ ] `12-interview-prep/system-design.md` — System design với K8s
 - [ ] `12-interview-prep/90-day-study-plan.md` — Kế hoạch học chi tiết
@@ -379,6 +379,6 @@ Phát hiện lỗi hoặc muốn bổ sung nội dung?
 
 ---
 
-**Cập Nhật Lần Cuối:** 2026-05-09
-**Phiên Bản:** 1.0 (README + INDEX hoàn thành)
-**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | 🚧 Các section chi tiết đang tạo
+**Cập Nhật Lần Cuối:** 2026-05-10
+**Phiên Bản:** 1.8 (08-monitoring hoàn thành)
+**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-architecture hoàn thành | ✅ 02-workload hoàn thành | ✅ 03-networking hoàn thành | ✅ 04-storage hoàn thành | ✅ 05-config-secret hoàn thành | ✅ 06-security hoàn thành | ✅ 07-scaling hoàn thành | ✅ 08-monitoring hoàn thành | 🚧 Các section còn lại đang tạo
