@@ -1,2 +1,7 @@
 1. Đọc nội dung file Devops/k8s/INDEX.md và Devops/k8s/README.md
 2. Tạo và hoàn thiện nội dung cho topic 02-workload; nội dung dùng tiếng Việt UTF-8, thuật ngữ kỹ thuật giữ nguyên tiếng Anh kèm giải thích trong ngoặc (ví dụ: HPA — Horizontal Pod Autoscaler — Tự Động Mở Rộng Pod Theo Chiều Ngang)
+
+------------------------------------------------------------------------
+1. Đọc nôi dung và cấu trúc của 2 file: DBA-Knowledge/README.md và DBA-Knowledge/INDEX.md
+2. Mục tiêu là tạo nội dung tương tự về kĩ năng K8s vào thư mục Devops/k8s.
+3. Thực hiện tạo 2 file readme, index trước tiên. Nội dung dùng tiếng Việt UTF-8, thuật ngữ kỹ thuật giữ nguyên tiếng Anh kèm giải thích trong ngoặc (ví dụ: HPA — Horizontal Pod Autoscaler — Tự Động Mở Rộng Pod Theo Chiều Ngang)
