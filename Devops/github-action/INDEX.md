@@ -10,90 +10,90 @@ Devops/github-action/
 │
 ├── 01-fundamentals/
 │   ├── README.md                           Kiến trúc GitHub Actions, khái niệm cốt lõi
-│   ├── workflow-syntax.md                  Cú pháp YAML workflow đầy đủ
-│   ├── events-triggers.md                  Tất cả events — push, PR, schedule, dispatch
-│   ├── runners.md                          GitHub-hosted vs self-hosted runners
-│   ├── contexts-expressions.md             ${{ github.* }}, ${{ env.* }}, ${{ secrets.* }}
-│   └── environment-variables.md            Biến môi trường mặc định và tùy chỉnh
+│   ├── 1-workflow-syntax.md                Cú pháp YAML workflow đầy đủ
+│   ├── 2-events-triggers.md                Tất cả events — push, PR, schedule, dispatch
+│   ├── 3-runners.md                        GitHub-hosted vs self-hosted runners
+│   ├── 4-contexts-expressions.md           ${{ github.* }}, ${{ env.* }}, ${{ secrets.* }}
+│   └── 5-environment-variables.md          Biến môi trường mặc định và tùy chỉnh
 │
 ├── 02-ci-pipeline/
 │   ├── README.md                           ✅ Đã tạo — CI pipeline, triggers, status checks
-│   ├── checkout-setup.md                   actions/checkout, setup-node, setup-python
-│   ├── testing-strategies.md               Unit test, integration test, code coverage
-│   ├── linting-quality.md                  ESLint, Prettier, SonarQube, code quality gates
-│   ├── build-artifacts.md                  Đóng gói, versioning, upload artifacts
-│   └── branch-protection.md                Status checks, required reviews, merge rules
+│   ├── 1-checkout-setup.md                 actions/checkout, setup-node, setup-python
+│   ├── 2-testing-strategies.md             Unit test, integration test, code coverage
+│   ├── 3-linting-quality.md                ESLint, Prettier, SonarQube, code quality gates
+│   ├── 4-build-artifacts.md                Đóng gói, versioning, upload artifacts
+│   └── 5-branch-protection.md              Status checks, required reviews, merge rules
 │
 ├── 03-cd-deployments/
 │   ├── README.md                           CD pipeline, environments, deployment strategies
-│   ├── environments.md                     Staging, production, protection rules, approvals
-│   ├── deployment-strategies.md            Rolling, Blue/Green, Canary deployments
-│   ├── docker-deployments.md               Build image, push to registry, deploy container
-│   ├── kubernetes-deployments.md           kubectl, Helm, Kustomize, GitOps
-│   ├── aws-deployments.md                  ECS, EKS, Lambda, S3, CloudFront
-│   ├── gcp-deployments.md                  GKE, Cloud Run, Artifact Registry
-│   └── azure-deployments.md               AKS, Azure Container Registry, App Service
+│   ├── 1-environments.md                   Staging, production, protection rules, approvals
+│   ├── 2-deployment-strategies.md          Rolling, Blue/Green, Canary deployments
+│   ├── 3-docker-deployments.md             Build image, push to registry, deploy container
+│   ├── 4-kubernetes-deployments.md         kubectl, Helm, Kustomize, GitOps
+│   ├── 5-aws-deployments.md                ECS, EKS, Lambda, S3, CloudFront
+│   ├── 6-gcp-deployments.md                GKE, Cloud Run, Artifact Registry
+│   └── 7-azure-deployments.md              AKS, Azure Container Registry, App Service
 │
 ├── 04-secrets-variables/
 │   ├── README.md                           Quản lý bí mật và biến
-│   ├── secrets-management.md              Repository, organization, environment secrets
-│   ├── variables.md                        Variables scope — org, repo, environment
-│   ├── oidc.md                             OIDC — OpenID Connect, không cần long-lived creds
-│   ├── vault-integration.md               Tích hợp HashiCorp Vault
-│   └── aws-secrets-manager.md             Tích hợp AWS Secrets Manager
+│   ├── 1-secrets-management.md             Repository, organization, environment secrets
+│   ├── 2-variables.md                      Variables scope — org, repo, environment
+│   ├── 3-oidc.md                           OIDC — OpenID Connect, không cần long-lived creds
+│   ├── 4-vault-integration.md              Tích hợp HashiCorp Vault
+│   └── 5-aws-secrets-manager.md            Tích hợp AWS Secrets Manager
 │
 ├── 05-reusable/
 │   ├── README.md                           Reusable workflows và actions
-│   ├── reusable-workflows.md              workflow_call, inputs, outputs, secrets
-│   ├── composite-actions.md               Composite actions — đóng gói nhiều steps
-│   ├── javascript-actions.md              Node.js actions, @actions/core, @actions/github
-│   ├── docker-actions.md                  Docker Container actions
-│   └── marketplace-guide.md              Chọn, đánh giá và pin actions từ Marketplace
+│   ├── 1-reusable-workflows.md             workflow_call, inputs, outputs, secrets
+│   ├── 2-composite-actions.md              Composite actions — đóng gói nhiều steps
+│   ├── 3-javascript-actions.md             Node.js actions, @actions/core, @actions/github
+│   ├── 4-docker-actions.md                 Docker Container actions
+│   └── 5-marketplace-guide.md              Chọn, đánh giá và pin actions từ Marketplace
 │
 ├── 06-matrix-concurrency/
 │   ├── README.md                           Matrix strategy và concurrency control
-│   ├── matrix-strategy.md                 Test đa phiên bản, đa OS, include/exclude
-│   ├── concurrency.md                      Concurrency groups, cancel-in-progress
-│   └── fan-out-fan-in.md                  Fan-out & fan-in patterns — song song và tập hợp
+│   ├── 1-matrix-strategy.md                Test đa phiên bản, đa OS, include/exclude
+│   ├── 2-concurrency.md                    Concurrency groups, cancel-in-progress
+│   └── 3-fan-out-fan-in.md                 Fan-out & fan-in patterns — song song và tập hợp
 │
 ├── 07-caching-performance/
 │   ├── README.md                           Cache, artifacts, tối ưu chi phí
-│   ├── caching-dependencies.md            actions/cache cho npm, pip, Maven, Gradle, Go
-│   ├── cache-key-strategies.md            Cache key patterns, restore keys
-│   ├── artifacts.md                        Upload/download artifacts, retention policy
-│   ├── performance-optimization.md        Tối ưu thời gian chạy workflow
-│   └── billing-cost.md                    Billing minutes, storage, tính toán và tiết kiệm chi phí
+│   ├── 1-caching-dependencies.md           actions/cache cho npm, pip, Maven, Gradle, Go
+│   ├── 2-cache-key-strategies.md           Cache key patterns, restore keys
+│   ├── 3-artifacts.md                      Upload/download artifacts, retention policy
+│   ├── 4-performance-optimization.md       Tối ưu thời gian chạy workflow
+│   └── 5-billing-cost.md                   Billing minutes, storage, tính toán và tiết kiệm chi phí
 │
 ├── 08-security/
 │   ├── README.md                           Bảo mật toàn diện cho GitHub Actions
-│   ├── permissions.md                      permissions block, GITHUB_TOKEN scopes
-│   ├── oidc-cloud-auth.md                 OIDC với AWS/GCP/Azure — không cần secrets
-│   ├── supply-chain.md                    Pin actions by SHA, Dependabot, dependency review
-│   ├── code-scanning.md                   CodeQL, SAST, DAST tích hợp trong CI
-│   ├── secret-scanning.md                 Phát hiện secrets bị lộ trong code
-│   └── security-hardening.md             Checklist bảo mật toàn diện cho enterprise
+│   ├── 1-permissions.md                    permissions block, GITHUB_TOKEN scopes
+│   ├── 2-oidc-cloud-auth.md                OIDC với AWS/GCP/Azure — không cần secrets
+│   ├── 3-supply-chain.md                   Pin actions by SHA, Dependabot, dependency review
+│   ├── 4-code-scanning.md                  CodeQL, SAST, DAST tích hợp trong CI
+│   ├── 5-secret-scanning.md                Phát hiện secrets bị lộ trong code
+│   └── 6-security-hardening.md             Checklist bảo mật toàn diện cho enterprise
 │
 ├── 09-self-hosted-runners/
 │   ├── README.md                           Self-hosted runners — cài đặt và vận hành
-│   ├── setup-registration.md             Cài đặt, đăng ký runner, labels, groups
-│   ├── arc-autoscaling.md                 ARC — Actions Runner Controller, auto-scaling trên K8s
-│   ├── security-isolation.md             Network isolation, ephemeral runners, hardening
-│   └── maintenance-monitoring.md         Bảo trì, giám sát, upgrade runners
+│   ├── 1-setup-registration.md             Cài đặt, đăng ký runner, labels, groups
+│   ├── 2-arc-autoscaling.md                ARC — Actions Runner Controller, auto-scaling trên K8s
+│   ├── 3-security-isolation.md             Network isolation, ephemeral runners, hardening
+│   └── 4-maintenance-monitoring.md         Bảo trì, giám sát, upgrade runners
 │
 ├── 10-monitoring-debugging/
 │   ├── README.md                           Giám sát và debug workflows
-│   ├── debug-logging.md                   ACTIONS_STEP_DEBUG, ACTIONS_RUNNER_DEBUG
-│   ├── workflow-notifications.md          Slack, email, GitHub Issues notifications
-│   ├── metrics-observability.md           Thời gian chạy, tỉ lệ lỗi, custom metrics
-│   └── audit-logs.md                      Audit logs cho enterprise, compliance
+│   ├── 1-debug-logging.md                  ACTIONS_STEP_DEBUG, ACTIONS_RUNNER_DEBUG
+│   ├── 2-workflow-notifications.md         Slack, email, GitHub Issues notifications
+│   ├── 3-metrics-observability.md          Thời gian chạy, tỉ lệ lỗi, custom metrics
+│   └── 4-audit-logs.md                     Audit logs cho enterprise, compliance
 │
 ├── 11-interview-prep/
 │   ├── README.md                           Tổng quan phỏng vấn GitHub Actions
-│   ├── INTERVIEW_GUIDE.md                 Top 20 câu hỏi phỏng vấn, tips trả lời
-│   ├── star-stories.md                    Mẫu câu chuyện STAR cho incident/projects
-│   ├── system-design-scenarios.md        Kịch bản thiết kế pipeline CI/CD
-│   ├── hands-on-exercises.md             Bài tập thực hành có đáp án
-│   └── 90-day-study-plan.md              Kế hoạch học 90 ngày có cấu trúc
+│   ├── 1-INTERVIEW_GUIDE.md                Top 20 câu hỏi phỏng vấn, tips trả lời
+│   ├── 2-star-stories.md                   Mẫu câu chuyện STAR cho incident/projects
+│   ├── 3-system-design-scenarios.md        Kịch bản thiết kế pipeline CI/CD
+│   ├── 4-hands-on-exercises.md             Bài tập thực hành có đáp án
+│   └── 5-90-day-study-plan.md              Kế hoạch học 90 ngày có cấu trúc
 │
 ├── ROADMAP.md                              Lộ trình học chi tiết theo level
 ├── GLOSSARY.md                             Thuật ngữ GitHub Actions & CI/CD
