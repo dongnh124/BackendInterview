@@ -99,7 +99,7 @@ Devops/jenkins/
 | **Pipeline: Declarative & Scripted**   | 02-pipeline/                         | ✅         | Toàn diện      |
 | **Quản Lý Plugin**                     | 03-plugins/                          | ✅         | Toàn diện      |
 | **Build Triggers và Artifacts**        | 04-builds-triggers/                  | ✅         | Toàn diện      |
-| **Distributed Builds**                 | 05-distributed-builds/               | 🚧 Cần tạo | -              |
+| **Distributed Builds**                 | 05-distributed-builds/               | ✅         | Toàn diện      |
 | **Security & Credentials**             | 06-security/                         | 🚧 Cần tạo | -              |
 | **Integration với Git, Docker, K8s**   | 07-integration/                      | 🚧 Cần tạo | -              |
 | **Shared Libraries**                   | 08-shared-libraries/                 | 🚧 Cần tạo | -              |
@@ -115,7 +115,7 @@ Devops/jenkins/
 
 - [x] `01-fundamentals/` — Kiến trúc và khái niệm nền tảng (4 files)
 - [x] `02-pipeline/` — Pipeline Declarative và Scripted (6 files)
-- [ ] `05-distributed-builds/` — Distributed Builds và Agent (4 files)
+- [x] `05-distributed-builds/` — Distributed Builds và Agent (4 files)
 - [ ] `06-security/` — Security và Credentials (4 files)
 
 ### Ưu Tiên Trung Bình (Kỹ năng vận hành)
@@ -325,6 +325,6 @@ Sau khi hoàn thành knowledge base này, bạn cần đạt được:
 
 ---
 
-**Cập Nhật Lần Cuối:** 2026-05-10
+**Cập Nhật Lần Cuối:** 2026-05-11
 **Phiên Bản:** 1.0
 **Trạng Thái:** ✅ README & INDEX — Đã tạo | 🚧 Nội dung chi tiết — Đang triển khai
