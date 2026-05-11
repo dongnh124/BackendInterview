@@ -98,7 +98,7 @@ Devops/jenkins/
 | **Kiến Trúc Nền Tảng**                 | 01-fundamentals/                     | ✅         | Toàn diện      |
 | **Pipeline: Declarative & Scripted**   | 02-pipeline/                         | ✅         | Toàn diện      |
 | **Quản Lý Plugin**                     | 03-plugins/                          | ✅         | Toàn diện      |
-| **Build Triggers và Artifacts**        | 04-builds-triggers/                  | 🚧 Cần tạo | -              |
+| **Build Triggers và Artifacts**        | 04-builds-triggers/                  | ✅         | Toàn diện      |
 | **Distributed Builds**                 | 05-distributed-builds/               | 🚧 Cần tạo | -              |
 | **Security & Credentials**             | 06-security/                         | 🚧 Cần tạo | -              |
 | **Integration với Git, Docker, K8s**   | 07-integration/                      | 🚧 Cần tạo | -              |
@@ -122,7 +122,7 @@ Devops/jenkins/
 
 - [ ] `07-integration/` — Tích hợp với Git, Docker, Kubernetes (5 files)
 - [ ] `08-shared-libraries/` — Shared Libraries nâng cao (3 files)
-- [ ] `04-builds-triggers/` — Build Triggers và Artifacts (4 files)
+- [x] `04-builds-triggers/` — Build Triggers và Artifacts (4 files)
 - [ ] `11-interview-prep/INTERVIEW_GUIDE.md` — Câu hỏi phỏng vấn
 
 ### Ưu Tiên Thấp (Tham khảo và vận hành)
