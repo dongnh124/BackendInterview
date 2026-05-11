@@ -105,7 +105,7 @@ Devops/jenkins/
 | **Shared Libraries**                   | 08-shared-libraries/                 | ✅         | Toàn diện      |
 | **Monitoring & Maintenance**           | 09-monitoring-maintenance/           | ✅         | Toàn diện      |
 | **Troubleshooting**                    | 10-troubleshooting/                  | ✅         | Toàn diện      |
-| **Interview Prep**                     | 11-interview-prep/                   | 🚧 Cần tạo | -              |
+| **Interview Prep**                     | 11-interview-prep/                   | ✅         | Toàn diện      |
 
 ---
 
@@ -123,14 +123,14 @@ Devops/jenkins/
 - [x] `07-integration/` — Tích hợp với Git, Docker, Kubernetes (5 files)
 - [x] `08-shared-libraries/` — Shared Libraries nâng cao (3 files)
 - [x] `04-builds-triggers/` — Build Triggers và Artifacts (4 files)
-- [ ] `11-interview-prep/INTERVIEW_GUIDE.md` — Câu hỏi phỏng vấn
+- [x] `11-interview-prep/INTERVIEW_GUIDE.md` — Câu hỏi phỏng vấn
 
 ### Ưu Tiên Thấp (Tham khảo và vận hành)
 
 - [x] `03-plugins/` — Quản lý Plugin (3 files)
 - [x] `09-monitoring-maintenance/` — Giám sát và bảo trì (4 files)
 - [x] `10-troubleshooting/` — Xử lý sự cố (5 files)
-- [ ] `11-interview-prep/` — Câu chuyện STAR, System Design (3 files)
+- [x] `11-interview-prep/` — Câu chuyện STAR, System Design (4 files)
 
 ---
 
@@ -326,5 +326,5 @@ Sau khi hoàn thành knowledge base này, bạn cần đạt được:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-11
-**Phiên Bản:** 1.5
-**Trạng Thái:** ✅ README & INDEX — Đã tạo | ✅ 06-security — Đã hoàn thành | ✅ 07-integration — Đã hoàn thành | ✅ 08-shared-libraries — Đã hoàn thành | ✅ 09-monitoring-maintenance — Đã hoàn thành | ✅ 10-troubleshooting — Đã hoàn thành | 🚧 11-interview-prep — Cần tạo
+**Phiên Bản:** 1.6
+**Trạng Thái:** ✅ README & INDEX — Đã tạo | ✅ 06-security — Đã hoàn thành | ✅ 07-integration — Đã hoàn thành | ✅ 08-shared-libraries — Đã hoàn thành | ✅ 09-monitoring-maintenance — Đã hoàn thành | ✅ 10-troubleshooting — Đã hoàn thành | ✅ 11-interview-prep — Đã hoàn thành
