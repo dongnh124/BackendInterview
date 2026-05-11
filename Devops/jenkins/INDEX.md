@@ -102,7 +102,7 @@ Devops/jenkins/
 | **Distributed Builds**                 | 05-distributed-builds/               | ✅         | Toàn diện      |
 | **Security & Credentials**             | 06-security/                         | ✅         | Toàn diện      |
 | **Integration với Git, Docker, K8s**   | 07-integration/                      | ✅         | Toàn diện      |
-| **Shared Libraries**                   | 08-shared-libraries/                 | 🚧 Cần tạo | -              |
+| **Shared Libraries**                   | 08-shared-libraries/                 | ✅         | Toàn diện      |
 | **Monitoring & Maintenance**           | 09-monitoring-maintenance/           | 🚧 Cần tạo | -              |
 | **Troubleshooting**                    | 10-troubleshooting/                  | 🚧 Cần tạo | -              |
 | **Interview Prep**                     | 11-interview-prep/                   | 🚧 Cần tạo | -              |
@@ -121,7 +121,7 @@ Devops/jenkins/
 ### Ưu Tiên Trung Bình (Kỹ năng vận hành)
 
 - [x] `07-integration/` — Tích hợp với Git, Docker, Kubernetes (5 files)
-- [ ] `08-shared-libraries/` — Shared Libraries nâng cao (3 files)
+- [x] `08-shared-libraries/` — Shared Libraries nâng cao (3 files)
 - [x] `04-builds-triggers/` — Build Triggers và Artifacts (4 files)
 - [ ] `11-interview-prep/INTERVIEW_GUIDE.md` — Câu hỏi phỏng vấn
 
@@ -326,5 +326,5 @@ Sau khi hoàn thành knowledge base này, bạn cần đạt được:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-11
-**Phiên Bản:** 1.2
-**Trạng Thái:** ✅ README & INDEX — Đã tạo | ✅ 06-security — Đã hoàn thành | ✅ 07-integration — Đã hoàn thành | 🚧 Nội dung chi tiết — Đang triển khai
+**Phiên Bản:** 1.3
+**Trạng Thái:** ✅ README & INDEX — Đã tạo | ✅ 06-security — Đã hoàn thành | ✅ 07-integration — Đã hoàn thành | ✅ 08-shared-libraries — Đã hoàn thành | 🚧 Nội dung chi tiết — Đang triển khai
