@@ -104,7 +104,7 @@ Devops/jenkins/
 | **Integration với Git, Docker, K8s**   | 07-integration/                      | ✅         | Toàn diện      |
 | **Shared Libraries**                   | 08-shared-libraries/                 | ✅         | Toàn diện      |
 | **Monitoring & Maintenance**           | 09-monitoring-maintenance/           | ✅         | Toàn diện      |
-| **Troubleshooting**                    | 10-troubleshooting/                  | 🚧 Cần tạo | -              |
+| **Troubleshooting**                    | 10-troubleshooting/                  | ✅         | Toàn diện      |
 | **Interview Prep**                     | 11-interview-prep/                   | 🚧 Cần tạo | -              |
 
 ---
@@ -129,7 +129,7 @@ Devops/jenkins/
 
 - [x] `03-plugins/` — Quản lý Plugin (3 files)
 - [x] `09-monitoring-maintenance/` — Giám sát và bảo trì (4 files)
-- [ ] `10-troubleshooting/` — Xử lý sự cố (5 files)
+- [x] `10-troubleshooting/` — Xử lý sự cố (5 files)
 - [ ] `11-interview-prep/` — Câu chuyện STAR, System Design (3 files)
 
 ---
@@ -326,5 +326,5 @@ Sau khi hoàn thành knowledge base này, bạn cần đạt được:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-11
-**Phiên Bản:** 1.4
-**Trạng Thái:** ✅ README & INDEX — Đã tạo | ✅ 06-security — Đã hoàn thành | ✅ 07-integration — Đã hoàn thành | ✅ 08-shared-libraries — Đã hoàn thành | ✅ 09-monitoring-maintenance — Đã hoàn thành | 🚧 Nội dung chi tiết — Đang triển khai
+**Phiên Bản:** 1.5
+**Trạng Thái:** ✅ README & INDEX — Đã tạo | ✅ 06-security — Đã hoàn thành | ✅ 07-integration — Đã hoàn thành | ✅ 08-shared-libraries — Đã hoàn thành | ✅ 09-monitoring-maintenance — Đã hoàn thành | ✅ 10-troubleshooting — Đã hoàn thành | 🚧 11-interview-prep — Cần tạo
