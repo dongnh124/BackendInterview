@@ -17,7 +17,7 @@ Devops/github-action/
 │   └── 5-environment-variables.md          Biến môi trường mặc định và tùy chỉnh
 │
 ├── 02-ci-pipeline/
-│   ├── README.md                           ✅ Đã tạo — CI pipeline, triggers, status checks
+│   ├── README.md                           CI pipeline, triggers, status checks
 │   ├── 1-checkout-setup.md                 actions/checkout, setup-node, setup-python
 │   ├── 2-testing-strategies.md             Unit test, integration test, code coverage
 │   ├── 3-linting-quality.md                ESLint, Prettier, SonarQube, code quality gates
@@ -94,11 +94,7 @@ Devops/github-action/
 │   ├── 3-system-design-scenarios.md        Kịch bản thiết kế pipeline CI/CD
 │   ├── 4-hands-on-exercises.md             Bài tập thực hành có đáp án
 │   └── 5-90-day-study-plan.md              Kế hoạch học 90 ngày có cấu trúc
-│
-├── ROADMAP.md                              Lộ trình học chi tiết theo level
-├── GLOSSARY.md                             Thuật ngữ GitHub Actions & CI/CD
-├── RESOURCES.md                            Sách, blog, công cụ, khóa học
-└── CHECKLIST.md                            Checklist trước phỏng vấn & trước khi deploy
+
 ```
 
 ---
@@ -109,10 +105,42 @@ Devops/github-action/
 |---|---|---|---|
 | **Tổng Quan & Lộ Trình** | README.md | ✅ | Toàn diện |
 | **Chỉ Mục** | INDEX.md | ✅ | Đầy đủ |
-| **CI Pipeline** | 02-ci-pipeline/README.md | 🚧 Cần tạo | — |
-| **CD & Deployments** | 03-cd-deployments/README.md | 🚧 Cần tạo | — |
-| **Secrets & OIDC** | 04-secrets-variables/README.md | 🚧 Cần tạo | — |
-| **Reusable Workflows** | 05-reusable/README.md | 🚧 Cần tạo | — |
+| **Nền Tảng — Tổng Quan** | 01-fundamentals/README.md | ✅ | Toàn diện |
+| **Nền Tảng — YAML Syntax** | 01-fundamentals/1-workflow-syntax.md | ✅ | Toàn diện |
+| **Nền Tảng — Events** | 01-fundamentals/2-events-triggers.md | ✅ | Toàn diện |
+| **Nền Tảng — Runners** | 01-fundamentals/3-runners.md | ✅ | Toàn diện |
+| **Nền Tảng — Contexts** | 01-fundamentals/4-contexts-expressions.md | ✅ | Toàn diện |
+| **Nền Tảng — Env Vars** | 01-fundamentals/5-environment-variables.md | ✅ | Toàn diện |
+| **CI Pipeline — Tổng Quan** | 02-ci-pipeline/README.md | ✅ | Toàn diện |
+| **CI Pipeline — Checkout & Setup** | 02-ci-pipeline/1-checkout-setup.md | ✅ | Toàn diện |
+| **CI Pipeline — Testing** | 02-ci-pipeline/2-testing-strategies.md | ✅ | Toàn diện |
+| **CI Pipeline — Linting** | 02-ci-pipeline/3-linting-quality.md | ✅ | Toàn diện |
+| **CI Pipeline — Build & Artifacts** | 02-ci-pipeline/4-build-artifacts.md | ✅ | Toàn diện |
+| **CI Pipeline — Branch Protection** | 02-ci-pipeline/5-branch-protection.md | ✅ | Toàn diện |
+| **CD & Deployments — Tổng Quan** | 03-cd-deployments/README.md | ✅ | Toàn diện |
+| **CD & Deployments — Environments** | 03-cd-deployments/1-environments.md | ✅ | Toàn diện |
+| **CD & Deployments — Strategies** | 03-cd-deployments/2-deployment-strategies.md | ✅ | Toàn diện |
+| **CD & Deployments — Docker** | 03-cd-deployments/3-docker-deployments.md | ✅ | Toàn diện |
+| **CD & Deployments — Kubernetes** | 03-cd-deployments/4-kubernetes-deployments.md | ✅ | Toàn diện |
+| **CD & Deployments — AWS** | 03-cd-deployments/5-aws-deployments.md | ✅ | Toàn diện |
+| **CD & Deployments — GCP** | 03-cd-deployments/6-gcp-deployments.md | ✅ | Toàn diện |
+| **CD & Deployments — Azure** | 03-cd-deployments/7-azure-deployments.md | ✅ | Toàn diện |
+| **Secrets — Tổng Quan** | 04-secrets-variables/README.md | ✅ | Toàn diện |
+| **Secrets — Secrets Management** | 04-secrets-variables/1-secrets-management.md | ✅ | Toàn diện |
+| **Secrets — Variables** | 04-secrets-variables/2-variables.md | ✅ | Toàn diện |
+| **Secrets — OIDC** | 04-secrets-variables/3-oidc.md | ✅ | Toàn diện |
+| **Secrets — HashiCorp Vault** | 04-secrets-variables/4-vault-integration.md | ✅ | Toàn diện |
+| **Secrets — AWS Secrets Manager** | 04-secrets-variables/5-aws-secrets-manager.md | ✅ | Toàn diện |
+| **Reusable — Tổng Quan** | 05-reusable/README.md | ✅ | Toàn diện |
+| **Reusable — Reusable Workflows** | 05-reusable/1-reusable-workflows.md | ✅ | Toàn diện |
+| **Reusable — Composite Actions** | 05-reusable/2-composite-actions.md | ✅ | Toàn diện |
+| **Reusable — JavaScript Actions** | 05-reusable/3-javascript-actions.md | ✅ | Toàn diện |
+| **Reusable — Docker Actions** | 05-reusable/4-docker-actions.md | ✅ | Toàn diện |
+| **Reusable — Marketplace Guide** | 05-reusable/5-marketplace-guide.md | ✅ | Toàn diện |
+| **Matrix & Concurrency — Tổng Quan** | 06-matrix-concurrency/README.md | ✅ | Toàn diện |
+| **Matrix & Concurrency — Matrix Strategy** | 06-matrix-concurrency/1-matrix-strategy.md | ✅ | Toàn diện |
+| **Matrix & Concurrency — Concurrency** | 06-matrix-concurrency/2-concurrency.md | ✅ | Toàn diện |
+| **Matrix & Concurrency — Fan-out & Fan-in** | 06-matrix-concurrency/3-fan-out-fan-in.md | ✅ | Toàn diện |
 | **Security** | 08-security/README.md | 🚧 Cần tạo | — |
 | **Interview Guide** | 11-interview-prep/INTERVIEW_GUIDE.md | 🚧 Cần tạo | — |
 
@@ -122,15 +150,15 @@ Devops/github-action/
 
 ### Ưu Tiên Cao (Kỹ Năng Cốt Lõi)
 
-- [ ] `01-fundamentals/README.md` — Kiến trúc, syntax, contexts
-- [ ] `02-ci-pipeline/README.md` — CI pipeline hoàn chỉnh
-- [ ] `03-cd-deployments/README.md` — CD với environments
-- [ ] `04-secrets-variables/oidc.md` — OIDC authentication (luôn hỏi trong phỏng vấn)
+- [x] `01-fundamentals/` — Kiến trúc, syntax, events, runners, contexts, env vars ✅
+- [x] `02-ci-pipeline/` — CI pipeline hoàn chỉnh (6 files) ✅
+- [x] `03-cd-deployments/` — CD pipeline hoàn chỉnh (8 files) ✅
+- [x] `04-secrets-variables/` — Secrets, Variables, OIDC, Vault, AWS Secrets Manager (6 files) ✅
 - [ ] `11-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi
 
 ### Ưu Tiên Trung Bình (Kỹ Năng Nâng Cao)
 
-- [ ] `05-reusable/reusable-workflows.md` — Workflow tái sử dụng
+- [x] `05-reusable/` — Reusable Workflows, Composite Actions, JS Actions, Docker Actions, Marketplace Guide (6 files) ✅
 - [ ] `08-security/security-hardening.md` — Bảo mật pipeline
 - [ ] `09-self-hosted-runners/arc-autoscaling.md` — ARC trên Kubernetes
 - [ ] `07-caching-performance/billing-cost.md` — Tối ưu chi phí
@@ -142,7 +170,7 @@ Devops/github-action/
 - [ ] `RESOURCES.md` — Tài liệu học
 - [ ] `CHECKLIST.md` — Checklist pre-deploy
 - [ ] `10-monitoring-debugging/` — Debug và observability
-- [ ] `06-matrix-concurrency/` — Advanced patterns
+- [x] `06-matrix-concurrency/` — Matrix Strategy, Concurrency, Fan-out/Fan-in (4 files) ✅
 
 ---
 
@@ -392,5 +420,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-11
-**Phiên Bản:** 1.0
-**Trạng Thái:** ✅ README + INDEX Hoàn Thành | 🚧 Các Section Đang Phát Triển
+**Phiên Bản:** 1.5
+**Trạng Thái:** ✅ README + INDEX + 01-fundamentals + 02-ci-pipeline + 03-cd-deployments + 04-secrets-variables + 05-reusable + 06-matrix-concurrency Hoàn Thành | 🚧 Các Section Đang Phát Triển
