@@ -171,6 +171,12 @@ Devops/terraform/
 | **10 CDK for Terraform — Python/TypeScript**    | 10-advanced/5-terraform-cdk.md               | ✅   | Toàn diện  |
 | **10 OpenTofu — Nhánh Open-source**             | 10-advanced/6-opentofu.md                    | ✅   | Toàn diện  |
 | **10 Kiến Trúc Đa Vùng & Đa Tài Khoản**        | 10-advanced/7-multi-region-account.md        | ✅   | Toàn diện  |
+| **11 Interview Prep — Tổng quan phần**          | 11-interview-prep/README.md                  | ✅   | Toàn diện  |
+| **11 Top 20 Câu Hỏi Phỏng Vấn Terraform**      | 11-interview-prep/1-INTERVIEW_GUIDE.md       | ✅   | Toàn diện  |
+| **11 Câu Chuyện Sự Cố theo Phương Pháp STAR**  | 11-interview-prep/2-star-stories.md          | ✅   | Toàn diện  |
+| **11 Thiết Kế Hệ Thống với IaC**               | 11-interview-prep/3-system-design-scenarios.md | ✅ | Toàn diện  |
+| **11 Q&A Kỹ Thuật Tổng Hợp**                  | 11-interview-prep/4-technical-questions.md   | ✅   | Toàn diện  |
+| **11 Kế Hoạch Học 90 Ngày**                    | 11-interview-prep/5-90-day-study-plan.md     | ✅   | Toàn diện  |
 
 ---
 
@@ -191,7 +197,12 @@ Devops/terraform/
 - [x] `03-modules/3-module-registry.md` — Terraform Registry public & private ✅
 - [x] `03-modules/4-module-versioning.md` — Semantic Versioning ✅
 - [x] `03-modules/5-composition-patterns.md` — Flat, Nested, Wrapper patterns ✅
-- [ ] `11-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
+- [x] `11-interview-prep/README.md` — Tổng quan chuẩn bị phỏng vấn ✅
+- [x] `11-interview-prep/1-INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn ✅
+- [x] `11-interview-prep/2-star-stories.md` — Câu chuyện STAR ✅
+- [x] `11-interview-prep/3-system-design-scenarios.md` — System design với IaC ✅
+- [x] `11-interview-prep/4-technical-questions.md` — Q&A kỹ thuật tổng hợp ✅
+- [x] `11-interview-prep/5-90-day-study-plan.md` — Kế hoạch học 90 ngày ✅
 - [ ] `ROADMAP.md` — Kế hoạch học 90 ngày chi tiết
 
 ### Ưu Tiên Trung (Kỹ năng vận hành)
@@ -200,7 +211,7 @@ Devops/terraform/
 - [x] `05-security/README.md` — Bảo mật hạ tầng ✅
 - [x] `09-troubleshooting/README.md` — Xử lý sự cố ✅
 - [x] `04-workspaces-environments/README.md` — Quản lý môi trường ✅
-- [ ] `11-interview-prep/star-stories.md` — Câu chuyện STAR
+- [x] `11-interview-prep/2-star-stories.md` — Câu chuyện STAR ✅
 
 ### Ưu Tiên Thấp (Tham khảo)
 
@@ -461,5 +472,5 @@ Knowledge base này mở cho việc học tập và sử dụng chuyên nghiệp
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.9
-**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | ✅ 06-cicd hoàn thành | ✅ 07-testing hoàn thành | ✅ 08-monitoring hoàn thành | ✅ 09-troubleshooting hoàn thành | ✅ 10-advanced hoàn thành | 🚧 11-interview-prep đang trong quá trình tạo
+**Phiên Bản:** 2.0
+**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | ✅ 06-cicd hoàn thành | ✅ 07-testing hoàn thành | ✅ 08-monitoring hoàn thành | ✅ 09-troubleshooting hoàn thành | ✅ 10-advanced hoàn thành | ✅ 11-interview-prep hoàn thành
