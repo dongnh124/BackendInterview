@@ -138,6 +138,12 @@ Devops/terraform/
 | **05 Sensitive Variables & Output Masking** | 05-security/3-sensitive-variables.md              | ✅   | Toàn diện  |
 | **05 Static Analysis — tfsec, Checkov**     | 05-security/4-static-analysis.md                 | ✅   | Toàn diện  |
 | **05 Audit Logging — CloudTrail, Config**   | 05-security/5-audit-logging.md                   | ✅   | Toàn diện  |
+| **06 CI/CD — Tổng quan phần**               | 06-cicd/README.md                                 | ✅   | Toàn diện  |
+| **06 GitHub Actions workflow cho Terraform** | 06-cicd/1-github-actions.md                      | ✅   | Toàn diện  |
+| **06 GitLab CI/CD pipeline**                | 06-cicd/2-gitlab-ci.md                            | ✅   | Toàn diện  |
+| **06 Atlantis — PR-based automation**       | 06-cicd/3-atlantis.md                             | ✅   | Toàn diện  |
+| **06 Terraform Cloud / HCP Terraform**      | 06-cicd/4-terraform-cloud.md                      | ✅   | Toàn diện  |
+| **06 Rollback Strategy — Chiến lược khôi phục** | 06-cicd/5-rollback-strategy.md               | ✅   | Toàn diện  |
 
 ---
 
@@ -163,7 +169,7 @@ Devops/terraform/
 
 ### Ưu Tiên Trung (Kỹ năng vận hành)
 
-- [ ] `06-cicd/README.md` — CI/CD integration
+- [x] `06-cicd/README.md` — CI/CD integration ✅
 - [x] `05-security/README.md` — Bảo mật hạ tầng ✅
 - [ ] `09-troubleshooting/README.md` — Xử lý sự cố
 - [x] `04-workspaces-environments/README.md` — Quản lý môi trường ✅
@@ -428,5 +434,5 @@ Knowledge base này mở cho việc học tập và sử dụng chuyên nghiệp
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.4
-**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
+**Phiên Bản:** 1.5
+**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | ✅ 06-cicd hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
