@@ -156,6 +156,13 @@ Devops/terraform/
 | **08 Change Audit — Kiểm Tra Thay Đổi**         | 08-monitoring/3-change-audit.md               | ✅   | Toàn diện  |
 | **08 Resource Tagging — Chiến Lược Gán Nhãn**   | 08-monitoring/4-resource-tagging.md           | ✅   | Toàn diện  |
 | **08 Alerting — Cảnh Báo Thay Đổi Bất Thường** | 08-monitoring/5-alerting.md                   | ✅   | Toàn diện  |
+| **09 Troubleshooting — Tổng quan phần**         | 09-troubleshooting/README.md                  | ✅   | Toàn diện  |
+| **09 State Corruption — Phát Hiện và Phục Hồi** | 09-troubleshooting/1-state-corruption.md      | ✅   | Toàn diện  |
+| **09 Dependency Cycle — Vòng Phụ Thuộc**        | 09-troubleshooting/2-dependency-issues.md     | ✅   | Toàn diện  |
+| **09 Provider Errors — Timeout, Rate Limit**    | 09-troubleshooting/3-provider-errors.md       | ✅   | Toàn diện  |
+| **09 terraform import & moved block**           | 09-troubleshooting/4-import-moved.md          | ✅   | Toàn diện  |
+| **09 TF_LOG=DEBUG — Chế Độ Gỡ Lỗi**            | 09-troubleshooting/5-debug-mode.md            | ✅   | Toàn diện  |
+| **09 Production Checklist — Trước Khi Apply**   | 09-troubleshooting/6-production-checklist.md  | ✅   | Toàn diện  |
 
 ---
 
@@ -183,7 +190,7 @@ Devops/terraform/
 
 - [x] `06-cicd/README.md` — CI/CD integration ✅
 - [x] `05-security/README.md` — Bảo mật hạ tầng ✅
-- [ ] `09-troubleshooting/README.md` — Xử lý sự cố
+- [x] `09-troubleshooting/README.md` — Xử lý sự cố ✅
 - [x] `04-workspaces-environments/README.md` — Quản lý môi trường ✅
 - [ ] `11-interview-prep/star-stories.md` — Câu chuyện STAR
 
@@ -446,5 +453,5 @@ Knowledge base này mở cho việc học tập và sử dụng chuyên nghiệp
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.7
-**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | ✅ 06-cicd hoàn thành | ✅ 07-testing hoàn thành | ✅ 08-monitoring hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
+**Phiên Bản:** 1.8
+**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | ✅ 06-cicd hoàn thành | ✅ 07-testing hoàn thành | ✅ 08-monitoring hoàn thành | ✅ 09-troubleshooting hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
