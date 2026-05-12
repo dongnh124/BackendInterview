@@ -114,6 +114,12 @@ Devops/terraform/
 | **01 Providers & Resources**              | 01-fundamentals/3-providers-resources.md | ✅       | Toàn diện  |
 | **01 Variables, Locals, Outputs**         | 01-fundamentals/4-variables-outputs.md | ✅         | Toàn diện  |
 | **01 Vòng đời: init→plan→apply→destroy** | 01-fundamentals/5-lifecycle.md         | ✅         | Toàn diện  |
+| **02 State Management — Tổng quan phần** | 02-state-management/README.md          | ✅         | Toàn diện  |
+| **02 State file là gì, chứa gì**         | 02-state-management/1-state-explained.md | ✅       | Toàn diện  |
+| **02 Remote Backend — S3, GCS, Azure**   | 02-state-management/2-remote-backend.md | ✅        | Toàn diện  |
+| **02 State Locking và deadlock**         | 02-state-management/3-state-locking.md | ✅         | Toàn diện  |
+| **02 terraform state commands**          | 02-state-management/4-state-commands.md | ✅        | Toàn diện  |
+| **02 Phục hồi khi state bị corrupt**    | 02-state-management/5-state-recovery.md | ✅        | Toàn diện  |
 
 ---
 
@@ -122,8 +128,12 @@ Devops/terraform/
 ### Ưu Tiên Cao (Kỹ năng cốt lõi)
 
 - [x] `01-fundamentals/README.md` — Nền tảng HCL, providers, lifecycle ✅
-- [ ] `02-state-management/README.md` — Remote state, locking
-- [ ] `02-state-management/remote-backend.md` — S3, GCS, Terraform Cloud
+- [x] `02-state-management/README.md` — Remote state, locking ✅
+- [x] `02-state-management/1-state-explained.md` — State file là gì ✅
+- [x] `02-state-management/2-remote-backend.md` — S3, GCS, Terraform Cloud ✅
+- [x] `02-state-management/3-state-locking.md` — State Locking và deadlock ✅
+- [x] `02-state-management/4-state-commands.md` — Các lệnh state ✅
+- [x] `02-state-management/5-state-recovery.md` — Phục hồi state corrupt ✅
 - [ ] `03-modules/README.md` — Module design patterns
 - [ ] `11-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
 - [ ] `ROADMAP.md` — Kế hoạch học 90 ngày chi tiết
@@ -395,5 +405,5 @@ Knowledge base này mở cho việc học tập và sử dụng chuyên nghiệp
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.0
-**Trạng Thái:** ✅ README & INDEX hoàn thành | 🚧 Các phần chi tiết đang trong quá trình tạo
+**Phiên Bản:** 1.1
+**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
