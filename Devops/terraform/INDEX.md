@@ -163,6 +163,14 @@ Devops/terraform/
 | **09 terraform import & moved block**           | 09-troubleshooting/4-import-moved.md          | ✅   | Toàn diện  |
 | **09 TF_LOG=DEBUG — Chế Độ Gỡ Lỗi**            | 09-troubleshooting/5-debug-mode.md            | ✅   | Toàn diện  |
 | **09 Production Checklist — Trước Khi Apply**   | 09-troubleshooting/6-production-checklist.md  | ✅   | Toàn diện  |
+| **10 Advanced — Tổng quan phần**                | 10-advanced/README.md                         | ✅   | Toàn diện  |
+| **10 Dynamic Blocks — Khối Động**               | 10-advanced/1-dynamic-blocks.md               | ✅   | Toàn diện  |
+| **10 Meta-arguments — depends_on, lifecycle**   | 10-advanced/2-meta-arguments.md               | ✅   | Toàn diện  |
+| **10 for_each vs count — So Sánh Chuyên Sâu**  | 10-advanced/3-for-each-count.md               | ✅   | Toàn diện  |
+| **10 Custom Provider — Provider Tùy Chỉnh**     | 10-advanced/4-custom-providers.md             | ✅   | Toàn diện  |
+| **10 CDK for Terraform — Python/TypeScript**    | 10-advanced/5-terraform-cdk.md               | ✅   | Toàn diện  |
+| **10 OpenTofu — Nhánh Open-source**             | 10-advanced/6-opentofu.md                    | ✅   | Toàn diện  |
+| **10 Kiến Trúc Đa Vùng & Đa Tài Khoản**        | 10-advanced/7-multi-region-account.md        | ✅   | Toàn diện  |
 
 ---
 
@@ -198,7 +206,7 @@ Devops/terraform/
 
 - [x] `07-testing/README.md` — Kiểm thử hạ tầng ✅
 - [x] `08-monitoring/README.md` — Giám sát & drift detection ✅
-- [ ] `10-advanced/README.md` — Chủ đề nâng cao
+- [x] `10-advanced/README.md` — Chủ đề nâng cao ✅
 - [ ] `GLOSSARY.md` — Thuật ngữ
 - [ ] `RESOURCES.md` — Tài liệu tham khảo
 
@@ -453,5 +461,5 @@ Knowledge base này mở cho việc học tập và sử dụng chuyên nghiệp
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.8
-**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | ✅ 06-cicd hoàn thành | ✅ 07-testing hoàn thành | ✅ 08-monitoring hoàn thành | ✅ 09-troubleshooting hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
+**Phiên Bản:** 1.9
+**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | ✅ 06-cicd hoàn thành | ✅ 07-testing hoàn thành | ✅ 08-monitoring hoàn thành | ✅ 09-troubleshooting hoàn thành | ✅ 10-advanced hoàn thành | 🚧 11-interview-prep đang trong quá trình tạo
