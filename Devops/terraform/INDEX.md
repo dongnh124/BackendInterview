@@ -126,6 +126,12 @@ Devops/terraform/
 | **03 Terraform Registry public & private** | 03-modules/3-module-registry.md      | ✅         | Toàn diện  |
 | **03 Semantic Versioning — Đánh số phiên bản** | 03-modules/4-module-versioning.md | ✅        | Toàn diện  |
 | **03 Flat, Nested, Wrapper module patterns** | 03-modules/5-composition-patterns.md | ✅       | Toàn diện  |
+| **04 Workspaces & Environments — Tổng quan** | 04-workspaces-environments/README.md  | ✅       | Toàn diện  |
+| **04 Terraform Workspaces — giới hạn và khi nào dùng** | 04-workspaces-environments/1-workspaces.md | ✅ | Toàn diện |
+| **04 Environment Separation — dev/staging/prod** | 04-workspaces-environments/2-environment-separation.md | ✅ | Toàn diện |
+| **04 .tfvars management theo môi trường**   | 04-workspaces-environments/3-tfvars-management.md | ✅   | Toàn diện  |
+| **04 Terragrunt — DRY multi-env management** | 04-workspaces-environments/4-terragrunt-intro.md | ✅  | Toàn diện  |
+| **04 Backend riêng cho từng môi trường**    | 04-workspaces-environments/5-backend-per-env.md   | ✅   | Toàn diện  |
 
 ---
 
@@ -154,7 +160,7 @@ Devops/terraform/
 - [ ] `06-cicd/README.md` — CI/CD integration
 - [ ] `05-security/README.md` — Bảo mật hạ tầng
 - [ ] `09-troubleshooting/README.md` — Xử lý sự cố
-- [ ] `04-workspaces-environments/README.md` — Quản lý môi trường
+- [x] `04-workspaces-environments/README.md` — Quản lý môi trường ✅
 - [ ] `11-interview-prep/star-stories.md` — Câu chuyện STAR
 
 ### Ưu Tiên Thấp (Tham khảo)
@@ -416,5 +422,5 @@ Knowledge base này mở cho việc học tập và sử dụng chuyên nghiệp
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.2
-**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
+**Phiên Bản:** 1.3
+**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
