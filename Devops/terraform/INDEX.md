@@ -144,6 +144,12 @@ Devops/terraform/
 | **06 Atlantis — PR-based automation**       | 06-cicd/3-atlantis.md                             | ✅   | Toàn diện  |
 | **06 Terraform Cloud / HCP Terraform**      | 06-cicd/4-terraform-cloud.md                      | ✅   | Toàn diện  |
 | **06 Rollback Strategy — Chiến lược khôi phục** | 06-cicd/5-rollback-strategy.md               | ✅   | Toàn diện  |
+| **07 Testing — Tổng quan phần**                 | 07-testing/README.md                          | ✅   | Toàn diện  |
+| **07 terraform validate & fmt**                 | 07-testing/1-validate-fmt.md                  | ✅   | Toàn diện  |
+| **07 TFLint — Linting nâng cao**                | 07-testing/2-tflint.md                        | ✅   | Toàn diện  |
+| **07 Terratest — Unit & Integration Testing**   | 07-testing/3-terratest.md                     | ✅   | Toàn diện  |
+| **07 Checkov & OPA — Compliance Testing**       | 07-testing/4-checkov-opa.md                   | ✅   | Toàn diện  |
+| **07 Chiến lược kiểm thử toàn diện**            | 07-testing/5-test-strategy.md                 | ✅   | Toàn diện  |
 
 ---
 
@@ -177,7 +183,7 @@ Devops/terraform/
 
 ### Ưu Tiên Thấp (Tham khảo)
 
-- [ ] `07-testing/README.md` — Kiểm thử hạ tầng
+- [x] `07-testing/README.md` — Kiểm thử hạ tầng ✅
 - [ ] `08-monitoring/README.md` — Giám sát & drift detection
 - [ ] `10-advanced/README.md` — Chủ đề nâng cao
 - [ ] `GLOSSARY.md` — Thuật ngữ
@@ -434,5 +440,5 @@ Knowledge base này mở cho việc học tập và sử dụng chuyên nghiệp
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.5
-**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | ✅ 06-cicd hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
+**Phiên Bản:** 1.6
+**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | ✅ 06-cicd hoàn thành | ✅ 07-testing hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
