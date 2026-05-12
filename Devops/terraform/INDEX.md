@@ -104,10 +104,16 @@ Devops/terraform/
 
 ## ✅ Những Gì Đã Tạo
 
-| Chủ Đề                   | File      | Trạng Thái | Chất Lượng |
-| ------------------------ | --------- | ---------- | ---------- |
-| **Tổng quan & Lộ trình** | README.md | ✅         | Toàn diện  |
-| **Chỉ mục đầy đủ**       | INDEX.md  | ✅         | Toàn diện  |
+| Chủ Đề                                    | File                                   | Trạng Thái | Chất Lượng |
+| ----------------------------------------- | -------------------------------------- | ---------- | ---------- |
+| **Tổng quan & Lộ trình**                  | README.md                              | ✅         | Toàn diện  |
+| **Chỉ mục đầy đủ**                        | INDEX.md                               | ✅         | Toàn diện  |
+| **01 Fundamentals — Tổng quan phần**      | 01-fundamentals/README.md              | ✅         | Toàn diện  |
+| **01 IaC là gì, lợi ích, so sánh tools** | 01-fundamentals/1-what-is-iac.md       | ✅         | Toàn diện  |
+| **01 HCL — Cú pháp đầy đủ**              | 01-fundamentals/2-hcl-syntax.md        | ✅         | Toàn diện  |
+| **01 Providers & Resources**              | 01-fundamentals/3-providers-resources.md | ✅       | Toàn diện  |
+| **01 Variables, Locals, Outputs**         | 01-fundamentals/4-variables-outputs.md | ✅         | Toàn diện  |
+| **01 Vòng đời: init→plan→apply→destroy** | 01-fundamentals/5-lifecycle.md         | ✅         | Toàn diện  |
 
 ---
 
@@ -115,7 +121,7 @@ Devops/terraform/
 
 ### Ưu Tiên Cao (Kỹ năng cốt lõi)
 
-- [ ] `01-fundamentals/README.md` — Nền tảng HCL, providers, lifecycle
+- [x] `01-fundamentals/README.md` — Nền tảng HCL, providers, lifecycle ✅
 - [ ] `02-state-management/README.md` — Remote state, locking
 - [ ] `02-state-management/remote-backend.md` — S3, GCS, Terraform Cloud
 - [ ] `03-modules/README.md` — Module design patterns
