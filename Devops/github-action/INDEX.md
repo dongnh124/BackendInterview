@@ -164,7 +164,12 @@ Devops/github-action/
 | **Monitoring & Debugging — Notifications** | 10-monitoring-debugging/2-workflow-notifications.md | ✅ | Toàn diện |
 | **Monitoring & Debugging — Metrics & Observability** | 10-monitoring-debugging/3-metrics-observability.md | ✅ | Toàn diện |
 | **Monitoring & Debugging — Audit Logs** | 10-monitoring-debugging/4-audit-logs.md | ✅ | Toàn diện |
-| **Interview Guide** | 11-interview-prep/INTERVIEW_GUIDE.md | 🚧 Cần tạo | — |
+| **Interview Prep — Tổng Quan** | 11-interview-prep/README.md | ✅ | Toàn diện |
+| **Interview Prep — Top 20 Câu Hỏi** | 11-interview-prep/1-INTERVIEW_GUIDE.md | ✅ | Toàn diện |
+| **Interview Prep — STAR Stories** | 11-interview-prep/2-star-stories.md | ✅ | Toàn diện |
+| **Interview Prep — System Design** | 11-interview-prep/3-system-design-scenarios.md | ✅ | Toàn diện |
+| **Interview Prep — Hands-on Exercises** | 11-interview-prep/4-hands-on-exercises.md | ✅ | Toàn diện |
+| **Interview Prep — 90-Day Study Plan** | 11-interview-prep/5-90-day-study-plan.md | ✅ | Toàn diện |
 
 ---
 
@@ -176,7 +181,7 @@ Devops/github-action/
 - [x] `02-ci-pipeline/` — CI pipeline hoàn chỉnh (6 files) ✅
 - [x] `03-cd-deployments/` — CD pipeline hoàn chỉnh (8 files) ✅
 - [x] `04-secrets-variables/` — Secrets, Variables, OIDC, Vault, AWS Secrets Manager (6 files) ✅
-- [ ] `11-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi
+- [x] `11-interview-prep/` — Phỏng vấn (6 files) ✅
 
 ### Ưu Tiên Trung Bình (Kỹ Năng Nâng Cao)
 
@@ -442,5 +447,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.9
-**Trạng Thái:** ✅ README + INDEX + 01-fundamentals + 02-ci-pipeline + 03-cd-deployments + 04-secrets-variables + 05-reusable + 06-matrix-concurrency + 07-caching-performance + 08-security + 09-self-hosted-runners + 10-monitoring-debugging Hoàn Thành | 🚧 Các Section Đang Phát Triển
+**Phiên Bản:** 2.0
+**Trạng Thái:** ✅ README + INDEX + 01-fundamentals + 02-ci-pipeline + 03-cd-deployments + 04-secrets-variables + 05-reusable + 06-matrix-concurrency + 07-caching-performance + 08-security + 09-self-hosted-runners + 10-monitoring-debugging + 11-interview-prep Hoàn Thành
