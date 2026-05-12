@@ -141,6 +141,12 @@ Devops/github-action/
 | **Matrix & Concurrency — Matrix Strategy** | 06-matrix-concurrency/1-matrix-strategy.md | ✅ | Toàn diện |
 | **Matrix & Concurrency — Concurrency** | 06-matrix-concurrency/2-concurrency.md | ✅ | Toàn diện |
 | **Matrix & Concurrency — Fan-out & Fan-in** | 06-matrix-concurrency/3-fan-out-fan-in.md | ✅ | Toàn diện |
+| **Caching — Tổng Quan** | 07-caching-performance/README.md | ✅ | Toàn diện |
+| **Caching — Dependencies** | 07-caching-performance/1-caching-dependencies.md | ✅ | Toàn diện |
+| **Caching — Cache Key Strategies** | 07-caching-performance/2-cache-key-strategies.md | ✅ | Toàn diện |
+| **Caching — Artifacts** | 07-caching-performance/3-artifacts.md | ✅ | Toàn diện |
+| **Caching — Performance Optimization** | 07-caching-performance/4-performance-optimization.md | ✅ | Toàn diện |
+| **Caching — Billing & Cost** | 07-caching-performance/5-billing-cost.md | ✅ | Toàn diện |
 | **Security** | 08-security/README.md | 🚧 Cần tạo | — |
 | **Interview Guide** | 11-interview-prep/INTERVIEW_GUIDE.md | 🚧 Cần tạo | — |
 
@@ -161,7 +167,7 @@ Devops/github-action/
 - [x] `05-reusable/` — Reusable Workflows, Composite Actions, JS Actions, Docker Actions, Marketplace Guide (6 files) ✅
 - [ ] `08-security/security-hardening.md` — Bảo mật pipeline
 - [ ] `09-self-hosted-runners/arc-autoscaling.md` — ARC trên Kubernetes
-- [ ] `07-caching-performance/billing-cost.md` — Tối ưu chi phí
+- [x] `07-caching-performance/` — Cache, Artifacts, Performance, Billing (6 files) ✅
 - [ ] `ROADMAP.md` — Lộ trình 90 ngày
 
 ### Ưu Tiên Thấp (Tài Liệu Tham Khảo)
@@ -419,6 +425,6 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 
 ---
 
-**Cập Nhật Lần Cuối:** 2026-05-11
-**Phiên Bản:** 1.5
-**Trạng Thái:** ✅ README + INDEX + 01-fundamentals + 02-ci-pipeline + 03-cd-deployments + 04-secrets-variables + 05-reusable + 06-matrix-concurrency Hoàn Thành | 🚧 Các Section Đang Phát Triển
+**Cập Nhật Lần Cuối:** 2026-05-12
+**Phiên Bản:** 1.6
+**Trạng Thái:** ✅ README + INDEX + 01-fundamentals + 02-ci-pipeline + 03-cd-deployments + 04-secrets-variables + 05-reusable + 06-matrix-concurrency + 07-caching-performance Hoàn Thành | 🚧 Các Section Đang Phát Triển
