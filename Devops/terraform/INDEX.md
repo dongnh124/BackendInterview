@@ -120,6 +120,12 @@ Devops/terraform/
 | **02 State Locking và deadlock**         | 02-state-management/3-state-locking.md | ✅         | Toàn diện  |
 | **02 terraform state commands**          | 02-state-management/4-state-commands.md | ✅        | Toàn diện  |
 | **02 Phục hồi khi state bị corrupt**    | 02-state-management/5-state-recovery.md | ✅        | Toàn diện  |
+| **03 Modules — Tổng quan phần**         | 03-modules/README.md                    | ✅         | Toàn diện  |
+| **03 Cấu trúc module chuẩn**            | 03-modules/1-module-structure.md        | ✅         | Toàn diện  |
+| **03 Variables, Outputs, Type Constraints** | 03-modules/2-input-output.md        | ✅         | Toàn diện  |
+| **03 Terraform Registry public & private** | 03-modules/3-module-registry.md      | ✅         | Toàn diện  |
+| **03 Semantic Versioning — Đánh số phiên bản** | 03-modules/4-module-versioning.md | ✅        | Toàn diện  |
+| **03 Flat, Nested, Wrapper module patterns** | 03-modules/5-composition-patterns.md | ✅       | Toàn diện  |
 
 ---
 
@@ -134,7 +140,12 @@ Devops/terraform/
 - [x] `02-state-management/3-state-locking.md` — State Locking và deadlock ✅
 - [x] `02-state-management/4-state-commands.md` — Các lệnh state ✅
 - [x] `02-state-management/5-state-recovery.md` — Phục hồi state corrupt ✅
-- [ ] `03-modules/README.md` — Module design patterns
+- [x] `03-modules/README.md` — Module design patterns ✅
+- [x] `03-modules/1-module-structure.md` — Cấu trúc module chuẩn ✅
+- [x] `03-modules/2-input-output.md` — Variables, Outputs, Type Constraints ✅
+- [x] `03-modules/3-module-registry.md` — Terraform Registry public & private ✅
+- [x] `03-modules/4-module-versioning.md` — Semantic Versioning ✅
+- [x] `03-modules/5-composition-patterns.md` — Flat, Nested, Wrapper patterns ✅
 - [ ] `11-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
 - [ ] `ROADMAP.md` — Kế hoạch học 90 ngày chi tiết
 
@@ -405,5 +416,5 @@ Knowledge base này mở cho việc học tập và sử dụng chuyên nghiệp
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.1
-**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
+**Phiên Bản:** 1.2
+**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
