@@ -150,6 +150,12 @@ Devops/terraform/
 | **07 Terratest — Unit & Integration Testing**   | 07-testing/3-terratest.md                     | ✅   | Toàn diện  |
 | **07 Checkov & OPA — Compliance Testing**       | 07-testing/4-checkov-opa.md                   | ✅   | Toàn diện  |
 | **07 Chiến lược kiểm thử toàn diện**            | 07-testing/5-test-strategy.md                 | ✅   | Toàn diện  |
+| **08 Monitoring — Tổng quan phần**              | 08-monitoring/README.md                       | ✅   | Toàn diện  |
+| **08 Drift Detection — Phát Hiện Lệch Cấu Hình** | 08-monitoring/1-drift-detection.md          | ✅   | Toàn diện  |
+| **08 Infracost — Ước Tính Chi Phí CI/CD**       | 08-monitoring/2-infracost.md                  | ✅   | Toàn diện  |
+| **08 Change Audit — Kiểm Tra Thay Đổi**         | 08-monitoring/3-change-audit.md               | ✅   | Toàn diện  |
+| **08 Resource Tagging — Chiến Lược Gán Nhãn**   | 08-monitoring/4-resource-tagging.md           | ✅   | Toàn diện  |
+| **08 Alerting — Cảnh Báo Thay Đổi Bất Thường** | 08-monitoring/5-alerting.md                   | ✅   | Toàn diện  |
 
 ---
 
@@ -184,7 +190,7 @@ Devops/terraform/
 ### Ưu Tiên Thấp (Tham khảo)
 
 - [x] `07-testing/README.md` — Kiểm thử hạ tầng ✅
-- [ ] `08-monitoring/README.md` — Giám sát & drift detection
+- [x] `08-monitoring/README.md` — Giám sát & drift detection ✅
 - [ ] `10-advanced/README.md` — Chủ đề nâng cao
 - [ ] `GLOSSARY.md` — Thuật ngữ
 - [ ] `RESOURCES.md` — Tài liệu tham khảo
@@ -440,5 +446,5 @@ Knowledge base này mở cho việc học tập và sử dụng chuyên nghiệp
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.6
-**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | ✅ 06-cicd hoàn thành | ✅ 07-testing hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
+**Phiên Bản:** 1.7
+**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | ✅ 06-cicd hoàn thành | ✅ 07-testing hoàn thành | ✅ 08-monitoring hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
