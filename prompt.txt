@@ -1,4 +1,4 @@
-1. Đọc nội dung file Devops/github-action/INDEX.md và Devops/github-action/README.md
+1. Đọc nội dung file Devops/terraform/INDEX.md và Devops/terraform/README.md
 2. Tạo và hoàn thiện nội dung cho topic 02-pipeline; nội dung dùng tiếng Việt UTF-8, thuật ngữ kỹ thuật giữ nguyên tiếng Anh kèm giải thích trong ngoặc (ví dụ: HPA — Horizontal Pod Autoscaler — Tự Động Mở Rộng Pod Theo Chiều Ngang); sau đó update status vào file INDEX.md
 
 ------------------------------------------------------------------------

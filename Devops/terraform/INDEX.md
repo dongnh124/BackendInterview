@@ -10,109 +10,104 @@ Devops/terraform/
 │
 ├── 01-fundamentals/
 │   ├── README.md                           Nền tảng Terraform, HCL, vòng đời tài nguyên
-│   ├── what-is-iac.md                      IaC là gì, lợi ích, so sánh tools
-│   ├── hcl-syntax.md                       HCL — HashiCorp Configuration Language — cú pháp
-│   ├── providers-resources.md              Provider & Resource cơ bản
-│   ├── variables-outputs.md                Variables, Locals, Outputs
-│   └── lifecycle.md                        init, plan, apply, destroy — vòng đời
+│   ├── 1-what-is-iac.md                      IaC là gì, lợi ích, so sánh tools
+│   ├── 2-hcl-syntax.md                       HCL — HashiCorp Configuration Language — cú pháp
+│   ├── 3-providers-resources.md              Provider & Resource cơ bản
+│   ├── 4-variables-outputs.md                Variables, Locals, Outputs
+│   └── 5-lifecycle.md                        init, plan, apply, destroy — vòng đời
 │
 ├── 02-state-management/
 │   ├── README.md                           Quản lý state, backend, locking
-│   ├── state-explained.md                  State file là gì, chứa gì, tại sao quan trọng
-│   ├── remote-backend.md                   S3+DynamoDB, GCS, Azure Blob, Terraform Cloud
-│   ├── state-locking.md                    State Locking — Khoá trạng thái — và deadlock
-│   ├── state-commands.md                   terraform state list/show/mv/rm/pull/push
-│   └── state-recovery.md                   Phục hồi khi state bị corrupt — hỏng
+│   ├── 1-state-explained.md                  State file là gì, chứa gì, tại sao quan trọng
+│   ├── 2-remote-backend.md                   S3+DynamoDB, GCS, Azure Blob, Terraform Cloud
+│   ├── 3-state-locking.md                    State Locking — Khoá trạng thái — và deadlock
+│   ├── 4-state-commands.md                   terraform state list/show/mv/rm/pull/push
+│   └── 5-state-recovery.md                   Phục hồi khi state bị corrupt — hỏng
 │
 ├── 03-modules/
 │   ├── README.md                           Thiết kế module, best practices
-│   ├── module-structure.md                 Cấu trúc module chuẩn
-│   ├── input-output.md                     Variables, Outputs, Type Constraints
-│   ├── module-registry.md                  Terraform Registry — public & private
-│   ├── module-versioning.md                Semantic versioning — Đánh số phiên bản
-│   └── composition-patterns.md             Flat, Nested, Wrapper module patterns
+│   ├── 1-module-structure.md                 Cấu trúc module chuẩn
+│   ├── 2-input-output.md                     Variables, Outputs, Type Constraints
+│   ├── 3-module-registry.md                  Terraform Registry — public & private
+│   ├── 4-module-versioning.md                Semantic versioning — Đánh số phiên bản
+│   └── 5-composition-patterns.md             Flat, Nested, Wrapper module patterns
 │
 ├── 04-workspaces-environments/
 │   ├── README.md                           Quản lý đa môi trường
-│   ├── workspaces.md                       Terraform Workspaces — giới hạn và dùng khi nào
-│   ├── environment-separation.md           dev/staging/prod strategy — chiến lược phân tách
-│   ├── tfvars-management.md                .tfvars file per environment
-│   ├── terragrunt-intro.md                 Terragrunt — DRY multi-env management
-│   └── backend-per-env.md                  Backend riêng cho từng môi trường
+│   ├── 1-workspaces.md                       Terraform Workspaces — giới hạn và dùng khi nào
+│   ├── 2-environment-separation.md           dev/staging/prod strategy — chiến lược phân tách
+│   ├── 3-tfvars-management.md                .tfvars file per environment
+│   ├── 4-terragrunt-intro.md                 Terragrunt — DRY multi-env management
+│   └── 5-backend-per-env.md                  Backend riêng cho từng môi trường
 │
 ├── 05-security/
 │   ├── README.md                           Bảo mật Terraform toàn diện
-│   ├── secrets-management.md               Vault, AWS Secrets Manager, SOPS
-│   ├── iam-roles.md                        IAM — Identity Access Management — role tối thiểu
-│   ├── sensitive-variables.md              Sensitive vars, output masking
-│   ├── static-analysis.md                  tfsec, Checkov, Terrascan
-│   └── audit-logging.md                    Nhật ký kiểm tra — CloudTrail, audit logs
+│   ├── 1-secrets-management.md               Vault, AWS Secrets Manager, SOPS
+│   ├── 2-iam-roles.md                        IAM — Identity Access Management — role tối thiểu
+│   ├── 3-sensitive-variables.md              Sensitive vars, output masking
+│   ├── 4-static-analysis.md                  tfsec, Checkov, Terrascan
+│   └── 5-audit-logging.md                    Nhật ký kiểm tra — CloudTrail, audit logs
 │
 ├── 06-cicd/
 │   ├── README.md                           Tích hợp CI/CD với Terraform
-│   ├── github-actions.md                   GitHub Actions workflow cho Terraform
-│   ├── gitlab-ci.md                        GitLab CI/CD pipeline
-│   ├── atlantis.md                         Atlantis — PR-based automation — tự động qua PR
-│   ├── terraform-cloud.md                  Terraform Cloud / HCP Terraform
-│   └── rollback-strategy.md                Chiến lược rollback khi có sự cố
+│   ├── 1-github-actions.md                   GitHub Actions workflow cho Terraform
+│   ├── 2-gitlab-ci.md                        GitLab CI/CD pipeline
+│   ├── 3-atlantis.md                         Atlantis — PR-based automation — tự động qua PR
+│   ├── 4-terraform-cloud.md                  Terraform Cloud / HCP Terraform
+│   └── 5-rollback-strategy.md                Chiến lược rollback khi có sự cố
 │
 ├── 07-testing/
 │   ├── README.md                           Kiểm thử hạ tầng Terraform
-│   ├── validate-fmt.md                     terraform validate, fmt, lint
-│   ├── tflint.md                           TFLint — Kiểm tra lỗi và best practices
-│   ├── terratest.md                        Terratest — Unit & Integration testing
-│   ├── checkov-opa.md                      Checkov & OPA — Open Policy Agent — compliance
-│   └── test-strategy.md                    Chiến lược kiểm thử toàn diện
+│   ├── 1-validate-fmt.md                     terraform validate, fmt, lint
+│   ├── 2-tflint.md                           TFLint — Kiểm tra lỗi và best practices
+│   ├── 3-terratest.md                        Terratest — Unit & Integration testing
+│   ├── 4-checkov-opa.md                      Checkov & OPA — Open Policy Agent — compliance
+│   └── 5-test-strategy.md                    Chiến lược kiểm thử toàn diện
 │
 ├── 08-monitoring/
 │   ├── README.md                           Giám sát & quan sát hạ tầng Terraform
-│   ├── drift-detection.md                  Drift Detection — Phát hiện lệch cấu hình
-│   ├── infracost.md                        Infracost — Ước tính chi phí trong CI/CD
-│   ├── change-audit.md                     Kiểm tra ai thay đổi gì, khi nào
-│   ├── resource-tagging.md                 Tagging strategy — Chiến lược gán nhãn
-│   └── alerting.md                         Cảnh báo khi có thay đổi ngoài dự kiến
+│   ├── 1-drift-detection.md                  Drift Detection — Phát hiện lệch cấu hình
+│   ├── 2-infracost.md                        Infracost — Ước tính chi phí trong CI/CD
+│   ├── 3-change-audit.md                     Kiểm tra ai thay đổi gì, khi nào
+│   ├── 4-resource-tagging.md                 Tagging strategy — Chiến lược gán nhãn
+│   └── 5-alerting.md                         Cảnh báo khi có thay đổi ngoài dự kiến
 │
 ├── 09-troubleshooting/
 │   ├── README.md                           Xử lý sự cố & incident response
-│   ├── state-corruption.md                 State file hỏng — cách phát hiện và phục hồi
-│   ├── dependency-issues.md                Dependency Cycle — Vòng phụ thuộc
-│   ├── provider-errors.md                  Lỗi provider — timeout, rate limit, auth
-│   ├── import-moved.md                     terraform import & moved block
-│   ├── debug-mode.md                       TF_LOG=DEBUG — chế độ gỡ lỗi chi tiết
-│   └── production-checklist.md             Checklist trước khi apply vào production
+│   ├── 1-state-corruption.md                 State file hỏng — cách phát hiện và phục hồi
+│   ├── 2-dependency-issues.md                Dependency Cycle — Vòng phụ thuộc
+│   ├── 3-provider-errors.md                  Lỗi provider — timeout, rate limit, auth
+│   ├── 4-import-moved.md                     terraform import & moved block
+│   ├── 5-debug-mode.md                       TF_LOG=DEBUG — chế độ gỡ lỗi chi tiết
+│   └── 6-production-checklist.md             Checklist trước khi apply vào production
 │
 ├── 10-advanced/
 │   ├── README.md                           Chủ đề Terraform nâng cao
-│   ├── dynamic-blocks.md                   Dynamic Blocks — Khối động
-│   ├── meta-arguments.md                   depends_on, lifecycle, provisioner
-│   ├── for-each-count.md                   for_each vs count — so sánh và dùng khi nào
-│   ├── custom-providers.md                 Viết Custom Provider — Provider tùy chỉnh
-│   ├── terraform-cdk.md                    CDK — Cloud Development Kit — Python/TypeScript
-│   ├── opentofu.md                         OpenTofu — Nhánh open-source của Terraform
-│   └── multi-region-account.md             Kiến trúc đa vùng & đa tài khoản
+│   ├── 1-dynamic-blocks.md                   Dynamic Blocks — Khối động
+│   ├── 2-meta-arguments.md                   depends_on, lifecycle, provisioner
+│   ├── 3-for-each-count.md                   for_each vs count — so sánh và dùng khi nào
+│   ├── 4-custom-providers.md                 Viết Custom Provider — Provider tùy chỉnh
+│   ├── 5-terraform-cdk.md                    CDK — Cloud Development Kit — Python/TypeScript
+│   ├── 6-opentofu.md                         OpenTofu — Nhánh open-source của Terraform
+│   └── 7-multi-region-account.md             Kiến trúc đa vùng & đa tài khoản
 │
 ├── 11-interview-prep/
 │   ├── README.md                           Tổng quan chuẩn bị phỏng vấn
-│   ├── INTERVIEW_GUIDE.md                  Top 20 câu hỏi phỏng vấn Terraform
-│   ├── star-stories.md                     Câu chuyện sự cố theo phương pháp STAR
-│   ├── system-design-scenarios.md          Thiết kế hệ thống với IaC
-│   ├── technical-questions.md              Q&A kỹ thuật tổng hợp
-│   └── 90-day-study-plan.md                Kế hoạch học 90 ngày có cấu trúc
-│
-├── ROADMAP.md                              Lộ trình học chi tiết theo tuần
-├── GLOSSARY.md                             Thuật ngữ Terraform & IaC
-├── RESOURCES.md                            Sách, blog, công cụ, khoá học
-└── CHECKLIST.md                            Checklist trước phỏng vấn & trước khi deploy
+│   ├── 1-INTERVIEW_GUIDE.md                  Top 20 câu hỏi phỏng vấn Terraform
+│   ├── 2-star-stories.md                     Câu chuyện sự cố theo phương pháp STAR
+│   ├── 3-system-design-scenarios.md          Thiết kế hệ thống với IaC
+│   ├── 4-technical-questions.md              Q&A kỹ thuật tổng hợp
+│   └── 5-90-day-study-plan.md                Kế hoạch học 90 ngày có cấu trúc
 ```
 
 ---
 
 ## ✅ Những Gì Đã Tạo
 
-| Chủ Đề                           | File                        | Trạng Thái | Chất Lượng     |
-| -------------------------------- | --------------------------- | ---------- | -------------- |
-| **Tổng quan & Lộ trình**         | README.md                   | ✅         | Toàn diện      |
-| **Chỉ mục đầy đủ**               | INDEX.md                    | ✅         | Toàn diện      |
+| Chủ Đề                   | File      | Trạng Thái | Chất Lượng |
+| ------------------------ | --------- | ---------- | ---------- |
+| **Tổng quan & Lộ trình** | README.md | ✅         | Toàn diện  |
+| **Chỉ mục đầy đủ**       | INDEX.md  | ✅         | Toàn diện  |
 
 ---
 
@@ -193,17 +188,17 @@ Dùng làm tài liệu tham khảo:
 
 ## 📊 Ước Tính Thời Gian Học
 
-| Phần                                   | Thời Gian   | Độ Khó | Ưu Tiên |
-| -------------------------------------- | ----------- | ------ | ------- |
-| Nền tảng (Fundamentals)                | 4-6 giờ     | ⭐     | Bắt buộc |
-| State Management — Quản lý trạng thái | 6-8 giờ     | ⭐⭐   | Bắt buộc |
-| Modules — Mô-đun                       | 8-10 giờ    | ⭐⭐   | Bắt buộc |
-| Workspaces & Environments              | 4-6 giờ     | ⭐⭐   | Bắt buộc |
-| Security — Bảo mật                     | 6-8 giờ     | ⭐⭐   | Bắt buộc |
-| CI/CD Integration                      | 8-10 giờ    | ⭐⭐⭐ | Nên có   |
-| Testing — Kiểm thử                     | 6-8 giờ     | ⭐⭐⭐ | Nên có   |
-| Monitoring — Giám sát                  | 4-6 giờ     | ⭐⭐   | Nên có   |
-| Advanced Topics — Nâng cao             | 15-20 giờ   | ⭐⭐⭐ | Tốt hơn  |
+| Phần                                  | Thời Gian | Độ Khó | Ưu Tiên  |
+| ------------------------------------- | --------- | ------ | -------- |
+| Nền tảng (Fundamentals)               | 4-6 giờ   | ⭐     | Bắt buộc |
+| State Management — Quản lý trạng thái | 6-8 giờ   | ⭐⭐   | Bắt buộc |
+| Modules — Mô-đun                      | 8-10 giờ  | ⭐⭐   | Bắt buộc |
+| Workspaces & Environments             | 4-6 giờ   | ⭐⭐   | Bắt buộc |
+| Security — Bảo mật                    | 6-8 giờ   | ⭐⭐   | Bắt buộc |
+| CI/CD Integration                     | 8-10 giờ  | ⭐⭐⭐ | Nên có   |
+| Testing — Kiểm thử                    | 6-8 giờ   | ⭐⭐⭐ | Nên có   |
+| Monitoring — Giám sát                 | 4-6 giờ   | ⭐⭐   | Nên có   |
+| Advanced Topics — Nâng cao            | 15-20 giờ | ⭐⭐⭐ | Tốt hơn  |
 
 **Tổng cộng: 60-90 giờ để có kiến thức Terraform toàn diện**
 
@@ -245,14 +240,14 @@ Dùng làm tài liệu tham khảo:
 
 ## 🔗 Điều Hướng Nhanh
 
-| Nhu Cầu                          | Vị Trí                                                                         |
-| -------------------------------- | ------------------------------------------------------------------------------ |
-| Tổng quan nhanh                  | [README.md](README.md)                                                         |
-| Remote backend setup             | [02-state-management/remote-backend.md](02-state-management/remote-backend.md) |
-| Module design guide              | [03-modules/README.md](03-modules/README.md)                                   |
-| CI/CD setup                      | [06-cicd/README.md](06-cicd/README.md)                                         |
-| Security checklist               | [05-security/README.md](05-security/README.md)                                 |
-| Câu hỏi phỏng vấn                | [11-interview-prep/INTERVIEW_GUIDE.md](11-interview-prep/INTERVIEW_GUIDE.md)   |
+| Nhu Cầu              | Vị Trí                                                                         |
+| -------------------- | ------------------------------------------------------------------------------ |
+| Tổng quan nhanh      | [README.md](README.md)                                                         |
+| Remote backend setup | [02-state-management/remote-backend.md](02-state-management/remote-backend.md) |
+| Module design guide  | [03-modules/README.md](03-modules/README.md)                                   |
+| CI/CD setup          | [06-cicd/README.md](06-cicd/README.md)                                         |
+| Security checklist   | [05-security/README.md](05-security/README.md)                                 |
+| Câu hỏi phỏng vấn    | [11-interview-prep/INTERVIEW_GUIDE.md](11-interview-prep/INTERVIEW_GUIDE.md)   |
 
 ---
 
