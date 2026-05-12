@@ -159,6 +159,11 @@ Devops/github-action/
 | **Self-hosted Runners — ARC & Auto-scaling** | 09-self-hosted-runners/2-arc-autoscaling.md | ✅ | Toàn diện |
 | **Self-hosted Runners — Security & Isolation** | 09-self-hosted-runners/3-security-isolation.md | ✅ | Toàn diện |
 | **Self-hosted Runners — Maintenance & Monitoring** | 09-self-hosted-runners/4-maintenance-monitoring.md | ✅ | Toàn diện |
+| **Monitoring & Debugging — Tổng Quan** | 10-monitoring-debugging/README.md | ✅ | Toàn diện |
+| **Monitoring & Debugging — Debug Logging** | 10-monitoring-debugging/1-debug-logging.md | ✅ | Toàn diện |
+| **Monitoring & Debugging — Notifications** | 10-monitoring-debugging/2-workflow-notifications.md | ✅ | Toàn diện |
+| **Monitoring & Debugging — Metrics & Observability** | 10-monitoring-debugging/3-metrics-observability.md | ✅ | Toàn diện |
+| **Monitoring & Debugging — Audit Logs** | 10-monitoring-debugging/4-audit-logs.md | ✅ | Toàn diện |
 | **Interview Guide** | 11-interview-prep/INTERVIEW_GUIDE.md | 🚧 Cần tạo | — |
 
 ---
@@ -186,7 +191,7 @@ Devops/github-action/
 - [ ] `GLOSSARY.md` — Thuật ngữ
 - [ ] `RESOURCES.md` — Tài liệu học
 - [ ] `CHECKLIST.md` — Checklist pre-deploy
-- [ ] `10-monitoring-debugging/` — Debug và observability
+- [x] `10-monitoring-debugging/` — Debug và observability ✅
 - [x] `06-matrix-concurrency/` — Matrix Strategy, Concurrency, Fan-out/Fan-in (4 files) ✅
 
 ---
@@ -437,5 +442,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.8
-**Trạng Thái:** ✅ README + INDEX + 01-fundamentals + 02-ci-pipeline + 03-cd-deployments + 04-secrets-variables + 05-reusable + 06-matrix-concurrency + 07-caching-performance + 08-security + 09-self-hosted-runners Hoàn Thành | 🚧 Các Section Đang Phát Triển
+**Phiên Bản:** 1.9
+**Trạng Thái:** ✅ README + INDEX + 01-fundamentals + 02-ci-pipeline + 03-cd-deployments + 04-secrets-variables + 05-reusable + 06-matrix-concurrency + 07-caching-performance + 08-security + 09-self-hosted-runners + 10-monitoring-debugging Hoàn Thành | 🚧 Các Section Đang Phát Triển
