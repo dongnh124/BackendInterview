@@ -147,7 +147,13 @@ Devops/github-action/
 | **Caching — Artifacts** | 07-caching-performance/3-artifacts.md | ✅ | Toàn diện |
 | **Caching — Performance Optimization** | 07-caching-performance/4-performance-optimization.md | ✅ | Toàn diện |
 | **Caching — Billing & Cost** | 07-caching-performance/5-billing-cost.md | ✅ | Toàn diện |
-| **Security** | 08-security/README.md | 🚧 Cần tạo | — |
+| **Security — Tổng Quan** | 08-security/README.md | ✅ | Toàn diện |
+| **Security — Permissions** | 08-security/1-permissions.md | ✅ | Toàn diện |
+| **Security — OIDC Cloud Auth** | 08-security/2-oidc-cloud-auth.md | ✅ | Toàn diện |
+| **Security — Supply Chain** | 08-security/3-supply-chain.md | ✅ | Toàn diện |
+| **Security — Code Scanning** | 08-security/4-code-scanning.md | ✅ | Toàn diện |
+| **Security — Secret Scanning** | 08-security/5-secret-scanning.md | ✅ | Toàn diện |
+| **Security — Hardening** | 08-security/6-security-hardening.md | ✅ | Toàn diện |
 | **Interview Guide** | 11-interview-prep/INTERVIEW_GUIDE.md | 🚧 Cần tạo | — |
 
 ---
@@ -165,7 +171,7 @@ Devops/github-action/
 ### Ưu Tiên Trung Bình (Kỹ Năng Nâng Cao)
 
 - [x] `05-reusable/` — Reusable Workflows, Composite Actions, JS Actions, Docker Actions, Marketplace Guide (6 files) ✅
-- [ ] `08-security/security-hardening.md` — Bảo mật pipeline
+- [x] `08-security/` — Bảo mật pipeline toàn diện (7 files) ✅
 - [ ] `09-self-hosted-runners/arc-autoscaling.md` — ARC trên Kubernetes
 - [x] `07-caching-performance/` — Cache, Artifacts, Performance, Billing (6 files) ✅
 - [ ] `ROADMAP.md` — Lộ trình 90 ngày
@@ -426,5 +432,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.6
-**Trạng Thái:** ✅ README + INDEX + 01-fundamentals + 02-ci-pipeline + 03-cd-deployments + 04-secrets-variables + 05-reusable + 06-matrix-concurrency + 07-caching-performance Hoàn Thành | 🚧 Các Section Đang Phát Triển
+**Phiên Bản:** 1.7
+**Trạng Thái:** ✅ README + INDEX + 01-fundamentals + 02-ci-pipeline + 03-cd-deployments + 04-secrets-variables + 05-reusable + 06-matrix-concurrency + 07-caching-performance + 08-security Hoàn Thành | 🚧 Các Section Đang Phát Triển
