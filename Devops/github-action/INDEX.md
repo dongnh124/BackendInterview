@@ -154,6 +154,11 @@ Devops/github-action/
 | **Security — Code Scanning** | 08-security/4-code-scanning.md | ✅ | Toàn diện |
 | **Security — Secret Scanning** | 08-security/5-secret-scanning.md | ✅ | Toàn diện |
 | **Security — Hardening** | 08-security/6-security-hardening.md | ✅ | Toàn diện |
+| **Self-hosted Runners — Tổng Quan** | 09-self-hosted-runners/README.md | ✅ | Toàn diện |
+| **Self-hosted Runners — Setup & Registration** | 09-self-hosted-runners/1-setup-registration.md | ✅ | Toàn diện |
+| **Self-hosted Runners — ARC & Auto-scaling** | 09-self-hosted-runners/2-arc-autoscaling.md | ✅ | Toàn diện |
+| **Self-hosted Runners — Security & Isolation** | 09-self-hosted-runners/3-security-isolation.md | ✅ | Toàn diện |
+| **Self-hosted Runners — Maintenance & Monitoring** | 09-self-hosted-runners/4-maintenance-monitoring.md | ✅ | Toàn diện |
 | **Interview Guide** | 11-interview-prep/INTERVIEW_GUIDE.md | 🚧 Cần tạo | — |
 
 ---
@@ -172,7 +177,7 @@ Devops/github-action/
 
 - [x] `05-reusable/` — Reusable Workflows, Composite Actions, JS Actions, Docker Actions, Marketplace Guide (6 files) ✅
 - [x] `08-security/` — Bảo mật pipeline toàn diện (7 files) ✅
-- [ ] `09-self-hosted-runners/arc-autoscaling.md` — ARC trên Kubernetes
+- [x] `09-self-hosted-runners/` — Setup, ARC auto-scaling, Security, Maintenance (5 files) ✅
 - [x] `07-caching-performance/` — Cache, Artifacts, Performance, Billing (6 files) ✅
 - [ ] `ROADMAP.md` — Lộ trình 90 ngày
 
@@ -432,5 +437,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.7
-**Trạng Thái:** ✅ README + INDEX + 01-fundamentals + 02-ci-pipeline + 03-cd-deployments + 04-secrets-variables + 05-reusable + 06-matrix-concurrency + 07-caching-performance + 08-security Hoàn Thành | 🚧 Các Section Đang Phát Triển
+**Phiên Bản:** 1.8
+**Trạng Thái:** ✅ README + INDEX + 01-fundamentals + 02-ci-pipeline + 03-cd-deployments + 04-secrets-variables + 05-reusable + 06-matrix-concurrency + 07-caching-performance + 08-security + 09-self-hosted-runners Hoàn Thành | 🚧 Các Section Đang Phát Triển
