@@ -132,6 +132,12 @@ Devops/terraform/
 | **04 .tfvars management theo môi trường**   | 04-workspaces-environments/3-tfvars-management.md | ✅   | Toàn diện  |
 | **04 Terragrunt — DRY multi-env management** | 04-workspaces-environments/4-terragrunt-intro.md | ✅  | Toàn diện  |
 | **04 Backend riêng cho từng môi trường**    | 04-workspaces-environments/5-backend-per-env.md   | ✅   | Toàn diện  |
+| **05 Security — Tổng quan phần**            | 05-security/README.md                             | ✅   | Toàn diện  |
+| **05 Secrets Management — Vault, SSM, SOPS** | 05-security/1-secrets-management.md              | ✅   | Toàn diện  |
+| **05 IAM Roles — Least Privilege**          | 05-security/2-iam-roles.md                        | ✅   | Toàn diện  |
+| **05 Sensitive Variables & Output Masking** | 05-security/3-sensitive-variables.md              | ✅   | Toàn diện  |
+| **05 Static Analysis — tfsec, Checkov**     | 05-security/4-static-analysis.md                 | ✅   | Toàn diện  |
+| **05 Audit Logging — CloudTrail, Config**   | 05-security/5-audit-logging.md                   | ✅   | Toàn diện  |
 
 ---
 
@@ -158,7 +164,7 @@ Devops/terraform/
 ### Ưu Tiên Trung (Kỹ năng vận hành)
 
 - [ ] `06-cicd/README.md` — CI/CD integration
-- [ ] `05-security/README.md` — Bảo mật hạ tầng
+- [x] `05-security/README.md` — Bảo mật hạ tầng ✅
 - [ ] `09-troubleshooting/README.md` — Xử lý sự cố
 - [x] `04-workspaces-environments/README.md` — Quản lý môi trường ✅
 - [ ] `11-interview-prep/star-stories.md` — Câu chuyện STAR
@@ -422,5 +428,5 @@ Knowledge base này mở cho việc học tập và sử dụng chuyên nghiệp
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-12
-**Phiên Bản:** 1.3
-**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
+**Phiên Bản:** 1.4
+**Trạng Thái:** ✅ README & INDEX hoàn thành | ✅ 01-fundamentals hoàn thành | ✅ 02-state-management hoàn thành | ✅ 03-modules hoàn thành | ✅ 04-workspaces-environments hoàn thành | ✅ 05-security hoàn thành | 🚧 Các phần còn lại đang trong quá trình tạo
