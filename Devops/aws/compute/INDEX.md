@@ -112,6 +112,12 @@ Devops/aws/compute/
 | **EC2 — Security & Key Pairs** | 01-ec2-fundamentals/3-security-keypairs.md | ✅ | Toàn diện |
 | **EC2 — User Data & IMDS**    | 01-ec2-fundamentals/4-user-data-metadata.md | ✅ | Toàn diện |
 | **EC2 — Placement Groups**    | 01-ec2-fundamentals/5-placement-groups.md | ✅ | Toàn diện |
+| **Auto Scaling — Tổng Quan** | 02-auto-scaling/README.md | ✅ | Toàn diện |
+| **Auto Scaling — ASG Cơ Bản** | 02-auto-scaling/1-auto-scaling-groups.md | ✅ | Toàn diện |
+| **Auto Scaling — Launch Templates** | 02-auto-scaling/2-launch-templates.md | ✅ | Toàn diện |
+| **Auto Scaling — Scaling Policies** | 02-auto-scaling/3-scaling-policies.md | ✅ | Toàn diện |
+| **Auto Scaling — Spot & Mixed Instances** | 02-auto-scaling/4-spot-mixed-instances.md | ✅ | Toàn diện |
+| **Auto Scaling — Lifecycle Hooks & Warm Pools** | 02-auto-scaling/5-lifecycle-hooks.md | ✅ | Toàn diện |
 
 ---
 
@@ -125,10 +131,10 @@ Devops/aws/compute/
 - [x] `01-ec2-fundamentals/3-security-keypairs.md` — Security Groups, Key Pairs, IAM profiles ✅
 - [x] `01-ec2-fundamentals/4-user-data-metadata.md` — Bootstrap scripts, IMDS v2 ✅
 - [x] `01-ec2-fundamentals/5-placement-groups.md` — Cluster/Spread/Partition ✅
-- [ ] `02-auto-scaling/README.md` — Auto Scaling tổng quan
-- [ ] `02-auto-scaling/1-auto-scaling-groups.md` — ASG cơ bản, capacity settings
-- [ ] `02-auto-scaling/2-launch-templates.md` — Launch Templates chi tiết
-- [ ] `02-auto-scaling/3-scaling-policies.md` — Tất cả scaling policies
+- [x] `02-auto-scaling/README.md` — Auto Scaling tổng quan ✅
+- [x] `02-auto-scaling/1-auto-scaling-groups.md` — ASG cơ bản, capacity settings ✅
+- [x] `02-auto-scaling/2-launch-templates.md` — Launch Templates chi tiết ✅
+- [x] `02-auto-scaling/3-scaling-policies.md` — Tất cả scaling policies ✅
 - [ ] `03-serverless-lambda/README.md` — Lambda & Serverless tổng quan
 - [ ] `03-serverless-lambda/1-lambda-fundamentals.md` — Function anatomy, execution model
 - [ ] `03-serverless-lambda/2-event-sources.md` — Event triggers phổ biến
@@ -137,8 +143,8 @@ Devops/aws/compute/
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
 
-- [ ] `02-auto-scaling/4-spot-mixed-instances.md` — Spot trong ASG
-- [ ] `02-auto-scaling/5-lifecycle-hooks.md` — Lifecycle hooks & warm pools
+- [x] `02-auto-scaling/4-spot-mixed-instances.md` — Spot trong ASG ✅
+- [x] `02-auto-scaling/5-lifecycle-hooks.md` — Lifecycle hooks & warm pools ✅
 - [ ] `03-serverless-lambda/3-layers-extensions.md` — Lambda Layers & Extensions
 - [ ] `03-serverless-lambda/4-concurrency-throttling.md` — Concurrency management
 - [ ] `03-serverless-lambda/5-performance-best-practices.md` — Cold start optimization
@@ -423,5 +429,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.1 (EC2 Fundamentals hoàn thành)
-**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
+**Phiên Bản:** 1.2 (Auto Scaling hoàn thành)
+**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
