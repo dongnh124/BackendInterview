@@ -47,19 +47,19 @@
 
 ## 🏢 Năng Lực Cốt Lõi
 
-| Năng Lực | Ưu Tiên | Thời Gian | Trạng Thái |
-|---|---|---|---|
-| **VPC Design & Subnetting** | ⭐⭐⭐ | 2 tuần | - |
-| **Load Balancing — ALB/NLB** | ⭐⭐⭐ | 1 tuần | - |
-| **Route 53 & DNS** | ⭐⭐⭐ | 1 tuần | - |
-| **CloudFront — CDN** | ⭐⭐⭐ | 1 tuần | - |
-| **Security Groups & Network ACL** | ⭐⭐⭐ | 1 tuần | - |
-| **VPN & Direct Connect** | ⭐⭐⭐ | 1 tuần | - |
-| **Transit Gateway** | ⭐⭐ | 1 tuần | - |
-| **WAF & Shield** | ⭐⭐ | 1 tuần | - |
-| **PrivateLink & VPC Endpoints** | ⭐⭐ | 1 tuần | - |
-| **Global Accelerator** | ⭐⭐ | 0.5 tuần | - |
-| **Network Monitoring & Flow Logs** | ⭐⭐ | 1 tuần | - |
+| Năng Lực                           | Ưu Tiên | Thời Gian | Trạng Thái |
+| ---------------------------------- | ------- | --------- | ---------- |
+| **VPC Design & Subnetting**        | ⭐⭐⭐  | 2 tuần    | -          |
+| **Load Balancing — ALB/NLB**       | ⭐⭐⭐  | 1 tuần    | -          |
+| **Route 53 & DNS**                 | ⭐⭐⭐  | 1 tuần    | -          |
+| **CloudFront — CDN**               | ⭐⭐⭐  | 1 tuần    | -          |
+| **Security Groups & Network ACL**  | ⭐⭐⭐  | 1 tuần    | -          |
+| **VPN & Direct Connect**           | ⭐⭐⭐  | 1 tuần    | -          |
+| **Transit Gateway**                | ⭐⭐    | 1 tuần    | -          |
+| **WAF & Shield**                   | ⭐⭐    | 1 tuần    | -          |
+| **PrivateLink & VPC Endpoints**    | ⭐⭐    | 1 tuần    | -          |
+| **Global Accelerator**             | ⭐⭐    | 0.5 tuần  | -          |
+| **Network Monitoring & Flow Logs** | ⭐⭐    | 1 tuần    | -          |
 
 ---
 
@@ -211,14 +211,14 @@ Học trong: 02-security/
 
 ## 🔗 Liên Kết Nhanh
 
-| Chủ Đề | Thư Mục | Ưu Tiên |
-|---|---|---|
-| Bắt đầu từ đây | [README.md](./README.md) | Trước tiên |
-| Toàn bộ chỉ mục | [INDEX.md](./INDEX.md) | Điều hướng |
-| VPC cơ bản | [01-vpc-fundamentals/](./01-vpc-fundamentals/) | Thiết yếu |
-| Load Balancer | [03-load-balancing/](./03-load-balancing/) | Quan trọng |
-| CloudFront CDN | [05-cdn-cloudfront/](./05-cdn-cloudfront/) | Quan trọng |
-| Chuẩn bị phỏng vấn | [10-interview-prep/](./10-interview-prep/) | Trước phỏng vấn |
+| Chủ Đề             | Thư Mục                                        | Ưu Tiên         |
+| ------------------ | ---------------------------------------------- | --------------- |
+| Bắt đầu từ đây     | [README.md](./README.md)                       | Trước tiên      |
+| Toàn bộ chỉ mục    | [INDEX.md](./INDEX.md)                         | Điều hướng      |
+| VPC cơ bản         | [01-vpc-fundamentals/](./01-vpc-fundamentals/) | Thiết yếu       |
+| Load Balancer      | [03-load-balancing/](./03-load-balancing/)     | Quan trọng      |
+| CloudFront CDN     | [05-cdn-cloudfront/](./05-cdn-cloudfront/)     | Quan trọng      |
+| Chuẩn bị phỏng vấn | [10-interview-prep/](./10-interview-prep/)     | Trước phỏng vấn |
 
 ---
 
