@@ -27,11 +27,11 @@ Devops/aws/compute/
 │
 ├── 03-serverless-lambda/
 │   ├── README.md                                    Tổng quan Lambda & kiến trúc serverless
-│   ├── 1-lambda-fundamentals.md                     (Sẽ tạo) Function anatomy, runtime, handler, role
-│   ├── 2-event-sources.md                           (Sẽ tạo) API Gateway, SQS, SNS, S3, DynamoDB Streams
-│   ├── 3-layers-extensions.md                       (Sẽ tạo) Lambda Layers, Extensions, Container images
-│   ├── 4-concurrency-throttling.md                  (Sẽ tạo) Reserved/Provisioned Concurrency, throttling
-│   └── 5-performance-best-practices.md              (Sẽ tạo) Cold start, SnapStart, memory tuning, VPC
+│   ├── 1-lambda-fundamentals.md                     Function anatomy, runtime, handler, role
+│   ├── 2-event-sources.md                           API Gateway, SQS, SNS, S3, DynamoDB Streams
+│   ├── 3-layers-extensions.md                       Lambda Layers, Extensions, Container images
+│   ├── 4-concurrency-throttling.md                  Reserved/Provisioned Concurrency, throttling
+│   └── 5-performance-best-practices.md              Cold start, SnapStart, memory tuning, VPC
 │
 ├── 04-containers-ecs/
 │   ├── README.md                                    Tổng quan ECS & container orchestration
@@ -118,6 +118,12 @@ Devops/aws/compute/
 | **Auto Scaling — Scaling Policies** | 02-auto-scaling/3-scaling-policies.md | ✅ | Toàn diện |
 | **Auto Scaling — Spot & Mixed Instances** | 02-auto-scaling/4-spot-mixed-instances.md | ✅ | Toàn diện |
 | **Auto Scaling — Lifecycle Hooks & Warm Pools** | 02-auto-scaling/5-lifecycle-hooks.md | ✅ | Toàn diện |
+| **Lambda — Tổng Quan & Kiến Trúc Serverless** | 03-serverless-lambda/README.md | ✅ | Toàn diện |
+| **Lambda — Fundamentals & Execution Model** | 03-serverless-lambda/1-lambda-fundamentals.md | ✅ | Toàn diện |
+| **Lambda — Event Sources & Triggers** | 03-serverless-lambda/2-event-sources.md | ✅ | Toàn diện |
+| **Lambda — Layers, Extensions & Container Images** | 03-serverless-lambda/3-layers-extensions.md | ✅ | Toàn diện |
+| **Lambda — Concurrency & Throttling** | 03-serverless-lambda/4-concurrency-throttling.md | ✅ | Toàn diện |
+| **Lambda — Performance & Best Practices** | 03-serverless-lambda/5-performance-best-practices.md | ✅ | Toàn diện |
 
 ---
 
@@ -135,9 +141,9 @@ Devops/aws/compute/
 - [x] `02-auto-scaling/1-auto-scaling-groups.md` — ASG cơ bản, capacity settings ✅
 - [x] `02-auto-scaling/2-launch-templates.md` — Launch Templates chi tiết ✅
 - [x] `02-auto-scaling/3-scaling-policies.md` — Tất cả scaling policies ✅
-- [ ] `03-serverless-lambda/README.md` — Lambda & Serverless tổng quan
-- [ ] `03-serverless-lambda/1-lambda-fundamentals.md` — Function anatomy, execution model
-- [ ] `03-serverless-lambda/2-event-sources.md` — Event triggers phổ biến
+- [x] `03-serverless-lambda/README.md` — Lambda & Serverless tổng quan ✅
+- [x] `03-serverless-lambda/1-lambda-fundamentals.md` — Function anatomy, execution model ✅
+- [x] `03-serverless-lambda/2-event-sources.md` — Event triggers phổ biến ✅
 - [ ] `04-containers-ecs/README.md` — ECS & container orchestration tổng quan
 - [ ] `04-containers-ecs/1-ecs-architecture.md` — Cluster, Service, Task architecture
 
@@ -145,9 +151,9 @@ Devops/aws/compute/
 
 - [x] `02-auto-scaling/4-spot-mixed-instances.md` — Spot trong ASG ✅
 - [x] `02-auto-scaling/5-lifecycle-hooks.md` — Lifecycle hooks & warm pools ✅
-- [ ] `03-serverless-lambda/3-layers-extensions.md` — Lambda Layers & Extensions
-- [ ] `03-serverless-lambda/4-concurrency-throttling.md` — Concurrency management
-- [ ] `03-serverless-lambda/5-performance-best-practices.md` — Cold start optimization
+- [x] `03-serverless-lambda/3-layers-extensions.md` — Lambda Layers & Extensions ✅
+- [x] `03-serverless-lambda/4-concurrency-throttling.md` — Concurrency management ✅
+- [x] `03-serverless-lambda/5-performance-best-practices.md` — Cold start optimization ✅
 - [ ] `04-containers-ecs/2-task-definitions.md` — Task Definition deep dive
 - [ ] `04-containers-ecs/3-ecs-services.md` — Service deployment strategies
 - [ ] `04-containers-ecs/4-fargate-vs-ec2.md` — Trade-offs & decision guide
@@ -429,5 +435,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.2 (Auto Scaling hoàn thành)
-**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
+**Phiên Bản:** 1.3 (Serverless Lambda hoàn thành)
+**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
