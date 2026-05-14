@@ -141,6 +141,12 @@ Devops/aws/network
 | **Global Accelerator — Anycast**    | 07-advanced-networking/3-global-accelerator.md | ✅         | Toàn diện  |
 | **Elastic IP & ENI**                | 07-advanced-networking/4-elastic-ip-eni.md     | ✅         | Toàn diện  |
 | **IPv6 & Dual-Stack VPC**           | 07-advanced-networking/5-ipv6.md               | ✅         | Toàn diện  |
+| **Giám Sát Mạng — Tổng Quan**       | 08-monitoring/README.md                        | ✅         | Toàn diện  |
+| **VPC Flow Logs — Phân Tích**       | 08-monitoring/1-vpc-flow-logs.md               | ✅         | Toàn diện  |
+| **CloudWatch Networking Metrics**   | 08-monitoring/2-cloudwatch-networking.md       | ✅         | Toàn diện  |
+| **Network Access Analyzer**         | 08-monitoring/3-network-access-analyzer.md     | ✅         | Toàn diện  |
+| **Reachability Analyzer**           | 08-monitoring/4-reachability-analyzer.md       | ✅         | Toàn diện  |
+| **Observability Checklist**         | 08-monitoring/5-observability-checklist.md     | ✅         | Toàn diện  |
 
 ---
 
@@ -197,8 +203,12 @@ Devops/aws/network
 
 ### Ưu Tiên Thấp — Tài Liệu Tham Khảo
 
-- [ ] `08-monitoring/README.md` — Giám sát mạng tổng quan
-- [ ] `08-monitoring/1-vpc-flow-logs.md` — VPC Flow Logs phân tích
+- [x] `08-monitoring/README.md` — Giám sát mạng tổng quan ✅
+- [x] `08-monitoring/1-vpc-flow-logs.md` — VPC Flow Logs phân tích ✅
+- [x] `08-monitoring/2-cloudwatch-networking.md` — CloudWatch Metrics cho ELB, CloudFront, VPN ✅
+- [x] `08-monitoring/3-network-access-analyzer.md` — Phân tích quyền truy cập mạng ✅
+- [x] `08-monitoring/4-reachability-analyzer.md` — Phân tích kết nối từng bước ✅
+- [x] `08-monitoring/5-observability-checklist.md` — Checklist giám sát toàn diện ✅
 - [ ] `09-troubleshooting/README.md` — Xử lý sự cố tổng quan
 - [ ] `09-troubleshooting/6-production-checklist.md` — Production checklist
 - [ ] `10-interview-prep/3-system-design-scenarios.md` — Design scenarios
@@ -450,5 +460,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.7 (07-advanced-networking hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | ✅ 04-dns-route53 hoàn thành | ✅ 05-cdn-cloudfront hoàn thành | ✅ 06-connectivity hoàn thành | ✅ 07-advanced-networking hoàn thành | 🚧 Các section còn lại đang tiến hành
+**Phiên Bản:** 1.8 (08-monitoring hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | ✅ 04-dns-route53 hoàn thành | ✅ 05-cdn-cloudfront hoàn thành | ✅ 06-connectivity hoàn thành | ✅ 07-advanced-networking hoàn thành | ✅ 08-monitoring hoàn thành | 🚧 Các section còn lại đang tiến hành
