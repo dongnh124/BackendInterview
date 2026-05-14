@@ -105,6 +105,12 @@ Devops/aws/network
 | **Route Tables & Internet Gateway** | 01-vpc-fundamentals/3-route-tables.md          | ✅         | Toàn diện  |
 | **NAT Gateway vs NAT Instance**     | 01-vpc-fundamentals/4-nat-gateway.md           | ✅         | Toàn diện  |
 | **VPC Peering & Resource Sharing**  | 01-vpc-fundamentals/5-vpc-peering.md           | ✅         | Toàn diện  |
+| **Bảo Mật Mạng — Tổng Quan**        | 02-security/README.md                          | ✅         | Toàn diện  |
+| **Security Groups — Stateful FW**   | 02-security/1-security-groups.md               | ✅         | Toàn diện  |
+| **Network ACLs — Stateless FW**     | 02-security/2-network-acls.md                  | ✅         | Toàn diện  |
+| **WAF — Web Application Firewall**  | 02-security/3-waf.md                           | ✅         | Toàn diện  |
+| **Shield Standard & Advanced**      | 02-security/4-shield.md                        | ✅         | Toàn diện  |
+| **AWS Network Firewall**            | 02-security/5-network-firewall.md              | ✅         | Toàn diện  |
 
 ---
 
@@ -118,9 +124,12 @@ Devops/aws/network
 - [x] `01-vpc-fundamentals/3-route-tables.md` — Bảng định tuyến & Internet Gateway ✅
 - [x] `01-vpc-fundamentals/4-nat-gateway.md` — NAT Gateway vs NAT Instance ✅
 - [x] `01-vpc-fundamentals/5-vpc-peering.md` — VPC Peering & Resource Sharing ✅
-- [ ] `02-security/README.md` — Bảo mật mạng tổng quan
-- [ ] `02-security/1-security-groups.md` — Security Groups chi tiết
-- [ ] `02-security/2-network-acls.md` — Network ACLs & so sánh với SG
+- [x] `02-security/README.md` — Bảo mật mạng tổng quan ✅
+- [x] `02-security/1-security-groups.md` — Security Groups chi tiết ✅
+- [x] `02-security/2-network-acls.md` — Network ACLs & so sánh với SG ✅
+- [x] `02-security/3-waf.md` — WAF, rules, managed rules ✅
+- [x] `02-security/4-shield.md` — Shield Standard & Advanced, DDoS protection ✅
+- [x] `02-security/5-network-firewall.md` — AWS Network Firewall, deep inspection ✅
 - [ ] `03-load-balancing/README.md` — Cân bằng tải tổng quan
 - [ ] `03-load-balancing/1-alb.md` — Application Load Balancer
 - [ ] `04-dns-route53/README.md` — DNS & Route 53 tổng quan
@@ -391,5 +400,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.1 (01-vpc-fundamentals hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | 🚧 Các section còn lại đang tiến hành
+**Phiên Bản:** 1.2 (02-security hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | 🚧 Các section còn lại đang tiến hành
