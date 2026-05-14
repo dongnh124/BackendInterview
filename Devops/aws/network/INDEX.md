@@ -129,6 +129,12 @@ Devops/aws/network
 | **OAC, OAI & Origin Protection**    | 05-cdn-cloudfront/3-origin-access.md           | ✅         | Toàn diện  |
 | **Lambda@Edge & CF Functions**      | 05-cdn-cloudfront/4-lambda-edge.md             | ✅         | Toàn diện  |
 | **Performance & Cost Optimization** | 05-cdn-cloudfront/5-performance-cost.md        | ✅         | Toàn diện  |
+| **Connectivity — Tổng Quan**        | 06-connectivity/README.md                      | ✅         | Toàn diện  |
+| **Site-to-Site VPN**                | 06-connectivity/1-site-to-site-vpn.md          | ✅         | Toàn diện  |
+| **Client VPN — Remote Access**      | 06-connectivity/2-client-vpn.md                | ✅         | Toàn diện  |
+| **Direct Connect — Kết Nối Riêng**  | 06-connectivity/3-direct-connect.md            | ✅         | Toàn diện  |
+| **Direct Connect Gateway**          | 06-connectivity/4-direct-connect-gateway.md    | ✅         | Toàn diện  |
+| **Transit Gateway — Hub-and-Spoke** | 06-connectivity/5-transit-gateway.md           | ✅         | Toàn diện  |
 
 ---
 
@@ -169,8 +175,12 @@ Devops/aws/network
 - [x] `05-cdn-cloudfront/3-origin-access.md` — OAC, OAI, S3 bucket protection ✅
 - [x] `05-cdn-cloudfront/4-lambda-edge.md` — Lambda@Edge & CloudFront Functions ✅
 - [x] `05-cdn-cloudfront/5-performance-cost.md` — Price Classes, Compression, Optimization ✅
-- [ ] `06-connectivity/README.md` — Kết nối hybrid tổng quan
-- [ ] `06-connectivity/5-transit-gateway.md` — Transit Gateway deep dive
+- [x] `06-connectivity/README.md` — Kết nối hybrid tổng quan ✅
+- [x] `06-connectivity/1-site-to-site-vpn.md` — Site-to-Site VPN, CGW, VGW ✅
+- [x] `06-connectivity/2-client-vpn.md` — Client VPN, remote access, auth ✅
+- [x] `06-connectivity/3-direct-connect.md` — Direct Connect, VIF types, HA ✅
+- [x] `06-connectivity/4-direct-connect-gateway.md` — DX Gateway, multi-VPC/region ✅
+- [x] `06-connectivity/5-transit-gateway.md` — Transit Gateway, hub-and-spoke ✅
 - [ ] `07-advanced-networking/README.md` — Advanced networking tổng quan
 - [ ] `07-advanced-networking/1-vpc-endpoints.md` — VPC Endpoints & PrivateLink
 - [ ] `10-interview-prep/1-INTERVIEW_GUIDE.md` — Top 20 interview questions
@@ -430,5 +440,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.5 (05-cdn-cloudfront hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | ✅ 04-dns-route53 hoàn thành | ✅ 05-cdn-cloudfront hoàn thành | 🚧 Các section còn lại đang tiến hành
+**Phiên Bản:** 1.6 (06-connectivity hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | ✅ 04-dns-route53 hoàn thành | ✅ 05-cdn-cloudfront hoàn thành | ✅ 06-connectivity hoàn thành | 🚧 Các section còn lại đang tiến hành
