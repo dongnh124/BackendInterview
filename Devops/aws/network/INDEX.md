@@ -135,6 +135,12 @@ Devops/aws/network
 | **Direct Connect — Kết Nối Riêng**  | 06-connectivity/3-direct-connect.md            | ✅         | Toàn diện  |
 | **Direct Connect Gateway**          | 06-connectivity/4-direct-connect-gateway.md    | ✅         | Toàn diện  |
 | **Transit Gateway — Hub-and-Spoke** | 06-connectivity/5-transit-gateway.md           | ✅         | Toàn diện  |
+| **Advanced Networking — Tổng Quan** | 07-advanced-networking/README.md               | ✅         | Toàn diện  |
+| **VPC Endpoints & PrivateLink**     | 07-advanced-networking/1-vpc-endpoints.md      | ✅         | Toàn diện  |
+| **AWS PrivateLink — Dịch Vụ Riêng** | 07-advanced-networking/2-privatelink.md        | ✅         | Toàn diện  |
+| **Global Accelerator — Anycast**    | 07-advanced-networking/3-global-accelerator.md | ✅         | Toàn diện  |
+| **Elastic IP & ENI**                | 07-advanced-networking/4-elastic-ip-eni.md     | ✅         | Toàn diện  |
+| **IPv6 & Dual-Stack VPC**           | 07-advanced-networking/5-ipv6.md               | ✅         | Toàn diện  |
 
 ---
 
@@ -181,8 +187,12 @@ Devops/aws/network
 - [x] `06-connectivity/3-direct-connect.md` — Direct Connect, VIF types, HA ✅
 - [x] `06-connectivity/4-direct-connect-gateway.md` — DX Gateway, multi-VPC/region ✅
 - [x] `06-connectivity/5-transit-gateway.md` — Transit Gateway, hub-and-spoke ✅
-- [ ] `07-advanced-networking/README.md` — Advanced networking tổng quan
-- [ ] `07-advanced-networking/1-vpc-endpoints.md` — VPC Endpoints & PrivateLink
+- [x] `07-advanced-networking/README.md` — Advanced networking tổng quan ✅
+- [x] `07-advanced-networking/1-vpc-endpoints.md` — VPC Endpoints & PrivateLink ✅
+- [x] `07-advanced-networking/2-privatelink.md` — AWS PrivateLink, endpoint services ✅
+- [x] `07-advanced-networking/3-global-accelerator.md` — Global Accelerator, Anycast ✅
+- [x] `07-advanced-networking/4-elastic-ip-eni.md` — Elastic IP, ENI, secondary IPs ✅
+- [x] `07-advanced-networking/5-ipv6.md` — IPv6 & Dual-Stack VPC ✅
 - [ ] `10-interview-prep/1-INTERVIEW_GUIDE.md` — Top 20 interview questions
 
 ### Ưu Tiên Thấp — Tài Liệu Tham Khảo
@@ -440,5 +450,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.6 (06-connectivity hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | ✅ 04-dns-route53 hoàn thành | ✅ 05-cdn-cloudfront hoàn thành | ✅ 06-connectivity hoàn thành | 🚧 Các section còn lại đang tiến hành
+**Phiên Bản:** 1.7 (07-advanced-networking hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | ✅ 04-dns-route53 hoàn thành | ✅ 05-cdn-cloudfront hoàn thành | ✅ 06-connectivity hoàn thành | ✅ 07-advanced-networking hoàn thành | 🚧 Các section còn lại đang tiến hành
