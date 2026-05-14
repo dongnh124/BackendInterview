@@ -117,6 +117,12 @@ Devops/aws/network
 | **Target Groups & Health Checks**   | 03-load-balancing/3-target-groups.md           | ✅         | Toàn diện  |
 | **SSL/TLS Termination & ACM**       | 03-load-balancing/4-ssl-tls.md                 | ✅         | Toàn diện  |
 | **Advanced Load Balancing Patterns**| 03-load-balancing/5-advanced-patterns.md       | ✅         | Toàn diện  |
+| **DNS & Route 53 — Tổng Quan**      | 04-dns-route53/README.md                       | ✅         | Toàn diện  |
+| **DNS Fundamentals & Record Types** | 04-dns-route53/1-dns-fundamentals.md           | ✅         | Toàn diện  |
+| **Public & Private Hosted Zones**   | 04-dns-route53/2-hosted-zones.md               | ✅         | Toàn diện  |
+| **7 Routing Policies**              | 04-dns-route53/3-routing-policies.md           | ✅         | Toàn diện  |
+| **Health Checks & DNS Failover**    | 04-dns-route53/4-health-checks.md              | ✅         | Toàn diện  |
+| **Route 53 Resolver & Hybrid DNS**  | 04-dns-route53/5-resolver.md                   | ✅         | Toàn diện  |
 
 ---
 
@@ -142,8 +148,12 @@ Devops/aws/network
 - [x] `03-load-balancing/3-target-groups.md` — Target Groups & Health Checks ✅
 - [x] `03-load-balancing/4-ssl-tls.md` — SSL/TLS Termination & ACM ✅
 - [x] `03-load-balancing/5-advanced-patterns.md` — Advanced Patterns ✅
-- [ ] `04-dns-route53/README.md` — DNS & Route 53 tổng quan
-- [ ] `04-dns-route53/3-routing-policies.md` — Tất cả routing policies
+- [x] `04-dns-route53/README.md` — DNS & Route 53 tổng quan ✅
+- [x] `04-dns-route53/1-dns-fundamentals.md` — DNS cơ bản, record types, TTL ✅
+- [x] `04-dns-route53/2-hosted-zones.md` — Public & Private hosted zones ✅
+- [x] `04-dns-route53/3-routing-policies.md` — Tất cả 7 routing policies ✅
+- [x] `04-dns-route53/4-health-checks.md` — Health checks, DNS failover automation ✅
+- [x] `04-dns-route53/5-resolver.md` — Route 53 Resolver, hybrid DNS ✅
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
 
@@ -410,5 +420,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.3 (03-load-balancing hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | 🚧 Các section còn lại đang tiến hành
+**Phiên Bản:** 1.4 (04-dns-route53 hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | ✅ 04-dns-route53 hoàn thành | 🚧 Các section còn lại đang tiến hành
