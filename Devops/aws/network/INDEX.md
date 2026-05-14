@@ -111,6 +111,12 @@ Devops/aws/network
 | **WAF — Web Application Firewall**  | 02-security/3-waf.md                           | ✅         | Toàn diện  |
 | **Shield Standard & Advanced**      | 02-security/4-shield.md                        | ✅         | Toàn diện  |
 | **AWS Network Firewall**            | 02-security/5-network-firewall.md              | ✅         | Toàn diện  |
+| **Load Balancing — Tổng Quan**      | 03-load-balancing/README.md                    | ✅         | Toàn diện  |
+| **ALB — Application Load Balancer** | 03-load-balancing/1-alb.md                     | ✅         | Toàn diện  |
+| **NLB — Network Load Balancer**     | 03-load-balancing/2-nlb.md                     | ✅         | Toàn diện  |
+| **Target Groups & Health Checks**   | 03-load-balancing/3-target-groups.md           | ✅         | Toàn diện  |
+| **SSL/TLS Termination & ACM**       | 03-load-balancing/4-ssl-tls.md                 | ✅         | Toàn diện  |
+| **Advanced Load Balancing Patterns**| 03-load-balancing/5-advanced-patterns.md       | ✅         | Toàn diện  |
 
 ---
 
@@ -130,8 +136,12 @@ Devops/aws/network
 - [x] `02-security/3-waf.md` — WAF, rules, managed rules ✅
 - [x] `02-security/4-shield.md` — Shield Standard & Advanced, DDoS protection ✅
 - [x] `02-security/5-network-firewall.md` — AWS Network Firewall, deep inspection ✅
-- [ ] `03-load-balancing/README.md` — Cân bằng tải tổng quan
-- [ ] `03-load-balancing/1-alb.md` — Application Load Balancer
+- [x] `03-load-balancing/README.md` — Cân bằng tải tổng quan ✅
+- [x] `03-load-balancing/1-alb.md` — Application Load Balancer ✅
+- [x] `03-load-balancing/2-nlb.md` — Network Load Balancer ✅
+- [x] `03-load-balancing/3-target-groups.md` — Target Groups & Health Checks ✅
+- [x] `03-load-balancing/4-ssl-tls.md` — SSL/TLS Termination & ACM ✅
+- [x] `03-load-balancing/5-advanced-patterns.md` — Advanced Patterns ✅
 - [ ] `04-dns-route53/README.md` — DNS & Route 53 tổng quan
 - [ ] `04-dns-route53/3-routing-policies.md` — Tất cả routing policies
 
@@ -400,5 +410,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.2 (02-security hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | 🚧 Các section còn lại đang tiến hành
+**Phiên Bản:** 1.3 (03-load-balancing hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | 🚧 Các section còn lại đang tiến hành
