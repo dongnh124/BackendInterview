@@ -75,12 +75,12 @@ Devops/aws/network
 │
 ├── 09-troubleshooting/
 │   ├── README.md                                Tổng quan xử lý sự cố mạng
-│   ├── 1-connectivity-debug.md                  (Sẽ tạo) EC2 không kết nối được — chẩn đoán từng bước
-│   ├── 2-security-group-nacl-debug.md           (Sẽ tạo) Gỡ lỗi Security Group & NACL
-│   ├── 3-dns-issues.md                          (Sẽ tạo) Route 53 & DNS resolution failures
-│   ├── 4-load-balancer-issues.md                (Sẽ tạo) ALB/NLB health check failures, 503 errors
-│   ├── 5-cloudfront-issues.md                   (Sẽ tạo) Cache miss, origin errors, SSL issues
-│   └── 6-production-checklist.md                (Sẽ tạo) Checklist trước khi đưa vào production
+│   ├── 1-connectivity-debug.md                  EC2 không kết nối được — chẩn đoán từng bước
+│   ├── 2-security-group-nacl-debug.md           Gỡ lỗi Security Group & NACL
+│   ├── 3-dns-issues.md                          Route 53 & DNS resolution failures
+│   ├── 4-load-balancer-issues.md                ALB/NLB health check failures, 503 errors
+│   ├── 5-cloudfront-issues.md                   Cache miss, origin errors, SSL issues
+│   └── 6-production-checklist.md                Checklist trước khi đưa vào production
 │
 └── 10-interview-prep/
     ├── README.md                                Tổng quan chuẩn bị phỏng vấn
@@ -147,6 +147,13 @@ Devops/aws/network
 | **Network Access Analyzer**         | 08-monitoring/3-network-access-analyzer.md     | ✅         | Toàn diện  |
 | **Reachability Analyzer**           | 08-monitoring/4-reachability-analyzer.md       | ✅         | Toàn diện  |
 | **Observability Checklist**         | 08-monitoring/5-observability-checklist.md     | ✅         | Toàn diện  |
+| **Troubleshooting — Tổng Quan**     | 09-troubleshooting/README.md                   | ✅         | Toàn diện  |
+| **Connectivity Debug — EC2**        | 09-troubleshooting/1-connectivity-debug.md     | ✅         | Toàn diện  |
+| **Security Group & NACL Debug**     | 09-troubleshooting/2-security-group-nacl-debug.md | ✅      | Toàn diện  |
+| **DNS Issues & Route 53 Debug**     | 09-troubleshooting/3-dns-issues.md             | ✅         | Toàn diện  |
+| **Load Balancer Issues**            | 09-troubleshooting/4-load-balancer-issues.md   | ✅         | Toàn diện  |
+| **CloudFront Issues**               | 09-troubleshooting/5-cloudfront-issues.md      | ✅         | Toàn diện  |
+| **Production Checklist**            | 09-troubleshooting/6-production-checklist.md   | ✅         | Toàn diện  |
 
 ---
 
@@ -209,8 +216,13 @@ Devops/aws/network
 - [x] `08-monitoring/3-network-access-analyzer.md` — Phân tích quyền truy cập mạng ✅
 - [x] `08-monitoring/4-reachability-analyzer.md` — Phân tích kết nối từng bước ✅
 - [x] `08-monitoring/5-observability-checklist.md` — Checklist giám sát toàn diện ✅
-- [ ] `09-troubleshooting/README.md` — Xử lý sự cố tổng quan
-- [ ] `09-troubleshooting/6-production-checklist.md` — Production checklist
+- [x] `09-troubleshooting/README.md` — Xử lý sự cố tổng quan ✅
+- [x] `09-troubleshooting/1-connectivity-debug.md` — EC2 không kết nối được ✅
+- [x] `09-troubleshooting/2-security-group-nacl-debug.md` — Gỡ lỗi Security Group & NACL ✅
+- [x] `09-troubleshooting/3-dns-issues.md` — Route 53 & DNS resolution failures ✅
+- [x] `09-troubleshooting/4-load-balancer-issues.md` — ALB/NLB health check failures ✅
+- [x] `09-troubleshooting/5-cloudfront-issues.md` — Cache miss, origin errors, SSL issues ✅
+- [x] `09-troubleshooting/6-production-checklist.md` — Production checklist ✅
 - [ ] `10-interview-prep/3-system-design-scenarios.md` — Design scenarios
 - [ ] `10-interview-prep/5-90-day-study-plan.md` — Kế hoạch 90 ngày
 
@@ -460,5 +472,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.8 (08-monitoring hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | ✅ 04-dns-route53 hoàn thành | ✅ 05-cdn-cloudfront hoàn thành | ✅ 06-connectivity hoàn thành | ✅ 07-advanced-networking hoàn thành | ✅ 08-monitoring hoàn thành | 🚧 Các section còn lại đang tiến hành
+**Phiên Bản:** 1.9 (09-troubleshooting hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | ✅ 04-dns-route53 hoàn thành | ✅ 05-cdn-cloudfront hoàn thành | ✅ 06-connectivity hoàn thành | ✅ 07-advanced-networking hoàn thành | ✅ 08-monitoring hoàn thành | ✅ 09-troubleshooting hoàn thành | 🚧 10-interview-prep đang tiến hành
