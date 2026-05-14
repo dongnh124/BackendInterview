@@ -5,7 +5,7 @@
 ## 📁 Cấu Trúc Thư Mục
 
 ```
-Devops/aws/
+Devops/aws/network
 ├── README.md                                    [BẮT ĐẦU TỪ ĐÂY] Lộ trình & tổng quan
 ├── INDEX.md                                     Chỉ mục đầy đủ (file này)
 │
@@ -95,10 +95,10 @@ Devops/aws/
 
 ## ✅ Đã Được Tạo
 
-| Chủ Đề | File | Trạng Thái | Chất Lượng |
-|---|---|---|---|
-| **Tổng Quan & Lộ Trình** | README.md | ✅ | Toàn diện |
-| **Chỉ Mục Đầy Đủ** | INDEX.md | ✅ | Đầy đủ |
+| Chủ Đề                   | File      | Trạng Thái | Chất Lượng |
+| ------------------------ | --------- | ---------- | ---------- |
+| **Tổng Quan & Lộ Trình** | README.md | ✅         | Toàn diện  |
+| **Chỉ Mục Đầy Đủ**       | INDEX.md  | ✅         | Đầy đủ     |
 
 ---
 
@@ -185,17 +185,17 @@ Dùng làm tài liệu tham khảo:
 
 ## 📊 Ước Tính Thời Gian Học
 
-| Section | Thời Gian | Độ Khó | Ưu Tiên |
-|---|---|---|---|
-| VPC Fundamentals | 6-8 giờ | ⭐⭐ | Bắt buộc |
-| Security (SG, NACL, WAF) | 6-8 giờ | ⭐⭐ | Bắt buộc |
-| Load Balancing | 4-6 giờ | ⭐⭐ | Bắt buộc |
-| DNS & Route 53 | 6-8 giờ | ⭐⭐ | Bắt buộc |
-| CloudFront CDN | 6-8 giờ | ⭐⭐ | Bắt buộc |
-| Hybrid Connectivity (VPN/DX/TGW) | 8-10 giờ | ⭐⭐⭐ | Nên học |
-| Advanced Networking | 6-8 giờ | ⭐⭐⭐ | Nên học |
-| Monitoring & Troubleshooting | 4-6 giờ | ⭐⭐ | Nên học |
-| Interview Prep | 4-6 giờ | ⭐ | Trước phỏng vấn |
+| Section                          | Thời Gian | Độ Khó | Ưu Tiên         |
+| -------------------------------- | --------- | ------ | --------------- |
+| VPC Fundamentals                 | 6-8 giờ   | ⭐⭐   | Bắt buộc        |
+| Security (SG, NACL, WAF)         | 6-8 giờ   | ⭐⭐   | Bắt buộc        |
+| Load Balancing                   | 4-6 giờ   | ⭐⭐   | Bắt buộc        |
+| DNS & Route 53                   | 6-8 giờ   | ⭐⭐   | Bắt buộc        |
+| CloudFront CDN                   | 6-8 giờ   | ⭐⭐   | Bắt buộc        |
+| Hybrid Connectivity (VPN/DX/TGW) | 8-10 giờ  | ⭐⭐⭐ | Nên học         |
+| Advanced Networking              | 6-8 giờ   | ⭐⭐⭐ | Nên học         |
+| Monitoring & Troubleshooting     | 4-6 giờ   | ⭐⭐   | Nên học         |
+| Interview Prep                   | 4-6 giờ   | ⭐     | Trước phỏng vấn |
 
 **Tổng cộng: 50-70 giờ để có kiến thức AWS Networking toàn diện**
 
@@ -237,19 +237,19 @@ Dùng làm tài liệu tham khảo:
 
 ## 🔗 Điều Hướng Nhanh
 
-| Nhu Cầu | Vị Trí |
-|---|---|
-| Tổng quan nhanh | [README.md](README.md) |
-| Thiết kế VPC | [01-vpc-fundamentals/README.md](01-vpc-fundamentals/README.md) |
-| Bảo mật mạng | [02-security/README.md](02-security/README.md) |
-| Cân bằng tải | [03-load-balancing/README.md](03-load-balancing/README.md) |
-| DNS & Route 53 | [04-dns-route53/README.md](04-dns-route53/README.md) |
-| CloudFront CDN | [05-cdn-cloudfront/README.md](05-cdn-cloudfront/README.md) |
-| Hybrid connectivity | [06-connectivity/README.md](06-connectivity/README.md) |
-| Mạng nâng cao | [07-advanced-networking/README.md](07-advanced-networking/README.md) |
-| Giám sát mạng | [08-monitoring/README.md](08-monitoring/README.md) |
-| Xử lý sự cố | [09-troubleshooting/README.md](09-troubleshooting/README.md) |
-| Câu hỏi phỏng vấn | [10-interview-prep/1-INTERVIEW_GUIDE.md](10-interview-prep/1-INTERVIEW_GUIDE.md) |
+| Nhu Cầu             | Vị Trí                                                                           |
+| ------------------- | -------------------------------------------------------------------------------- |
+| Tổng quan nhanh     | [README.md](README.md)                                                           |
+| Thiết kế VPC        | [01-vpc-fundamentals/README.md](01-vpc-fundamentals/README.md)                   |
+| Bảo mật mạng        | [02-security/README.md](02-security/README.md)                                   |
+| Cân bằng tải        | [03-load-balancing/README.md](03-load-balancing/README.md)                       |
+| DNS & Route 53      | [04-dns-route53/README.md](04-dns-route53/README.md)                             |
+| CloudFront CDN      | [05-cdn-cloudfront/README.md](05-cdn-cloudfront/README.md)                       |
+| Hybrid connectivity | [06-connectivity/README.md](06-connectivity/README.md)                           |
+| Mạng nâng cao       | [07-advanced-networking/README.md](07-advanced-networking/README.md)             |
+| Giám sát mạng       | [08-monitoring/README.md](08-monitoring/README.md)                               |
+| Xử lý sự cố         | [09-troubleshooting/README.md](09-troubleshooting/README.md)                     |
+| Câu hỏi phỏng vấn   | [10-interview-prep/1-INTERVIEW_GUIDE.md](10-interview-prep/1-INTERVIEW_GUIDE.md) |
 
 ---
 
