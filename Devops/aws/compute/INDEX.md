@@ -106,6 +106,12 @@ Devops/aws/compute/
 | ----------------------------- | ------------------- | ---------- | ---------- |
 | **Tổng Quan & Lộ Trình**      | README.md           | ✅         | Toàn diện  |
 | **Chỉ Mục Đầy Đủ**            | INDEX.md            | ✅         | Đầy đủ     |
+| **EC2 — Tổng Quan & Vòng Đời** | 01-ec2-fundamentals/README.md | ✅ | Toàn diện |
+| **EC2 — Instance Types**      | 01-ec2-fundamentals/1-instance-types.md | ✅ | Toàn diện |
+| **EC2 — AMI & Storage**       | 01-ec2-fundamentals/2-ami-storage.md | ✅ | Toàn diện |
+| **EC2 — Security & Key Pairs** | 01-ec2-fundamentals/3-security-keypairs.md | ✅ | Toàn diện |
+| **EC2 — User Data & IMDS**    | 01-ec2-fundamentals/4-user-data-metadata.md | ✅ | Toàn diện |
+| **EC2 — Placement Groups**    | 01-ec2-fundamentals/5-placement-groups.md | ✅ | Toàn diện |
 
 ---
 
@@ -113,12 +119,12 @@ Devops/aws/compute/
 
 ### Ưu Tiên Cao — Kỹ Năng Cốt Lõi
 
-- [ ] `01-ec2-fundamentals/README.md` — Tổng quan EC2, instance lifecycle
-- [ ] `01-ec2-fundamentals/1-instance-types.md` — Instance families & chọn đúng loại
-- [ ] `01-ec2-fundamentals/2-ami-storage.md` — AMI, EBS, snapshot management
-- [ ] `01-ec2-fundamentals/3-security-keypairs.md` — Security Groups, Key Pairs, IAM profiles
-- [ ] `01-ec2-fundamentals/4-user-data-metadata.md` — Bootstrap scripts, IMDS v2
-- [ ] `01-ec2-fundamentals/5-placement-groups.md` — Cluster/Spread/Partition
+- [x] `01-ec2-fundamentals/README.md` — Tổng quan EC2, instance lifecycle ✅
+- [x] `01-ec2-fundamentals/1-instance-types.md` — Instance families & chọn đúng loại ✅
+- [x] `01-ec2-fundamentals/2-ami-storage.md` — AMI, EBS, snapshot management ✅
+- [x] `01-ec2-fundamentals/3-security-keypairs.md` — Security Groups, Key Pairs, IAM profiles ✅
+- [x] `01-ec2-fundamentals/4-user-data-metadata.md` — Bootstrap scripts, IMDS v2 ✅
+- [x] `01-ec2-fundamentals/5-placement-groups.md` — Cluster/Spread/Partition ✅
 - [ ] `02-auto-scaling/README.md` — Auto Scaling tổng quan
 - [ ] `02-auto-scaling/1-auto-scaling-groups.md` — ASG cơ bản, capacity settings
 - [ ] `02-auto-scaling/2-launch-templates.md` — Launch Templates chi tiết
@@ -417,5 +423,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.0 (README & INDEX hoàn thành)
-**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | 🚧 Các sections đang được phát triển
+**Phiên Bản:** 1.1 (EC2 Fundamentals hoàn thành)
+**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
