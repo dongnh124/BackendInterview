@@ -123,6 +123,12 @@ Devops/aws/network
 | **7 Routing Policies**              | 04-dns-route53/3-routing-policies.md           | ✅         | Toàn diện  |
 | **Health Checks & DNS Failover**    | 04-dns-route53/4-health-checks.md              | ✅         | Toàn diện  |
 | **Route 53 Resolver & Hybrid DNS**  | 04-dns-route53/5-resolver.md                   | ✅         | Toàn diện  |
+| **CloudFront CDN — Tổng Quan**      | 05-cdn-cloudfront/README.md                    | ✅         | Toàn diện  |
+| **CloudFront Basics & Distributions**| 05-cdn-cloudfront/1-cloudfront-basics.md      | ✅         | Toàn diện  |
+| **Cache Behaviors & TTL**           | 05-cdn-cloudfront/2-cache-behaviors.md         | ✅         | Toàn diện  |
+| **OAC, OAI & Origin Protection**    | 05-cdn-cloudfront/3-origin-access.md           | ✅         | Toàn diện  |
+| **Lambda@Edge & CF Functions**      | 05-cdn-cloudfront/4-lambda-edge.md             | ✅         | Toàn diện  |
+| **Performance & Cost Optimization** | 05-cdn-cloudfront/5-performance-cost.md        | ✅         | Toàn diện  |
 
 ---
 
@@ -157,8 +163,12 @@ Devops/aws/network
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
 
-- [ ] `05-cdn-cloudfront/README.md` — CloudFront CDN tổng quan
-- [ ] `05-cdn-cloudfront/1-cloudfront-basics.md` — Kiến trúc & cấu hình cơ bản
+- [x] `05-cdn-cloudfront/README.md` — CloudFront CDN tổng quan ✅
+- [x] `05-cdn-cloudfront/1-cloudfront-basics.md` — Distributions, Edge Locations, Origins ✅
+- [x] `05-cdn-cloudfront/2-cache-behaviors.md` — Cache Policies, TTL, Cache Key ✅
+- [x] `05-cdn-cloudfront/3-origin-access.md` — OAC, OAI, S3 bucket protection ✅
+- [x] `05-cdn-cloudfront/4-lambda-edge.md` — Lambda@Edge & CloudFront Functions ✅
+- [x] `05-cdn-cloudfront/5-performance-cost.md` — Price Classes, Compression, Optimization ✅
 - [ ] `06-connectivity/README.md` — Kết nối hybrid tổng quan
 - [ ] `06-connectivity/5-transit-gateway.md` — Transit Gateway deep dive
 - [ ] `07-advanced-networking/README.md` — Advanced networking tổng quan
@@ -420,5 +430,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.4 (04-dns-route53 hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | ✅ 04-dns-route53 hoàn thành | 🚧 Các section còn lại đang tiến hành
+**Phiên Bản:** 1.5 (05-cdn-cloudfront hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | ✅ 02-security hoàn thành | ✅ 03-load-balancing hoàn thành | ✅ 04-dns-route53 hoàn thành | ✅ 05-cdn-cloudfront hoàn thành | 🚧 Các section còn lại đang tiến hành
