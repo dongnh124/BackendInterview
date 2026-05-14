@@ -95,10 +95,16 @@ Devops/aws/network
 
 ## ✅ Đã Được Tạo
 
-| Chủ Đề                   | File      | Trạng Thái | Chất Lượng |
-| ------------------------ | --------- | ---------- | ---------- |
-| **Tổng Quan & Lộ Trình** | README.md | ✅         | Toàn diện  |
-| **Chỉ Mục Đầy Đủ**       | INDEX.md  | ✅         | Đầy đủ     |
+| Chủ Đề                              | File                                           | Trạng Thái | Chất Lượng |
+| ----------------------------------- | ---------------------------------------------- | ---------- | ---------- |
+| **Tổng Quan & Lộ Trình**            | README.md                                      | ✅         | Toàn diện  |
+| **Chỉ Mục Đầy Đủ**                  | INDEX.md                                       | ✅         | Đầy đủ     |
+| **VPC Fundamentals — Tổng Quan**    | 01-vpc-fundamentals/README.md                  | ✅         | Toàn diện  |
+| **VPC Architecture & CIDR**        | 01-vpc-fundamentals/1-vpc-architecture.md      | ✅         | Toàn diện  |
+| **Public/Private/Isolated Subnets** | 01-vpc-fundamentals/2-subnets.md               | ✅         | Toàn diện  |
+| **Route Tables & Internet Gateway** | 01-vpc-fundamentals/3-route-tables.md          | ✅         | Toàn diện  |
+| **NAT Gateway vs NAT Instance**     | 01-vpc-fundamentals/4-nat-gateway.md           | ✅         | Toàn diện  |
+| **VPC Peering & Resource Sharing**  | 01-vpc-fundamentals/5-vpc-peering.md           | ✅         | Toàn diện  |
 
 ---
 
@@ -106,9 +112,12 @@ Devops/aws/network
 
 ### Ưu Tiên Cao — Kỹ Năng Cốt Lõi
 
-- [ ] `01-vpc-fundamentals/README.md` — Nền tảng VPC, kiến trúc mạng
-- [ ] `01-vpc-fundamentals/1-vpc-architecture.md` — Thiết kế VPC, CIDR planning
-- [ ] `01-vpc-fundamentals/2-subnets.md` — Public/Private/Isolated subnets
+- [x] `01-vpc-fundamentals/README.md` — Nền tảng VPC, kiến trúc mạng ✅
+- [x] `01-vpc-fundamentals/1-vpc-architecture.md` — Thiết kế VPC, CIDR planning ✅
+- [x] `01-vpc-fundamentals/2-subnets.md` — Public/Private/Isolated subnets ✅
+- [x] `01-vpc-fundamentals/3-route-tables.md` — Bảng định tuyến & Internet Gateway ✅
+- [x] `01-vpc-fundamentals/4-nat-gateway.md` — NAT Gateway vs NAT Instance ✅
+- [x] `01-vpc-fundamentals/5-vpc-peering.md` — VPC Peering & Resource Sharing ✅
 - [ ] `02-security/README.md` — Bảo mật mạng tổng quan
 - [ ] `02-security/1-security-groups.md` — Security Groups chi tiết
 - [ ] `02-security/2-network-acls.md` — Network ACLs & so sánh với SG
@@ -382,5 +391,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.0 (README + INDEX hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | 🚧 Các section chi tiết đang tiến hành
+**Phiên Bản:** 1.1 (01-vpc-fundamentals hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-vpc-fundamentals hoàn thành | 🚧 Các section còn lại đang tiến hành
