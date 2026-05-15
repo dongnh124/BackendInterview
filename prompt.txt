@@ -1,4 +1,4 @@
-1. Đọc nội dung file Devops/aws/network/INDEX.md và Devops/aws/network/README.md
+1. Đọc nội dung file Devops/aws/storage/INDEX.md và Devops/aws/storage/README.md
 2. Tạo và hoàn thiện nội dung cho topic 01-vpc-fundamentals; nội dung dùng tiếng Việt UTF-8, thuật ngữ kỹ thuật giữ nguyên tiếng Anh kèm giải thích trong ngoặc (ví dụ: HPA — Horizontal Pod Autoscaler — Tự Động Mở Rộng Pod Theo Chiều Ngang); sau đó update status vào file INDEX.md
 
 ------------------------------------------------------------------------
