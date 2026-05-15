@@ -130,6 +130,12 @@ Devops/aws/compute/
 | **ECS — Services, Deployment & Auto Scaling** | 04-containers-ecs/3-ecs-services.md | ✅ | Toàn diện |
 | **ECS — Fargate vs EC2 Launch Type** | 04-containers-ecs/4-fargate-vs-ec2.md | ✅ | Toàn diện |
 | **ECS — Networking: awsvpc, Service Connect** | 04-containers-ecs/5-ecs-networking.md | ✅ | Toàn diện |
+| **EKS — Tổng Quan & Kiến Trúc Kubernetes** | 05-containers-eks/README.md | ✅ | Toàn diện |
+| **EKS — Control Plane, Data Plane & Add-ons** | 05-containers-eks/1-eks-architecture.md | ✅ | Toàn diện |
+| **EKS — Managed Nodes, Self-managed & Fargate Profiles** | 05-containers-eks/2-node-groups.md | ✅ | Toàn diện |
+| **EKS — VPC CNI, CoreDNS, Ingress & Network Policies** | 05-containers-eks/3-eks-networking.md | ✅ | Toàn diện |
+| **EKS — EBS CSI, EFS CSI & StatefulSets** | 05-containers-eks/4-eks-storage.md | ✅ | Toàn diện |
+| **EKS — RBAC, IRSA, Pod Security & Secrets Encryption** | 05-containers-eks/5-eks-security.md | ✅ | Toàn diện |
 
 ---
 
@@ -164,18 +170,18 @@ Devops/aws/compute/
 - [x] `04-containers-ecs/3-ecs-services.md` — Service deployment strategies ✅
 - [x] `04-containers-ecs/4-fargate-vs-ec2.md` — Trade-offs & decision guide ✅
 - [x] `04-containers-ecs/5-ecs-networking.md` — awsvpc, Service Connect ✅
-- [ ] `05-containers-eks/README.md` — EKS tổng quan
-- [ ] `05-containers-eks/1-eks-architecture.md` — Control plane & data plane
+- [x] `05-containers-eks/README.md` — EKS tổng quan ✅
+- [x] `05-containers-eks/1-eks-architecture.md` — Control plane & data plane ✅
 - [ ] `06-high-availability/README.md` — HA patterns tổng quan
 - [ ] `06-high-availability/1-multi-az-design.md` — Multi-AZ architecture
 - [ ] `06-high-availability/4-deployment-strategies.md` — Blue/Green, Canary, Rolling
 
 ### Ưu Tiên Thấp — Tài Liệu Tham Khảo
 
-- [ ] `05-containers-eks/2-node-groups.md` — Node group management
-- [ ] `05-containers-eks/3-eks-networking.md` — VPC CNI & networking
-- [ ] `05-containers-eks/4-eks-storage.md` — EBS/EFS CSI drivers
-- [ ] `05-containers-eks/5-eks-security.md` — RBAC, IRSA, pod security
+- [x] `05-containers-eks/2-node-groups.md` — Node group management ✅
+- [x] `05-containers-eks/3-eks-networking.md` — VPC CNI & networking ✅
+- [x] `05-containers-eks/4-eks-storage.md` — EBS/EFS CSI drivers ✅
+- [x] `05-containers-eks/5-eks-security.md` — RBAC, IRSA, pod security ✅
 - [ ] `07-cost-optimization/README.md` — Cost optimization tổng quan
 - [ ] `07-cost-optimization/1-pricing-models.md` — Tất cả pricing models
 - [ ] `07-cost-optimization/2-spot-strategy.md` — Spot best practices
@@ -441,5 +447,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.4 (ECS Containers hoàn thành)
-**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
+**Phiên Bản:** 1.5 (EKS Containers hoàn thành)
+**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | ✅ 05-containers-eks hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
