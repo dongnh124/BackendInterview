@@ -45,12 +45,12 @@ Devops/aws/databases/
 │   └── 5-security.md                           VPC, Security Groups, Encryption (TLS/KMS), Auth Tokens, IAM
 │
 ├── 05-ha-backup/
-│   ├── README.md                               (Tạo sau) HA strategies, backup overview
-│   ├── 1-rpo-rto.md                            (Tạo sau) RPO, RTO — business requirements, design
-│   ├── 2-automated-backups.md                  (Tạo sau) RDS automated backups, retention policy
-│   ├── 3-snapshots.md                          (Tạo sau) Manual snapshots, cross-region copy
-│   ├── 4-pitr.md                               (Tạo sau) Point-in-Time Recovery, restore procedures
-│   └── 5-disaster-recovery.md                  (Tạo sau) DR strategies, multi-region failover
+│   ├── README.md                               Tổng quan HA & Backup, kiến trúc, lộ trình học
+│   ├── 1-rpo-rto.md                            RPO, RTO — yêu cầu kinh doanh, thiết kế chiến lược
+│   ├── 2-automated-backups.md                  RDS Automated Backups, retention policy, cấu hình
+│   ├── 3-snapshots.md                          Manual Snapshots, cross-region copy, lifecycle
+│   ├── 4-pitr.md                               Point-in-Time Recovery, quy trình khôi phục
+│   └── 5-disaster-recovery.md                  DR strategies (4 loại), multi-region failover, runbook
 │
 ├── 06-security/
 │   ├── README.md                               (Tạo sau) Bảo mật cơ sở dữ liệu toàn diện
@@ -145,6 +145,12 @@ Devops/aws/databases/
 | **ElastiCache — Caching Strategies**          | 04-elasticache/3-caching-strategies.md      | ✅          | Toàn Diện    |
 | **ElastiCache — Persistence (RDB & AOF)**     | 04-elasticache/4-persistence.md             | ✅          | Toàn Diện    |
 | **ElastiCache — Security**                    | 04-elasticache/5-security.md                | ✅          | Toàn Diện    |
+| **HA & Backup — Tổng Quan & Kiến Trúc**      | 05-ha-backup/README.md                      | ✅          | Toàn Diện    |
+| **HA & Backup — RPO & RTO**                   | 05-ha-backup/1-rpo-rto.md                   | ✅          | Toàn Diện    |
+| **HA & Backup — Automated Backups**           | 05-ha-backup/2-automated-backups.md         | ✅          | Toàn Diện    |
+| **HA & Backup — Manual Snapshots**            | 05-ha-backup/3-snapshots.md                 | ✅          | Toàn Diện    |
+| **HA & Backup — Point-in-Time Recovery**      | 05-ha-backup/4-pitr.md                      | ✅          | Toàn Diện    |
+| **HA & Backup — Disaster Recovery**           | 05-ha-backup/5-disaster-recovery.md         | ✅          | Toàn Diện    |
 
 ---
 
@@ -168,7 +174,12 @@ Devops/aws/databases/
 - [x] `04-elasticache/3-caching-strategies.md` — Lazy Loading, Write-Through, TTL ✅ **Hoàn thành**
 - [x] `04-elasticache/4-persistence.md` — RDB, AOF, Backup/Restore ✅ **Hoàn thành**
 - [x] `04-elasticache/5-security.md` — VPC, TLS, KMS, Auth, IAM ✅ **Hoàn thành**
-- [ ] `05-ha-backup/README.md` — HA strategies, backup, PITR, disaster recovery
+- [x] `05-ha-backup/README.md` — HA strategies, backup, PITR, disaster recovery ✅ **Hoàn thành**
+- [x] `05-ha-backup/1-rpo-rto.md` — RPO, RTO, thiết kế chiến lược ✅ **Hoàn thành**
+- [x] `05-ha-backup/2-automated-backups.md` — Automated Backups, retention policy ✅ **Hoàn thành**
+- [x] `05-ha-backup/3-snapshots.md` — Manual Snapshots, cross-region copy ✅ **Hoàn thành**
+- [x] `05-ha-backup/4-pitr.md` — Point-in-Time Recovery, runbook khẩn cấp ✅ **Hoàn thành**
+- [x] `05-ha-backup/5-disaster-recovery.md` — DR strategies, multi-region failover ✅ **Hoàn thành**
 - [ ] `12-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
@@ -434,5 +445,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.4
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
+**Phiên Bản:** 1.5
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
