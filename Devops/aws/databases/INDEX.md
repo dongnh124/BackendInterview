@@ -78,12 +78,12 @@ Devops/aws/databases/
 │   └── 5-cutover-runbook.md                    Cutover planning, rollback, post-migration validation
 │
 ├── 09-monitoring/
-│   ├── README.md                               (Tạo sau) Monitoring & observability toàn diện
-│   ├── 1-cloudwatch-dashboards.md              (Tạo sau) Dashboard setup, key database metrics
-│   ├── 2-alerting-strategy.md                  (Tạo sau) Thresholds, SLO, alert routing
-│   ├── 3-rds-enhanced-monitoring.md            (Tạo sau) OS-level metrics, process monitoring
-│   ├── 4-dynamodb-monitoring.md                (Tạo sau) DynamoDB CloudWatch alarms, capacity alerts
-│   └── 5-activity-streams.md                   (Tạo sau) Database Activity Streams, audit integration
+│   ├── README.md                               Tổng quan Monitoring & Observability, kiến trúc, lộ trình học
+│   ├── 1-cloudwatch-dashboards.md              CloudWatch Metrics, key metrics theo dịch vụ, tạo dashboard
+│   ├── 2-alerting-strategy.md                  SLO, SLA, thresholds, alert routing, chống alert fatigue
+│   ├── 3-rds-enhanced-monitoring.md            OS-level metrics, process monitoring, phân tích sự cố
+│   ├── 4-dynamodb-monitoring.md                Capacity alarms, throttling detection, Contributor Insights
+│   └── 5-activity-streams.md                   Database Activity Streams, Kinesis, SIEM, compliance PCI/HIPAA
 │
 ├── 10-advanced/
 │   ├── README.md                               (Tạo sau) Chủ đề nâng cao — multi-region, analytics
@@ -170,6 +170,12 @@ Devops/aws/databases/
 | **Migration — CDC & Zero-Downtime Online Migration** | 08-migration/3-cdc-online-migration.md       | ✅       | Toàn Diện    |
 | **Migration — Chiến Lược Di Chuyển**              | 08-migration/4-migration-strategies.md          | ✅       | Toàn Diện    |
 | **Migration — Cutover Runbook & Rollback**        | 08-migration/5-cutover-runbook.md               | ✅       | Toàn Diện    |
+| **Monitoring — Tổng Quan & Kiến Trúc**            | 09-monitoring/README.md                         | ✅       | Toàn Diện    |
+| **Monitoring — CloudWatch Dashboards & Key Metrics** | 09-monitoring/1-cloudwatch-dashboards.md      | ✅       | Toàn Diện    |
+| **Monitoring — Alerting Strategy & SLO**          | 09-monitoring/2-alerting-strategy.md            | ✅       | Toàn Diện    |
+| **Monitoring — RDS Enhanced Monitoring**          | 09-monitoring/3-rds-enhanced-monitoring.md      | ✅       | Toàn Diện    |
+| **Monitoring — DynamoDB CloudWatch & Contributor Insights** | 09-monitoring/4-dynamodb-monitoring.md | ✅       | Toàn Diện    |
+| **Monitoring — Database Activity Streams**        | 09-monitoring/5-activity-streams.md             | ✅       | Toàn Diện    |
 
 ---
 
@@ -224,7 +230,12 @@ Devops/aws/databases/
 
 ### Ưu Tiên Thấp Hơn — Tham Khảo
 
-- [ ] `09-monitoring/README.md` — CloudWatch, alerting, Activity Streams
+- [x] `09-monitoring/README.md` — Monitoring & Observability overview ✅ **Hoàn thành**
+- [x] `09-monitoring/1-cloudwatch-dashboards.md` — CloudWatch Metrics, key metrics, dashboards ✅ **Hoàn thành**
+- [x] `09-monitoring/2-alerting-strategy.md` — SLO, alerting thresholds, alert routing ✅ **Hoàn thành**
+- [x] `09-monitoring/3-rds-enhanced-monitoring.md` — OS-level metrics, process monitoring ✅ **Hoàn thành**
+- [x] `09-monitoring/4-dynamodb-monitoring.md` — DynamoDB alarms, Contributor Insights ✅ **Hoàn thành**
+- [x] `09-monitoring/5-activity-streams.md` — Activity Streams, SIEM, compliance ✅ **Hoàn thành**
 - [ ] `10-advanced/README.md` — Redshift, Neptune, DocumentDB, Timestream
 - [ ] `11-cost-optimization/README.md` — Reserved instances, right-sizing
 - [ ] `12-interview-prep/system-design-scenarios.md` — Design problems
@@ -480,5 +491,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.8
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | ✅ 07-performance-tuning Hoàn Thành | ✅ 08-migration Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
+**Phiên Bản:** 1.9
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | ✅ 07-performance-tuning Hoàn Thành | ✅ 08-migration Hoàn Thành | ✅ 09-monitoring Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
