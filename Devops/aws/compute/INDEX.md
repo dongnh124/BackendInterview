@@ -136,6 +136,12 @@ Devops/aws/compute/
 | **EKS — VPC CNI, CoreDNS, Ingress & Network Policies** | 05-containers-eks/3-eks-networking.md | ✅ | Toàn diện |
 | **EKS — EBS CSI, EFS CSI & StatefulSets** | 05-containers-eks/4-eks-storage.md | ✅ | Toàn diện |
 | **EKS — RBAC, IRSA, Pod Security & Secrets Encryption** | 05-containers-eks/5-eks-security.md | ✅ | Toàn diện |
+| **High Availability — Tổng Quan & Kiến Trúc HA** | 06-high-availability/README.md | ✅ | Toàn diện |
+| **High Availability — Multi-AZ Design** | 06-high-availability/1-multi-az-design.md | ✅ | Toàn diện |
+| **High Availability — Scaling Strategies** | 06-high-availability/2-scaling-strategies.md | ✅ | Toàn diện |
+| **High Availability — Health Checks & Recovery** | 06-high-availability/3-health-checks-recovery.md | ✅ | Toàn diện |
+| **High Availability — Deployment Strategies** | 06-high-availability/4-deployment-strategies.md | ✅ | Toàn diện |
+| **High Availability — Capacity Planning** | 06-high-availability/5-capacity-planning.md | ✅ | Toàn diện |
 
 ---
 
@@ -172,9 +178,12 @@ Devops/aws/compute/
 - [x] `04-containers-ecs/5-ecs-networking.md` — awsvpc, Service Connect ✅
 - [x] `05-containers-eks/README.md` — EKS tổng quan ✅
 - [x] `05-containers-eks/1-eks-architecture.md` — Control plane & data plane ✅
-- [ ] `06-high-availability/README.md` — HA patterns tổng quan
-- [ ] `06-high-availability/1-multi-az-design.md` — Multi-AZ architecture
-- [ ] `06-high-availability/4-deployment-strategies.md` — Blue/Green, Canary, Rolling
+- [x] `06-high-availability/README.md` — HA patterns tổng quan ✅
+- [x] `06-high-availability/1-multi-az-design.md` — Multi-AZ architecture ✅
+- [x] `06-high-availability/2-scaling-strategies.md` — Reactive, predictive, scheduled scaling ✅
+- [x] `06-high-availability/3-health-checks-recovery.md` — EC2/ELB/ECS health checks, auto recovery ✅
+- [x] `06-high-availability/4-deployment-strategies.md` — Blue/Green, Canary, Rolling ✅
+- [x] `06-high-availability/5-capacity-planning.md` — Load testing, forecasting, pre-scaling ✅
 
 ### Ưu Tiên Thấp — Tài Liệu Tham Khảo
 
@@ -447,5 +456,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.5 (EKS Containers hoàn thành)
-**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | ✅ 05-containers-eks hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
+**Phiên Bản:** 1.6 (High Availability hoàn thành)
+**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | ✅ 05-containers-eks hoàn thành | ✅ 06-high-availability hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
