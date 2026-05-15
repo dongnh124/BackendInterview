@@ -103,11 +103,11 @@ Devops/aws/databases/
 │   └── 5-rightsizing.md                        Instance sizing methodology, storage optimization, automation
 │
 └── 12-interview-prep/
-    ├── README.md                               (Tạo sau) Tổng quan chuẩn bị phỏng vấn
-    ├── INTERVIEW_GUIDE.md                      (Tạo sau) Top 20 câu hỏi, tips & tricks
-    ├── system-design-scenarios.md              (Tạo sau) Kịch bản thiết kế hệ thống
-    ├── trade-off-discussions.md                (Tạo sau) SQL vs NoSQL, RDS vs DynamoDB
-    └── star-stories.md                         (Tạo sau) Mẫu câu chuyện STAR theo sự cố
+    ├── README.md                               Tổng quan chuẩn bị phỏng vấn, lộ trình 2 tuần, framework trả lời
+    ├── INTERVIEW_GUIDE.md                      Top 20 câu hỏi thường gặp, câu trả lời mẫu, tips phỏng vấn
+    ├── system-design-scenarios.md              5 kịch bản thiết kế hệ thống hoàn chỉnh với database considerations
+    ├── trade-off-discussions.md                SQL vs NoSQL, RDS vs Aurora vs DynamoDB, caching, consistency
+    └── star-stories.md                         10 mẫu câu chuyện STAR về database incidents & achievements
 ```
 
 ---
@@ -189,6 +189,11 @@ Devops/aws/databases/
 | **Cost Optimization — DynamoDB On-Demand vs Provisioned** | 11-cost-optimization/3-dynamodb-cost.md  | ✅       | Toàn Diện    |
 | **Cost Optimization — ElastiCache Reserved Nodes**| 11-cost-optimization/4-elasticache-cost.md      | ✅       | Toàn Diện    |
 | **Cost Optimization — Right-sizing & Storage**    | 11-cost-optimization/5-rightsizing.md           | ✅       | Toàn Diện    |
+| **Interview Prep — Tổng Quan & Framework**        | 12-interview-prep/README.md                     | ✅       | Toàn Diện    |
+| **Interview Prep — Top 20 Câu Hỏi & Câu Trả Lời**| 12-interview-prep/INTERVIEW_GUIDE.md            | ✅       | Toàn Diện    |
+| **Interview Prep — System Design Scenarios**      | 12-interview-prep/system-design-scenarios.md    | ✅       | Toàn Diện    |
+| **Interview Prep — Trade-off Discussions**        | 12-interview-prep/trade-off-discussions.md      | ✅       | Toàn Diện    |
+| **Interview Prep — STAR Stories**                 | 12-interview-prep/star-stories.md               | ✅       | Toàn Diện    |
 
 ---
 
@@ -218,7 +223,8 @@ Devops/aws/databases/
 - [x] `05-ha-backup/3-snapshots.md` — Manual Snapshots, cross-region copy ✅ **Hoàn thành**
 - [x] `05-ha-backup/4-pitr.md` — Point-in-Time Recovery, runbook khẩn cấp ✅ **Hoàn thành**
 - [x] `05-ha-backup/5-disaster-recovery.md` — DR strategies, multi-region failover ✅ **Hoàn thành**
-- [ ] `12-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
+- [x] `12-interview-prep/README.md` — Tổng quan, framework, lộ trình 2 tuần ✅ **Hoàn thành**
+- [x] `12-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn ✅ **Hoàn thành**
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
 - [x] `06-security/README.md` — Tổng quan, Defense in Depth ✅ **Hoàn thành**
@@ -262,7 +268,9 @@ Devops/aws/databases/
 - [x] `11-cost-optimization/3-dynamodb-cost.md` — On-Demand vs Provisioned, TTL, DAX ROI, GSI cost ✅ **Hoàn thành**
 - [x] `11-cost-optimization/4-elasticache-cost.md` — Reserved Nodes, right-sizing, Serverless ✅ **Hoàn thành**
 - [x] `11-cost-optimization/5-rightsizing.md` — Instance sizing, storage optimization, automation ✅ **Hoàn thành**
-- [ ] `12-interview-prep/system-design-scenarios.md` — Design problems
+- [x] `12-interview-prep/system-design-scenarios.md` — 5 kịch bản thiết kế hệ thống ✅ **Hoàn thành**
+- [x] `12-interview-prep/trade-off-discussions.md` — SQL vs NoSQL, caching, consistency ✅ **Hoàn thành**
+- [x] `12-interview-prep/star-stories.md` — 10 mẫu câu chuyện STAR ✅ **Hoàn thành**
 
 ---
 
@@ -515,5 +523,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 2.1
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | ✅ 07-performance-tuning Hoàn Thành | ✅ 08-migration Hoàn Thành | ✅ 09-monitoring Hoàn Thành | ✅ 10-advanced Hoàn Thành | ✅ 11-cost-optimization Hoàn Thành | 🚧 12-interview-prep Đang Xây Dựng
+**Phiên Bản:** 2.2
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | ✅ 07-performance-tuning Hoàn Thành | ✅ 08-migration Hoàn Thành | ✅ 09-monitoring Hoàn Thành | ✅ 10-advanced Hoàn Thành | ✅ 11-cost-optimization Hoàn Thành | ✅ 12-interview-prep Hoàn Thành
