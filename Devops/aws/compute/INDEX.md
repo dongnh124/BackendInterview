@@ -166,6 +166,12 @@ Devops/aws/compute/
 | **Troubleshooting — Gỡ Lỗi Lambda** | 10-troubleshooting/3-lambda-debugging.md | ✅ | Toàn diện |
 | **Troubleshooting — Sự Cố Container ECS/EKS** | 10-troubleshooting/4-container-issues.md | ✅ | Toàn diện |
 | **Troubleshooting — Checklist Trước Go-Live** | 10-troubleshooting/5-production-checklist.md | ✅ | Toàn diện |
+| **Interview Prep — Tổng Quan & Chiến Lược** | 11-interview-prep/README.md | ✅ | Toàn diện |
+| **Interview Prep — Top 20 Q&A** | 11-interview-prep/1-INTERVIEW_GUIDE.md | ✅ | Toàn diện |
+| **Interview Prep — 5 STAR Stories** | 11-interview-prep/2-star-stories.md | ✅ | Toàn diện |
+| **Interview Prep — 5 System Design Scenarios** | 11-interview-prep/3-system-design-scenarios.md | ✅ | Toàn diện |
+| **Interview Prep — 5 Hands-on Exercises** | 11-interview-prep/4-hands-on-exercises.md | ✅ | Toàn diện |
+| **Interview Prep — Kế Hoạch Học 90 Ngày** | 11-interview-prep/5-90-day-study-plan.md | ✅ | Toàn diện |
 
 ---
 
@@ -239,8 +245,12 @@ Devops/aws/compute/
 - [x] `10-troubleshooting/3-lambda-debugging.md` — Timeouts, OOM, permissions, cold start ✅
 - [x] `10-troubleshooting/4-container-issues.md` — Task failures, OOM, networking, image pull ✅
 - [x] `10-troubleshooting/5-production-checklist.md` — Checklist trước khi go-live ✅
-- [ ] `11-interview-prep/README.md` — Interview prep tổng quan
-- [ ] `11-interview-prep/1-INTERVIEW_GUIDE.md` — Top 20 Q&A
+- [x] `11-interview-prep/README.md` — Interview prep tổng quan ✅
+- [x] `11-interview-prep/1-INTERVIEW_GUIDE.md` — Top 20 Q&A ✅
+- [x] `11-interview-prep/2-star-stories.md` — 5 câu chuyện STAR ✅
+- [x] `11-interview-prep/3-system-design-scenarios.md` — 5 kịch bản thiết kế hệ thống ✅
+- [x] `11-interview-prep/4-hands-on-exercises.md` — 5 bài tập thực hành step-by-step ✅
+- [x] `11-interview-prep/5-90-day-study-plan.md` — Kế hoạch học 90 ngày ✅
 
 ---
 
@@ -493,5 +503,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 2.0 (Troubleshooting hoàn thành)
-**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | ✅ 05-containers-eks hoàn thành | ✅ 06-high-availability hoàn thành | ✅ 07-cost-optimization hoàn thành | ✅ 08-security hoàn thành | ✅ 09-monitoring hoàn thành | ✅ 10-troubleshooting hoàn thành | 🚧 11-interview-prep đang được phát triển
+**Phiên Bản:** 3.0 (Interview Prep hoàn thành — Knowledge Base đầy đủ)
+**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | ✅ 05-containers-eks hoàn thành | ✅ 06-high-availability hoàn thành | ✅ 07-cost-optimization hoàn thành | ✅ 08-security hoàn thành | ✅ 09-monitoring hoàn thành | ✅ 10-troubleshooting hoàn thành | ✅ 11-interview-prep hoàn thành
