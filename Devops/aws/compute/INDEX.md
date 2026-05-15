@@ -75,11 +75,11 @@ Devops/aws/compute/
 │
 ├── 09-monitoring/
 │   ├── README.md                                    Tổng quan giám sát Compute
-│   ├── 1-cloudwatch-metrics.md                      (Sẽ tạo) EC2, Lambda, ECS/EKS default & custom metrics
-│   ├── 2-cloudwatch-logs.md                         (Sẽ tạo) Log Groups, Log Insights, Metric Filters
-│   ├── 3-cloudwatch-alarms.md                       (Sẽ tạo) Alarms, composite alarms, SNS notifications
-│   ├── 4-xray-tracing.md                            (Sẽ tạo) X-Ray, distributed tracing, service map
-│   └── 5-observability-checklist.md                 (Sẽ tạo) SLI/SLO/SLA, dashboards, runbooks
+│   ├── 1-cloudwatch-metrics.md                      EC2, Lambda, ECS/EKS default & custom metrics
+│   ├── 2-cloudwatch-logs.md                         Log Groups, Log Insights, Metric Filters
+│   ├── 3-cloudwatch-alarms.md                       Alarms, composite alarms, SNS notifications
+│   ├── 4-xray-tracing.md                            X-Ray, distributed tracing, service map
+│   └── 5-observability-checklist.md                 SLI/SLO/SLA, dashboards, runbooks
 │
 ├── 10-troubleshooting/
 │   ├── README.md                                    Tổng quan xử lý sự cố Compute
@@ -154,6 +154,12 @@ Devops/aws/compute/
 | **Security — Secrets Management** | 08-security/3-secrets-management.md | ✅ | Toàn diện |
 | **Security — Encryption & KMS** | 08-security/4-encryption.md | ✅ | Toàn diện |
 | **Security — Compliance & Patching** | 08-security/5-compliance-patching.md | ✅ | Toàn diện |
+| **Monitoring — Tổng Quan & Observability** | 09-monitoring/README.md | ✅ | Toàn diện |
+| **Monitoring — CloudWatch Metrics** | 09-monitoring/1-cloudwatch-metrics.md | ✅ | Toàn diện |
+| **Monitoring — CloudWatch Logs** | 09-monitoring/2-cloudwatch-logs.md | ✅ | Toàn diện |
+| **Monitoring — CloudWatch Alarms** | 09-monitoring/3-cloudwatch-alarms.md | ✅ | Toàn diện |
+| **Monitoring — AWS X-Ray Distributed Tracing** | 09-monitoring/4-xray-tracing.md | ✅ | Toàn diện |
+| **Monitoring — Observability Checklist & SLI/SLO** | 09-monitoring/5-observability-checklist.md | ✅ | Toàn diện |
 
 ---
 
@@ -215,9 +221,12 @@ Devops/aws/compute/
 - [x] `08-security/3-secrets-management.md` — Secrets Manager, Parameter Store, rotation ✅
 - [x] `08-security/4-encryption.md` — EBS encryption, KMS, data-in-transit ✅
 - [x] `08-security/5-compliance-patching.md` — Inspector, Security Hub, patch baselines ✅
-- [ ] `09-monitoring/README.md` — Monitoring tổng quan
-- [ ] `09-monitoring/1-cloudwatch-metrics.md` — Key metrics
-- [ ] `09-monitoring/4-xray-tracing.md` — Distributed tracing
+- [x] `09-monitoring/README.md` — Monitoring tổng quan ✅
+- [x] `09-monitoring/1-cloudwatch-metrics.md` — Key metrics ✅
+- [x] `09-monitoring/2-cloudwatch-logs.md` — Log Groups, Insights, Filters ✅
+- [x] `09-monitoring/3-cloudwatch-alarms.md` — Alarms, Composite, Actions ✅
+- [x] `09-monitoring/4-xray-tracing.md` — Distributed tracing ✅
+- [x] `09-monitoring/5-observability-checklist.md` — SLI/SLO/SLA, Runbooks ✅
 - [ ] `10-troubleshooting/README.md` — Troubleshooting tổng quan
 - [ ] `10-troubleshooting/5-production-checklist.md` — Production checklist
 - [ ] `11-interview-prep/README.md` — Interview prep tổng quan
@@ -474,5 +483,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.8 (Security hoàn thành)
-**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | ✅ 05-containers-eks hoàn thành | ✅ 06-high-availability hoàn thành | ✅ 07-cost-optimization hoàn thành | ✅ 08-security hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
+**Phiên Bản:** 1.9 (Monitoring hoàn thành)
+**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | ✅ 05-containers-eks hoàn thành | ✅ 06-high-availability hoàn thành | ✅ 07-cost-optimization hoàn thành | ✅ 08-security hoàn thành | ✅ 09-monitoring hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
