@@ -95,12 +95,12 @@ Devops/aws/databases/
 │   └── 6-timestream.md                         Time-series database, IoT use cases, memory/magnetic store, scheduled queries
 │
 ├── 11-cost-optimization/
-│   ├── README.md                               (Tạo sau) Tối ưu chi phí database trên AWS
-│   ├── 1-rds-pricing.md                        (Tạo sau) RDS pricing models, reserved instances
-│   ├── 2-aurora-cost.md                        (Tạo sau) Aurora vs RDS cost, serverless cost model
-│   ├── 3-dynamodb-cost.md                      (Tạo sau) On-demand vs provisioned, auto-scaling
-│   ├── 4-elasticache-cost.md                   (Tạo sau) ElastiCache pricing, reserved nodes
-│   └── 5-rightsizing.md                        (Tạo sau) Instance sizing, storage optimization
+│   ├── README.md                               Tổng quan, framework tối ưu chi phí, quick wins
+│   ├── 1-rds-pricing.md                        RDS pricing models, Reserved Instances, storage tiers
+│   ├── 2-aurora-cost.md                        Aurora I/O-Optimized vs Standard, Serverless v2 cost model
+│   ├── 3-dynamodb-cost.md                      On-demand vs provisioned, auto-scaling, TTL, bẫy chi phí
+│   ├── 4-elasticache-cost.md                   ElastiCache pricing, Reserved Nodes, Serverless, right-sizing
+│   └── 5-rightsizing.md                        Instance sizing methodology, storage optimization, automation
 │
 └── 12-interview-prep/
     ├── README.md                               (Tạo sau) Tổng quan chuẩn bị phỏng vấn
@@ -183,6 +183,12 @@ Devops/aws/databases/
 | **Advanced — Neptune Graph Database**             | 10-advanced/4-neptune.md                        | ✅       | Toàn Diện    |
 | **Advanced — DocumentDB MongoDB Compatible**      | 10-advanced/5-documentdb.md                     | ✅       | Toàn Diện    |
 | **Advanced — Timestream Time-Series Database**    | 10-advanced/6-timestream.md                     | ✅       | Toàn Diện    |
+| **Cost Optimization — Tổng Quan & Framework**     | 11-cost-optimization/README.md                  | ✅       | Toàn Diện    |
+| **Cost Optimization — RDS Pricing & Reserved Instances** | 11-cost-optimization/1-rds-pricing.md      | ✅       | Toàn Diện    |
+| **Cost Optimization — Aurora I/O & Serverless**   | 11-cost-optimization/2-aurora-cost.md           | ✅       | Toàn Diện    |
+| **Cost Optimization — DynamoDB On-Demand vs Provisioned** | 11-cost-optimization/3-dynamodb-cost.md  | ✅       | Toàn Diện    |
+| **Cost Optimization — ElastiCache Reserved Nodes**| 11-cost-optimization/4-elasticache-cost.md      | ✅       | Toàn Diện    |
+| **Cost Optimization — Right-sizing & Storage**    | 11-cost-optimization/5-rightsizing.md           | ✅       | Toàn Diện    |
 
 ---
 
@@ -250,7 +256,12 @@ Devops/aws/databases/
 - [x] `10-advanced/4-neptune.md` — Neptune Graph Database, Gremlin, SPARQL ✅ **Hoàn thành**
 - [x] `10-advanced/5-documentdb.md` — DocumentDB, MongoDB migration ✅ **Hoàn thành**
 - [x] `10-advanced/6-timestream.md` — Timestream, IoT, time-series ✅ **Hoàn thành**
-- [ ] `11-cost-optimization/README.md` — Reserved instances, right-sizing
+- [x] `11-cost-optimization/README.md` — Framework tối ưu chi phí, quick wins ✅ **Hoàn thành**
+- [x] `11-cost-optimization/1-rds-pricing.md` — RDS pricing, Reserved Instances, storage tiers ✅ **Hoàn thành**
+- [x] `11-cost-optimization/2-aurora-cost.md` — Aurora I/O-Optimized, Serverless v2, Aurora vs RDS cost ✅ **Hoàn thành**
+- [x] `11-cost-optimization/3-dynamodb-cost.md` — On-Demand vs Provisioned, TTL, DAX ROI, GSI cost ✅ **Hoàn thành**
+- [x] `11-cost-optimization/4-elasticache-cost.md` — Reserved Nodes, right-sizing, Serverless ✅ **Hoàn thành**
+- [x] `11-cost-optimization/5-rightsizing.md` — Instance sizing, storage optimization, automation ✅ **Hoàn thành**
 - [ ] `12-interview-prep/system-design-scenarios.md` — Design problems
 
 ---
@@ -504,5 +515,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 2.0
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | ✅ 07-performance-tuning Hoàn Thành | ✅ 08-migration Hoàn Thành | ✅ 09-monitoring Hoàn Thành | ✅ 10-advanced Hoàn Thành | 🚧 11-cost-optimization & 12-interview-prep Đang Xây Dựng
+**Phiên Bản:** 2.1
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | ✅ 07-performance-tuning Hoàn Thành | ✅ 08-migration Hoàn Thành | ✅ 09-monitoring Hoàn Thành | ✅ 10-advanced Hoàn Thành | ✅ 11-cost-optimization Hoàn Thành | 🚧 12-interview-prep Đang Xây Dựng
