@@ -124,6 +124,12 @@ Devops/aws/compute/
 | **Lambda — Layers, Extensions & Container Images** | 03-serverless-lambda/3-layers-extensions.md | ✅ | Toàn diện |
 | **Lambda — Concurrency & Throttling** | 03-serverless-lambda/4-concurrency-throttling.md | ✅ | Toàn diện |
 | **Lambda — Performance & Best Practices** | 03-serverless-lambda/5-performance-best-practices.md | ✅ | Toàn diện |
+| **ECS — Tổng Quan & Container Orchestration** | 04-containers-ecs/README.md | ✅ | Toàn diện |
+| **ECS — Architecture: Cluster, Service, Task** | 04-containers-ecs/1-ecs-architecture.md | ✅ | Toàn diện |
+| **ECS — Task Definitions Deep Dive** | 04-containers-ecs/2-task-definitions.md | ✅ | Toàn diện |
+| **ECS — Services, Deployment & Auto Scaling** | 04-containers-ecs/3-ecs-services.md | ✅ | Toàn diện |
+| **ECS — Fargate vs EC2 Launch Type** | 04-containers-ecs/4-fargate-vs-ec2.md | ✅ | Toàn diện |
+| **ECS — Networking: awsvpc, Service Connect** | 04-containers-ecs/5-ecs-networking.md | ✅ | Toàn diện |
 
 ---
 
@@ -144,8 +150,8 @@ Devops/aws/compute/
 - [x] `03-serverless-lambda/README.md` — Lambda & Serverless tổng quan ✅
 - [x] `03-serverless-lambda/1-lambda-fundamentals.md` — Function anatomy, execution model ✅
 - [x] `03-serverless-lambda/2-event-sources.md` — Event triggers phổ biến ✅
-- [ ] `04-containers-ecs/README.md` — ECS & container orchestration tổng quan
-- [ ] `04-containers-ecs/1-ecs-architecture.md` — Cluster, Service, Task architecture
+- [x] `04-containers-ecs/README.md` — ECS & container orchestration tổng quan ✅
+- [x] `04-containers-ecs/1-ecs-architecture.md` — Cluster, Service, Task architecture ✅
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
 
@@ -154,10 +160,10 @@ Devops/aws/compute/
 - [x] `03-serverless-lambda/3-layers-extensions.md` — Lambda Layers & Extensions ✅
 - [x] `03-serverless-lambda/4-concurrency-throttling.md` — Concurrency management ✅
 - [x] `03-serverless-lambda/5-performance-best-practices.md` — Cold start optimization ✅
-- [ ] `04-containers-ecs/2-task-definitions.md` — Task Definition deep dive
-- [ ] `04-containers-ecs/3-ecs-services.md` — Service deployment strategies
-- [ ] `04-containers-ecs/4-fargate-vs-ec2.md` — Trade-offs & decision guide
-- [ ] `04-containers-ecs/5-ecs-networking.md` — awsvpc, Service Connect
+- [x] `04-containers-ecs/2-task-definitions.md` — Task Definition deep dive ✅
+- [x] `04-containers-ecs/3-ecs-services.md` — Service deployment strategies ✅
+- [x] `04-containers-ecs/4-fargate-vs-ec2.md` — Trade-offs & decision guide ✅
+- [x] `04-containers-ecs/5-ecs-networking.md` — awsvpc, Service Connect ✅
 - [ ] `05-containers-eks/README.md` — EKS tổng quan
 - [ ] `05-containers-eks/1-eks-architecture.md` — Control plane & data plane
 - [ ] `06-high-availability/README.md` — HA patterns tổng quan
@@ -434,6 +440,6 @@ Phát hiện lỗi? Muốn thêm nội dung?
 
 ---
 
-**Cập Nhật Lần Cuối:** 2026-05-14
-**Phiên Bản:** 1.3 (Serverless Lambda hoàn thành)
-**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
+**Cập Nhật Lần Cuối:** 2026-05-15
+**Phiên Bản:** 1.4 (ECS Containers hoàn thành)
+**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
