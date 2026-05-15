@@ -70,12 +70,12 @@ Devops/aws/databases/
 │   └── 6-index-optimization.md                 Index types, composite index, covering index, GSI optimization
 │
 ├── 08-migration/
-│   ├── README.md                               (Tạo sau) Database migration — chiến lược & công cụ
-│   ├── 1-dms-overview.md                       (Tạo sau) AWS DMS architecture, task types
-│   ├── 2-sct.md                                (Tạo sau) Schema Conversion Tool, heterogeneous migration
-│   ├── 3-cdc-online-migration.md               (Tạo sau) CDC, online migration, zero-downtime
-│   ├── 4-migration-strategies.md               (Tạo sau) Lift-and-shift, re-platform, re-architect
-│   └── 5-cutover-runbook.md                    (Tạo sau) Cutover planning, rollback, validation
+│   ├── README.md                               Tổng quan migration — chiến lược, công cụ, quy trình
+│   ├── 1-dms-overview.md                       AWS DMS architecture, replication instance, task types
+│   ├── 2-sct.md                                Schema Conversion Tool, heterogeneous migration, data type mapping
+│   ├── 3-cdc-online-migration.md               CDC, online migration, zero-downtime, validation
+│   ├── 4-migration-strategies.md               Lift-and-shift, re-platform, re-architect, decision framework
+│   └── 5-cutover-runbook.md                    Cutover planning, rollback, post-migration validation
 │
 ├── 09-monitoring/
 │   ├── README.md                               (Tạo sau) Monitoring & observability toàn diện
@@ -164,6 +164,12 @@ Devops/aws/databases/
 | **Performance Tuning — Connection Pooling & RDS Proxy** | 07-performance-tuning/4-connection-pooling.md | ✅ | Toàn Diện    |
 | **Performance Tuning — DynamoDB Hot Partitions & DAX** | 07-performance-tuning/5-dynamodb-performance.md | ✅ | Toàn Diện   |
 | **Performance Tuning — Index & GSI Optimization** | 07-performance-tuning/6-index-optimization.md  | ✅       | Toàn Diện    |
+| **Migration — Tổng Quan & Quy Trình**             | 08-migration/README.md                          | ✅       | Toàn Diện    |
+| **Migration — AWS DMS Architecture & Task Types** | 08-migration/1-dms-overview.md                  | ✅       | Toàn Diện    |
+| **Migration — SCT & Heterogeneous Migration**     | 08-migration/2-sct.md                           | ✅       | Toàn Diện    |
+| **Migration — CDC & Zero-Downtime Online Migration** | 08-migration/3-cdc-online-migration.md       | ✅       | Toàn Diện    |
+| **Migration — Chiến Lược Di Chuyển**              | 08-migration/4-migration-strategies.md          | ✅       | Toàn Diện    |
+| **Migration — Cutover Runbook & Rollback**        | 08-migration/5-cutover-runbook.md               | ✅       | Toàn Diện    |
 
 ---
 
@@ -209,7 +215,12 @@ Devops/aws/databases/
 - [x] `07-performance-tuning/4-connection-pooling.md` — RDS Proxy, pgBouncer, connection limits ✅ **Hoàn thành**
 - [x] `07-performance-tuning/5-dynamodb-performance.md` — Hot partitions, throttling, DAX ✅ **Hoàn thành**
 - [x] `07-performance-tuning/6-index-optimization.md` — Index design, GSI optimization ✅ **Hoàn thành**
-- [ ] `08-migration/README.md` — DMS, SCT, CDC, cutover planning
+- [x] `08-migration/README.md` — DMS, SCT, CDC, cutover planning ✅ **Hoàn thành**
+- [x] `08-migration/1-dms-overview.md` — AWS DMS architecture, task types ✅ **Hoàn thành**
+- [x] `08-migration/2-sct.md` — Schema Conversion Tool, heterogeneous migration ✅ **Hoàn thành**
+- [x] `08-migration/3-cdc-online-migration.md` — CDC, zero-downtime techniques ✅ **Hoàn thành**
+- [x] `08-migration/4-migration-strategies.md` — Lift-and-shift, re-platform, re-architect ✅ **Hoàn thành**
+- [x] `08-migration/5-cutover-runbook.md` — Cutover planning, rollback, validation ✅ **Hoàn thành**
 
 ### Ưu Tiên Thấp Hơn — Tham Khảo
 
@@ -469,5 +480,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.7
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | ✅ 07-performance-tuning Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
+**Phiên Bản:** 1.8
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | ✅ 07-performance-tuning Hoàn Thành | ✅ 08-migration Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
