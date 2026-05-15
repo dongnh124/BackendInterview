@@ -131,6 +131,14 @@ Devops/aws/databases/
 | **Aurora — Global Database**                  | 02-aurora/3-aurora-global.md                | ✅          | Toàn Diện    |
 | **Aurora — Aurora vs RDS Trade-offs**         | 02-aurora/4-aurora-vs-rds.md                | ✅          | Toàn Diện    |
 | **Aurora — High Availability & Failover**     | 02-aurora/5-aurora-ha-failover.md           | ✅          | Toàn Diện    |
+| **DynamoDB — Tổng Quan & Data Model**         | 03-dynamodb/README.md                       | ✅          | Toàn Diện    |
+| **DynamoDB — Tables, Partition Key, Sort Key**| 03-dynamodb/1-data-model.md                 | ✅          | Toàn Diện    |
+| **DynamoDB — On-Demand vs Provisioned, Auto Scaling** | 03-dynamodb/2-capacity-modes.md     | ✅          | Toàn Diện    |
+| **DynamoDB — GSI, LSI & Index Design**        | 03-dynamodb/3-indexes.md                    | ✅          | Toàn Diện    |
+| **DynamoDB — Streams & Lambda Integration**   | 03-dynamodb/4-streams-lambda.md             | ✅          | Toàn Diện    |
+| **DynamoDB — Transactions & ACID**            | 03-dynamodb/5-transactions-acid.md          | ✅          | Toàn Diện    |
+| **DynamoDB — DAX (DynamoDB Accelerator)**     | 03-dynamodb/6-dax.md                        | ✅          | Toàn Diện    |
+| **DynamoDB — Access Patterns & Single-Table** | 03-dynamodb/7-access-patterns.md            | ✅          | Toàn Diện    |
 
 ---
 
@@ -140,7 +148,14 @@ Devops/aws/databases/
 
 - [x] `01-rds-fundamentals/README.md` — RDS overview, engine types, Multi-AZ, Read Replicas ✅ **Hoàn thành**
 - [x] `02-aurora/README.md` — Aurora architecture, cluster, serverless, global database ✅ **Hoàn thành**
-- [ ] `03-dynamodb/README.md` — DynamoDB data model, capacity modes, indexes
+- [x] `03-dynamodb/README.md` — DynamoDB data model, capacity modes, indexes ✅ **Hoàn thành**
+- [x] `03-dynamodb/1-data-model.md` — Tables, Partition Key, Sort Key, Attributes ✅ **Hoàn thành**
+- [x] `03-dynamodb/2-capacity-modes.md` — On-Demand vs Provisioned, Auto Scaling, Throttling ✅ **Hoàn thành**
+- [x] `03-dynamodb/3-indexes.md` — GSI, LSI, Sparse Index, GSI Overloading ✅ **Hoàn thành**
+- [x] `03-dynamodb/4-streams-lambda.md` — DynamoDB Streams, Lambda Integration ✅ **Hoàn thành**
+- [x] `03-dynamodb/5-transactions-acid.md` — Transactions, ACID, TransactWrite/Get ✅ **Hoàn thành**
+- [x] `03-dynamodb/6-dax.md` — DAX, Item Cache, Query Cache ✅ **Hoàn thành**
+- [x] `03-dynamodb/7-access-patterns.md` — Single-Table Design, Access Patterns ✅ **Hoàn thành**
 - [ ] `05-ha-backup/README.md` — HA strategies, backup, PITR, disaster recovery
 - [ ] `12-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
 
@@ -409,5 +424,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.2
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
+**Phiên Bản:** 1.3
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
