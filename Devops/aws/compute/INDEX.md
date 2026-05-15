@@ -148,6 +148,12 @@ Devops/aws/compute/
 | **Cost Optimization — Rightsizing** | 07-cost-optimization/3-rightsizing.md | ✅ | Toàn diện |
 | **Cost Optimization — Savings Plans** | 07-cost-optimization/4-savings-plans.md | ✅ | Toàn diện |
 | **Cost Optimization — Cost Monitoring** | 07-cost-optimization/5-cost-monitoring.md | ✅ | Toàn diện |
+| **Security — Tổng Quan & Defense in Depth** | 08-security/README.md | ✅ | Toàn diện |
+| **Security — IAM Roles & Instance Profiles** | 08-security/1-iam-instance-profiles.md | ✅ | Toàn diện |
+| **Security — AWS Systems Manager** | 08-security/2-systems-manager.md | ✅ | Toàn diện |
+| **Security — Secrets Management** | 08-security/3-secrets-management.md | ✅ | Toàn diện |
+| **Security — Encryption & KMS** | 08-security/4-encryption.md | ✅ | Toàn diện |
+| **Security — Compliance & Patching** | 08-security/5-compliance-patching.md | ✅ | Toàn diện |
 
 ---
 
@@ -203,9 +209,12 @@ Devops/aws/compute/
 - [x] `07-cost-optimization/3-rightsizing.md` — Compute Optimizer, utilization ✅
 - [x] `07-cost-optimization/4-savings-plans.md` — Compute vs EC2 Instance vs SageMaker plans ✅
 - [x] `07-cost-optimization/5-cost-monitoring.md` — Cost Explorer, Budgets, Trusted Advisor ✅
-- [ ] `08-security/README.md` — Security tổng quan
-- [ ] `08-security/1-iam-instance-profiles.md` — IAM best practices
-- [ ] `08-security/2-systems-manager.md` — SSM Session Manager
+- [x] `08-security/README.md` — Security tổng quan ✅
+- [x] `08-security/1-iam-instance-profiles.md` — IAM Roles, Instance Profiles, least privilege ✅
+- [x] `08-security/2-systems-manager.md` — SSM Session Manager, Run Command, Patch Manager ✅
+- [x] `08-security/3-secrets-management.md` — Secrets Manager, Parameter Store, rotation ✅
+- [x] `08-security/4-encryption.md` — EBS encryption, KMS, data-in-transit ✅
+- [x] `08-security/5-compliance-patching.md` — Inspector, Security Hub, patch baselines ✅
 - [ ] `09-monitoring/README.md` — Monitoring tổng quan
 - [ ] `09-monitoring/1-cloudwatch-metrics.md` — Key metrics
 - [ ] `09-monitoring/4-xray-tracing.md` — Distributed tracing
@@ -465,5 +474,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.7 (Cost Optimization hoàn thành)
-**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | ✅ 05-containers-eks hoàn thành | ✅ 06-high-availability hoàn thành | ✅ 07-cost-optimization hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
+**Phiên Bản:** 1.8 (Security hoàn thành)
+**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | ✅ 05-containers-eks hoàn thành | ✅ 06-high-availability hoàn thành | ✅ 07-cost-optimization hoàn thành | ✅ 08-security hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
