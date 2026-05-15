@@ -53,12 +53,12 @@ Devops/aws/databases/
 │   └── 5-disaster-recovery.md                  DR strategies (4 loại), multi-region failover, runbook
 │
 ├── 06-security/
-│   ├── README.md                               (Tạo sau) Bảo mật cơ sở dữ liệu toàn diện
-│   ├── 1-vpc-security-groups.md                (Tạo sau) VPC design, private subnets, security groups
-│   ├── 2-iam-authentication.md                 (Tạo sau) IAM roles, database authentication
-│   ├── 3-encryption.md                         (Tạo sau) KMS, encryption at rest & in transit
-│   ├── 4-secrets-management.md                 (Tạo sau) Secrets Manager, Parameter Store, rotation
-│   └── 5-audit-compliance.md                   (Tạo sau) CloudTrail, Activity Streams, PCI/HIPAA/GDPR
+│   ├── README.md                               Bảo mật cơ sở dữ liệu toàn diện, Defense in Depth
+│   ├── 1-vpc-security-groups.md                VPC design, private subnets, security groups, NACLs
+│   ├── 2-iam-authentication.md                 IAM roles, database authentication, Least Privilege
+│   ├── 3-encryption.md                         KMS, encryption at rest & in transit, TLS/SSL
+│   ├── 4-secrets-management.md                 Secrets Manager, Parameter Store, automatic rotation
+│   └── 5-audit-compliance.md                   CloudTrail, Activity Streams, PCI/HIPAA/GDPR
 │
 ├── 07-performance-tuning/
 │   ├── README.md                               (Tạo sau) Tối ưu hiệu năng — methodology
@@ -151,6 +151,12 @@ Devops/aws/databases/
 | **HA & Backup — Manual Snapshots**            | 05-ha-backup/3-snapshots.md                 | ✅          | Toàn Diện    |
 | **HA & Backup — Point-in-Time Recovery**      | 05-ha-backup/4-pitr.md                      | ✅          | Toàn Diện    |
 | **HA & Backup — Disaster Recovery**           | 05-ha-backup/5-disaster-recovery.md         | ✅          | Toàn Diện    |
+| **Security — Tổng Quan & Defense in Depth**   | 06-security/README.md                       | ✅          | Toàn Diện    |
+| **Security — VPC & Security Groups**          | 06-security/1-vpc-security-groups.md        | ✅          | Toàn Diện    |
+| **Security — IAM Authentication**             | 06-security/2-iam-authentication.md         | ✅          | Toàn Diện    |
+| **Security — KMS Encryption**                 | 06-security/3-encryption.md                 | ✅          | Toàn Diện    |
+| **Security — Secrets Manager & Parameter Store** | 06-security/4-secrets-management.md      | ✅          | Toàn Diện    |
+| **Security — Audit & Compliance**             | 06-security/5-audit-compliance.md           | ✅          | Toàn Diện    |
 
 ---
 
@@ -183,7 +189,12 @@ Devops/aws/databases/
 - [ ] `12-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
-- [ ] `06-security/README.md` — VPC, IAM, KMS, Secrets Manager, compliance
+- [x] `06-security/README.md` — Tổng quan, Defense in Depth ✅ **Hoàn thành**
+- [x] `06-security/1-vpc-security-groups.md` — VPC, private subnets, Security Groups, NACLs ✅ **Hoàn thành**
+- [x] `06-security/2-iam-authentication.md` — IAM Roles, IAM Auth cho RDS, Least Privilege ✅ **Hoàn thành**
+- [x] `06-security/3-encryption.md` — KMS, Encryption at Rest & in Transit, TLS ✅ **Hoàn thành**
+- [x] `06-security/4-secrets-management.md` — Secrets Manager, Parameter Store, auto rotation ✅ **Hoàn thành**
+- [x] `06-security/5-audit-compliance.md` — CloudTrail, Activity Streams, PCI/HIPAA/GDPR ✅ **Hoàn thành**
 - [ ] `07-performance-tuning/README.md` — Performance Insights, slow query, RDS Proxy
 - [ ] `08-migration/README.md` — DMS, SCT, CDC, cutover planning
 
@@ -445,5 +456,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.5
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
+**Phiên Bản:** 1.6
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
