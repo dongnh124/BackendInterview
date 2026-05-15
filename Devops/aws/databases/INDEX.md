@@ -37,12 +37,12 @@ Devops/aws/databases/
 │   └── 7-access-patterns.md                    (Tạo sau) Single-table design, access patterns
 │
 ├── 04-elasticache/
-│   ├── README.md                               (Tạo sau) Tổng quan ElastiCache, Redis vs Memcached
-│   ├── 1-redis-vs-memcached.md                 (Tạo sau) So sánh chi tiết, khi nào dùng gì
-│   ├── 2-redis-cluster.md                      (Tạo sau) Cluster mode, replication groups, sharding
-│   ├── 3-caching-strategies.md                 (Tạo sau) Lazy loading, write-through, write-around
-│   ├── 4-persistence.md                        (Tạo sau) RDB, AOF, backup/restore
-│   └── 5-security.md                           (Tạo sau) VPC, encryption, auth tokens, IAM
+│   ├── README.md                               Tổng quan ElastiCache, Redis vs Memcached, kiến trúc
+│   ├── 1-redis-vs-memcached.md                 So sánh chi tiết Redis & Memcached, khi nào dùng gì
+│   ├── 2-redis-cluster.md                      Cluster mode, Replication Groups, Sharding, Failover
+│   ├── 3-caching-strategies.md                 Lazy Loading, Write-Through, Write-Around, TTL, Invalidation
+│   ├── 4-persistence.md                        RDB Snapshots, AOF Logging, Backup & Restore trên AWS
+│   └── 5-security.md                           VPC, Security Groups, Encryption (TLS/KMS), Auth Tokens, IAM
 │
 ├── 05-ha-backup/
 │   ├── README.md                               (Tạo sau) HA strategies, backup overview
@@ -139,6 +139,12 @@ Devops/aws/databases/
 | **DynamoDB — Transactions & ACID**            | 03-dynamodb/5-transactions-acid.md          | ✅          | Toàn Diện    |
 | **DynamoDB — DAX (DynamoDB Accelerator)**     | 03-dynamodb/6-dax.md                        | ✅          | Toàn Diện    |
 | **DynamoDB — Access Patterns & Single-Table** | 03-dynamodb/7-access-patterns.md            | ✅          | Toàn Diện    |
+| **ElastiCache — Tổng Quan & Kiến Trúc**      | 04-elasticache/README.md                    | ✅          | Toàn Diện    |
+| **ElastiCache — Redis vs Memcached**          | 04-elasticache/1-redis-vs-memcached.md      | ✅          | Toàn Diện    |
+| **ElastiCache — Redis Cluster & Replication** | 04-elasticache/2-redis-cluster.md           | ✅          | Toàn Diện    |
+| **ElastiCache — Caching Strategies**          | 04-elasticache/3-caching-strategies.md      | ✅          | Toàn Diện    |
+| **ElastiCache — Persistence (RDB & AOF)**     | 04-elasticache/4-persistence.md             | ✅          | Toàn Diện    |
+| **ElastiCache — Security**                    | 04-elasticache/5-security.md                | ✅          | Toàn Diện    |
 
 ---
 
@@ -156,12 +162,16 @@ Devops/aws/databases/
 - [x] `03-dynamodb/5-transactions-acid.md` — Transactions, ACID, TransactWrite/Get ✅ **Hoàn thành**
 - [x] `03-dynamodb/6-dax.md` — DAX, Item Cache, Query Cache ✅ **Hoàn thành**
 - [x] `03-dynamodb/7-access-patterns.md` — Single-Table Design, Access Patterns ✅ **Hoàn thành**
+- [x] `04-elasticache/README.md` — ElastiCache overview, Redis vs Memcached ✅ **Hoàn thành**
+- [x] `04-elasticache/1-redis-vs-memcached.md` — So sánh Redis & Memcached ✅ **Hoàn thành**
+- [x] `04-elasticache/2-redis-cluster.md` — Cluster Mode, Replication, Sharding ✅ **Hoàn thành**
+- [x] `04-elasticache/3-caching-strategies.md` — Lazy Loading, Write-Through, TTL ✅ **Hoàn thành**
+- [x] `04-elasticache/4-persistence.md` — RDB, AOF, Backup/Restore ✅ **Hoàn thành**
+- [x] `04-elasticache/5-security.md` — VPC, TLS, KMS, Auth, IAM ✅ **Hoàn thành**
 - [ ] `05-ha-backup/README.md` — HA strategies, backup, PITR, disaster recovery
 - [ ] `12-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
-
-- [ ] `04-elasticache/README.md` — ElastiCache Redis, Memcached, caching strategies
 - [ ] `06-security/README.md` — VPC, IAM, KMS, Secrets Manager, compliance
 - [ ] `07-performance-tuning/README.md` — Performance Insights, slow query, RDS Proxy
 - [ ] `08-migration/README.md` — DMS, SCT, CDC, cutover planning
@@ -424,5 +434,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.3
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
+**Phiên Bản:** 1.4
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
