@@ -61,13 +61,13 @@ Devops/aws/databases/
 │   └── 5-audit-compliance.md                   CloudTrail, Activity Streams, PCI/HIPAA/GDPR
 │
 ├── 07-performance-tuning/
-│   ├── README.md                               (Tạo sau) Tối ưu hiệu năng — methodology
-│   ├── 1-performance-insights.md               (Tạo sau) RDS Performance Insights, top SQL
-│   ├── 2-cloudwatch-metrics.md                 (Tạo sau) Key metrics, enhanced monitoring
-│   ├── 3-slow-query-analysis.md                (Tạo sau) Slow query log, EXPLAIN plans
-│   ├── 4-connection-pooling.md                 (Tạo sau) RDS Proxy, pgBouncer, connection limits
-│   ├── 5-dynamodb-performance.md               (Tạo sau) Hot partitions, throttling, DAX
-│   └── 6-index-optimization.md                 (Tạo sau) Index design, GSI optimization, covering indexes
+│   ├── README.md                               Tối ưu hiệu năng — methodology, công cụ, vòng lặp tối ưu
+│   ├── 1-performance-insights.md               RDS Performance Insights, AAS, wait events, top SQL
+│   ├── 2-cloudwatch-metrics.md                 Key metrics RDS/Aurora/DynamoDB/ElastiCache, Enhanced Monitoring
+│   ├── 3-slow-query-analysis.md                Slow query log, EXPLAIN plans, mysqldumpslow, pt-query-digest
+│   ├── 4-connection-pooling.md                 RDS Proxy, pgBouncer, connection limits, IAM Auth
+│   ├── 5-dynamodb-performance.md               Hot partitions, throttling, write sharding, DAX, Adaptive Capacity
+│   └── 6-index-optimization.md                 Index types, composite index, covering index, GSI optimization
 │
 ├── 08-migration/
 │   ├── README.md                               (Tạo sau) Database migration — chiến lược & công cụ
@@ -157,6 +157,13 @@ Devops/aws/databases/
 | **Security — KMS Encryption**                 | 06-security/3-encryption.md                 | ✅          | Toàn Diện    |
 | **Security — Secrets Manager & Parameter Store** | 06-security/4-secrets-management.md      | ✅          | Toàn Diện    |
 | **Security — Audit & Compliance**             | 06-security/5-audit-compliance.md           | ✅          | Toàn Diện    |
+| **Performance Tuning — Tổng Quan & Methodology** | 07-performance-tuning/README.md          | ✅          | Toàn Diện    |
+| **Performance Tuning — RDS Performance Insights** | 07-performance-tuning/1-performance-insights.md | ✅   | Toàn Diện    |
+| **Performance Tuning — CloudWatch & Enhanced Monitoring** | 07-performance-tuning/2-cloudwatch-metrics.md | ✅ | Toàn Diện    |
+| **Performance Tuning — Slow Query & EXPLAIN** | 07-performance-tuning/3-slow-query-analysis.md  | ✅       | Toàn Diện    |
+| **Performance Tuning — Connection Pooling & RDS Proxy** | 07-performance-tuning/4-connection-pooling.md | ✅ | Toàn Diện    |
+| **Performance Tuning — DynamoDB Hot Partitions & DAX** | 07-performance-tuning/5-dynamodb-performance.md | ✅ | Toàn Diện   |
+| **Performance Tuning — Index & GSI Optimization** | 07-performance-tuning/6-index-optimization.md  | ✅       | Toàn Diện    |
 
 ---
 
@@ -195,7 +202,13 @@ Devops/aws/databases/
 - [x] `06-security/3-encryption.md` — KMS, Encryption at Rest & in Transit, TLS ✅ **Hoàn thành**
 - [x] `06-security/4-secrets-management.md` — Secrets Manager, Parameter Store, auto rotation ✅ **Hoàn thành**
 - [x] `06-security/5-audit-compliance.md` — CloudTrail, Activity Streams, PCI/HIPAA/GDPR ✅ **Hoàn thành**
-- [ ] `07-performance-tuning/README.md` — Performance Insights, slow query, RDS Proxy
+- [x] `07-performance-tuning/README.md` — Performance Insights, slow query, RDS Proxy ✅ **Hoàn thành**
+- [x] `07-performance-tuning/1-performance-insights.md` — RDS Performance Insights, AAS, wait events ✅ **Hoàn thành**
+- [x] `07-performance-tuning/2-cloudwatch-metrics.md` — Key metrics, Enhanced Monitoring ✅ **Hoàn thành**
+- [x] `07-performance-tuning/3-slow-query-analysis.md` — Slow query log, EXPLAIN plans ✅ **Hoàn thành**
+- [x] `07-performance-tuning/4-connection-pooling.md` — RDS Proxy, pgBouncer, connection limits ✅ **Hoàn thành**
+- [x] `07-performance-tuning/5-dynamodb-performance.md` — Hot partitions, throttling, DAX ✅ **Hoàn thành**
+- [x] `07-performance-tuning/6-index-optimization.md` — Index design, GSI optimization ✅ **Hoàn thành**
 - [ ] `08-migration/README.md` — DMS, SCT, CDC, cutover planning
 
 ### Ưu Tiên Thấp Hơn — Tham Khảo
@@ -456,5 +469,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.6
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
+**Phiên Bản:** 1.7
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | ✅ 07-performance-tuning Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
