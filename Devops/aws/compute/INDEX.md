@@ -142,6 +142,12 @@ Devops/aws/compute/
 | **High Availability — Health Checks & Recovery** | 06-high-availability/3-health-checks-recovery.md | ✅ | Toàn diện |
 | **High Availability — Deployment Strategies** | 06-high-availability/4-deployment-strategies.md | ✅ | Toàn diện |
 | **High Availability — Capacity Planning** | 06-high-availability/5-capacity-planning.md | ✅ | Toàn diện |
+| **Cost Optimization — Tổng Quan & FinOps** | 07-cost-optimization/README.md | ✅ | Toàn diện |
+| **Cost Optimization — Pricing Models** | 07-cost-optimization/1-pricing-models.md | ✅ | Toàn diện |
+| **Cost Optimization — Spot Strategy** | 07-cost-optimization/2-spot-strategy.md | ✅ | Toàn diện |
+| **Cost Optimization — Rightsizing** | 07-cost-optimization/3-rightsizing.md | ✅ | Toàn diện |
+| **Cost Optimization — Savings Plans** | 07-cost-optimization/4-savings-plans.md | ✅ | Toàn diện |
+| **Cost Optimization — Cost Monitoring** | 07-cost-optimization/5-cost-monitoring.md | ✅ | Toàn diện |
 
 ---
 
@@ -191,9 +197,12 @@ Devops/aws/compute/
 - [x] `05-containers-eks/3-eks-networking.md` — VPC CNI & networking ✅
 - [x] `05-containers-eks/4-eks-storage.md` — EBS/EFS CSI drivers ✅
 - [x] `05-containers-eks/5-eks-security.md` — RBAC, IRSA, pod security ✅
-- [ ] `07-cost-optimization/README.md` — Cost optimization tổng quan
-- [ ] `07-cost-optimization/1-pricing-models.md` — Tất cả pricing models
-- [ ] `07-cost-optimization/2-spot-strategy.md` — Spot best practices
+- [x] `07-cost-optimization/README.md` — Cost optimization tổng quan ✅
+- [x] `07-cost-optimization/1-pricing-models.md` — Tất cả pricing models ✅
+- [x] `07-cost-optimization/2-spot-strategy.md` — Spot best practices ✅
+- [x] `07-cost-optimization/3-rightsizing.md` — Compute Optimizer, utilization ✅
+- [x] `07-cost-optimization/4-savings-plans.md` — Compute vs EC2 Instance vs SageMaker plans ✅
+- [x] `07-cost-optimization/5-cost-monitoring.md` — Cost Explorer, Budgets, Trusted Advisor ✅
 - [ ] `08-security/README.md` — Security tổng quan
 - [ ] `08-security/1-iam-instance-profiles.md` — IAM best practices
 - [ ] `08-security/2-systems-manager.md` — SSM Session Manager
@@ -456,5 +465,5 @@ Phát hiện lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.6 (High Availability hoàn thành)
-**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | ✅ 05-containers-eks hoàn thành | ✅ 06-high-availability hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
+**Phiên Bản:** 1.7 (Cost Optimization hoàn thành)
+**Trạng Thái:** ✅ README.md hoàn thành | ✅ INDEX.md hoàn thành | ✅ 01-ec2-fundamentals hoàn thành | ✅ 02-auto-scaling hoàn thành | ✅ 03-serverless-lambda hoàn thành | ✅ 04-containers-ecs hoàn thành | ✅ 05-containers-eks hoàn thành | ✅ 06-high-availability hoàn thành | ✅ 07-cost-optimization hoàn thành | 🚧 Các sections tiếp theo đang được phát triển
