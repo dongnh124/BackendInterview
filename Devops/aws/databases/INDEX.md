@@ -86,13 +86,13 @@ Devops/aws/databases/
 │   └── 5-activity-streams.md                   Database Activity Streams, Kinesis, SIEM, compliance PCI/HIPAA
 │
 ├── 10-advanced/
-│   ├── README.md                               (Tạo sau) Chủ đề nâng cao — multi-region, analytics
-│   ├── 1-redshift.md                           (Tạo sau) Redshift architecture, distribution keys, Spectrum
-│   ├── 2-aurora-global-advanced.md             (Tạo sau) Multi-region active-active, conflict resolution
-│   ├── 3-dynamodb-global-tables.md             (Tạo sau) Global Tables, eventual consistency, conflicts
-│   ├── 4-neptune.md                            (Tạo sau) Graph database, Gremlin, SPARQL
-│   ├── 5-documentdb.md                         (Tạo sau) DocumentDB, MongoDB migration, compatibility
-│   └── 6-timestream.md                         (Tạo sau) Time-series database, IoT use cases
+│   ├── README.md                               Tổng quan chủ đề nâng cao — multi-region, analytics, graph, document, time-series
+│   ├── 1-redshift.md                           Redshift architecture, distribution keys, sort keys, Spectrum, Serverless
+│   ├── 2-aurora-global-advanced.md             Aurora Global Database, multi-region active-active, write forwarding, conflict resolution
+│   ├── 3-dynamodb-global-tables.md             Global Tables v2, eventual consistency, last-write-wins, conflict patterns
+│   ├── 4-neptune.md                            Graph database, Gremlin, SPARQL, openCypher, fraud detection, social graph
+│   ├── 5-documentdb.md                         DocumentDB, MongoDB compatibility, aggregation pipeline, migration
+│   └── 6-timestream.md                         Time-series database, IoT use cases, memory/magnetic store, scheduled queries
 │
 ├── 11-cost-optimization/
 │   ├── README.md                               (Tạo sau) Tối ưu chi phí database trên AWS
@@ -176,6 +176,13 @@ Devops/aws/databases/
 | **Monitoring — RDS Enhanced Monitoring**          | 09-monitoring/3-rds-enhanced-monitoring.md      | ✅       | Toàn Diện    |
 | **Monitoring — DynamoDB CloudWatch & Contributor Insights** | 09-monitoring/4-dynamodb-monitoring.md | ✅       | Toàn Diện    |
 | **Monitoring — Database Activity Streams**        | 09-monitoring/5-activity-streams.md             | ✅       | Toàn Diện    |
+| **Advanced — Tổng Quan Chủ Đề Nâng Cao**         | 10-advanced/README.md                           | ✅       | Toàn Diện    |
+| **Advanced — Redshift Data Warehouse**            | 10-advanced/1-redshift.md                       | ✅       | Toàn Diện    |
+| **Advanced — Aurora Global Database Nâng Cao**    | 10-advanced/2-aurora-global-advanced.md         | ✅       | Toàn Diện    |
+| **Advanced — DynamoDB Global Tables**             | 10-advanced/3-dynamodb-global-tables.md         | ✅       | Toàn Diện    |
+| **Advanced — Neptune Graph Database**             | 10-advanced/4-neptune.md                        | ✅       | Toàn Diện    |
+| **Advanced — DocumentDB MongoDB Compatible**      | 10-advanced/5-documentdb.md                     | ✅       | Toàn Diện    |
+| **Advanced — Timestream Time-Series Database**    | 10-advanced/6-timestream.md                     | ✅       | Toàn Diện    |
 
 ---
 
@@ -236,7 +243,13 @@ Devops/aws/databases/
 - [x] `09-monitoring/3-rds-enhanced-monitoring.md` — OS-level metrics, process monitoring ✅ **Hoàn thành**
 - [x] `09-monitoring/4-dynamodb-monitoring.md` — DynamoDB alarms, Contributor Insights ✅ **Hoàn thành**
 - [x] `09-monitoring/5-activity-streams.md` — Activity Streams, SIEM, compliance ✅ **Hoàn thành**
-- [ ] `10-advanced/README.md` — Redshift, Neptune, DocumentDB, Timestream
+- [x] `10-advanced/README.md` — Tổng quan advanced topics ✅ **Hoàn thành**
+- [x] `10-advanced/1-redshift.md` — Redshift architecture, distribution keys, Spectrum ✅ **Hoàn thành**
+- [x] `10-advanced/2-aurora-global-advanced.md` — Aurora Global, multi-region active-active ✅ **Hoàn thành**
+- [x] `10-advanced/3-dynamodb-global-tables.md` — Global Tables, conflict resolution ✅ **Hoàn thành**
+- [x] `10-advanced/4-neptune.md` — Neptune Graph Database, Gremlin, SPARQL ✅ **Hoàn thành**
+- [x] `10-advanced/5-documentdb.md` — DocumentDB, MongoDB migration ✅ **Hoàn thành**
+- [x] `10-advanced/6-timestream.md` — Timestream, IoT, time-series ✅ **Hoàn thành**
 - [ ] `11-cost-optimization/README.md` — Reserved instances, right-sizing
 - [ ] `12-interview-prep/system-design-scenarios.md` — Design problems
 
@@ -491,5 +504,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.9
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | ✅ 07-performance-tuning Hoàn Thành | ✅ 08-migration Hoàn Thành | ✅ 09-monitoring Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
+**Phiên Bản:** 2.0
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | ✅ 03-dynamodb Hoàn Thành | ✅ 04-elasticache Hoàn Thành | ✅ 05-ha-backup Hoàn Thành | ✅ 06-security Hoàn Thành | ✅ 07-performance-tuning Hoàn Thành | ✅ 08-migration Hoàn Thành | ✅ 09-monitoring Hoàn Thành | ✅ 10-advanced Hoàn Thành | 🚧 11-cost-optimization & 12-interview-prep Đang Xây Dựng
