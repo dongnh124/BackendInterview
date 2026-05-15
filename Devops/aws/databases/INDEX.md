@@ -125,6 +125,12 @@ Devops/aws/databases/
 | **RDS — Read Replicas**                       | 01-rds-fundamentals/4-read-replicas.md      | ✅          | Toàn Diện    |
 | **RDS — Parameter Groups & Option Groups**    | 01-rds-fundamentals/5-parameter-groups.md   | ✅          | Toàn Diện    |
 | **RDS — RDS Proxy**                           | 01-rds-fundamentals/6-rds-proxy.md          | ✅          | Toàn Diện    |
+| **Aurora — Tổng Quan & Kiến Trúc**           | 02-aurora/README.md                         | ✅          | Toàn Diện    |
+| **Aurora — Shared Storage & Cluster Endpoints** | 02-aurora/1-aurora-architecture.md       | ✅          | Toàn Diện    |
+| **Aurora — Serverless v2 & Auto-Scaling**     | 02-aurora/2-aurora-serverless.md            | ✅          | Toàn Diện    |
+| **Aurora — Global Database**                  | 02-aurora/3-aurora-global.md                | ✅          | Toàn Diện    |
+| **Aurora — Aurora vs RDS Trade-offs**         | 02-aurora/4-aurora-vs-rds.md                | ✅          | Toàn Diện    |
+| **Aurora — High Availability & Failover**     | 02-aurora/5-aurora-ha-failover.md           | ✅          | Toàn Diện    |
 
 ---
 
@@ -133,7 +139,7 @@ Devops/aws/databases/
 ### Ưu Tiên Cao — Kỹ Năng Core
 
 - [x] `01-rds-fundamentals/README.md` — RDS overview, engine types, Multi-AZ, Read Replicas ✅ **Hoàn thành**
-- [ ] `02-aurora/README.md` — Aurora architecture, cluster, serverless, global database
+- [x] `02-aurora/README.md` — Aurora architecture, cluster, serverless, global database ✅ **Hoàn thành**
 - [ ] `03-dynamodb/README.md` — DynamoDB data model, capacity modes, indexes
 - [ ] `05-ha-backup/README.md` — HA strategies, backup, PITR, disaster recovery
 - [ ] `12-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
@@ -403,5 +409,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.1
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
+**Phiên Bản:** 1.2
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | ✅ 02-aurora Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
