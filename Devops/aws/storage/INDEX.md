@@ -124,7 +124,7 @@ Devops/aws/storage/
 | --------------------------- | ------------------------------- | ---------- | -------------- |
 | **Tổng Quan & Lộ Trình**    | README.md                       | ✅         | Toàn diện      |
 | **Chỉ Mục Đầy Đủ**          | INDEX.md                        | ✅         | Toàn diện      |
-| **S3 Fundamentals**         | 01-s3-fundamentals/ (6 files)   | 🚧         | Cần tạo        |
+| **S3 Fundamentals**         | 01-s3-fundamentals/ (6 files)   | ✅         | Hoàn thành     |
 | **S3 Nâng Cao**             | 02-s3-advanced/ (6 files)       | 🚧         | Cần tạo        |
 | **EBS**                     | 03-ebs/ (7 files)               | 🚧         | Cần tạo        |
 | **EFS**                     | 04-efs/ (6 files)               | 🚧         | Cần tạo        |
@@ -380,5 +380,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.0 (README + INDEX đã tạo)
-**Trạng Thái:** ✅ README.md | ✅ INDEX.md | 🚧 Các phần chi tiết đang triển khai
+**Phiên Bản:** 1.1 (README + INDEX + 01-s3-fundamentals hoàn thành)
+**Trạng Thái:** ✅ README.md | ✅ INDEX.md | ✅ 01-s3-fundamentals/ | 🚧 Các phần còn lại đang triển khai
