@@ -114,10 +114,17 @@ Devops/aws/databases/
 
 ## ✅ Những Gì Đã Được Tạo
 
-| Chủ Đề                                        | File                | Trạng Thái | Chất Lượng    |
-| --------------------------------------------- | ------------------- | ---------- | ------------- |
-| **Tổng Quan & Lộ Trình**                      | README.md           | ✅          | Toàn Diện    |
-| **Bảng Chỉ Mục Đầy Đủ**                      | INDEX.md            | ✅          | Toàn Diện    |
+| Chủ Đề                                        | File                                        | Trạng Thái | Chất Lượng    |
+| --------------------------------------------- | ------------------------------------------- | ---------- | ------------- |
+| **Tổng Quan & Lộ Trình**                      | README.md                                   | ✅          | Toàn Diện    |
+| **Bảng Chỉ Mục Đầy Đủ**                      | INDEX.md                                    | ✅          | Toàn Diện    |
+| **RDS Fundamentals — Tổng Quan**              | 01-rds-fundamentals/README.md               | ✅          | Toàn Diện    |
+| **RDS — Engine Types**                        | 01-rds-fundamentals/1-engine-types.md       | ✅          | Toàn Diện    |
+| **RDS — Instance & Storage**                  | 01-rds-fundamentals/2-instance-storage.md   | ✅          | Toàn Diện    |
+| **RDS — Multi-AZ Deployment**                 | 01-rds-fundamentals/3-multi-az.md           | ✅          | Toàn Diện    |
+| **RDS — Read Replicas**                       | 01-rds-fundamentals/4-read-replicas.md      | ✅          | Toàn Diện    |
+| **RDS — Parameter Groups & Option Groups**    | 01-rds-fundamentals/5-parameter-groups.md   | ✅          | Toàn Diện    |
+| **RDS — RDS Proxy**                           | 01-rds-fundamentals/6-rds-proxy.md          | ✅          | Toàn Diện    |
 
 ---
 
@@ -125,7 +132,7 @@ Devops/aws/databases/
 
 ### Ưu Tiên Cao — Kỹ Năng Core
 
-- [ ] `01-rds-fundamentals/README.md` — RDS overview, engine types, Multi-AZ, Read Replicas
+- [x] `01-rds-fundamentals/README.md` — RDS overview, engine types, Multi-AZ, Read Replicas ✅ **Hoàn thành**
 - [ ] `02-aurora/README.md` — Aurora architecture, cluster, serverless, global database
 - [ ] `03-dynamodb/README.md` — DynamoDB data model, capacity modes, indexes
 - [ ] `05-ha-backup/README.md` — HA strategies, backup, PITR, disaster recovery
@@ -396,5 +403,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.0
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | 🚧 Các Section Chi Tiết Đang Xây Dựng
+**Phiên Bản:** 1.1
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-rds-fundamentals Hoàn Thành | 🚧 Các Section Khác Đang Xây Dựng
