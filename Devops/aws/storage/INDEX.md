@@ -127,7 +127,7 @@ Devops/aws/storage/
 | **S3 Fundamentals**         | 01-s3-fundamentals/ (6 files)   | ✅         | Hoàn thành     |
 | **S3 Nâng Cao**             | 02-s3-advanced/ (7 files)       | ✅         | Hoàn thành     |
 | **EBS**                     | 03-ebs/ (7 files)               | ✅         | Hoàn thành     |
-| **EFS**                     | 04-efs/ (6 files)               | 🚧         | Cần tạo        |
+| **EFS**                     | 04-efs/ (6 files)               | ✅         | Hoàn thành     |
 | **Bảo Mật**                 | 05-security/ (8 files)          | 🚧         | Cần tạo        |
 | **Tối Ưu Chi Phí**          | 06-cost-optimization/ (6 files) | 🚧         | Cần tạo        |
 | **Monitoring**              | 07-monitoring/ (6 files)        | 🚧         | Cần tạo        |
@@ -379,6 +379,6 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 
 ---
 
-**Cập Nhật Lần Cuối:** 2026-05-15
-**Phiên Bản:** 1.3 (README + INDEX + 01-s3-fundamentals + 02-s3-advanced + 03-ebs hoàn thành)
-**Trạng Thái:** ✅ README.md | ✅ INDEX.md | ✅ 01-s3-fundamentals/ | ✅ 02-s3-advanced/ | ✅ 03-ebs/ | 🚧 Các phần còn lại đang triển khai
+**Cập Nhật Lần Cuối:** 2026-05-16
+**Phiên Bản:** 1.4 (README + INDEX + 01-s3-fundamentals + 02-s3-advanced + 03-ebs + 04-efs hoàn thành)
+**Trạng Thái:** ✅ README.md | ✅ INDEX.md | ✅ 01-s3-fundamentals/ | ✅ 02-s3-advanced/ | ✅ 03-ebs/ | ✅ 04-efs/ | 🚧 Các phần còn lại đang triển khai
