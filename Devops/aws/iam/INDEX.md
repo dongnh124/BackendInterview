@@ -26,11 +26,11 @@ Devops/aws/iam/
 │   └── 5-cross-account-roles.md                ✅ Mô hình hub-and-spoke
 │
 ├── 03-organizations/
-│   ├── README.md                               (Cần tạo) Multi-account strategy
-│   ├── 1-organizations-setup.md                (Cần tạo) Tạo OU hierarchy
-│   ├── 2-service-control-policies.md           (Cần tạo) SCPs — cú pháp, ví dụ, giới hạn
-│   ├── 3-control-tower.md                      (Cần tạo) Landing zone tự động
-│   └── 4-account-vending.md                    (Cần tạo) Tự động tạo tài khoản mới
+│   ├── README.md                               ✅ Multi-account strategy, landing zone overview
+│   ├── 1-organizations-setup.md                ✅ Tạo OU hierarchy, service integrations
+│   ├── 2-service-control-policies.md           ✅ SCPs — cú pháp, ví dụ thực tế, lỗi phổ biến
+│   ├── 3-control-tower.md                      ✅ Landing zone tự động, guardrails, AFT
+│   └── 4-account-vending.md                    ✅ Tự động tạo tài khoản — AVM, AFT, pipeline
 │
 ├── 04-encryption-kms/
 │   ├── README.md                               (Cần tạo) Encryption strategy trên AWS
@@ -114,8 +114,8 @@ Devops/aws/iam/
 | **Tổng Quan & Lộ Trình** | README.md | ✅ Hoàn Thành | Toàn Diện |
 | **Chỉ Mục Đầy Đủ** | INDEX.md | ✅ Hoàn Thành | Đầy Đủ |
 | **IAM Fundamentals** | 01-iam-fundamentals/ | ✅ Hoàn Thành | Toàn Diện |
-| **Identity Federation** | 02-identity-federation/ | ✅ Hoàn Thành | Toàn Diện |
-| **Organizations & Multi-Account** | 03-organizations/ | 🚧 Đang Tạo | - |
+| **Identity Federation** | 02-identity-federation/ | ✅ Hoàn Thành | - |
+| **Organizations & Multi-Account** | 03-organizations/ | ✅ Hoàn Thành | Toàn Diện |
 | **Encryption & KMS** | 04-encryption-kms/ | 🚧 Đang Tạo | - |
 | **Secrets & Certificates** | 05-secrets-certificates/ | 🚧 Đang Tạo | - |
 | **Network Security** | 06-network-security/ | 🚧 Đang Tạo | - |
@@ -412,5 +412,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-16
-**Phiên Bản:** 1.2 (02-identity-federation hoàn thành)
-**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
+**Phiên Bản:** 1.3 (03-organizations hoàn thành)
+**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | ✅ 03-organizations Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
