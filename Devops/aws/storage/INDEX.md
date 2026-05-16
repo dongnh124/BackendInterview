@@ -135,7 +135,7 @@ Devops/aws/storage/
 | **Storage Gateway**         | 09-storage-gateway/ (6 files)   | ✅         | Hoàn thành     |
 | **Snow Family**             | 10-snow-family/ (6 files)       | ✅         | Hoàn thành     |
 | **FSx**                     | 11-fsx/ (6 files)               | ✅         | Hoàn thành     |
-| **Phỏng Vấn**               | 12-interview-prep/ (6 files)    | 🚧         | Cần tạo        |
+| **Phỏng Vấn**               | 12-interview-prep/ (6 files)    | ✅         | Hoàn thành     |
 
 ---
 
@@ -380,5 +380,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-16
-**Phiên Bản:** 2.1 (README + INDEX + 01-s3-fundamentals + 02-s3-advanced + 03-ebs + 04-efs + 05-security + 06-cost-optimization + 07-monitoring + 08-disaster-recovery + 09-storage-gateway + 10-snow-family + 11-fsx hoàn thành)
-**Trạng Thái:** ✅ README.md | ✅ INDEX.md | ✅ 01-s3-fundamentals/ | ✅ 02-s3-advanced/ | ✅ 03-ebs/ | ✅ 04-efs/ | ✅ 05-security/ | ✅ 06-cost-optimization/ | ✅ 07-monitoring/ | ✅ 08-disaster-recovery/ | ✅ 09-storage-gateway/ | ✅ 10-snow-family/ | ✅ 11-fsx/ | 🚧 12-interview-prep/ đang triển khai
+**Phiên Bản:** 2.2 (Toàn bộ 12 topics hoàn thành — kể cả 12-interview-prep/)
+**Trạng Thái:** ✅ README.md | ✅ INDEX.md | ✅ 01-s3-fundamentals/ | ✅ 02-s3-advanced/ | ✅ 03-ebs/ | ✅ 04-efs/ | ✅ 05-security/ | ✅ 06-cost-optimization/ | ✅ 07-monitoring/ | ✅ 08-disaster-recovery/ | ✅ 09-storage-gateway/ | ✅ 10-snow-family/ | ✅ 11-fsx/ | ✅ 12-interview-prep/
