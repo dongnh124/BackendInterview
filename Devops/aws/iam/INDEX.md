@@ -11,94 +11,94 @@ Devops/aws/iam/
 │
 ├── 01-iam-fundamentals/
 │   ├── README.md                               Nền tảng IAM, khái niệm cốt lõi
-│   ├── users-groups-roles.md                   (Cần tạo) Users, Groups, Roles chi tiết
-│   ├── policy-types.md                         (Cần tạo) Identity/Resource/SCPs/Permissions Boundary
-│   ├── iam-conditions.md                       (Cần tạo) Condition keys, operators, examples
-│   ├── permission-boundaries.md                (Cần tạo) Giới hạn quyền, use cases
-│   └── iam-best-practices.md                   (Cần tạo) Checklist bảo mật IAM
+│   ├── 1-users-groups-roles.md                 (Cần tạo) Users, Groups, Roles chi tiết
+│   ├── 2-policy-types.md                       (Cần tạo) Identity/Resource/SCPs/Permissions Boundary
+│   ├── 3-iam-conditions.md                     (Cần tạo) Condition keys, operators, examples
+│   ├── 4-permission-boundaries.md              (Cần tạo) Giới hạn quyền, use cases
+│   └── 5-iam-best-practices.md                 (Cần tạo) Checklist bảo mật IAM
 │
 ├── 02-identity-federation/
 │   ├── README.md                               (Cần tạo) Federation, SSO, Cognito overview
-│   ├── iam-identity-center.md                  (Cần tạo) AWS SSO đa tài khoản
-│   ├── saml-federation.md                      (Cần tạo) SAML 2.0 với AD/Okta/Azure AD
-│   ├── oidc-federation.md                      (Cần tạo) OIDC với GitHub Actions, Google
-│   ├── cognito-user-pools.md                   (Cần tạo) Auth cho ứng dụng web/mobile
-│   └── cross-account-roles.md                  (Cần tạo) Mô hình hub-and-spoke
+│   ├── 1-iam-identity-center.md                (Cần tạo) AWS SSO đa tài khoản
+│   ├── 2-saml-federation.md                    (Cần tạo) SAML 2.0 với AD/Okta/Azure AD
+│   ├── 3-oidc-federation.md                    (Cần tạo) OIDC với GitHub Actions, Google
+│   ├── 4-cognito-user-pools.md                 (Cần tạo) Auth cho ứng dụng web/mobile
+│   └── 5-cross-account-roles.md                (Cần tạo) Mô hình hub-and-spoke
 │
 ├── 03-organizations/
 │   ├── README.md                               (Cần tạo) Multi-account strategy
-│   ├── organizations-setup.md                  (Cần tạo) Tạo OU hierarchy
-│   ├── service-control-policies.md             (Cần tạo) SCPs — cú pháp, ví dụ, giới hạn
-│   ├── control-tower.md                        (Cần tạo) Landing zone tự động
-│   └── account-vending.md                      (Cần tạo) Tự động tạo tài khoản mới
+│   ├── 1-organizations-setup.md                (Cần tạo) Tạo OU hierarchy
+│   ├── 2-service-control-policies.md           (Cần tạo) SCPs — cú pháp, ví dụ, giới hạn
+│   ├── 3-control-tower.md                      (Cần tạo) Landing zone tự động
+│   └── 4-account-vending.md                    (Cần tạo) Tự động tạo tài khoản mới
 │
 ├── 04-encryption-kms/
 │   ├── README.md                               (Cần tạo) Encryption strategy trên AWS
-│   ├── kms-key-types.md                        (Cần tạo) CMK vs AWS-managed vs data keys
-│   ├── envelope-encryption.md                  (Cần tạo) Mã hóa phong bì, DEK lifecycle
-│   ├── key-policies.md                         (Cần tạo) Key policy vs IAM policy
-│   ├── kms-grants.md                           (Cần tạo) Grants — ủy quyền dùng key tạm thời
-│   ├── cloudhsm.md                             (Cần tạo) CloudHSM — FIPS 140-2 Level 3
-│   └── s3-encryption-options.md                (Cần tạo) SSE-S3 vs SSE-KMS vs SSE-C vs CSE
+│   ├── 1-kms-key-types.md                      (Cần tạo) CMK vs AWS-managed vs data keys
+│   ├── 2-envelope-encryption.md                (Cần tạo) Mã hóa phong bì, DEK lifecycle
+│   ├── 3-key-policies.md                       (Cần tạo) Key policy vs IAM policy
+│   ├── 4-kms-grants.md                         (Cần tạo) Grants — ủy quyền dùng key tạm thời
+│   ├── 5-cloudhsm.md                           (Cần tạo) CloudHSM — FIPS 140-2 Level 3
+│   └── 6-s3-encryption-options.md              (Cần tạo) SSE-S3 vs SSE-KMS vs SSE-C vs CSE
 │
 ├── 05-secrets-certificates/
 │   ├── README.md                               (Cần tạo) Secrets lifecycle management
-│   ├── secrets-manager.md                      (Cần tạo) Lưu trữ, xoay vòng, truy xuất bí mật
-│   ├── parameter-store.md                      (Cần tạo) Hierarchy, SecureString, versions
-│   ├── secrets-vs-parameter.md                 (Cần tạo) So sánh và hướng dẫn chọn lựa
-│   ├── acm-certificates.md                     (Cần tạo) TLS cert lifecycle, auto-renewal
-│   └── acm-private-ca.md                       (Cần tạo) Internal PKI trên AWS
+│   ├── 1-secrets-manager.md                    (Cần tạo) Lưu trữ, xoay vòng, truy xuất bí mật
+│   ├── 2-parameter-store.md                    (Cần tạo) Hierarchy, SecureString, versions
+│   ├── 3-secrets-vs-parameter.md               (Cần tạo) So sánh và hướng dẫn chọn lựa
+│   ├── 4-acm-certificates.md                   (Cần tạo) TLS cert lifecycle, auto-renewal
+│   └── 5-acm-private-ca.md                     (Cần tạo) Internal PKI trên AWS
 │
 ├── 06-network-security/
 │   ├── README.md                               (Cần tạo) Defense-in-depth network design
-│   ├── security-groups.md                      (Cần tạo) Stateful firewall, best practices
-│   ├── nacls.md                                (Cần tạo) Stateless rules, subnet protection
-│   ├── vpc-endpoints.md                        (Cần tạo) Gateway vs Interface endpoints
-│   ├── privatelink.md                          (Cần tạo) Private service connectivity
-│   ├── waf-setup.md                            (Cần tạo) WAF rules, managed rule groups
-│   ├── shield-ddos.md                          (Cần tạo) DDoS protection tiers
-│   └── network-firewall.md                     (Cần tạo) Stateful firewall có thể lập trình
+│   ├── 1-security-groups.md                    (Cần tạo) Stateful firewall, best practices
+│   ├── 2-nacls.md                              (Cần tạo) Stateless rules, subnet protection
+│   ├── 3-vpc-endpoints.md                      (Cần tạo) Gateway vs Interface endpoints
+│   ├── 4-privatelink.md                        (Cần tạo) Private service connectivity
+│   ├── 5-waf-setup.md                          (Cần tạo) WAF rules, managed rule groups
+│   ├── 6-shield-ddos.md                        (Cần tạo) DDoS protection tiers
+│   └── 7-network-firewall.md                   (Cần tạo) Stateful firewall có thể lập trình
 │
 ├── 07-monitoring-auditing/
 │   ├── README.md                               (Cần tạo) Security observability strategy
-│   ├── cloudtrail-setup.md                     (Cần tạo) Trail config, S3 integrity, Lake
-│   ├── cloudtrail-analysis.md                  (Cần tạo) Phân tích log, Athena queries
-│   ├── aws-config-rules.md                     (Cần tạo) Managed rules, custom rules, remediation
-│   ├── access-analyzer.md                      (Cần tạo) Phát hiện external access
-│   └── security-dashboard.md                   (Cần tạo) CloudWatch dashboards cho security
+│   ├── 1-cloudtrail-setup.md                   (Cần tạo) Trail config, S3 integrity, Lake
+│   ├── 2-cloudtrail-analysis.md                (Cần tạo) Phân tích log, Athena queries
+│   ├── 3-aws-config-rules.md                   (Cần tạo) Managed rules, custom rules, remediation
+│   ├── 4-access-analyzer.md                    (Cần tạo) Phát hiện external access
+│   └── 5-security-dashboard.md                 (Cần tạo) CloudWatch dashboards cho security
 │
 ├── 08-threat-detection/
 │   ├── README.md                               (Cần tạo) Threat detection ecosystem
-│   ├── guardduty.md                            (Cần tạo) Findings types, severity, suppression
-│   ├── security-hub.md                         (Cần tạo) Aggregation, standards, custom actions
-│   ├── inspector.md                            (Cần tạo) EC2/ECR/Lambda vulnerability scanning
-│   ├── macie.md                                (Cần tạo) S3 data classification, PII detection
-│   ├── detective.md                            (Cần tạo) Graph-based investigation
-│   └── incident-response.md                    (Cần tạo) Runbook xử lý sự cố bảo mật AWS
+│   ├── 1-guardduty.md                          (Cần tạo) Findings types, severity, suppression
+│   ├── 2-security-hub.md                       (Cần tạo) Aggregation, standards, custom actions
+│   ├── 3-inspector.md                          (Cần tạo) EC2/ECR/Lambda vulnerability scanning
+│   ├── 4-macie.md                              (Cần tạo) S3 data classification, PII detection
+│   ├── 5-detective.md                          (Cần tạo) Graph-based investigation
+│   └── 6-incident-response.md                  (Cần tạo) Runbook xử lý sự cố bảo mật AWS
 │
 ├── 09-compliance-governance/
 │   ├── README.md                               (Cần tạo) Compliance strategy on AWS
-│   ├── audit-manager.md                        (Cần tạo) Tự động thu thập bằng chứng
-│   ├── conformance-packs.md                    (Cần tạo) CIS, PCI-DSS, HIPAA conformance packs
-│   ├── firewall-manager.md                     (Cần tạo) Centralized WAF/SG/Shield management
-│   ├── pci-dss-aws.md                          (Cần tạo) Payment Card Industry compliance
-│   └── hipaa-aws.md                            (Cần tạo) Healthcare data compliance
+│   ├── 1-audit-manager.md                      (Cần tạo) Tự động thu thập bằng chứng
+│   ├── 2-conformance-packs.md                  (Cần tạo) CIS, PCI-DSS, HIPAA conformance packs
+│   ├── 3-firewall-manager.md                   (Cần tạo) Centralized WAF/SG/Shield management
+│   ├── 4-pci-dss-aws.md                        (Cần tạo) Payment Card Industry compliance
+│   └── 5-hipaa-aws.md                          (Cần tạo) Healthcare data compliance
 │
 ├── 10-advanced/
 │   ├── README.md                               (Cần tạo) Advanced security patterns
-│   ├── abac.md                                 (Cần tạo) Attribute-Based Access Control
-│   ├── zero-trust.md                           (Cần tạo) Zero Trust Architecture trên AWS
-│   ├── data-perimeter.md                       (Cần tạo) Vành đai dữ liệu, resource policies
-│   ├── security-automation.md                  (Cần tạo) Auto-remediation với EventBridge + Lambda
-│   └── supply-chain-security.md                (Cần tạo) CodeArtifact, Sigstore, SBOM
+│   ├── 1-abac.md                               (Cần tạo) Attribute-Based Access Control
+│   ├── 2-zero-trust.md                         (Cần tạo) Zero Trust Architecture trên AWS
+│   ├── 3-data-perimeter.md                     (Cần tạo) Vành đai dữ liệu, resource policies
+│   ├── 4-security-automation.md                (Cần tạo) Auto-remediation với EventBridge + Lambda
+│   └── 5-supply-chain-security.md              (Cần tạo) CodeArtifact, Sigstore, SBOM
 │
 ├── 11-interview-prep/
 │   ├── README.md                               (Cần tạo) Tổng quan chuẩn bị phỏng vấn
-│   ├── top-questions.md                        (Cần tạo) Top 25 câu hỏi AWS Security
-│   ├── iam-troubleshooting.md                  (Cần tạo) Debug Access Denied, policy conflicts
-│   ├── system-design-security.md               (Cần tạo) Bài toán thiết kế kiến trúc bảo mật
-│   ├── star-stories.md                         (Cần tạo) Mẫu câu chuyện sự cố STAR
-│   └── 90-day-study-plan.md                    (Cần tạo) Kế hoạch học tập 90 ngày
+│   ├── 1-top-questions.md                      (Cần tạo) Top 25 câu hỏi AWS Security
+│   ├── 2-iam-troubleshooting.md                (Cần tạo) Debug Access Denied, policy conflicts
+│   ├── 3-system-design-security.md             (Cần tạo) Bài toán thiết kế kiến trúc bảo mật
+│   ├── 4-star-stories.md                       (Cần tạo) Mẫu câu chuyện sự cố STAR
+│   └── 5-90-day-study-plan.md                  (Cần tạo) Kế hoạch học tập 90 ngày
 │
 ├── GLOSSARY.md                                 (Cần tạo) Thuật ngữ AWS Security
 ├── RESOURCES.md                                (Cần tạo) Sách, blog, công cụ, chứng chỉ
@@ -259,15 +259,15 @@ Dùng như tài liệu tham khảo:
 |---|---|
 | Tổng quan toàn bộ | [README.md](README.md) |
 | IAM cơ bản | [01-iam-fundamentals/README.md](01-iam-fundamentals/README.md) |
-| SSO đa tài khoản | [02-identity-federation/iam-identity-center.md](02-identity-federation/iam-identity-center.md) |
+| SSO đa tài khoản | [02-identity-federation/1-iam-identity-center.md](02-identity-federation/1-iam-identity-center.md) |
 | Multi-account design | [03-organizations/README.md](03-organizations/README.md) |
 | Mã hóa & KMS | [04-encryption-kms/README.md](04-encryption-kms/README.md) |
-| Quản lý bí mật | [05-secrets-certificates/secrets-manager.md](05-secrets-certificates/secrets-manager.md) |
+| Quản lý bí mật | [05-secrets-certificates/1-secrets-manager.md](05-secrets-certificates/1-secrets-manager.md) |
 | Bảo mật mạng | [06-network-security/README.md](06-network-security/README.md) |
 | CloudTrail & Config | [07-monitoring-auditing/README.md](07-monitoring-auditing/README.md) |
-| GuardDuty & incidents | [08-threat-detection/incident-response.md](08-threat-detection/incident-response.md) |
+| GuardDuty & incidents | [08-threat-detection/6-incident-response.md](08-threat-detection/6-incident-response.md) |
 | Compliance | [09-compliance-governance/README.md](09-compliance-governance/README.md) |
-| Câu hỏi phỏng vấn | [11-interview-prep/top-questions.md](11-interview-prep/top-questions.md) |
+| Câu hỏi phỏng vấn | [11-interview-prep/1-top-questions.md](11-interview-prep/1-top-questions.md) |
 
 ---
 
