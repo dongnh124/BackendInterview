@@ -33,13 +33,13 @@ Devops/aws/iam/
 │   └── 4-account-vending.md                    ✅ Tự động tạo tài khoản — AVM, AFT, pipeline
 │
 ├── 04-encryption-kms/
-│   ├── README.md                               (Cần tạo) Encryption strategy trên AWS
-│   ├── 1-kms-key-types.md                      (Cần tạo) CMK vs AWS-managed vs data keys
-│   ├── 2-envelope-encryption.md                (Cần tạo) Mã hóa phong bì, DEK lifecycle
-│   ├── 3-key-policies.md                       (Cần tạo) Key policy vs IAM policy
-│   ├── 4-kms-grants.md                         (Cần tạo) Grants — ủy quyền dùng key tạm thời
-│   ├── 5-cloudhsm.md                           (Cần tạo) CloudHSM — FIPS 140-2 Level 3
-│   └── 6-s3-encryption-options.md              (Cần tạo) SSE-S3 vs SSE-KMS vs SSE-C vs CSE
+│   ├── README.md                               ✅ Encryption strategy trên AWS
+│   ├── 1-kms-key-types.md                      ✅ CMK vs AWS-managed vs data keys
+│   ├── 2-envelope-encryption.md                ✅ Mã hóa phong bì, DEK lifecycle
+│   ├── 3-key-policies.md                       ✅ Key policy vs IAM policy
+│   ├── 4-kms-grants.md                         ✅ Grants — ủy quyền dùng key tạm thời
+│   ├── 5-cloudhsm.md                           ✅ CloudHSM — FIPS 140-2 Level 3
+│   └── 6-s3-encryption-options.md              ✅ SSE-S3 vs SSE-KMS vs SSE-C vs CSE
 │
 ├── 05-secrets-certificates/
 │   ├── README.md                               (Cần tạo) Secrets lifecycle management
@@ -116,7 +116,7 @@ Devops/aws/iam/
 | **IAM Fundamentals** | 01-iam-fundamentals/ | ✅ Hoàn Thành | Toàn Diện |
 | **Identity Federation** | 02-identity-federation/ | ✅ Hoàn Thành | - |
 | **Organizations & Multi-Account** | 03-organizations/ | ✅ Hoàn Thành | Toàn Diện |
-| **Encryption & KMS** | 04-encryption-kms/ | 🚧 Đang Tạo | - |
+| **Encryption & KMS** | 04-encryption-kms/ | ✅ Hoàn Thành | Toàn Diện |
 | **Secrets & Certificates** | 05-secrets-certificates/ | 🚧 Đang Tạo | - |
 | **Network Security** | 06-network-security/ | 🚧 Đang Tạo | - |
 | **Monitoring & Auditing** | 07-monitoring-auditing/ | 🚧 Đang Tạo | - |
@@ -412,5 +412,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-16
-**Phiên Bản:** 1.3 (03-organizations hoàn thành)
-**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | ✅ 03-organizations Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
+**Phiên Bản:** 1.4 (04-encryption-kms hoàn thành)
+**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | ✅ 03-organizations Hoàn Thành | ✅ 04-encryption-kms Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
