@@ -18,12 +18,12 @@ Devops/aws/iam/
 │   └── 5-iam-best-practices.md                 ✅ Checklist bảo mật IAM
 │
 ├── 02-identity-federation/
-│   ├── README.md                               (Cần tạo) Federation, SSO, Cognito overview
-│   ├── 1-iam-identity-center.md                (Cần tạo) AWS SSO đa tài khoản
-│   ├── 2-saml-federation.md                    (Cần tạo) SAML 2.0 với AD/Okta/Azure AD
-│   ├── 3-oidc-federation.md                    (Cần tạo) OIDC với GitHub Actions, Google
-│   ├── 4-cognito-user-pools.md                 (Cần tạo) Auth cho ứng dụng web/mobile
-│   └── 5-cross-account-roles.md                (Cần tạo) Mô hình hub-and-spoke
+│   ├── README.md                               ✅ Federation, SSO, Cognito overview
+│   ├── 1-iam-identity-center.md                ✅ AWS SSO đa tài khoản
+│   ├── 2-saml-federation.md                    ✅ SAML 2.0 với AD/Okta/Azure AD
+│   ├── 3-oidc-federation.md                    ✅ OIDC với GitHub Actions, Google
+│   ├── 4-cognito-user-pools.md                 ✅ Auth cho ứng dụng web/mobile
+│   └── 5-cross-account-roles.md                ✅ Mô hình hub-and-spoke
 │
 ├── 03-organizations/
 │   ├── README.md                               (Cần tạo) Multi-account strategy
@@ -114,7 +114,7 @@ Devops/aws/iam/
 | **Tổng Quan & Lộ Trình** | README.md | ✅ Hoàn Thành | Toàn Diện |
 | **Chỉ Mục Đầy Đủ** | INDEX.md | ✅ Hoàn Thành | Đầy Đủ |
 | **IAM Fundamentals** | 01-iam-fundamentals/ | ✅ Hoàn Thành | Toàn Diện |
-| **Identity Federation** | 02-identity-federation/ | 🚧 Đang Tạo | - |
+| **Identity Federation** | 02-identity-federation/ | ✅ Hoàn Thành | Toàn Diện |
 | **Organizations & Multi-Account** | 03-organizations/ | 🚧 Đang Tạo | - |
 | **Encryption & KMS** | 04-encryption-kms/ | 🚧 Đang Tạo | - |
 | **Secrets & Certificates** | 05-secrets-certificates/ | 🚧 Đang Tạo | - |
@@ -412,5 +412,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-16
-**Phiên Bản:** 1.1 (01-iam-fundamentals hoàn thành)
-**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
+**Phiên Bản:** 1.2 (02-identity-federation hoàn thành)
+**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
