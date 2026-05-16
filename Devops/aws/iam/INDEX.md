@@ -10,12 +10,12 @@ Devops/aws/iam/
 ├── INDEX.md                                    Chỉ mục đầy đủ (file này)
 │
 ├── 01-iam-fundamentals/
-│   ├── README.md                               Nền tảng IAM, khái niệm cốt lõi
-│   ├── 1-users-groups-roles.md                 (Cần tạo) Users, Groups, Roles chi tiết
-│   ├── 2-policy-types.md                       (Cần tạo) Identity/Resource/SCPs/Permissions Boundary
-│   ├── 3-iam-conditions.md                     (Cần tạo) Condition keys, operators, examples
-│   ├── 4-permission-boundaries.md              (Cần tạo) Giới hạn quyền, use cases
-│   └── 5-iam-best-practices.md                 (Cần tạo) Checklist bảo mật IAM
+│   ├── README.md                               ✅ Nền tảng IAM, khái niệm cốt lõi
+│   ├── 1-users-groups-roles.md                 ✅ Users, Groups, Roles chi tiết
+│   ├── 2-policy-types.md                       ✅ Identity/Resource/SCPs/Permissions Boundary
+│   ├── 3-iam-conditions.md                     ✅ Condition keys, operators, examples
+│   ├── 4-permission-boundaries.md              ✅ Giới hạn quyền, use cases
+│   └── 5-iam-best-practices.md                 ✅ Checklist bảo mật IAM
 │
 ├── 02-identity-federation/
 │   ├── README.md                               (Cần tạo) Federation, SSO, Cognito overview
@@ -113,7 +113,7 @@ Devops/aws/iam/
 |---|---|---|---|
 | **Tổng Quan & Lộ Trình** | README.md | ✅ Hoàn Thành | Toàn Diện |
 | **Chỉ Mục Đầy Đủ** | INDEX.md | ✅ Hoàn Thành | Đầy Đủ |
-| **IAM Fundamentals** | 01-iam-fundamentals/ | 🚧 Đang Tạo | - |
+| **IAM Fundamentals** | 01-iam-fundamentals/ | ✅ Hoàn Thành | Toàn Diện |
 | **Identity Federation** | 02-identity-federation/ | 🚧 Đang Tạo | - |
 | **Organizations & Multi-Account** | 03-organizations/ | 🚧 Đang Tạo | - |
 | **Encryption & KMS** | 04-encryption-kms/ | 🚧 Đang Tạo | - |
@@ -412,5 +412,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-16
-**Phiên Bản:** 1.0 (README + INDEX hoàn thành)
-**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | 🚧 Các Module Đang Tạo
+**Phiên Bản:** 1.1 (01-iam-fundamentals hoàn thành)
+**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
