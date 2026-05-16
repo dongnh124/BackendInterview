@@ -42,12 +42,12 @@ Devops/aws/iam/
 │   └── 6-s3-encryption-options.md              ✅ SSE-S3 vs SSE-KMS vs SSE-C vs CSE
 │
 ├── 05-secrets-certificates/
-│   ├── README.md                               (Cần tạo) Secrets lifecycle management
-│   ├── 1-secrets-manager.md                    (Cần tạo) Lưu trữ, xoay vòng, truy xuất bí mật
-│   ├── 2-parameter-store.md                    (Cần tạo) Hierarchy, SecureString, versions
-│   ├── 3-secrets-vs-parameter.md               (Cần tạo) So sánh và hướng dẫn chọn lựa
-│   ├── 4-acm-certificates.md                   (Cần tạo) TLS cert lifecycle, auto-renewal
-│   └── 5-acm-private-ca.md                     (Cần tạo) Internal PKI trên AWS
+│   ├── README.md                               ✅ Secrets lifecycle management
+│   ├── 1-secrets-manager.md                    ✅ Lưu trữ, xoay vòng, truy xuất bí mật
+│   ├── 2-parameter-store.md                    ✅ Hierarchy, SecureString, versions
+│   ├── 3-secrets-vs-parameter.md               ✅ So sánh và hướng dẫn chọn lựa
+│   ├── 4-acm-certificates.md                   ✅ TLS cert lifecycle, auto-renewal
+│   └── 5-acm-private-ca.md                     ✅ Internal PKI trên AWS
 │
 ├── 06-network-security/
 │   ├── README.md                               (Cần tạo) Defense-in-depth network design
@@ -117,7 +117,7 @@ Devops/aws/iam/
 | **Identity Federation** | 02-identity-federation/ | ✅ Hoàn Thành | - |
 | **Organizations & Multi-Account** | 03-organizations/ | ✅ Hoàn Thành | Toàn Diện |
 | **Encryption & KMS** | 04-encryption-kms/ | ✅ Hoàn Thành | Toàn Diện |
-| **Secrets & Certificates** | 05-secrets-certificates/ | 🚧 Đang Tạo | - |
+| **Secrets & Certificates** | 05-secrets-certificates/ | ✅ Hoàn Thành | Toàn Diện |
 | **Network Security** | 06-network-security/ | 🚧 Đang Tạo | - |
 | **Monitoring & Auditing** | 07-monitoring-auditing/ | 🚧 Đang Tạo | - |
 | **Threat Detection** | 08-threat-detection/ | 🚧 Đang Tạo | - |
@@ -412,5 +412,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-16
-**Phiên Bản:** 1.4 (04-encryption-kms hoàn thành)
-**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | ✅ 03-organizations Hoàn Thành | ✅ 04-encryption-kms Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
+**Phiên Bản:** 1.5 (05-secrets-certificates hoàn thành)
+**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | ✅ 03-organizations Hoàn Thành | ✅ 04-encryption-kms Hoàn Thành | ✅ 05-secrets-certificates Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
