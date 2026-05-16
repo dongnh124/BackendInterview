@@ -68,13 +68,13 @@ Devops/aws/iam/
 │   └── 5-security-dashboard.md                 ✅ CloudWatch dashboards cho security
 │
 ├── 08-threat-detection/
-│   ├── README.md                               (Cần tạo) Threat detection ecosystem
-│   ├── 1-guardduty.md                          (Cần tạo) Findings types, severity, suppression
-│   ├── 2-security-hub.md                       (Cần tạo) Aggregation, standards, custom actions
-│   ├── 3-inspector.md                          (Cần tạo) EC2/ECR/Lambda vulnerability scanning
-│   ├── 4-macie.md                              (Cần tạo) S3 data classification, PII detection
-│   ├── 5-detective.md                          (Cần tạo) Graph-based investigation
-│   └── 6-incident-response.md                  (Cần tạo) Runbook xử lý sự cố bảo mật AWS
+│   ├── README.md                               ✅ Threat detection ecosystem, so sánh dịch vụ
+│   ├── 1-guardduty.md                          ✅ Finding types, severity levels, suppression rules
+│   ├── 2-security-hub.md                       ✅ Aggregation, ASFF, standards, custom actions
+│   ├── 3-inspector.md                          ✅ EC2/ECR/Lambda vulnerability scanning, CVSS
+│   ├── 4-macie.md                              ✅ S3 data classification, PII/PHI detection
+│   ├── 5-detective.md                          ✅ Graph-based investigation, behavior graph
+│   └── 6-incident-response.md                  ✅ Runbook xử lý sự cố bảo mật AWS
 │
 ├── 09-compliance-governance/
 │   ├── README.md                               (Cần tạo) Compliance strategy on AWS
@@ -120,7 +120,7 @@ Devops/aws/iam/
 | **Secrets & Certificates** | 05-secrets-certificates/ | ✅ Hoàn Thành | Toàn Diện |
 | **Network Security** | 06-network-security/ | ✅ Hoàn Thành | Toàn Diện |
 | **Monitoring & Auditing** | 07-monitoring-auditing/ | ✅ Hoàn Thành | Toàn Diện |
-| **Threat Detection** | 08-threat-detection/ | 🚧 Đang Tạo | - |
+| **Threat Detection** | 08-threat-detection/ | ✅ Hoàn Thành | Toàn Diện |
 | **Compliance & Governance** | 09-compliance-governance/ | 🚧 Đang Tạo | - |
 | **Advanced Topics** | 10-advanced/ | 🚧 Đang Tạo | - |
 | **Interview Prep** | 11-interview-prep/ | 🚧 Đang Tạo | - |
@@ -412,5 +412,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-16
-**Phiên Bản:** 1.7 (07-monitoring-auditing hoàn thành)
-**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | ✅ 03-organizations Hoàn Thành | ✅ 04-encryption-kms Hoàn Thành | ✅ 05-secrets-certificates Hoàn Thành | ✅ 06-network-security Hoàn Thành | ✅ 07-monitoring-auditing Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
+**Phiên Bản:** 1.8 (08-threat-detection hoàn thành)
+**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | ✅ 03-organizations Hoàn Thành | ✅ 04-encryption-kms Hoàn Thành | ✅ 05-secrets-certificates Hoàn Thành | ✅ 06-network-security Hoàn Thành | ✅ 07-monitoring-auditing Hoàn Thành | ✅ 08-threat-detection Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
