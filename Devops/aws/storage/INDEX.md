@@ -129,7 +129,7 @@ Devops/aws/storage/
 | **EBS**                     | 03-ebs/ (7 files)               | ✅         | Hoàn thành     |
 | **EFS**                     | 04-efs/ (6 files)               | ✅         | Hoàn thành     |
 | **Bảo Mật**                 | 05-security/ (8 files)          | ✅         | Hoàn thành     |
-| **Tối Ưu Chi Phí**          | 06-cost-optimization/ (6 files) | 🚧         | Cần tạo        |
+| **Tối Ưu Chi Phí**          | 06-cost-optimization/ (7 files) | ✅         | Hoàn thành     |
 | **Monitoring**              | 07-monitoring/ (6 files)        | 🚧         | Cần tạo        |
 | **Disaster Recovery**       | 08-disaster-recovery/ (5 files) | 🚧         | Cần tạo        |
 | **Storage Gateway**         | 09-storage-gateway/ (5 files)   | 🚧         | Cần tạo        |
@@ -380,5 +380,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-16
-**Phiên Bản:** 1.5 (README + INDEX + 01-s3-fundamentals + 02-s3-advanced + 03-ebs + 04-efs + 05-security hoàn thành)
-**Trạng Thái:** ✅ README.md | ✅ INDEX.md | ✅ 01-s3-fundamentals/ | ✅ 02-s3-advanced/ | ✅ 03-ebs/ | ✅ 04-efs/ | ✅ 05-security/ | 🚧 Các phần còn lại đang triển khai
+**Phiên Bản:** 1.6 (README + INDEX + 01-s3-fundamentals + 02-s3-advanced + 03-ebs + 04-efs + 05-security + 06-cost-optimization hoàn thành)
+**Trạng Thái:** ✅ README.md | ✅ INDEX.md | ✅ 01-s3-fundamentals/ | ✅ 02-s3-advanced/ | ✅ 03-ebs/ | ✅ 04-efs/ | ✅ 05-security/ | ✅ 06-cost-optimization/ | 🚧 Các phần còn lại đang triển khai
