@@ -77,12 +77,12 @@ Devops/aws/iam/
 │   └── 6-incident-response.md                  ✅ Runbook xử lý sự cố bảo mật AWS
 │
 ├── 09-compliance-governance/
-│   ├── README.md                               (Cần tạo) Compliance strategy on AWS
-│   ├── 1-audit-manager.md                      (Cần tạo) Tự động thu thập bằng chứng
-│   ├── 2-conformance-packs.md                  (Cần tạo) CIS, PCI-DSS, HIPAA conformance packs
-│   ├── 3-firewall-manager.md                   (Cần tạo) Centralized WAF/SG/Shield management
-│   ├── 4-pci-dss-aws.md                        (Cần tạo) Payment Card Industry compliance
-│   └── 5-hipaa-aws.md                          (Cần tạo) Healthcare data compliance
+│   ├── README.md                               ✅ Compliance strategy on AWS
+│   ├── 1-audit-manager.md                      ✅ Tự động thu thập bằng chứng
+│   ├── 2-conformance-packs.md                  ✅ CIS, PCI-DSS, HIPAA conformance packs
+│   ├── 3-firewall-manager.md                   ✅ Centralized WAF/SG/Shield management
+│   ├── 4-pci-dss-aws.md                        ✅ Payment Card Industry compliance
+│   └── 5-hipaa-aws.md                          ✅ Healthcare data compliance
 │
 ├── 10-advanced/
 │   ├── README.md                               (Cần tạo) Advanced security patterns
@@ -121,7 +121,7 @@ Devops/aws/iam/
 | **Network Security** | 06-network-security/ | ✅ Hoàn Thành | Toàn Diện |
 | **Monitoring & Auditing** | 07-monitoring-auditing/ | ✅ Hoàn Thành | Toàn Diện |
 | **Threat Detection** | 08-threat-detection/ | ✅ Hoàn Thành | Toàn Diện |
-| **Compliance & Governance** | 09-compliance-governance/ | 🚧 Đang Tạo | - |
+| **Compliance & Governance** | 09-compliance-governance/ | ✅ Hoàn Thành | Toàn Diện |
 | **Advanced Topics** | 10-advanced/ | 🚧 Đang Tạo | - |
 | **Interview Prep** | 11-interview-prep/ | 🚧 Đang Tạo | - |
 
@@ -412,5 +412,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-16
-**Phiên Bản:** 1.8 (08-threat-detection hoàn thành)
-**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | ✅ 03-organizations Hoàn Thành | ✅ 04-encryption-kms Hoàn Thành | ✅ 05-secrets-certificates Hoàn Thành | ✅ 06-network-security Hoàn Thành | ✅ 07-monitoring-auditing Hoàn Thành | ✅ 08-threat-detection Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
+**Phiên Bản:** 1.9 (09-compliance-governance hoàn thành)
+**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | ✅ 03-organizations Hoàn Thành | ✅ 04-encryption-kms Hoàn Thành | ✅ 05-secrets-certificates Hoàn Thành | ✅ 06-network-security Hoàn Thành | ✅ 07-monitoring-auditing Hoàn Thành | ✅ 08-threat-detection Hoàn Thành | ✅ 09-compliance-governance Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
