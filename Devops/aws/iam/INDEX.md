@@ -50,14 +50,14 @@ Devops/aws/iam/
 │   └── 5-acm-private-ca.md                     ✅ Internal PKI trên AWS
 │
 ├── 06-network-security/
-│   ├── README.md                               (Cần tạo) Defense-in-depth network design
-│   ├── 1-security-groups.md                    (Cần tạo) Stateful firewall, best practices
-│   ├── 2-nacls.md                              (Cần tạo) Stateless rules, subnet protection
-│   ├── 3-vpc-endpoints.md                      (Cần tạo) Gateway vs Interface endpoints
-│   ├── 4-privatelink.md                        (Cần tạo) Private service connectivity
-│   ├── 5-waf-setup.md                          (Cần tạo) WAF rules, managed rule groups
-│   ├── 6-shield-ddos.md                        (Cần tạo) DDoS protection tiers
-│   └── 7-network-firewall.md                   (Cần tạo) Stateful firewall có thể lập trình
+│   ├── README.md                               ✅ Defense-in-depth network design
+│   ├── 1-security-groups.md                    ✅ Stateful firewall, best practices
+│   ├── 2-nacls.md                              ✅ Stateless rules, subnet protection
+│   ├── 3-vpc-endpoints.md                      ✅ Gateway vs Interface endpoints
+│   ├── 4-privatelink.md                        ✅ Private service connectivity
+│   ├── 5-waf-setup.md                          ✅ WAF rules, managed rule groups
+│   ├── 6-shield-ddos.md                        ✅ DDoS protection tiers
+│   └── 7-network-firewall.md                   ✅ Stateful firewall có thể lập trình
 │
 ├── 07-monitoring-auditing/
 │   ├── README.md                               (Cần tạo) Security observability strategy
@@ -118,7 +118,7 @@ Devops/aws/iam/
 | **Organizations & Multi-Account** | 03-organizations/ | ✅ Hoàn Thành | Toàn Diện |
 | **Encryption & KMS** | 04-encryption-kms/ | ✅ Hoàn Thành | Toàn Diện |
 | **Secrets & Certificates** | 05-secrets-certificates/ | ✅ Hoàn Thành | Toàn Diện |
-| **Network Security** | 06-network-security/ | 🚧 Đang Tạo | - |
+| **Network Security** | 06-network-security/ | ✅ Hoàn Thành | Toàn Diện |
 | **Monitoring & Auditing** | 07-monitoring-auditing/ | 🚧 Đang Tạo | - |
 | **Threat Detection** | 08-threat-detection/ | 🚧 Đang Tạo | - |
 | **Compliance & Governance** | 09-compliance-governance/ | 🚧 Đang Tạo | - |
@@ -412,5 +412,5 @@ Knowledge base này mở để học tập và sử dụng chuyên nghiệp.
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-16
-**Phiên Bản:** 1.5 (05-secrets-certificates hoàn thành)
-**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | ✅ 03-organizations Hoàn Thành | ✅ 04-encryption-kms Hoàn Thành | ✅ 05-secrets-certificates Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
+**Phiên Bản:** 1.6 (06-network-security hoàn thành)
+**Trạng Thái:** ✅ README Hoàn Thành | ✅ INDEX Hoàn Thành | ✅ 01-iam-fundamentals Hoàn Thành | ✅ 02-identity-federation Hoàn Thành | ✅ 03-organizations Hoàn Thành | ✅ 04-encryption-kms Hoàn Thành | ✅ 05-secrets-certificates Hoàn Thành | ✅ 06-network-security Hoàn Thành | 🚧 Các Module Còn Lại Đang Tạo
