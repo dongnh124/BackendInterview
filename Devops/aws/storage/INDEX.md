@@ -131,7 +131,7 @@ Devops/aws/storage/
 | **Bảo Mật**                 | 05-security/ (8 files)          | ✅         | Hoàn thành     |
 | **Tối Ưu Chi Phí**          | 06-cost-optimization/ (7 files) | ✅         | Hoàn thành     |
 | **Monitoring**              | 07-monitoring/ (7 files)        | ✅         | Hoàn thành     |
-| **Disaster Recovery**       | 08-disaster-recovery/ (5 files) | 🚧         | Cần tạo        |
+| **Disaster Recovery**       | 08-disaster-recovery/ (5 files) | ✅         | Hoàn thành     |
 | **Storage Gateway**         | 09-storage-gateway/ (5 files)   | 🚧         | Cần tạo        |
 | **Snow Family**             | 10-snow-family/ (5 files)       | 🚧         | Cần tạo        |
 | **FSx**                     | 11-fsx/ (5 files)               | 🚧         | Cần tạo        |
@@ -380,5 +380,5 @@ Tìm thấy lỗi? Muốn thêm nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-16
-**Phiên Bản:** 1.7 (README + INDEX + 01-s3-fundamentals + 02-s3-advanced + 03-ebs + 04-efs + 05-security + 06-cost-optimization + 07-monitoring hoàn thành)
-**Trạng Thái:** ✅ README.md | ✅ INDEX.md | ✅ 01-s3-fundamentals/ | ✅ 02-s3-advanced/ | ✅ 03-ebs/ | ✅ 04-efs/ | ✅ 05-security/ | ✅ 06-cost-optimization/ | ✅ 07-monitoring/ | 🚧 Các phần còn lại đang triển khai
+**Phiên Bản:** 1.8 (README + INDEX + 01-s3-fundamentals + 02-s3-advanced + 03-ebs + 04-efs + 05-security + 06-cost-optimization + 07-monitoring + 08-disaster-recovery hoàn thành)
+**Trạng Thái:** ✅ README.md | ✅ INDEX.md | ✅ 01-s3-fundamentals/ | ✅ 02-s3-advanced/ | ✅ 03-ebs/ | ✅ 04-efs/ | ✅ 05-security/ | ✅ 06-cost-optimization/ | ✅ 07-monitoring/ | ✅ 08-disaster-recovery/ | 🚧 Các phần còn lại đang triển khai
