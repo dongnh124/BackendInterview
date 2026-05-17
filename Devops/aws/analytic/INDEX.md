@@ -117,6 +117,11 @@ Devops/aws/analytic/
 | **Glue ETL Jobs**                        | 03-glue/2-glue-etl-jobs.md                     | ✅         | Toàn diện     |
 | **Glue Crawlers**                        | 03-glue/3-glue-crawlers.md                     | ✅         | Toàn diện     |
 | **Glue Data Quality**                    | 03-glue/4-glue-data-quality.md                 | ✅         | Toàn diện     |
+| **Athena — Tổng Quan Module**            | 04-athena/README.md                            | ✅         | Toàn diện     |
+| **Athena Fundamentals — Nền Tảng**       | 04-athena/1-athena-fundamentals.md             | ✅         | Toàn diện     |
+| **Athena Performance Optimization**      | 04-athena/2-athena-performance.md              | ✅         | Toàn diện     |
+| **Athena Federated Query**               | 04-athena/3-athena-federation.md               | ✅         | Toàn diện     |
+| **Athena Cost Optimization**             | 04-athena/4-athena-cost-optimization.md        | ✅         | Toàn diện     |
 
 ---
 
@@ -127,7 +132,7 @@ Devops/aws/analytic/
 - [x] `01-fundamentals/README.md` — Nền tảng: Batch vs Streaming, Data Lake vs Warehouse ✅
 - [x] `02-kinesis/README.md` — Kinesis Data Streams, Firehose, Analytics ✅
 - [x] `03-glue/README.md` — Glue ETL, Data Catalog, Crawlers ✅
-- [ ] `04-athena/README.md` — Athena serverless query, tối ưu performance
+- [x] `04-athena/README.md` — Athena serverless query, tối ưu performance ✅
 - [ ] `05-redshift/README.md` — Redshift MPP, distribution strategies
 - [ ] `12-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
 
@@ -394,5 +399,5 @@ Knowledge base này là tài liệu sống. Đóng góp được chào đón:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.3
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | 🚧 Các module 04-12 đang trong kế hoạch
+**Phiên Bản:** 1.4
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | 🚧 Các module 05-12 đang trong kế hoạch
