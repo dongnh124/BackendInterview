@@ -107,6 +107,11 @@ Devops/aws/analytic/
 | **Batch vs Stream Processing**           | 01-fundamentals/3-batch-vs-streaming.md        | ✅         | Toàn diện     |
 | **Data Lake vs Warehouse vs Lakehouse**  | 01-fundamentals/4-data-lake-vs-warehouse.md    | ✅         | Toàn diện     |
 | **ETL vs ELT**                           | 01-fundamentals/5-etl-elt-concepts.md          | ✅         | Toàn diện     |
+| **Kinesis — Tổng Quan Module**           | 02-kinesis/README.md                           | ✅         | Toàn diện     |
+| **Kinesis Data Streams — KDS**           | 02-kinesis/1-kinesis-data-streams.md           | ✅         | Toàn diện     |
+| **Kinesis Data Firehose — KDF**          | 02-kinesis/2-kinesis-firehose.md               | ✅         | Toàn diện     |
+| **Kinesis Data Analytics — KDA/Flink**  | 02-kinesis/3-kinesis-analytics.md              | ✅         | Toàn diện     |
+| **Kinesis vs Kafka / MSK**               | 02-kinesis/4-kinesis-vs-kafka.md               | ✅         | Toàn diện     |
 
 ---
 
@@ -115,7 +120,7 @@ Devops/aws/analytic/
 ### Ưu Tiên Cao — Core Analytics Services
 
 - [x] `01-fundamentals/README.md` — Nền tảng: Batch vs Streaming, Data Lake vs Warehouse ✅
-- [ ] `02-kinesis/README.md` — Kinesis Data Streams, Firehose, Analytics
+- [x] `02-kinesis/README.md` — Kinesis Data Streams, Firehose, Analytics ✅
 - [ ] `03-glue/README.md` — Glue ETL, Data Catalog, Crawlers
 - [ ] `04-athena/README.md` — Athena serverless query, tối ưu performance
 - [ ] `05-redshift/README.md` — Redshift MPP, distribution strategies
@@ -384,5 +389,5 @@ Knowledge base này là tài liệu sống. Đóng góp được chào đón:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.1
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | 🚧 Các module 02-12 đang trong kế hoạch
+**Phiên Bản:** 1.2
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | 🚧 Các module 03-12 đang trong kế hoạch
