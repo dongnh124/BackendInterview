@@ -27,12 +27,12 @@ Devops/aws/management/
 │   └── 5-forensics-investigation.md                     ✅ Điều tra sự cố, phân tích event history
 │
 ├── 03-aws-config/
-│   ├── README.md                                        Tổng quan AWS Config & compliance automation
-│   ├── 1-configuration-recorder.md                      (Sẽ tạo) Recorder setup, resource types, S3 delivery
-│   ├── 2-config-rules.md                                (Sẽ tạo) Managed rules, Custom Lambda rules, scope
-│   ├── 3-conformance-packs.md                           (Sẽ tạo) CIS, PCI-DSS, NIST conformance packs
-│   ├── 4-remediation.md                                 (Sẽ tạo) Automatic remediation với SSM Automation
-│   └── 5-aggregator-multiregion.md                      (Sẽ tạo) Aggregator, multi-account compliance view
+│   ├── README.md                                        ✅ Tổng quan AWS Config & compliance automation
+│   ├── 1-configuration-recorder.md                      ✅ Recorder setup, resource types, S3 delivery
+│   ├── 2-config-rules.md                                ✅ Managed rules, Custom Lambda rules, scope
+│   ├── 3-conformance-packs.md                           ✅ CIS, PCI-DSS, NIST conformance packs
+│   ├── 4-remediation.md                                 ✅ Automatic remediation với SSM Automation
+│   └── 5-aggregator-multiregion.md                      ✅ Aggregator, multi-account compliance view
 │
 ├── 04-systems-manager/
 │   ├── README.md                                        Tổng quan SSM & operational toolkit
@@ -104,7 +104,7 @@ Devops/aws/management/
 | **Chỉ Mục Đầy Đủ**                        | INDEX.md (file này)                         | ✅         | Toàn diện     |
 | **CloudWatch — Giám Sát**                 | 01-cloudwatch/ (6 files)                    | ✅ Hoàn thành | Toàn diện  |
 | **CloudTrail — Kiểm Toán**               | 02-cloudtrail/ (6 files)                    | ✅ Hoàn thành | Toàn diện  |
-| **AWS Config — Tuân Thủ**                 | 03-aws-config/ (5 files)                    | 🚧 Sẽ tạo | -             |
+| **AWS Config — Tuân Thủ**                 | 03-aws-config/ (6 files)                    | ✅ Hoàn thành | Toàn diện  |
 | **Systems Manager — Vận Hành**            | 04-systems-manager/ (6 files)               | 🚧 Sẽ tạo | -             |
 | **CloudFormation — IaC**                  | 05-cloudformation/ (6 files)                | 🚧 Sẽ tạo | -             |
 | **Organizations — Đa Tài Khoản**          | 06-organizations/ (5 files)                 | 🚧 Sẽ tạo | -             |
@@ -122,7 +122,7 @@ Devops/aws/management/
 
 - [x] `01-cloudwatch/README.md` — Monitoring strategy, Metrics, Alarms, Logs Insights
 - [x] `02-cloudtrail/README.md` — Audit logging, Event types, Organization Trail
-- [ ] `03-aws-config/README.md` — Config Rules, Conformance Packs, Remediation
+- [x] `03-aws-config/README.md` — Config Rules, Conformance Packs, Remediation
 - [ ] `04-systems-manager/README.md` — Session Manager, Patch Manager, Parameter Store
 - [ ] `05-cloudformation/README.md` — Template anatomy, Stacks, StackSets, CDK so sánh
 
@@ -336,5 +336,5 @@ Phát hiện lỗi? Muốn bổ sung nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.2 (02-cloudtrail hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | 🚧 Các module khác đang phát triển
+**Phiên Bản:** 1.3 (03-aws-config hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | 🚧 Các module khác đang phát triển
