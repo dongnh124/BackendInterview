@@ -53,12 +53,12 @@ Devops/aws/management/
 │   └── 6-cdk-comparison.md                              ✅ CDK vs CloudFormation, khi nào dùng CDK
 │
 ├── 06-organizations/
-│   ├── README.md                                        Tổng quan AWS Organizations & multi-account strategy
-│   ├── 1-account-structure.md                           (Sẽ tạo) Management account, Member accounts, OU hierarchy
-│   ├── 2-scp-policies.md                                (Sẽ tạo) SCP deny list vs allow list, inheritance
-│   ├── 3-consolidated-billing.md                        (Sẽ tạo) Billing consolidation, volume discounts, RI sharing
-│   ├── 4-delegated-admin.md                             (Sẽ tạo) Delegated administrator pattern, trusted access
-│   └── 5-multi-account-patterns.md                      (Sẽ tạo) Account vending, account types, OU design patterns
+│   ├── README.md                                        ✅ Tổng quan AWS Organizations & multi-account strategy
+│   ├── 1-account-structure.md                           ✅ Management account, Member accounts, OU hierarchy
+│   ├── 2-scp-policies.md                                ✅ SCP deny list vs allow list, inheritance
+│   ├── 3-consolidated-billing.md                        ✅ Billing consolidation, volume discounts, RI sharing
+│   ├── 4-delegated-admin.md                             ✅ Delegated administrator pattern, trusted access
+│   └── 5-multi-account-patterns.md                      ✅ Account vending, account types, OU design patterns
 │
 ├── 07-control-tower/
 │   ├── README.md                                        Tổng quan Control Tower & landing zone
@@ -107,7 +107,7 @@ Devops/aws/management/
 | **AWS Config — Tuân Thủ**                 | 03-aws-config/ (6 files)                    | ✅ Hoàn thành | Toàn diện  |
 | **Systems Manager — Vận Hành**            | 04-systems-manager/ (7 files)               | ✅ Hoàn thành | Toàn diện  |
 | **CloudFormation — IaC**                  | 05-cloudformation/ (7 files)                | ✅ Hoàn thành | Toàn diện  |
-| **Organizations — Đa Tài Khoản**          | 06-organizations/ (5 files)                 | 🚧 Sẽ tạo | -             |
+| **Organizations — Đa Tài Khoản**          | 06-organizations/ (6 files)                 | ✅ Hoàn thành | Toàn diện  |
 | **Control Tower — Landing Zone**          | 07-control-tower/ (4 files)                 | 🚧 Sẽ tạo | -             |
 | **Trusted Advisor — Best Practice**       | 08-trusted-advisor/ (2 files)               | 🚧 Sẽ tạo | -             |
 | **Health Dashboard — Sức Khỏe Dịch Vụ** | 09-health-dashboard/ (2 files)              | 🚧 Sẽ tạo | -             |
@@ -128,7 +128,7 @@ Devops/aws/management/
 
 ### Ưu Tiên Trung Bình (Kỹ năng nâng cao — doanh nghiệp lớn)
 
-- [ ] `06-organizations/README.md` — OU design, SCPs, multi-account patterns
+- [x] `06-organizations/README.md` — OU design, SCPs, multi-account patterns
 - [ ] `07-control-tower/README.md` — Landing Zone, Guardrails, Account Factory
 - [ ] `10-cost-governance/README.md` — Budgets, Cost Explorer, Tagging strategy
 - [ ] `11-interview-prep/INTERVIEW_GUIDE.md` — Top 30 câu hỏi phỏng vấn
@@ -336,5 +336,5 @@ Phát hiện lỗi? Muốn bổ sung nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.5 (05-cloudformation hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | 🚧 Các module khác đang phát triển
+**Phiên Bản:** 1.6 (06-organizations hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | ✅ 06-organizations/ (6 files) hoàn thành | 🚧 Các module khác đang phát triển
