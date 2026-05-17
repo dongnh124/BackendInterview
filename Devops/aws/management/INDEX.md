@@ -78,12 +78,12 @@ Devops/aws/management/
 │   └── 2-eventbridge-integration.md                     ✅ Tự động hóa response với EventBridge + Lambda
 │
 ├── 10-cost-governance/
-│   ├── README.md                                        Tổng quan cost governance & FinOps trên AWS
-│   ├── 1-budgets-alerts.md                              (Sẽ tạo) AWS Budgets, budget types, alert actions
-│   ├── 2-cost-explorer.md                               (Sẽ tạo) Cost Explorer, filtering, forecasting, rightsizing
-│   ├── 3-anomaly-detection.md                           (Sẽ tạo) Cost Anomaly Detection, ML models, monitors
-│   ├── 4-tagging-strategy.md                            (Sẽ tạo) Tag policies, cost allocation tags, enforcement
-│   └── 5-savings-plans-ri.md                            (Sẽ tạo) Savings Plans vs Reserved Instances, commitment strategies
+│   ├── README.md                                        ✅ Tổng quan cost governance & FinOps trên AWS
+│   ├── 1-budgets-alerts.md                              ✅ AWS Budgets, budget types, alert actions
+│   ├── 2-cost-explorer.md                               ✅ Cost Explorer, filtering, forecasting, rightsizing
+│   ├── 3-anomaly-detection.md                           ✅ Cost Anomaly Detection, ML models, monitors
+│   ├── 4-tagging-strategy.md                            ✅ Tag policies, cost allocation tags, enforcement
+│   └── 5-savings-plans-ri.md                            ✅ Savings Plans vs Reserved Instances, commitment strategies
 │
 └── 11-interview-prep/
     ├── README.md                                        (Sẽ tạo) Hướng dẫn ôn tập phỏng vấn
@@ -111,7 +111,7 @@ Devops/aws/management/
 | **Control Tower — Landing Zone**          | 07-control-tower/ (5 files)                 | ✅ Hoàn thành | Toàn diện   |
 | **Trusted Advisor — Best Practice**       | 08-trusted-advisor/ (3 files)               | ✅ Hoàn thành | Toàn diện  |
 | **Health Dashboard — Sức Khỏe Dịch Vụ** | 09-health-dashboard/ (2 files)              | ✅ Hoàn thành | -             |
-| **Cost Governance — Quản Trị Chi Phí**   | 10-cost-governance/ (5 files)               | 🚧 Sẽ tạo | -             |
+| **Cost Governance — Quản Trị Chi Phí**   | 10-cost-governance/ (6 files)               | ✅ Hoàn thành | Toàn diện   |
 | **Phỏng Vấn & Tình Huống**               | 11-interview-prep/ (5 files)                | 🚧 Sẽ tạo | -             |
 
 ---
@@ -130,7 +130,7 @@ Devops/aws/management/
 
 - [x] `06-organizations/README.md` — OU design, SCPs, multi-account patterns
 - [x] `07-control-tower/README.md` — Landing Zone, Guardrails, Account Factory
-- [ ] `10-cost-governance/README.md` — Budgets, Cost Explorer, Tagging strategy
+- [x] `10-cost-governance/README.md` — Budgets, Cost Explorer, Tagging strategy
 - [ ] `11-interview-prep/INTERVIEW_GUIDE.md` — Top 30 câu hỏi phỏng vấn
 
 ### Ưu Tiên Thấp Hơn (Tham khảo & chuyên sâu)
@@ -336,5 +336,5 @@ Phát hiện lỗi? Muốn bổ sung nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.8 (08-trusted-advisor hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | ✅ 06-organizations/ (6 files) hoàn thành | ✅ 07-control-tower/ (5 files) hoàn thành | ✅ 08-trusted-advisor/ (3 files) hoàn thành | ✅ 09-health-dashboard/ (3 files) hoàn thành | 🚧 Các module khác đang phát triển
+**Phiên Bản:** 1.9 (10-cost-governance hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | ✅ 06-organizations/ (6 files) hoàn thành | ✅ 07-control-tower/ (5 files) hoàn thành | ✅ 08-trusted-advisor/ (3 files) hoàn thành | ✅ 09-health-dashboard/ (3 files) hoàn thành | ✅ 10-cost-governance/ (6 files) hoàn thành | 🚧 11-interview-prep đang phát triển
