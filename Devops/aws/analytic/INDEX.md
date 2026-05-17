@@ -122,6 +122,11 @@ Devops/aws/analytic/
 | **Athena Performance Optimization**      | 04-athena/2-athena-performance.md              | ✅         | Toàn diện     |
 | **Athena Federated Query**               | 04-athena/3-athena-federation.md               | ✅         | Toàn diện     |
 | **Athena Cost Optimization**             | 04-athena/4-athena-cost-optimization.md        | ✅         | Toàn diện     |
+| **Redshift — Tổng Quan Module**          | 05-redshift/README.md                          | ✅         | Toàn diện     |
+| **Redshift Architecture — Kiến Trúc**   | 05-redshift/1-redshift-architecture.md         | ✅         | Toàn diện     |
+| **Redshift Performance Optimization**    | 05-redshift/2-redshift-performance.md          | ✅         | Toàn diện     |
+| **Redshift Spectrum — Query S3**         | 05-redshift/3-redshift-spectrum.md             | ✅         | Toàn diện     |
+| **Redshift Serverless**                  | 05-redshift/4-redshift-serverless.md           | ✅         | Toàn diện     |
 
 ---
 
@@ -133,7 +138,7 @@ Devops/aws/analytic/
 - [x] `02-kinesis/README.md` — Kinesis Data Streams, Firehose, Analytics ✅
 - [x] `03-glue/README.md` — Glue ETL, Data Catalog, Crawlers ✅
 - [x] `04-athena/README.md` — Athena serverless query, tối ưu performance ✅
-- [ ] `05-redshift/README.md` — Redshift MPP, distribution strategies
+- [x] `05-redshift/README.md` — Redshift MPP, distribution strategies ✅
 - [ ] `12-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
 
 ### Ưu Tiên Trung Bình — Advanced Services
@@ -399,5 +404,5 @@ Knowledge base này là tài liệu sống. Đóng góp được chào đón:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.4
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | 🚧 Các module 05-12 đang trong kế hoạch
+**Phiên Bản:** 1.5
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | ✅ 05-redshift hoàn thành (5 files) | 🚧 Các module 06-12 đang trong kế hoạch
