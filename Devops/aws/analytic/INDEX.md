@@ -54,9 +54,9 @@ Devops/aws/analytic/
 │
 ├── 07-lake-formation/
 │   ├── README.md                           Tổng quan Lake Formation — data lake governance
-│   ├── 1-data-lake-design.md              (Cần tạo) Zone architecture, folder structure
-│   ├── 2-lake-formation-security.md       (Cần tạo) Column/row-level, tag-based access
-│   └── 3-s3-data-lake.md                 (Cần tạo) S3 lifecycle, intelligent tiering
+│   ├── 1-data-lake-design.md              Zone architecture, folder structure, partitioning strategy
+│   ├── 2-lake-formation-security.md       Column/row-level, LF-Tags, cross-account sharing
+│   └── 3-s3-data-lake.md                 S3 lifecycle, Intelligent-Tiering, storage classes, tối ưu chi phí
 │
 ├── 08-quicksight/
 │   ├── README.md                           Tổng quan QuickSight — BI & visualization
@@ -132,6 +132,10 @@ Devops/aws/analytic/
 | **Apache Spark trên EMR**               | 06-emr/2-emr-spark.md                          | ✅         | Toàn diện     |
 | **EMR Serverless**                      | 06-emr/3-emr-serverless.md                     | ✅         | Toàn diện     |
 | **EMR Cost Optimization**               | 06-emr/4-emr-cost-optimization.md              | ✅         | Toàn diện     |
+| **Lake Formation — Tổng Quan Module**   | 07-lake-formation/README.md                    | ✅         | Toàn diện     |
+| **Data Lake Design — Thiết Kế**         | 07-lake-formation/1-data-lake-design.md        | ✅         | Toàn diện     |
+| **Lake Formation Security**             | 07-lake-formation/2-lake-formation-security.md | ✅         | Toàn diện     |
+| **S3 Data Lake**                        | 07-lake-formation/3-s3-data-lake.md            | ✅         | Toàn diện     |
 
 ---
 
@@ -149,7 +153,7 @@ Devops/aws/analytic/
 ### Ưu Tiên Trung Bình — Advanced Services
 
 - [x] `06-emr/README.md` — EMR, Spark, EMR Serverless ✅
-- [ ] `07-lake-formation/README.md` — Data Lake governance, security
+- [x] `07-lake-formation/README.md` — Data Lake governance, security ✅
 - [ ] `11-data-architecture/README.md` — Lambda, Kappa, Medallion, Data Mesh
 - [ ] `09-opensearch/README.md` — Search & log analytics
 - [ ] `ROADMAP.md` — Kế hoạch học 90 ngày chi tiết
@@ -409,5 +413,5 @@ Knowledge base này là tài liệu sống. Đóng góp được chào đón:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.6
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | ✅ 05-redshift hoàn thành (5 files) | ✅ 06-emr hoàn thành (5 files) | 🚧 Các module 07-12 đang trong kế hoạch
+**Phiên Bản:** 1.7
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | ✅ 05-redshift hoàn thành (5 files) | ✅ 06-emr hoàn thành (5 files) | ✅ 07-lake-formation hoàn thành (4 files) | 🚧 Các module 08-12 đang trong kế hoạch
