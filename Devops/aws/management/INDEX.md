@@ -68,9 +68,9 @@ Devops/aws/management/
 │   └── 4-customizations-cfct.md                         ✅ Customizations for Control Tower (CfCT)
 │
 ├── 08-trusted-advisor/
-│   ├── README.md                                        Tổng quan Trusted Advisor & best practice checks
-│   ├── 1-check-categories.md                            (Sẽ tạo) 5 categories: Cost, Performance, Security, FT, Limits
-│   └── 2-programmatic-access.md                         (Sẽ tạo) Support API, EventBridge integration, automation
+│   ├── README.md                                        ✅ Tổng quan Trusted Advisor & best practice checks
+│   ├── 1-check-categories.md                            ✅ 5 categories: Cost, Performance, Security, FT, Limits
+│   └── 2-programmatic-access.md                         ✅ Support API, EventBridge integration, automation
 │
 ├── 09-health-dashboard/
 │   ├── README.md                                        ✅ Tổng quan Health Dashboard & service events
@@ -109,8 +109,8 @@ Devops/aws/management/
 | **CloudFormation — IaC**                  | 05-cloudformation/ (7 files)                | ✅ Hoàn thành | Toàn diện  |
 | **Organizations — Đa Tài Khoản**          | 06-organizations/ (6 files)                 | ✅ Hoàn thành | Toàn diện  |
 | **Control Tower — Landing Zone**          | 07-control-tower/ (5 files)                 | ✅ Hoàn thành | Toàn diện   |
-| **Trusted Advisor — Best Practice**       | 08-trusted-advisor/ (2 files)               | 🚧 Sẽ tạo | -             |
-| **Health Dashboard — Sức Khỏe Dịch Vụ** | 09-health-dashboard/ (3 files)              | ✅ Hoàn thành | Toàn diện  |
+| **Trusted Advisor — Best Practice**       | 08-trusted-advisor/ (3 files)               | ✅ Hoàn thành | Toàn diện  |
+| **Health Dashboard — Sức Khỏe Dịch Vụ** | 09-health-dashboard/ (2 files)              | ✅ Hoàn thành | -             |
 | **Cost Governance — Quản Trị Chi Phí**   | 10-cost-governance/ (5 files)               | 🚧 Sẽ tạo | -             |
 | **Phỏng Vấn & Tình Huống**               | 11-interview-prep/ (5 files)                | 🚧 Sẽ tạo | -             |
 
@@ -135,7 +135,7 @@ Devops/aws/management/
 
 ### Ưu Tiên Thấp Hơn (Tham khảo & chuyên sâu)
 
-- [ ] `08-trusted-advisor/` — Best practice checks tự động
+- [x] `08-trusted-advisor/` — Best practice checks tự động
 - [x] `09-health-dashboard/` — Service health & EventBridge automation
 - [ ] `11-interview-prep/service-comparison.md` — Bảng so sánh dịch vụ
 - [ ] `11-interview-prep/system-design-scenarios.md` — Tình huống thiết kế
@@ -336,5 +336,5 @@ Phát hiện lỗi? Muốn bổ sung nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.8 (09-health-dashboard hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | ✅ 06-organizations/ (6 files) hoàn thành | ✅ 07-control-tower/ (5 files) hoàn thành | ✅ 09-health-dashboard/ (3 files) hoàn thành | 🚧 Các module khác đang phát triển
+**Phiên Bản:** 1.8 (08-trusted-advisor hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | ✅ 06-organizations/ (6 files) hoàn thành | ✅ 07-control-tower/ (5 files) hoàn thành | ✅ 08-trusted-advisor/ (3 files) hoàn thành | ✅ 09-health-dashboard/ (3 files) hoàn thành | 🚧 Các module khác đang phát triển
