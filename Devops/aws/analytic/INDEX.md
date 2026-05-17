@@ -26,10 +26,10 @@ Devops/aws/analytic/
 │
 ├── 03-glue/
 │   ├── README.md                           Tổng quan Glue — ETL & Data Catalog
-│   ├── 1-glue-catalog.md                  (Cần tạo) Data Catalog — metadata repository
-│   ├── 2-glue-etl-jobs.md                 (Cần tạo) ETL Jobs — PySpark, Python Shell, Ray
-│   ├── 3-glue-crawlers.md                 (Cần tạo) Crawlers — tự động phát hiện schema
-│   └── 4-glue-data-quality.md            (Cần tạo) Data Quality — profiling, validation
+│   ├── 1-glue-catalog.md                  Data Catalog — metadata repository, tích hợp Athena/Redshift/EMR
+│   ├── 2-glue-etl-jobs.md                 ETL Jobs — PySpark, Python Shell, Ray, DPU, tối ưu chi phí
+│   ├── 3-glue-crawlers.md                 Crawlers — tự động phát hiện schema, partition discovery
+│   └── 4-glue-data-quality.md            Data Quality — DQDL, profiling, validation, quarantine pattern
 │
 ├── 04-athena/
 │   ├── README.md                           Tổng quan Athena — serverless SQL query
@@ -112,6 +112,11 @@ Devops/aws/analytic/
 | **Kinesis Data Firehose — KDF**          | 02-kinesis/2-kinesis-firehose.md               | ✅         | Toàn diện     |
 | **Kinesis Data Analytics — KDA/Flink**  | 02-kinesis/3-kinesis-analytics.md              | ✅         | Toàn diện     |
 | **Kinesis vs Kafka / MSK**               | 02-kinesis/4-kinesis-vs-kafka.md               | ✅         | Toàn diện     |
+| **Glue — Tổng Quan Module**              | 03-glue/README.md                              | ✅         | Toàn diện     |
+| **Glue Data Catalog**                    | 03-glue/1-glue-catalog.md                      | ✅         | Toàn diện     |
+| **Glue ETL Jobs**                        | 03-glue/2-glue-etl-jobs.md                     | ✅         | Toàn diện     |
+| **Glue Crawlers**                        | 03-glue/3-glue-crawlers.md                     | ✅         | Toàn diện     |
+| **Glue Data Quality**                    | 03-glue/4-glue-data-quality.md                 | ✅         | Toàn diện     |
 
 ---
 
@@ -121,7 +126,7 @@ Devops/aws/analytic/
 
 - [x] `01-fundamentals/README.md` — Nền tảng: Batch vs Streaming, Data Lake vs Warehouse ✅
 - [x] `02-kinesis/README.md` — Kinesis Data Streams, Firehose, Analytics ✅
-- [ ] `03-glue/README.md` — Glue ETL, Data Catalog, Crawlers
+- [x] `03-glue/README.md` — Glue ETL, Data Catalog, Crawlers ✅
 - [ ] `04-athena/README.md` — Athena serverless query, tối ưu performance
 - [ ] `05-redshift/README.md` — Redshift MPP, distribution strategies
 - [ ] `12-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
@@ -389,5 +394,5 @@ Knowledge base này là tài liệu sống. Đóng góp được chào đón:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.2
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | 🚧 Các module 03-12 đang trong kế hoạch
+**Phiên Bản:** 1.3
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | 🚧 Các module 04-12 đang trong kế hoạch
