@@ -46,11 +46,11 @@ Devops/aws/analytic/
 │   └── 4-redshift-serverless.md          (Cần tạo) Auto capacity, RPU, use cases
 │
 ├── 06-emr/
-│   ├── README.md                           Tổng quan EMR — big data processing
-│   ├── 1-emr-architecture.md              (Cần tạo) Master/Core/Task nodes, cluster lifecycle
-│   ├── 2-emr-spark.md                     (Cần tạo) Apache Spark trên EMR, optimization
-│   ├── 3-emr-serverless.md                (Cần tạo) EMR Serverless — không quản lý cluster
-│   └── 4-emr-cost-optimization.md        (Cần tạo) Spot Instances, Instance Fleets
+│   ├── README.md                           Tổng quan EMR — big data processing, deploy modes
+│   ├── 1-emr-architecture.md              Master/Core/Task nodes, cluster lifecycle, HA, storage
+│   ├── 2-emr-spark.md                     Apache Spark trên EMR, AQE, memory tuning, Glue Catalog
+│   ├── 3-emr-serverless.md                EMR Serverless — không quản lý cluster, pre-initialized capacity
+│   └── 4-emr-cost-optimization.md        Spot Instances, Instance Fleets, transient cluster, sizing
 │
 ├── 07-lake-formation/
 │   ├── README.md                           Tổng quan Lake Formation — data lake governance
@@ -127,6 +127,11 @@ Devops/aws/analytic/
 | **Redshift Performance Optimization**    | 05-redshift/2-redshift-performance.md          | ✅         | Toàn diện     |
 | **Redshift Spectrum — Query S3**         | 05-redshift/3-redshift-spectrum.md             | ✅         | Toàn diện     |
 | **Redshift Serverless**                  | 05-redshift/4-redshift-serverless.md           | ✅         | Toàn diện     |
+| **EMR — Tổng Quan Module**               | 06-emr/README.md                               | ✅         | Toàn diện     |
+| **EMR Architecture — Kiến Trúc**        | 06-emr/1-emr-architecture.md                   | ✅         | Toàn diện     |
+| **Apache Spark trên EMR**               | 06-emr/2-emr-spark.md                          | ✅         | Toàn diện     |
+| **EMR Serverless**                      | 06-emr/3-emr-serverless.md                     | ✅         | Toàn diện     |
+| **EMR Cost Optimization**               | 06-emr/4-emr-cost-optimization.md              | ✅         | Toàn diện     |
 
 ---
 
@@ -143,7 +148,7 @@ Devops/aws/analytic/
 
 ### Ưu Tiên Trung Bình — Advanced Services
 
-- [ ] `06-emr/README.md` — EMR, Spark, EMR Serverless
+- [x] `06-emr/README.md` — EMR, Spark, EMR Serverless ✅
 - [ ] `07-lake-formation/README.md` — Data Lake governance, security
 - [ ] `11-data-architecture/README.md` — Lambda, Kappa, Medallion, Data Mesh
 - [ ] `09-opensearch/README.md` — Search & log analytics
@@ -404,5 +409,5 @@ Knowledge base này là tài liệu sống. Đóng góp được chào đón:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.5
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | ✅ 05-redshift hoàn thành (5 files) | 🚧 Các module 06-12 đang trong kế hoạch
+**Phiên Bản:** 1.6
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | ✅ 05-redshift hoàn thành (5 files) | ✅ 06-emr hoàn thành (5 files) | 🚧 Các module 07-12 đang trong kế hoạch
