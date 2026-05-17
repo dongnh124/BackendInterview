@@ -44,13 +44,13 @@ Devops/aws/management/
 │   └── 6-distributor-opscenter.md                       ✅ Package distribution, OpsItems, OpsCenter
 │
 ├── 05-cloudformation/
-│   ├── README.md                                        Tổng quan CloudFormation & IaC trên AWS
-│   ├── 1-template-anatomy.md                            (Sẽ tạo) Parameters, Resources, Outputs, Mappings, Conditions
-│   ├── 2-stacks-lifecycle.md                            (Sẽ tạo) Create/Update/Delete stack, rollback, events
-│   ├── 3-stacksets-multiregion.md                       (Sẽ tạo) StackSets với Organizations, deployment targets
-│   ├── 4-change-sets-drift.md                           (Sẽ tạo) Change Sets, Drift Detection, import resources
-│   ├── 5-custom-resources.md                            (Sẽ tạo) Custom Resources với Lambda, resource providers
-│   └── 6-cdk-comparison.md                              (Sẽ tạo) CDK vs CloudFormation, khi nào dùng CDK
+│   ├── README.md                                        ✅ Tổng quan CloudFormation & IaC trên AWS
+│   ├── 1-template-anatomy.md                            ✅ Parameters, Resources, Outputs, Mappings, Conditions
+│   ├── 2-stacks-lifecycle.md                            ✅ Create/Update/Delete stack, rollback, events
+│   ├── 3-stacksets-multiregion.md                       ✅ StackSets với Organizations, deployment targets
+│   ├── 4-change-sets-drift.md                           ✅ Change Sets, Drift Detection, import resources
+│   ├── 5-custom-resources.md                            ✅ Custom Resources với Lambda, resource providers
+│   └── 6-cdk-comparison.md                              ✅ CDK vs CloudFormation, khi nào dùng CDK
 │
 ├── 06-organizations/
 │   ├── README.md                                        Tổng quan AWS Organizations & multi-account strategy
@@ -106,7 +106,7 @@ Devops/aws/management/
 | **CloudTrail — Kiểm Toán**               | 02-cloudtrail/ (6 files)                    | ✅ Hoàn thành | Toàn diện  |
 | **AWS Config — Tuân Thủ**                 | 03-aws-config/ (6 files)                    | ✅ Hoàn thành | Toàn diện  |
 | **Systems Manager — Vận Hành**            | 04-systems-manager/ (7 files)               | ✅ Hoàn thành | Toàn diện  |
-| **CloudFormation — IaC**                  | 05-cloudformation/ (6 files)                | 🚧 Sẽ tạo | -             |
+| **CloudFormation — IaC**                  | 05-cloudformation/ (7 files)                | ✅ Hoàn thành | Toàn diện  |
 | **Organizations — Đa Tài Khoản**          | 06-organizations/ (5 files)                 | 🚧 Sẽ tạo | -             |
 | **Control Tower — Landing Zone**          | 07-control-tower/ (4 files)                 | 🚧 Sẽ tạo | -             |
 | **Trusted Advisor — Best Practice**       | 08-trusted-advisor/ (2 files)               | 🚧 Sẽ tạo | -             |
@@ -124,7 +124,7 @@ Devops/aws/management/
 - [x] `02-cloudtrail/README.md` — Audit logging, Event types, Organization Trail
 - [x] `03-aws-config/README.md` — Config Rules, Conformance Packs, Remediation
 - [x] `04-systems-manager/README.md` — Session Manager, Patch Manager, Parameter Store
-- [ ] `05-cloudformation/README.md` — Template anatomy, Stacks, StackSets, CDK so sánh
+- [x] `05-cloudformation/README.md` — Template anatomy, Stacks, StackSets, CDK so sánh
 
 ### Ưu Tiên Trung Bình (Kỹ năng nâng cao — doanh nghiệp lớn)
 
@@ -336,5 +336,5 @@ Phát hiện lỗi? Muốn bổ sung nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.4 (04-systems-manager hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | 🚧 Các module khác đang phát triển
+**Phiên Bản:** 1.5 (05-cloudformation hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | 🚧 Các module khác đang phát triển
