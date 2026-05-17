@@ -61,11 +61,11 @@ Devops/aws/management/
 │   └── 5-multi-account-patterns.md                      ✅ Account vending, account types, OU design patterns
 │
 ├── 07-control-tower/
-│   ├── README.md                                        Tổng quan Control Tower & landing zone
-│   ├── 1-landing-zone-setup.md                          (Sẽ tạo) Landing Zone components, Log Archive, Audit accounts
-│   ├── 2-guardrails.md                                  (Sẽ tạo) Preventive vs Detective guardrails, mandatory vs elective
-│   ├── 3-account-factory.md                             (Sẽ tạo) Account Factory, Account Factory for Terraform (AFT)
-│   └── 4-customizations-cfct.md                         (Sẽ tạo) Customizations for Control Tower (CfCT)
+│   ├── README.md                                        ✅ Tổng quan Control Tower & landing zone
+│   ├── 1-landing-zone-setup.md                          ✅ Landing Zone components, Log Archive, Audit accounts
+│   ├── 2-guardrails.md                                  ✅ Preventive vs Detective guardrails, mandatory vs elective
+│   ├── 3-account-factory.md                             ✅ Account Factory, Account Factory for Terraform (AFT)
+│   └── 4-customizations-cfct.md                         ✅ Customizations for Control Tower (CfCT)
 │
 ├── 08-trusted-advisor/
 │   ├── README.md                                        Tổng quan Trusted Advisor & best practice checks
@@ -108,7 +108,7 @@ Devops/aws/management/
 | **Systems Manager — Vận Hành**            | 04-systems-manager/ (7 files)               | ✅ Hoàn thành | Toàn diện  |
 | **CloudFormation — IaC**                  | 05-cloudformation/ (7 files)                | ✅ Hoàn thành | Toàn diện  |
 | **Organizations — Đa Tài Khoản**          | 06-organizations/ (6 files)                 | ✅ Hoàn thành | Toàn diện  |
-| **Control Tower — Landing Zone**          | 07-control-tower/ (4 files)                 | 🚧 Sẽ tạo | -             |
+| **Control Tower — Landing Zone**          | 07-control-tower/ (5 files)                 | ✅ Hoàn thành | Toàn diện   |
 | **Trusted Advisor — Best Practice**       | 08-trusted-advisor/ (2 files)               | 🚧 Sẽ tạo | -             |
 | **Health Dashboard — Sức Khỏe Dịch Vụ** | 09-health-dashboard/ (2 files)              | 🚧 Sẽ tạo | -             |
 | **Cost Governance — Quản Trị Chi Phí**   | 10-cost-governance/ (5 files)               | 🚧 Sẽ tạo | -             |
@@ -129,7 +129,7 @@ Devops/aws/management/
 ### Ưu Tiên Trung Bình (Kỹ năng nâng cao — doanh nghiệp lớn)
 
 - [x] `06-organizations/README.md` — OU design, SCPs, multi-account patterns
-- [ ] `07-control-tower/README.md` — Landing Zone, Guardrails, Account Factory
+- [x] `07-control-tower/README.md` — Landing Zone, Guardrails, Account Factory
 - [ ] `10-cost-governance/README.md` — Budgets, Cost Explorer, Tagging strategy
 - [ ] `11-interview-prep/INTERVIEW_GUIDE.md` — Top 30 câu hỏi phỏng vấn
 
@@ -336,5 +336,5 @@ Phát hiện lỗi? Muốn bổ sung nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.6 (06-organizations hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | ✅ 06-organizations/ (6 files) hoàn thành | 🚧 Các module khác đang phát triển
+**Phiên Bản:** 1.7 (07-control-tower hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | ✅ 06-organizations/ (6 files) hoàn thành | ✅ 07-control-tower/ (5 files) hoàn thành | 🚧 Các module khác đang phát triển
