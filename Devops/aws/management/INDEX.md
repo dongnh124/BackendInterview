@@ -86,12 +86,12 @@ Devops/aws/management/
 │   └── 5-savings-plans-ri.md                            ✅ Savings Plans vs Reserved Instances, commitment strategies
 │
 └── 11-interview-prep/
-    ├── README.md                                        (Sẽ tạo) Hướng dẫn ôn tập phỏng vấn
-    ├── INTERVIEW_GUIDE.md                               (Sẽ tạo) Top 30 câu hỏi AWS Management & Governance
-    ├── service-comparison.md                            (Sẽ tạo) So sánh chi tiết các dịch vụ dễ nhầm lẫn
-    ├── system-design-scenarios.md                       (Sẽ tạo) Tình huống thiết kế hệ thống
-    ├── star-stories.md                                  (Sẽ tạo) Mẫu câu chuyện sự cố theo STAR
-    └── 90-day-study-plan.md                             (Sẽ tạo) Kế hoạch học 90 ngày có cấu trúc
+    ├── README.md                                        ✅ Hướng dẫn ôn tập phỏng vấn & lộ trình 2 tuần
+    ├── INTERVIEW_GUIDE.md                               ✅ Top 30 câu hỏi AWS Management & Governance
+    ├── service-comparison.md                            ✅ So sánh chi tiết các dịch vụ dễ nhầm lẫn (9 cặp)
+    ├── system-design-scenarios.md                       ✅ 6 tình huống thiết kế hệ thống thực tế
+    ├── star-stories.md                                  ✅ 5 mẫu câu chuyện sự cố theo STAR + template
+    └── 90-day-study-plan.md                             ✅ Kế hoạch học 90 ngày có cấu trúc theo tuần
 ```
 
 ---
@@ -112,7 +112,7 @@ Devops/aws/management/
 | **Trusted Advisor — Best Practice**       | 08-trusted-advisor/ (3 files)               | ✅ Hoàn thành | Toàn diện  |
 | **Health Dashboard — Sức Khỏe Dịch Vụ** | 09-health-dashboard/ (2 files)              | ✅ Hoàn thành | -             |
 | **Cost Governance — Quản Trị Chi Phí**   | 10-cost-governance/ (6 files)               | ✅ Hoàn thành | Toàn diện   |
-| **Phỏng Vấn & Tình Huống**               | 11-interview-prep/ (5 files)                | 🚧 Sẽ tạo | -             |
+| **Phỏng Vấn & Tình Huống**               | 11-interview-prep/ (6 files)                | ✅ Hoàn thành | Toàn diện  |
 
 ---
 
@@ -131,14 +131,14 @@ Devops/aws/management/
 - [x] `06-organizations/README.md` — OU design, SCPs, multi-account patterns
 - [x] `07-control-tower/README.md` — Landing Zone, Guardrails, Account Factory
 - [x] `10-cost-governance/README.md` — Budgets, Cost Explorer, Tagging strategy
-- [ ] `11-interview-prep/INTERVIEW_GUIDE.md` — Top 30 câu hỏi phỏng vấn
+- [x] `11-interview-prep/INTERVIEW_GUIDE.md` — Top 30 câu hỏi phỏng vấn
 
 ### Ưu Tiên Thấp Hơn (Tham khảo & chuyên sâu)
 
 - [x] `08-trusted-advisor/` — Best practice checks tự động
 - [x] `09-health-dashboard/` — Service health & EventBridge automation
-- [ ] `11-interview-prep/service-comparison.md` — Bảng so sánh dịch vụ
-- [ ] `11-interview-prep/system-design-scenarios.md` — Tình huống thiết kế
+- [x] `11-interview-prep/service-comparison.md` — Bảng so sánh dịch vụ
+- [x] `11-interview-prep/system-design-scenarios.md` — Tình huống thiết kế
 
 ---
 
@@ -336,5 +336,5 @@ Phát hiện lỗi? Muốn bổ sung nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.9 (10-cost-governance hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | ✅ 06-organizations/ (6 files) hoàn thành | ✅ 07-control-tower/ (5 files) hoàn thành | ✅ 08-trusted-advisor/ (3 files) hoàn thành | ✅ 09-health-dashboard/ (3 files) hoàn thành | ✅ 10-cost-governance/ (6 files) hoàn thành | 🚧 11-interview-prep đang phát triển
+**Phiên Bản:** 2.0 (11-interview-prep hoàn thành — Knowledge Base đầy đủ)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | ✅ 06-organizations/ (6 files) hoàn thành | ✅ 07-control-tower/ (5 files) hoàn thành | ✅ 08-trusted-advisor/ (3 files) hoàn thành | ✅ 09-health-dashboard/ (3 files) hoàn thành | ✅ 10-cost-governance/ (6 files) hoàn thành | ✅ 11-interview-prep/ (6 files) hoàn thành
