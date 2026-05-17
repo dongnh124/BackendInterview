@@ -73,9 +73,9 @@ Devops/aws/management/
 │   └── 2-programmatic-access.md                         (Sẽ tạo) Support API, EventBridge integration, automation
 │
 ├── 09-health-dashboard/
-│   ├── README.md                                        Tổng quan Health Dashboard & service events
-│   ├── 1-personal-health.md                             (Sẽ tạo) Personal Health Dashboard, event types, notifications
-│   └── 2-eventbridge-integration.md                     (Sẽ tạo) Tự động hóa response với EventBridge + Lambda
+│   ├── README.md                                        ✅ Tổng quan Health Dashboard & service events
+│   ├── 1-personal-health.md                             ✅ Personal Health Dashboard, event types, notifications
+│   └── 2-eventbridge-integration.md                     ✅ Tự động hóa response với EventBridge + Lambda
 │
 ├── 10-cost-governance/
 │   ├── README.md                                        Tổng quan cost governance & FinOps trên AWS
@@ -110,7 +110,7 @@ Devops/aws/management/
 | **Organizations — Đa Tài Khoản**          | 06-organizations/ (6 files)                 | ✅ Hoàn thành | Toàn diện  |
 | **Control Tower — Landing Zone**          | 07-control-tower/ (5 files)                 | ✅ Hoàn thành | Toàn diện   |
 | **Trusted Advisor — Best Practice**       | 08-trusted-advisor/ (2 files)               | 🚧 Sẽ tạo | -             |
-| **Health Dashboard — Sức Khỏe Dịch Vụ** | 09-health-dashboard/ (2 files)              | 🚧 Sẽ tạo | -             |
+| **Health Dashboard — Sức Khỏe Dịch Vụ** | 09-health-dashboard/ (3 files)              | ✅ Hoàn thành | Toàn diện  |
 | **Cost Governance — Quản Trị Chi Phí**   | 10-cost-governance/ (5 files)               | 🚧 Sẽ tạo | -             |
 | **Phỏng Vấn & Tình Huống**               | 11-interview-prep/ (5 files)                | 🚧 Sẽ tạo | -             |
 
@@ -136,7 +136,7 @@ Devops/aws/management/
 ### Ưu Tiên Thấp Hơn (Tham khảo & chuyên sâu)
 
 - [ ] `08-trusted-advisor/` — Best practice checks tự động
-- [ ] `09-health-dashboard/` — Service health & EventBridge automation
+- [x] `09-health-dashboard/` — Service health & EventBridge automation
 - [ ] `11-interview-prep/service-comparison.md` — Bảng so sánh dịch vụ
 - [ ] `11-interview-prep/system-design-scenarios.md` — Tình huống thiết kế
 
@@ -336,5 +336,5 @@ Phát hiện lỗi? Muốn bổ sung nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.7 (07-control-tower hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | ✅ 06-organizations/ (6 files) hoàn thành | ✅ 07-control-tower/ (5 files) hoàn thành | 🚧 Các module khác đang phát triển
+**Phiên Bản:** 1.8 (09-health-dashboard hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | ✅ 03-aws-config/ (6 files) hoàn thành | ✅ 04-systems-manager/ (7 files) hoàn thành | ✅ 05-cloudformation/ (7 files) hoàn thành | ✅ 06-organizations/ (6 files) hoàn thành | ✅ 07-control-tower/ (5 files) hoàn thành | ✅ 09-health-dashboard/ (3 files) hoàn thành | 🚧 Các module khác đang phát triển
