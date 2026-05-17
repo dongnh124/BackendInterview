@@ -97,10 +97,16 @@ Devops/aws/analytic/
 
 ## ✅ Đã Tạo
 
-| Chủ Đề                       | File              | Trạng Thái | Chất Lượng    |
-| ---------------------------- | ----------------- | ---------- | ------------- |
-| **Tổng Quan & Lộ Trình**     | README.md         | ✅         | Toàn diện     |
-| **Chỉ Mục Đầy Đủ**           | INDEX.md          | ✅         | Toàn diện     |
+| Chủ Đề                                   | File                                           | Trạng Thái | Chất Lượng    |
+| ---------------------------------------- | ---------------------------------------------- | ---------- | ------------- |
+| **Tổng Quan & Lộ Trình**                 | README.md                                      | ✅         | Toàn diện     |
+| **Chỉ Mục Đầy Đủ**                       | INDEX.md                                       | ✅         | Toàn diện     |
+| **Nền Tảng — Mục Lục Module**            | 01-fundamentals/README.md                      | ✅         | Toàn diện     |
+| **Tổng Quan Các Loại Analytics**         | 01-fundamentals/1-analytics-overview.md        | ✅         | Toàn diện     |
+| **Khái Niệm Data Pipeline**              | 01-fundamentals/2-data-pipeline-concepts.md    | ✅         | Toàn diện     |
+| **Batch vs Stream Processing**           | 01-fundamentals/3-batch-vs-streaming.md        | ✅         | Toàn diện     |
+| **Data Lake vs Warehouse vs Lakehouse**  | 01-fundamentals/4-data-lake-vs-warehouse.md    | ✅         | Toàn diện     |
+| **ETL vs ELT**                           | 01-fundamentals/5-etl-elt-concepts.md          | ✅         | Toàn diện     |
 
 ---
 
@@ -108,7 +114,7 @@ Devops/aws/analytic/
 
 ### Ưu Tiên Cao — Core Analytics Services
 
-- [ ] `01-fundamentals/README.md` — Nền tảng: Batch vs Streaming, Data Lake vs Warehouse
+- [x] `01-fundamentals/README.md` — Nền tảng: Batch vs Streaming, Data Lake vs Warehouse ✅
 - [ ] `02-kinesis/README.md` — Kinesis Data Streams, Firehose, Analytics
 - [ ] `03-glue/README.md` — Glue ETL, Data Catalog, Crawlers
 - [ ] `04-athena/README.md` — Athena serverless query, tối ưu performance
@@ -378,5 +384,5 @@ Knowledge base này là tài liệu sống. Đóng góp được chào đón:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.0
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | 🚧 Các module chi tiết đang trong kế hoạch
+**Phiên Bản:** 1.1
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | 🚧 Các module 02-12 đang trong kế hoạch
