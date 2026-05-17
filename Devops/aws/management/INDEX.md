@@ -10,13 +10,13 @@ Devops/aws/management/
 ├── INDEX.md                                             Chỉ mục đầy đủ (file này)
 │
 ├── 01-cloudwatch/
-│   ├── README.md                                        Tổng quan CloudWatch & observability strategy
-│   ├── 1-metrics-namespaces.md                          (Sẽ tạo) Metrics, Namespaces, Dimensions, Statistics
-│   ├── 2-alarms-composite.md                            (Sẽ tạo) Alarms, Composite Alarms, SNS actions
-│   ├── 3-logs-insights.md                               (Sẽ tạo) Log Groups, Log Streams, Insights queries
-│   ├── 4-dashboards-widgets.md                          (Sẽ tạo) Dashboards, Widgets, Cross-account view
-│   ├── 5-container-application-insights.md              (Sẽ tạo) Container Insights, Application Insights
-│   └── 6-cloudwatch-agent.md                            (Sẽ tạo) CW Agent cài trên EC2, custom metrics
+│   ├── README.md                                        ✅ Tổng quan CloudWatch & observability strategy
+│   ├── 1-metrics-namespaces.md                          ✅ Metrics, Namespaces, Dimensions, Statistics
+│   ├── 2-alarms-composite.md                            ✅ Alarms, Composite Alarms, SNS actions
+│   ├── 3-logs-insights.md                               ✅ Log Groups, Log Streams, Insights queries
+│   ├── 4-dashboards-widgets.md                          ✅ Dashboards, Widgets, Cross-account view
+│   ├── 5-container-application-insights.md              ✅ Container Insights, Application Insights
+│   └── 6-cloudwatch-agent.md                            ✅ CW Agent cài trên EC2, custom metrics
 │
 ├── 02-cloudtrail/
 │   ├── README.md                                        Tổng quan CloudTrail & audit logging
@@ -102,7 +102,7 @@ Devops/aws/management/
 | ----------------------------------------- | ------------------------------------------- | ---------- | ------------- |
 | **Tổng Quan & Lộ Trình**                  | README.md                                   | ✅         | Toàn diện     |
 | **Chỉ Mục Đầy Đủ**                        | INDEX.md (file này)                         | ✅         | Toàn diện     |
-| **CloudWatch — Giám Sát**                 | 01-cloudwatch/ (6 files)                    | 🚧 Sẽ tạo | -             |
+| **CloudWatch — Giám Sát**                 | 01-cloudwatch/ (6 files)                    | ✅ Hoàn thành | Toàn diện  |
 | **CloudTrail — Kiểm Toán**               | 02-cloudtrail/ (5 files)                    | 🚧 Sẽ tạo | -             |
 | **AWS Config — Tuân Thủ**                 | 03-aws-config/ (5 files)                    | 🚧 Sẽ tạo | -             |
 | **Systems Manager — Vận Hành**            | 04-systems-manager/ (6 files)               | 🚧 Sẽ tạo | -             |
@@ -120,7 +120,7 @@ Devops/aws/management/
 
 ### Ưu Tiên Cao (Kỹ năng cốt lõi — hỏi nhiều nhất trong phỏng vấn)
 
-- [ ] `01-cloudwatch/README.md` — Monitoring strategy, Metrics, Alarms, Logs Insights
+- [x] `01-cloudwatch/README.md` — Monitoring strategy, Metrics, Alarms, Logs Insights
 - [ ] `02-cloudtrail/README.md` — Audit logging, Event types, Organization Trail
 - [ ] `03-aws-config/README.md` — Config Rules, Conformance Packs, Remediation
 - [ ] `04-systems-manager/README.md` — Session Manager, Patch Manager, Parameter Store
@@ -335,6 +335,6 @@ Phát hiện lỗi? Muốn bổ sung nội dung?
 
 ---
 
-**Cập Nhật Lần Cuối:** 2026-05-16
-**Phiên Bản:** 1.0 (README.md + INDEX.md hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | 🚧 Các module chi tiết đang phát triển
+**Cập Nhật Lần Cuối:** 2026-05-17
+**Phiên Bản:** 1.1 (01-cloudwatch hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | 🚧 Các module khác đang phát triển
