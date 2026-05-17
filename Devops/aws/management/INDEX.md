@@ -19,12 +19,12 @@ Devops/aws/management/
 │   └── 6-cloudwatch-agent.md                            ✅ CW Agent cài trên EC2, custom metrics
 │
 ├── 02-cloudtrail/
-│   ├── README.md                                        Tổng quan CloudTrail & audit logging
-│   ├── 1-event-types.md                                 (Sẽ tạo) Management Events, Data Events, Insights Events
-│   ├── 2-trails-configuration.md                        (Sẽ tạo) Single-region vs multi-region, S3 + CW Logs
-│   ├── 3-organization-trail.md                          (Sẽ tạo) Centralized logging cho multi-account
-│   ├── 4-cloudtrail-insights.md                         (Sẽ tạo) Anomaly detection trong API activity
-│   └── 5-forensics-investigation.md                     (Sẽ tạo) Điều tra sự cố, phân tích event history
+│   ├── README.md                                        ✅ Tổng quan CloudTrail & audit logging
+│   ├── 1-event-types.md                                 ✅ Management Events, Data Events, Insights Events
+│   ├── 2-trails-configuration.md                        ✅ Single-region vs multi-region, S3 + CW Logs
+│   ├── 3-organization-trail.md                          ✅ Centralized logging cho multi-account
+│   ├── 4-cloudtrail-insights.md                         ✅ Anomaly detection trong API activity
+│   └── 5-forensics-investigation.md                     ✅ Điều tra sự cố, phân tích event history
 │
 ├── 03-aws-config/
 │   ├── README.md                                        Tổng quan AWS Config & compliance automation
@@ -103,7 +103,7 @@ Devops/aws/management/
 | **Tổng Quan & Lộ Trình**                  | README.md                                   | ✅         | Toàn diện     |
 | **Chỉ Mục Đầy Đủ**                        | INDEX.md (file này)                         | ✅         | Toàn diện     |
 | **CloudWatch — Giám Sát**                 | 01-cloudwatch/ (6 files)                    | ✅ Hoàn thành | Toàn diện  |
-| **CloudTrail — Kiểm Toán**               | 02-cloudtrail/ (5 files)                    | 🚧 Sẽ tạo | -             |
+| **CloudTrail — Kiểm Toán**               | 02-cloudtrail/ (6 files)                    | ✅ Hoàn thành | Toàn diện  |
 | **AWS Config — Tuân Thủ**                 | 03-aws-config/ (5 files)                    | 🚧 Sẽ tạo | -             |
 | **Systems Manager — Vận Hành**            | 04-systems-manager/ (6 files)               | 🚧 Sẽ tạo | -             |
 | **CloudFormation — IaC**                  | 05-cloudformation/ (6 files)                | 🚧 Sẽ tạo | -             |
@@ -121,7 +121,7 @@ Devops/aws/management/
 ### Ưu Tiên Cao (Kỹ năng cốt lõi — hỏi nhiều nhất trong phỏng vấn)
 
 - [x] `01-cloudwatch/README.md` — Monitoring strategy, Metrics, Alarms, Logs Insights
-- [ ] `02-cloudtrail/README.md` — Audit logging, Event types, Organization Trail
+- [x] `02-cloudtrail/README.md` — Audit logging, Event types, Organization Trail
 - [ ] `03-aws-config/README.md` — Config Rules, Conformance Packs, Remediation
 - [ ] `04-systems-manager/README.md` — Session Manager, Patch Manager, Parameter Store
 - [ ] `05-cloudformation/README.md` — Template anatomy, Stacks, StackSets, CDK so sánh
@@ -336,5 +336,5 @@ Phát hiện lỗi? Muốn bổ sung nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.1 (01-cloudwatch hoàn thành)
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | 🚧 Các module khác đang phát triển
+**Phiên Bản:** 1.2 (02-cloudtrail hoàn thành)
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-cloudwatch/ (7 files) hoàn thành | ✅ 02-cloudtrail/ (6 files) hoàn thành | 🚧 Các module khác đang phát triển
