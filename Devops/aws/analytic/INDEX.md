@@ -136,6 +136,10 @@ Devops/aws/analytic/
 | **Data Lake Design — Thiết Kế**         | 07-lake-formation/1-data-lake-design.md        | ✅         | Toàn diện     |
 | **Lake Formation Security**             | 07-lake-formation/2-lake-formation-security.md | ✅         | Toàn diện     |
 | **S3 Data Lake**                        | 07-lake-formation/3-s3-data-lake.md            | ✅         | Toàn diện     |
+| **QuickSight — Tổng Quan Module**       | 08-quicksight/README.md                        | ✅         | Toàn diện     |
+| **QuickSight Basics — Dataset/Analysis**| 08-quicksight/1-quicksight-basics.md           | ✅         | Toàn diện     |
+| **SPICE Engine — In-memory Cache**      | 08-quicksight/2-spice-engine.md                | ✅         | Toàn diện     |
+| **Embedded Analytics**                  | 08-quicksight/3-embedded-analytics.md          | ✅         | Toàn diện     |
 
 ---
 
@@ -160,7 +164,7 @@ Devops/aws/analytic/
 
 ### Ưu Tiên Thấp — Reference Materials
 
-- [ ] `08-quicksight/README.md` — BI & visualization
+- [x] `08-quicksight/README.md` — BI & visualization ✅
 - [ ] `10-msk/README.md` — Managed Kafka
 - [ ] `12-interview-prep/system-design-scenarios.md` — Kịch bản thiết kế hệ thống
 - [ ] `GLOSSARY.md` — Thuật ngữ
@@ -413,5 +417,5 @@ Knowledge base này là tài liệu sống. Đóng góp được chào đón:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.7
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | ✅ 05-redshift hoàn thành (5 files) | ✅ 06-emr hoàn thành (5 files) | ✅ 07-lake-formation hoàn thành (4 files) | 🚧 Các module 08-12 đang trong kế hoạch
+**Phiên Bản:** 1.8
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | ✅ 05-redshift hoàn thành (5 files) | ✅ 06-emr hoàn thành (5 files) | ✅ 07-lake-formation hoàn thành (4 files) | ✅ 08-quicksight hoàn thành (4 files) | 🚧 Các module 09-12 đang trong kế hoạch
