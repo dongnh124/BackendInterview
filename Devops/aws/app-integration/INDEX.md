@@ -102,7 +102,7 @@ app-integration/
 | **Amazon MQ** | 06-amazon-mq/ (3 files) | ✅ Hoàn thành | Toàn diện |
 | **AWS AppSync** | 07-appsync/ (4 files) | ✅ Hoàn thành | Toàn diện |
 | **Messaging Patterns** | 08-patterns/ (9 files) | ✅ Hoàn thành | Toàn diện |
-| **Monitoring** | 09-monitoring/ (5 files) | 🚧 Cần tạo | — |
+| **Monitoring** | 09-monitoring/ (5 files) | ✅ Hoàn thành | Toàn diện |
 | **Phỏng Vấn Prep** | 10-interview-prep/ (6 files) | 🚧 Cần tạo | — |
 
 ---
@@ -125,7 +125,7 @@ app-integration/
 - [x] `05-kinesis/1-data-streams.md` — Streaming architecture ✅
 - [x] `08-patterns/2-saga-pattern.md` — Distributed transactions ✅
 - [x] `08-patterns/3-idempotency.md` — Luôn được hỏi trong phỏng vấn ✅
-- [ ] `09-monitoring/1-key-metrics.md` — Giám sát production
+- [x] `09-monitoring/1-key-metrics.md` — Giám sát production ✅
 
 ### Ưu Tiên Thấp — Tham Khảo Nâng Cao
 
@@ -353,5 +353,5 @@ Tài liệu này luôn được cập nhật. Chào đón đóng góp:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-18
-**Phiên Bản:** 1.8 (Amazon SQS + Amazon SNS + Amazon EventBridge + AWS Step Functions + Amazon Kinesis + Amazon MQ + AWS AppSync + Messaging Patterns hoàn thành)
-**Trạng Thái:** ✅ README + INDEX + 01-sqs + 02-sns + 03-eventbridge + 04-step-functions + 05-kinesis + 06-amazon-mq + 07-appsync + 08-patterns hoàn thành | 🚧 09-monitoring + 10-interview-prep đang xây dựng
+**Phiên Bản:** 1.9 (Amazon SQS + Amazon SNS + Amazon EventBridge + AWS Step Functions + Amazon Kinesis + Amazon MQ + AWS AppSync + Messaging Patterns + Monitoring hoàn thành)
+**Trạng Thái:** ✅ README + INDEX + 01-sqs + 02-sns + 03-eventbridge + 04-step-functions + 05-kinesis + 06-amazon-mq + 07-appsync + 08-patterns + 09-monitoring hoàn thành | 🚧 10-interview-prep đang xây dựng
