@@ -118,6 +118,12 @@ Devops/circleci/
 | **04 — Certified Orbs**               | 04-orbs/2-certified-orbs.md                             | ✅         | Toàn Diện  |
 | **04 — Inline Orbs**                  | 04-orbs/3-inline-orbs.md                                | ✅         | Toàn Diện  |
 | **04 — Custom Orb Development**       | 04-orbs/4-custom-orb-development.md                     | ✅         | Toàn Diện  |
+| **05 — Giới Thiệu Module Optimization** | 05-optimization/README.md                             | ✅         | Toàn Diện  |
+| **05 — Caching Strategies**           | 05-optimization/1-caching-strategies.md                 | ✅         | Toàn Diện  |
+| **05 — Workspace**                    | 05-optimization/2-workspace.md                          | ✅         | Toàn Diện  |
+| **05 — Test Splitting**               | 05-optimization/3-test-splitting.md                     | ✅         | Toàn Diện  |
+| **05 — Parallelism**                  | 05-optimization/4-parallelism.md                        | ✅         | Toàn Diện  |
+| **05 — Pipeline Insights**            | 05-optimization/5-pipeline-insights.md                  | ✅         | Toàn Diện  |
 
 ---
 
@@ -138,7 +144,12 @@ Devops/circleci/
 - [x] ~~`03-workflows/3-approval-jobs.md` — Manual gate, cổng duyệt thủ công~~ ✅
 - [x] ~~`03-workflows/4-scheduled-pipelines.md` — Cron triggers, lập lịch~~ ✅
 - [x] ~~`03-workflows/5-branch-tag-filters.md` — Bộ lọc nhánh, tag, regex~~ ✅
-- [ ] `05-optimization/caching-strategies.md` — Caching chi tiết
+- [x] ~~`05-optimization/README.md` — Tổng quan chiến lược tối ưu pipeline~~ ✅
+- [x] ~~`05-optimization/1-caching-strategies.md` — Caching chi tiết~~ ✅
+- [x] ~~`05-optimization/2-workspace.md` — Workspace giữa các jobs~~ ✅
+- [x] ~~`05-optimization/3-test-splitting.md` — Test splitting theo timing/file~~ ✅
+- [x] ~~`05-optimization/4-parallelism.md` — Parallelism, resource class~~ ✅
+- [x] ~~`05-optimization/5-pipeline-insights.md` — Bottleneck, flaky tests~~ ✅
 - [ ] `06-security/contexts.md` — Contexts và quản lý secrets
 - [ ] `10-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
 
@@ -151,7 +162,7 @@ Devops/circleci/
 - [x] ~~`04-orbs/4-custom-orb-development.md` — Tạo, test và publish custom orb~~ ✅
 - [ ] `07-integration/docker-build-push.md` — CI/CD với Docker
 - [ ] `07-integration/aws-integration.md` — Tích hợp AWS toàn diện
-- [ ] `05-optimization/test-splitting.md` — Test splitting và parallelism
+- [x] ~~`05-optimization/test-splitting.md` — Test splitting và parallelism~~ ✅
 - [ ] `09-advanced/dynamic-config.md` — Dynamic Config cho monorepo
 - [ ] `08-monitoring/ssh-debugging.md` — Debug pipeline qua SSH
 
@@ -382,4 +393,4 @@ Tìm lỗi hoặc muốn bổ sung nội dung?
 
 **Cập Nhật Lần Cuối:** 2026-05-18
 **Phiên Bản:** 1.2
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-fundamentals Hoàn Thành | ✅ 02-configuration Hoàn Thành | ✅ 03-workflows Hoàn Thành | ✅ 04-orbs Hoàn Thành | 🚧 Các Module Khác Đang Phát Triển
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-fundamentals Hoàn Thành | ✅ 02-configuration Hoàn Thành | ✅ 03-workflows Hoàn Thành | ✅ 04-orbs Hoàn Thành | ✅ 05-optimization Hoàn Thành | 🚧 Các Module Khác Đang Phát Triển
