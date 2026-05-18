@@ -144,6 +144,10 @@ Devops/aws/analytic/
 | **OpenSearch Fundamentals — Nền Tảng** | 09-opensearch/1-opensearch-fundamentals.md     | ✅         | Toàn diện     |
 | **OpenSearch Ingestion — Thu Nạp**      | 09-opensearch/2-opensearch-ingestion.md        | ✅         | Toàn diện     |
 | **OpenSearch Security — Bảo Mật**      | 09-opensearch/3-opensearch-security.md         | ✅         | Toàn diện     |
+| **MSK — Tổng Quan Module**              | 10-msk/README.md                               | ✅         | Toàn diện     |
+| **MSK Architecture — Kiến Trúc**       | 10-msk/1-msk-architecture.md                  | ✅         | Toàn diện     |
+| **MSK vs Kinesis — So Sánh**           | 10-msk/2-msk-vs-kinesis.md                    | ✅         | Toàn diện     |
+| **MSK Security — Bảo Mật**            | 10-msk/3-msk-security.md                      | ✅         | Toàn diện     |
 
 ---
 
@@ -169,7 +173,7 @@ Devops/aws/analytic/
 ### Ưu Tiên Thấp — Reference Materials
 
 - [x] `08-quicksight/README.md` — BI & visualization ✅
-- [ ] `10-msk/README.md` — Managed Kafka
+- [x] `10-msk/README.md` — Managed Kafka ✅
 - [ ] `12-interview-prep/system-design-scenarios.md` — Kịch bản thiết kế hệ thống
 - [ ] `GLOSSARY.md` — Thuật ngữ
 - [ ] `RESOURCES.md` — Tài liệu tham khảo
@@ -421,5 +425,5 @@ Knowledge base này là tài liệu sống. Đóng góp được chào đón:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 1.9
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | ✅ 05-redshift hoàn thành (5 files) | ✅ 06-emr hoàn thành (5 files) | ✅ 07-lake-formation hoàn thành (4 files) | ✅ 08-quicksight hoàn thành (4 files) | ✅ 09-opensearch hoàn thành (4 files) | 🚧 Các module 10-12 đang trong kế hoạch
+**Phiên Bản:** 2.0
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | ✅ 05-redshift hoàn thành (5 files) | ✅ 06-emr hoàn thành (5 files) | ✅ 07-lake-formation hoàn thành (4 files) | ✅ 08-quicksight hoàn thành (4 files) | ✅ 09-opensearch hoàn thành (4 files) | ✅ 10-msk hoàn thành (4 files) | 🚧 Các module 11-12 đang trong kế hoạch
