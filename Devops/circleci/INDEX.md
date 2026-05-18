@@ -113,6 +113,11 @@ Devops/circleci/
 | **03 — Approval Jobs**                | 03-workflows/3-approval-jobs.md                         | ✅         | Toàn Diện  |
 | **03 — Scheduled Pipelines**          | 03-workflows/4-scheduled-pipelines.md                   | ✅         | Toàn Diện  |
 | **03 — Branch & Tag Filters**         | 03-workflows/5-branch-tag-filters.md                    | ✅         | Toàn Diện  |
+| **04 — Giới Thiệu Module Orbs**       | 04-orbs/README.md                                       | ✅         | Toàn Diện  |
+| **04 — Sử Dụng Orbs**                 | 04-orbs/1-using-orbs.md                                 | ✅         | Toàn Diện  |
+| **04 — Certified Orbs**               | 04-orbs/2-certified-orbs.md                             | ✅         | Toàn Diện  |
+| **04 — Inline Orbs**                  | 04-orbs/3-inline-orbs.md                                | ✅         | Toàn Diện  |
+| **04 — Custom Orb Development**       | 04-orbs/4-custom-orb-development.md                     | ✅         | Toàn Diện  |
 
 ---
 
@@ -139,8 +144,11 @@ Devops/circleci/
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
 
-- [ ] `04-orbs/README.md` — Tổng quan orbs ecosystem
-- [ ] `04-orbs/certified-orbs.md` — Các orb phổ biến: aws-cli, docker, node
+- [x] ~~`04-orbs/README.md` — Tổng quan orbs ecosystem~~ ✅
+- [x] ~~`04-orbs/1-using-orbs.md` — Import và dùng orb từ registry~~ ✅
+- [x] ~~`04-orbs/certified-orbs.md` — Các orb phổ biến: aws-cli, docker, node~~ ✅
+- [x] ~~`04-orbs/3-inline-orbs.md` — Inline Orb nội tuyến~~ ✅
+- [x] ~~`04-orbs/4-custom-orb-development.md` — Tạo, test và publish custom orb~~ ✅
 - [ ] `07-integration/docker-build-push.md` — CI/CD với Docker
 - [ ] `07-integration/aws-integration.md` — Tích hợp AWS toàn diện
 - [ ] `05-optimization/test-splitting.md` — Test splitting và parallelism
@@ -374,4 +382,4 @@ Tìm lỗi hoặc muốn bổ sung nội dung?
 
 **Cập Nhật Lần Cuối:** 2026-05-18
 **Phiên Bản:** 1.2
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-fundamentals Hoàn Thành | ✅ 02-configuration Hoàn Thành | ✅ 03-workflows Hoàn Thành | 🚧 Các Module Khác Đang Phát Triển
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-fundamentals Hoàn Thành | ✅ 02-configuration Hoàn Thành | ✅ 03-workflows Hoàn Thành | ✅ 04-orbs Hoàn Thành | 🚧 Các Module Khác Đang Phát Triển
