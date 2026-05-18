@@ -101,7 +101,7 @@ app-integration/
 | **Amazon Kinesis** | 05-kinesis/ (6 files) | ✅ Hoàn thành | Toàn diện |
 | **Amazon MQ** | 06-amazon-mq/ (3 files) | ✅ Hoàn thành | Toàn diện |
 | **AWS AppSync** | 07-appsync/ (4 files) | ✅ Hoàn thành | Toàn diện |
-| **Messaging Patterns** | 08-patterns/ (9 files) | 🚧 Cần tạo | — |
+| **Messaging Patterns** | 08-patterns/ (9 files) | ✅ Hoàn thành | Toàn diện |
 | **Monitoring** | 09-monitoring/ (5 files) | 🚧 Cần tạo | — |
 | **Phỏng Vấn Prep** | 10-interview-prep/ (6 files) | 🚧 Cần tạo | — |
 
@@ -115,7 +115,7 @@ app-integration/
 - [x] `01-sqs/1-standard-vs-fifo.md` — Câu hỏi phỏng vấn phổ biến ✅
 - [x] `01-sqs/3-dead-letter-queue.md` — DLQ quan trọng trong production ✅
 - [x] `02-sns/3-fanout-pattern.md` — Fan-out pattern thực tế ✅
-- [ ] `08-patterns/1-service-comparison.md` — Bảng so sánh dịch vụ
+- [x] `08-patterns/1-service-comparison.md` — Bảng so sánh dịch vụ ✅
 - [ ] `10-interview-prep/1-INTERVIEW_GUIDE.md` — Top 25 câu hỏi
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
@@ -123,8 +123,8 @@ app-integration/
 - [x] `03-eventbridge/README.md` — EventBridge ngày càng quan trọng ✅
 - [x] `04-step-functions/5-saga-orchestration.md` — Saga là pattern hot ✅
 - [x] `05-kinesis/1-data-streams.md` — Streaming architecture ✅
-- [ ] `08-patterns/2-saga-pattern.md` — Distributed transactions
-- [ ] `08-patterns/3-idempotency.md` — Luôn được hỏi trong phỏng vấn
+- [x] `08-patterns/2-saga-pattern.md` — Distributed transactions ✅
+- [x] `08-patterns/3-idempotency.md` — Luôn được hỏi trong phỏng vấn ✅
 - [ ] `09-monitoring/1-key-metrics.md` — Giám sát production
 
 ### Ưu Tiên Thấp — Tham Khảo Nâng Cao
@@ -353,5 +353,5 @@ Tài liệu này luôn được cập nhật. Chào đón đóng góp:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-18
-**Phiên Bản:** 1.7 (Amazon SQS + Amazon SNS + Amazon EventBridge + AWS Step Functions + Amazon Kinesis + Amazon MQ + AWS AppSync hoàn thành)
-**Trạng Thái:** ✅ README + INDEX + 01-sqs + 02-sns + 03-eventbridge + 04-step-functions + 05-kinesis + 06-amazon-mq + 07-appsync hoàn thành | 🚧 Các module khác đang xây dựng
+**Phiên Bản:** 1.8 (Amazon SQS + Amazon SNS + Amazon EventBridge + AWS Step Functions + Amazon Kinesis + Amazon MQ + AWS AppSync + Messaging Patterns hoàn thành)
+**Trạng Thái:** ✅ README + INDEX + 01-sqs + 02-sns + 03-eventbridge + 04-step-functions + 05-kinesis + 06-amazon-mq + 07-appsync + 08-patterns hoàn thành | 🚧 09-monitoring + 10-interview-prep đang xây dựng
