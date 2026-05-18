@@ -94,7 +94,7 @@ app-integration/
 |---|---|---|---|
 | **Tổng Quan & Lộ Trình** | README.md | ✅ | Toàn diện |
 | **Mục Lục** | INDEX.md | ✅ | Toàn diện |
-| **Amazon SQS** | 01-sqs/ (6 files) | 🚧 Cần tạo | — |
+| **Amazon SQS** | 01-sqs/ (6 files) | ✅ Hoàn thành | Toàn diện |
 | **Amazon SNS** | 02-sns/ (5 files) | 🚧 Cần tạo | — |
 | **Amazon EventBridge** | 03-eventbridge/ (6 files) | 🚧 Cần tạo | — |
 | **AWS Step Functions** | 04-step-functions/ (6 files) | 🚧 Cần tạo | — |
@@ -111,9 +111,9 @@ app-integration/
 
 ### Ưu Tiên Cao — Kỹ Năng Cốt Lõi
 
-- [ ] `01-sqs/README.md` — Nền tảng SQS, thường hỏi nhất
-- [ ] `01-sqs/1-standard-vs-fifo.md` — Câu hỏi phỏng vấn phổ biến
-- [ ] `01-sqs/3-dead-letter-queue.md` — DLQ quan trọng trong production
+- [x] `01-sqs/README.md` — Nền tảng SQS, thường hỏi nhất ✅
+- [x] `01-sqs/1-standard-vs-fifo.md` — Câu hỏi phỏng vấn phổ biến ✅
+- [x] `01-sqs/3-dead-letter-queue.md` — DLQ quan trọng trong production ✅
 - [ ] `02-sns/3-fanout-pattern.md` — Fan-out pattern thực tế
 - [ ] `08-patterns/1-service-comparison.md` — Bảng so sánh dịch vụ
 - [ ] `10-interview-prep/1-INTERVIEW_GUIDE.md` — Top 25 câu hỏi
@@ -353,5 +353,5 @@ Tài liệu này luôn được cập nhật. Chào đón đóng góp:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-18
-**Phiên Bản:** 1.0 (README + INDEX hoàn thành)
-**Trạng Thái:** ✅ README + INDEX hoàn thành | 🚧 Các module chi tiết đang xây dựng
+**Phiên Bản:** 1.1 (Amazon SQS hoàn thành)
+**Trạng Thái:** ✅ README + INDEX + 01-sqs hoàn thành | 🚧 Các module khác đang xây dựng
