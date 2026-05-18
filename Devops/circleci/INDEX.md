@@ -91,16 +91,22 @@ Devops/circleci/
 
 ## ✅ Đã Tạo — What's Been Created
 
-| Chủ Đề                                | File                                          | Trạng Thái | Chất Lượng |
-| ------------------------------------- | --------------------------------------------- | ---------- | ---------- |
-| **Tổng Quan & Lộ Trình**              | README.md                                     | ✅         | Toàn Diện  |
-| **Chỉ Mục Đầy Đủ**                    | INDEX.md                                      | ✅         | Toàn Diện  |
-| **01 — Giới Thiệu Module Fundamentals** | 01-fundamentals/README.md                   | ✅         | Toàn Diện  |
-| **01 — Khái Niệm CI/CD**              | 01-fundamentals/1-cicd-concepts.md            | ✅         | Toàn Diện  |
-| **01 — Kiến Trúc CircleCI**           | 01-fundamentals/2-circleci-architecture.md    | ✅         | Toàn Diện  |
-| **01 — Executors**                    | 01-fundamentals/3-executors.md                | ✅         | Toàn Diện  |
-| **01 — Resource Classes**             | 01-fundamentals/4-resource-classes.md         | ✅         | Toàn Diện  |
-| **01 — CircleCI vs Alternatives**     | 01-fundamentals/5-circleci-vs-alternatives.md | ✅         | Toàn Diện  |
+| Chủ Đề                                | File                                                    | Trạng Thái | Chất Lượng |
+| ------------------------------------- | ------------------------------------------------------- | ---------- | ---------- |
+| **Tổng Quan & Lộ Trình**              | README.md                                               | ✅         | Toàn Diện  |
+| **Chỉ Mục Đầy Đủ**                    | INDEX.md                                                | ✅         | Toàn Diện  |
+| **01 — Giới Thiệu Module Fundamentals** | 01-fundamentals/README.md                             | ✅         | Toàn Diện  |
+| **01 — Khái Niệm CI/CD**              | 01-fundamentals/1-cicd-concepts.md                      | ✅         | Toàn Diện  |
+| **01 — Kiến Trúc CircleCI**           | 01-fundamentals/2-circleci-architecture.md              | ✅         | Toàn Diện  |
+| **01 — Executors**                    | 01-fundamentals/3-executors.md                          | ✅         | Toàn Diện  |
+| **01 — Resource Classes**             | 01-fundamentals/4-resource-classes.md                   | ✅         | Toàn Diện  |
+| **01 — CircleCI vs Alternatives**     | 01-fundamentals/5-circleci-vs-alternatives.md           | ✅         | Toàn Diện  |
+| **02 — Giới Thiệu Module Configuration** | 02-configuration/README.md                          | ✅         | Toàn Diện  |
+| **02 — Cú Pháp YAML**                 | 02-configuration/1-yaml-syntax.md                       | ✅         | Toàn Diện  |
+| **02 — Jobs và Steps**                | 02-configuration/2-jobs-and-steps.md                    | ✅         | Toàn Diện  |
+| **02 — Commands**                     | 02-configuration/3-commands.md                          | ✅         | Toàn Diện  |
+| **02 — Parameters**                   | 02-configuration/4-parameters.md                        | ✅         | Toàn Diện  |
+| **02 — Environment Variables**        | 02-configuration/5-environment-variables.md             | ✅         | Toàn Diện  |
 
 ---
 
@@ -109,8 +115,12 @@ Devops/circleci/
 ### Ưu Tiên Cao — Kỹ Năng Cốt Lõi
 
 - [x] ~~`01-fundamentals/README.md` — Nền tảng CI/CD và kiến trúc CircleCI~~ ✅
-- [ ] `02-configuration/README.md` — Cấu hình `.circleci/config.yml` đầy đủ
-- [ ] `02-configuration/jobs-and-steps.md` — Jobs, steps, built-in commands
+- [x] ~~`02-configuration/README.md` — Cấu hình `.circleci/config.yml` đầy đủ~~ ✅
+- [x] ~~`02-configuration/1-yaml-syntax.md` — Cú pháp YAML, anchors, aliases~~ ✅
+- [x] ~~`02-configuration/2-jobs-and-steps.md` — Jobs, steps, built-in commands~~ ✅
+- [x] ~~`02-configuration/3-commands.md` — Commands tái sử dụng~~ ✅
+- [x] ~~`02-configuration/4-parameters.md` — Pipeline, job, command parameters~~ ✅
+- [x] ~~`02-configuration/5-environment-variables.md` — Built-in, project-level, context vars~~ ✅
 - [ ] `03-workflows/README.md` — Thiết kế workflow sequential, parallel, approval
 - [ ] `05-optimization/caching-strategies.md` — Caching chi tiết
 - [ ] `06-security/contexts.md` — Contexts và quản lý secrets
@@ -352,5 +362,5 @@ Tìm lỗi hoặc muốn bổ sung nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-18
-**Phiên Bản:** 1.1
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-fundamentals Hoàn Thành | 🚧 Các Module Khác Đang Phát Triển
+**Phiên Bản:** 1.2
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-fundamentals Hoàn Thành | ✅ 02-configuration Hoàn Thành | 🚧 Các Module Khác Đang Phát Triển
