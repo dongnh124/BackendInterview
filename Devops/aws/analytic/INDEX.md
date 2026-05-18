@@ -148,6 +148,11 @@ Devops/aws/analytic/
 | **MSK Architecture — Kiến Trúc**       | 10-msk/1-msk-architecture.md                  | ✅         | Toàn diện     |
 | **MSK vs Kinesis — So Sánh**           | 10-msk/2-msk-vs-kinesis.md                    | ✅         | Toàn diện     |
 | **MSK Security — Bảo Mật**            | 10-msk/3-msk-security.md                      | ✅         | Toàn diện     |
+| **Data Architecture — Tổng Quan Module** | 11-data-architecture/README.md              | ✅         | Toàn diện     |
+| **Lambda Architecture — Batch + Speed** | 11-data-architecture/1-lambda-architecture.md | ✅         | Toàn diện     |
+| **Kappa Architecture — Stream-only**   | 11-data-architecture/2-kappa-architecture.md  | ✅         | Toàn diện     |
+| **Data Mesh — Domain Ownership**       | 11-data-architecture/3-data-mesh.md           | ✅         | Toàn diện     |
+| **Medallion Architecture — Bronze/Silver/Gold** | 11-data-architecture/4-medallion-architecture.md | ✅  | Toàn diện     |
 
 ---
 
@@ -166,7 +171,7 @@ Devops/aws/analytic/
 
 - [x] `06-emr/README.md` — EMR, Spark, EMR Serverless ✅
 - [x] `07-lake-formation/README.md` — Data Lake governance, security ✅
-- [ ] `11-data-architecture/README.md` — Lambda, Kappa, Medallion, Data Mesh
+- [x] `11-data-architecture/README.md` — Lambda, Kappa, Medallion, Data Mesh ✅
 - [x] `09-opensearch/README.md` — Search & log analytics ✅
 - [ ] `ROADMAP.md` — Kế hoạch học 90 ngày chi tiết
 
@@ -424,6 +429,6 @@ Knowledge base này là tài liệu sống. Đóng góp được chào đón:
 
 ---
 
-**Cập Nhật Lần Cuối:** 2026-05-17
-**Phiên Bản:** 2.0
-**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | ✅ 05-redshift hoàn thành (5 files) | ✅ 06-emr hoàn thành (5 files) | ✅ 07-lake-formation hoàn thành (4 files) | ✅ 08-quicksight hoàn thành (4 files) | ✅ 09-opensearch hoàn thành (4 files) | ✅ 10-msk hoàn thành (4 files) | 🚧 Các module 11-12 đang trong kế hoạch
+**Cập Nhật Lần Cuối:** 2026-05-18
+**Phiên Bản:** 2.1
+**Trạng Thái:** ✅ README.md & INDEX.md hoàn thành | ✅ 01-fundamentals hoàn thành (6 files) | ✅ 02-kinesis hoàn thành (5 files) | ✅ 03-glue hoàn thành (5 files) | ✅ 04-athena hoàn thành (5 files) | ✅ 05-redshift hoàn thành (5 files) | ✅ 06-emr hoàn thành (5 files) | ✅ 07-lake-formation hoàn thành (4 files) | ✅ 08-quicksight hoàn thành (4 files) | ✅ 09-opensearch hoàn thành (4 files) | ✅ 10-msk hoàn thành (4 files) | ✅ 11-data-architecture hoàn thành (5 files) | 🚧 Module 12 đang trong kế hoạch
