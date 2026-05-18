@@ -107,6 +107,12 @@ Devops/circleci/
 | **02 — Commands**                     | 02-configuration/3-commands.md                          | ✅         | Toàn Diện  |
 | **02 — Parameters**                   | 02-configuration/4-parameters.md                        | ✅         | Toàn Diện  |
 | **02 — Environment Variables**        | 02-configuration/5-environment-variables.md             | ✅         | Toàn Diện  |
+| **03 — Giới Thiệu Module Workflows**  | 03-workflows/README.md                                  | ✅         | Toàn Diện  |
+| **03 — Sequential Workflow**          | 03-workflows/1-sequential-workflow.md                   | ✅         | Toàn Diện  |
+| **03 — Parallel Workflow**            | 03-workflows/2-parallel-workflow.md                     | ✅         | Toàn Diện  |
+| **03 — Approval Jobs**                | 03-workflows/3-approval-jobs.md                         | ✅         | Toàn Diện  |
+| **03 — Scheduled Pipelines**          | 03-workflows/4-scheduled-pipelines.md                   | ✅         | Toàn Diện  |
+| **03 — Branch & Tag Filters**         | 03-workflows/5-branch-tag-filters.md                    | ✅         | Toàn Diện  |
 
 ---
 
@@ -121,7 +127,12 @@ Devops/circleci/
 - [x] ~~`02-configuration/3-commands.md` — Commands tái sử dụng~~ ✅
 - [x] ~~`02-configuration/4-parameters.md` — Pipeline, job, command parameters~~ ✅
 - [x] ~~`02-configuration/5-environment-variables.md` — Built-in, project-level, context vars~~ ✅
-- [ ] `03-workflows/README.md` — Thiết kế workflow sequential, parallel, approval
+- [x] ~~`03-workflows/README.md` — Thiết kế workflow sequential, parallel, approval~~ ✅
+- [x] ~~`03-workflows/1-sequential-workflow.md` — requires, chuỗi phụ thuộc~~ ✅
+- [x] ~~`03-workflows/2-parallel-workflow.md` — Fan-out/Fan-in, tăng tốc~~ ✅
+- [x] ~~`03-workflows/3-approval-jobs.md` — Manual gate, cổng duyệt thủ công~~ ✅
+- [x] ~~`03-workflows/4-scheduled-pipelines.md` — Cron triggers, lập lịch~~ ✅
+- [x] ~~`03-workflows/5-branch-tag-filters.md` — Bộ lọc nhánh, tag, regex~~ ✅
 - [ ] `05-optimization/caching-strategies.md` — Caching chi tiết
 - [ ] `06-security/contexts.md` — Contexts và quản lý secrets
 - [ ] `10-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
@@ -363,4 +374,4 @@ Tìm lỗi hoặc muốn bổ sung nội dung?
 
 **Cập Nhật Lần Cuối:** 2026-05-18
 **Phiên Bản:** 1.2
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-fundamentals Hoàn Thành | ✅ 02-configuration Hoàn Thành | 🚧 Các Module Khác Đang Phát Triển
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-fundamentals Hoàn Thành | ✅ 02-configuration Hoàn Thành | ✅ 03-workflows Hoàn Thành | 🚧 Các Module Khác Đang Phát Triển
