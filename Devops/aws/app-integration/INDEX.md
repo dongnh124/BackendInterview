@@ -99,7 +99,7 @@ app-integration/
 | **Amazon EventBridge** | 03-eventbridge/ (6 files) | ✅ Hoàn thành | Toàn diện |
 | **AWS Step Functions** | 04-step-functions/ (6 files) | ✅ Hoàn thành | Toàn diện |
 | **Amazon Kinesis** | 05-kinesis/ (6 files) | ✅ Hoàn thành | Toàn diện |
-| **Amazon MQ** | 06-amazon-mq/ (3 files) | 🚧 Cần tạo | — |
+| **Amazon MQ** | 06-amazon-mq/ (3 files) | ✅ Hoàn thành | Toàn diện |
 | **AWS AppSync** | 07-appsync/ (4 files) | 🚧 Cần tạo | — |
 | **Messaging Patterns** | 08-patterns/ (9 files) | 🚧 Cần tạo | — |
 | **Monitoring** | 09-monitoring/ (5 files) | 🚧 Cần tạo | — |
@@ -353,5 +353,5 @@ Tài liệu này luôn được cập nhật. Chào đón đóng góp:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-18
-**Phiên Bản:** 1.5 (Amazon SQS + Amazon SNS + Amazon EventBridge + AWS Step Functions + Amazon Kinesis hoàn thành)
-**Trạng Thái:** ✅ README + INDEX + 01-sqs + 02-sns + 03-eventbridge + 04-step-functions + 05-kinesis hoàn thành | 🚧 Các module khác đang xây dựng
+**Phiên Bản:** 1.6 (Amazon SQS + Amazon SNS + Amazon EventBridge + AWS Step Functions + Amazon Kinesis + Amazon MQ hoàn thành)
+**Trạng Thái:** ✅ README + INDEX + 01-sqs + 02-sns + 03-eventbridge + 04-step-functions + 05-kinesis + 06-amazon-mq hoàn thành | 🚧 Các module khác đang xây dựng
