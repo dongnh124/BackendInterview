@@ -11,90 +11,90 @@ Devops/circleci/
 │
 ├── 01-fundamentals/
 │   ├── README.md                               Giới thiệu CI/CD và kiến trúc CircleCI
-│   ├── cicd-concepts.md                        CI vs CD (Delivery) vs CD (Deployment)
-│   ├── circleci-architecture.md                Pipeline → Workflow → Job → Step
-│   ├── executors.md                            Docker, Machine, macOS, Windows executor
-│   ├── resource-classes.md                     CPU/RAM resource class và chi phí
-│   └── circleci-vs-alternatives.md             So sánh Jenkins, GitHub Actions, GitLab CI
+│   ├── 1-cicd-concepts.md                        CI vs CD (Delivery) vs CD (Deployment)
+│   ├── 2-circleci-architecture.md                Pipeline → Workflow → Job → Step
+│   ├── 3-executors.md                            Docker, Machine, macOS, Windows executor
+│   ├── 4-resource-classes.md                     CPU/RAM resource class và chi phí
+│   └── 5-circleci-vs-alternatives.md             So sánh Jenkins, GitHub Actions, GitLab CI
 │
 ├── 02-configuration/
 │   ├── README.md                               Hướng dẫn cấu hình .circleci/config.yml
-│   ├── yaml-syntax.md                          Cú pháp YAML đầy đủ, anchors, aliases
-│   ├── jobs-and-steps.md                       Định nghĩa job, các built-in steps
-│   ├── commands.md                             Commands — Lệnh Tái Sử Dụng tùy chỉnh
-│   ├── parameters.md                           Pipeline, job, command parameters
-│   └── environment-variables.md                Built-in, project-level, org-level vars
+│   ├── 1-yaml-syntax.md                          Cú pháp YAML đầy đủ, anchors, aliases
+│   ├── 2-jobs-and-steps.md                       Định nghĩa job, các built-in steps
+│   ├── 3-commands.md                             Commands — Lệnh Tái Sử Dụng tùy chỉnh
+│   ├── 4-parameters.md                           Pipeline, job, command parameters
+│   └── 5-environment-variables.md                Built-in, project-level, org-level vars
 │
 ├── 03-workflows/
 │   ├── README.md                               Tổng quan workflow design
-│   ├── sequential-workflow.md                  requires, job dependencies
-│   ├── parallel-workflow.md                    Fan-out/Fan-in, tăng tốc độ
-│   ├── approval-jobs.md                        Manual gate — Cổng Duyệt Thủ Công
-│   ├── scheduled-pipelines.md                  Cron triggers — Kích Hoạt Theo Lịch
-│   └── branch-tag-filters.md                   Bộ lọc nhánh, tag, regex
+│   ├── 1-sequential-workflow.md                  requires, job dependencies
+│   ├── 2-parallel-workflow.md                    Fan-out/Fan-in, tăng tốc độ
+│   ├── 3-approval-jobs.md                        Manual gate — Cổng Duyệt Thủ Công
+│   ├── 4-scheduled-pipelines.md                  Cron triggers — Kích Hoạt Theo Lịch
+│   └── 5-branch-tag-filters.md                   Bộ lọc nhánh, tag, regex
 │
 ├── 04-orbs/
 │   ├── README.md                               Giới thiệu Orbs — Gói Tích Hợp
-│   ├── using-orbs.md                           Import và dùng orb từ registry
-│   ├── certified-orbs.md                       aws-cli, docker, node, kubernetes orbs
-│   ├── inline-orbs.md                          Inline Orb — Orb Nội Tuyến trong config
-│   └── custom-orb-development.md               Tạo, test và publish orb tùy chỉnh
+│   ├── 1-using-orbs.md                           Import và dùng orb từ registry
+│   ├── 2-certified-orbs.md                       aws-cli, docker, node, kubernetes orbs
+│   ├── 3-inline-orbs.md                          Inline Orb — Orb Nội Tuyến trong config
+│   └── 4-custom-orb-development.md               Tạo, test và publish orb tùy chỉnh
 │
 ├── 05-optimization/
 │   ├── README.md                               Chiến lược tối ưu pipeline
-│   ├── caching-strategies.md                   save_cache, restore_cache, cache keys
-│   ├── workspace.md                            persist_to_workspace, attach_workspace
-│   ├── test-splitting.md                       circleci tests split, timing-based
-│   ├── parallelism.md                          parallelism key, test distribution
-│   └── pipeline-insights.md                    Phân tích bottleneck, success rate
+│   ├── 1-caching-strategies.md                   save_cache, restore_cache, cache keys
+│   ├── 2-workspace.md                            persist_to_workspace, attach_workspace
+│   ├── 3-test-splitting.md                       circleci tests split, timing-based
+│   ├── 4-parallelism.md                          parallelism key, test distribution
+│   └── 5-pipeline-insights.md                    Phân tích bottleneck, success rate
 │
 ├── 06-security/
 │   ├── README.md                               Bảo mật pipeline toàn diện
-│   ├── contexts.md                             Contexts — Ngữ Cảnh: org-level secrets
-│   ├── oidc-integration.md                     OIDC — OpenID Connect với AWS/GCP/Azure
-│   ├── ip-ranges.md                            IP Ranges — Dải IP cho firewall whitelist
-│   └── audit-log.md                            Audit Log — Nhật Ký Kiểm Toán
+│   ├── 1-contexts.md                             Contexts — Ngữ Cảnh: org-level secrets
+│   ├── 2-oidc-integration.md                     OIDC — OpenID Connect với AWS/GCP/Azure
+│   ├── 3-ip-ranges.md                            IP Ranges — Dải IP cho firewall whitelist
+│   └── 4-audit-log.md                            Audit Log — Nhật Ký Kiểm Toán
 │
 ├── 07-integration/
 │   ├── README.md                               Tổng quan tích hợp cloud & tools
-│   ├── docker-build-push.md                    Build và push Docker image
-│   ├── kubernetes-deploy.md                    Deploy lên EKS, GKE, AKS
-│   ├── aws-integration.md                      S3, ECR, ECS, Lambda, CodeDeploy
-│   ├── gcp-integration.md                      GCR, Cloud Run, GKE
-│   ├── terraform-pipeline.md                   Terraform plan/apply trong CircleCI
-│   └── notifications.md                        Slack, email, webhook notifications
+│   ├── 1-docker-build-push.md                    Build và push Docker image
+│   ├── 2-kubernetes-deploy.md                    Deploy lên EKS, GKE, AKS
+│   ├── 3-aws-integration.md                      S3, ECR, ECS, Lambda, CodeDeploy
+│   ├── 4-gcp-integration.md                      GCR, Cloud Run, GKE
+│   ├── 5-terraform-pipeline.md                   Terraform plan/apply trong CircleCI
+│   └── 6-notifications.md                        Slack, email, webhook notifications
 │
 ├── 08-monitoring/
 │   ├── README.md                               Giám sát và xử lý sự cố pipeline
-│   ├── pipeline-insights.md                    CircleCI Insights dashboard
-│   ├── ssh-debugging.md                        Rerun with SSH — Gỡ Lỗi Qua SSH
-│   ├── common-errors.md                        OOM, timeout, exit code phổ biến
-│   └── flaky-tests.md                          Flaky Tests — Kiểm Thử Không Ổn Định
+│   ├── 1-pipeline-insights.md                    CircleCI Insights dashboard
+│   ├── 2-ssh-debugging.md                        Rerun with SSH — Gỡ Lỗi Qua SSH
+│   ├── 3-common-errors.md                        OOM, timeout, exit code phổ biến
+│   └── 4-flaky-tests.md                          Flaky Tests — Kiểm Thử Không Ổn Định
 │
 ├── 09-advanced/
 │   ├── README.md                               Chủ đề nâng cao
-│   ├── dynamic-config.md                       Dynamic Config — Cấu Hình Động
-│   ├── path-filtering.md                       Path Filtering cho monorepo
-│   ├── matrix-jobs.md                          Matrix Jobs — Công Việc Ma Trận
-│   ├── self-hosted-runner.md                   Self-Hosted Runner — Máy Chạy Tự Quản Lý
-│   └── monorepo-strategy.md                    Chiến lược CI/CD cho monorepo
+│   ├── 1-dynamic-config.md                       Dynamic Config — Cấu Hình Động
+│   ├── 2-path-filtering.md                       Path Filtering cho monorepo
+│   ├── 3-matrix-jobs.md                          Matrix Jobs — Công Việc Ma Trận
+│   ├── 4-self-hosted-runner.md                   Self-Hosted Runner — Máy Chạy Tự Quản Lý
+│   └── 5-monorepo-strategy.md                    Chiến lược CI/CD cho monorepo
 │
 └── 10-interview-prep/
     ├── README.md                               Hướng dẫn chuẩn bị phỏng vấn
-    ├── INTERVIEW_GUIDE.md                      Top 20 câu hỏi phỏng vấn & câu trả lời
-    ├── star-stories.md                         Câu chuyện STAR về incident CI/CD
-    ├── system-design-scenarios.md              Bài toán thiết kế hệ thống CI/CD
-    └── tool-comparison.md                      CircleCI vs Jenkins vs GitHub Actions
+    ├── 1-INTERVIEW_GUIDE.md                      Top 20 câu hỏi phỏng vấn & câu trả lời
+    ├── 2-star-stories.md                         Câu chuyện STAR về incident CI/CD
+    ├── 3-system-design-scenarios.md              Bài toán thiết kế hệ thống CI/CD
+    └── 4-tool-comparison.md                      CircleCI vs Jenkins vs GitHub Actions
 ```
 
 ---
 
 ## ✅ Đã Tạo — What's Been Created
 
-| Chủ Đề | File | Trạng Thái | Chất Lượng |
-| ------- | ---- | ---------- | ---------- |
-| **Tổng Quan & Lộ Trình** | README.md | ✅ | Toàn Diện |
-| **Chỉ Mục Đầy Đủ** | INDEX.md | ✅ | Toàn Diện |
+| Chủ Đề                   | File      | Trạng Thái | Chất Lượng |
+| ------------------------ | --------- | ---------- | ---------- |
+| **Tổng Quan & Lộ Trình** | README.md | ✅         | Toàn Diện  |
+| **Chỉ Mục Đầy Đủ**       | INDEX.md  | ✅         | Toàn Diện  |
 
 ---
 
@@ -176,17 +176,17 @@ Dùng như tài liệu tham khảo nhanh:
 
 ## 📊 Ước Tính Thời Gian Học
 
-| Module | Thời Gian | Độ Khó | Mức Độ Ưu Tiên |
-| ------- | --------- | ------- | -------------- |
-| Nền Tảng — Fundamentals | 3–4 giờ | ⭐ | Bắt Buộc |
-| Cấu Hình — Configuration | 5–8 giờ | ⭐⭐ | Bắt Buộc |
-| Workflow Design | 4–6 giờ | ⭐⭐ | Bắt Buộc |
-| Orbs | 3–4 giờ | ⭐⭐ | Nên Học |
-| Tối Ưu Hóa — Optimization | 5–7 giờ | ⭐⭐⭐ | Bắt Buộc |
-| Bảo Mật — Security | 4–6 giờ | ⭐⭐ | Bắt Buộc |
-| Tích Hợp — Integration | 6–10 giờ | ⭐⭐⭐ | Theo Dự Án |
-| Monitoring & Debug | 3–4 giờ | ⭐⭐ | Nên Học |
-| Advanced Topics | 8–12 giờ | ⭐⭐⭐ | Tùy Chọn |
+| Module                    | Thời Gian | Độ Khó | Mức Độ Ưu Tiên |
+| ------------------------- | --------- | ------ | -------------- |
+| Nền Tảng — Fundamentals   | 3–4 giờ   | ⭐     | Bắt Buộc       |
+| Cấu Hình — Configuration  | 5–8 giờ   | ⭐⭐   | Bắt Buộc       |
+| Workflow Design           | 4–6 giờ   | ⭐⭐   | Bắt Buộc       |
+| Orbs                      | 3–4 giờ   | ⭐⭐   | Nên Học        |
+| Tối Ưu Hóa — Optimization | 5–7 giờ   | ⭐⭐⭐ | Bắt Buộc       |
+| Bảo Mật — Security        | 4–6 giờ   | ⭐⭐   | Bắt Buộc       |
+| Tích Hợp — Integration    | 6–10 giờ  | ⭐⭐⭐ | Theo Dự Án     |
+| Monitoring & Debug        | 3–4 giờ   | ⭐⭐   | Nên Học        |
+| Advanced Topics           | 8–12 giờ  | ⭐⭐⭐ | Tùy Chọn       |
 
 **Tổng cộng: 40–60 giờ để thành thạo CircleCI**
 
@@ -230,18 +230,18 @@ Dùng như tài liệu tham khảo nhanh:
 
 ## 🔗 Điều Hướng Nhanh — Quick Navigation
 
-| Nhu Cầu | Vị Trí |
-| ------- | ------- |
-| Tổng quan nhanh | [README.md](README.md) |
-| Cú pháp YAML config | [02-configuration/README.md](02-configuration/README.md) |
-| Thiết kế workflow | [03-workflows/README.md](03-workflows/README.md) |
-| Tìm hiểu orbs | [04-orbs/README.md](04-orbs/README.md) |
-| Tối ưu pipeline chậm | [05-optimization/README.md](05-optimization/README.md) |
-| Bảo mật secrets | [06-security/README.md](06-security/README.md) |
-| Tích hợp AWS/GCP | [07-integration/README.md](07-integration/README.md) |
-| Pipeline bị lỗi | [08-monitoring/README.md](08-monitoring/README.md) |
-| Dynamic Config/Monorepo | [09-advanced/README.md](09-advanced/README.md) |
-| Câu hỏi phỏng vấn | [10-interview-prep/INTERVIEW_GUIDE.md](10-interview-prep/INTERVIEW_GUIDE.md) |
+| Nhu Cầu                 | Vị Trí                                                                       |
+| ----------------------- | ---------------------------------------------------------------------------- |
+| Tổng quan nhanh         | [README.md](README.md)                                                       |
+| Cú pháp YAML config     | [02-configuration/README.md](02-configuration/README.md)                     |
+| Thiết kế workflow       | [03-workflows/README.md](03-workflows/README.md)                             |
+| Tìm hiểu orbs           | [04-orbs/README.md](04-orbs/README.md)                                       |
+| Tối ưu pipeline chậm    | [05-optimization/README.md](05-optimization/README.md)                       |
+| Bảo mật secrets         | [06-security/README.md](06-security/README.md)                               |
+| Tích hợp AWS/GCP        | [07-integration/README.md](07-integration/README.md)                         |
+| Pipeline bị lỗi         | [08-monitoring/README.md](08-monitoring/README.md)                           |
+| Dynamic Config/Monorepo | [09-advanced/README.md](09-advanced/README.md)                               |
+| Câu hỏi phỏng vấn       | [10-interview-prep/INTERVIEW_GUIDE.md](10-interview-prep/INTERVIEW_GUIDE.md) |
 
 ---
 
@@ -253,6 +253,7 @@ Sao chép phần này và đánh dấu theo tiến độ:
 ## Tiến Độ Học CircleCI
 
 ### Giai Đoạn 1: Nền Tảng (Tuần 1–2)
+
 - [ ] CI/CD concepts — khái niệm cơ bản
 - [ ] Kiến trúc CircleCI
 - [ ] Executor: Docker, Machine, macOS
@@ -260,6 +261,7 @@ Sao chép phần này và đánh dấu theo tiến độ:
 - [ ] Chạy pipeline đầu tiên thành công
 
 ### Giai Đoạn 2: Kỹ Năng Cốt Lõi (Tuần 3–6)
+
 - [ ] YAML config nâng cao
 - [ ] Workflow: sequential, parallel, approval
 - [ ] Caching với cache keys tối ưu
@@ -268,6 +270,7 @@ Sao chép phần này và đánh dấu theo tiến độ:
 - [ ] Orbs: aws-cli, docker, slack
 
 ### Giai Đoạn 3: Vận Hành (Tuần 7–10)
+
 - [ ] Test splitting và parallelism
 - [ ] SSH debugging pipeline lỗi
 - [ ] Tích hợp AWS/GCP deployment
@@ -275,6 +278,7 @@ Sao chép phần này và đánh dấu theo tiến độ:
 - [ ] Security hardening
 
 ### Giai Đoạn 4: Chuyên Sâu (Tuần 11+)
+
 - [ ] Dynamic Config
 - [ ] Path Filtering — monorepo
 - [ ] Custom Orb development
