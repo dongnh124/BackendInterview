@@ -91,10 +91,16 @@ Devops/circleci/
 
 ## ✅ Đã Tạo — What's Been Created
 
-| Chủ Đề                   | File      | Trạng Thái | Chất Lượng |
-| ------------------------ | --------- | ---------- | ---------- |
-| **Tổng Quan & Lộ Trình** | README.md | ✅         | Toàn Diện  |
-| **Chỉ Mục Đầy Đủ**       | INDEX.md  | ✅         | Toàn Diện  |
+| Chủ Đề                                | File                                          | Trạng Thái | Chất Lượng |
+| ------------------------------------- | --------------------------------------------- | ---------- | ---------- |
+| **Tổng Quan & Lộ Trình**              | README.md                                     | ✅         | Toàn Diện  |
+| **Chỉ Mục Đầy Đủ**                    | INDEX.md                                      | ✅         | Toàn Diện  |
+| **01 — Giới Thiệu Module Fundamentals** | 01-fundamentals/README.md                   | ✅         | Toàn Diện  |
+| **01 — Khái Niệm CI/CD**              | 01-fundamentals/1-cicd-concepts.md            | ✅         | Toàn Diện  |
+| **01 — Kiến Trúc CircleCI**           | 01-fundamentals/2-circleci-architecture.md    | ✅         | Toàn Diện  |
+| **01 — Executors**                    | 01-fundamentals/3-executors.md                | ✅         | Toàn Diện  |
+| **01 — Resource Classes**             | 01-fundamentals/4-resource-classes.md         | ✅         | Toàn Diện  |
+| **01 — CircleCI vs Alternatives**     | 01-fundamentals/5-circleci-vs-alternatives.md | ✅         | Toàn Diện  |
 
 ---
 
@@ -102,7 +108,7 @@ Devops/circleci/
 
 ### Ưu Tiên Cao — Kỹ Năng Cốt Lõi
 
-- [ ] `01-fundamentals/README.md` — Nền tảng CI/CD và kiến trúc CircleCI
+- [x] ~~`01-fundamentals/README.md` — Nền tảng CI/CD và kiến trúc CircleCI~~ ✅
 - [ ] `02-configuration/README.md` — Cấu hình `.circleci/config.yml` đầy đủ
 - [ ] `02-configuration/jobs-and-steps.md` — Jobs, steps, built-in commands
 - [ ] `03-workflows/README.md` — Thiết kế workflow sequential, parallel, approval
@@ -346,5 +352,5 @@ Tìm lỗi hoặc muốn bổ sung nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-18
-**Phiên Bản:** 1.0
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | 🚧 Các Module Chi Tiết Đang Phát Triển
+**Phiên Bản:** 1.1
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-fundamentals Hoàn Thành | 🚧 Các Module Khác Đang Phát Triển
