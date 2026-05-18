@@ -103,7 +103,7 @@ app-integration/
 | **AWS AppSync** | 07-appsync/ (4 files) | ✅ Hoàn thành | Toàn diện |
 | **Messaging Patterns** | 08-patterns/ (9 files) | ✅ Hoàn thành | Toàn diện |
 | **Monitoring** | 09-monitoring/ (5 files) | ✅ Hoàn thành | Toàn diện |
-| **Phỏng Vấn Prep** | 10-interview-prep/ (6 files) | 🚧 Cần tạo | — |
+| **Phỏng Vấn Prep** | 10-interview-prep/ (6 files) | ✅ Hoàn thành | Toàn diện |
 
 ---
 
@@ -116,7 +116,7 @@ app-integration/
 - [x] `01-sqs/3-dead-letter-queue.md` — DLQ quan trọng trong production ✅
 - [x] `02-sns/3-fanout-pattern.md` — Fan-out pattern thực tế ✅
 - [x] `08-patterns/1-service-comparison.md` — Bảng so sánh dịch vụ ✅
-- [ ] `10-interview-prep/1-INTERVIEW_GUIDE.md` — Top 25 câu hỏi
+- [x] `10-interview-prep/1-INTERVIEW_GUIDE.md` — Top 25 câu hỏi ✅
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
 
@@ -132,8 +132,8 @@ app-integration/
 - [ ] `06-amazon-mq/2-migration-guide.md` — Migration use case
 - [x] `07-appsync/2-real-time-subscriptions.md` — GraphQL subscriptions ✅
 - [x] `05-kinesis/5-enhanced-fanout.md` — Advanced Kinesis ✅
-- [ ] `10-interview-prep/3-system-design-scenarios.md` — Thiết kế hệ thống
-- [ ] `10-interview-prep/5-90-day-study-plan.md` — Kế hoạch học
+- [x] `10-interview-prep/3-system-design-scenarios.md` — Thiết kế hệ thống ✅
+- [x] `10-interview-prep/5-90-day-study-plan.md` — Kế hoạch học ✅
 
 ---
 
@@ -353,5 +353,5 @@ Tài liệu này luôn được cập nhật. Chào đón đóng góp:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-18
-**Phiên Bản:** 1.9 (Amazon SQS + Amazon SNS + Amazon EventBridge + AWS Step Functions + Amazon Kinesis + Amazon MQ + AWS AppSync + Messaging Patterns + Monitoring hoàn thành)
-**Trạng Thái:** ✅ README + INDEX + 01-sqs + 02-sns + 03-eventbridge + 04-step-functions + 05-kinesis + 06-amazon-mq + 07-appsync + 08-patterns + 09-monitoring hoàn thành | 🚧 10-interview-prep đang xây dựng
+**Phiên Bản:** 2.0 (Amazon SQS + Amazon SNS + Amazon EventBridge + AWS Step Functions + Amazon Kinesis + Amazon MQ + AWS AppSync + Messaging Patterns + Monitoring + Interview Prep hoàn thành)
+**Trạng Thái:** ✅ README + INDEX + 01-sqs + 02-sns + 03-eventbridge + 04-step-functions + 05-kinesis + 06-amazon-mq + 07-appsync + 08-patterns + 09-monitoring + 10-interview-prep hoàn thành
