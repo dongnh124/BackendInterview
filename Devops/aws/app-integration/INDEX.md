@@ -97,7 +97,7 @@ app-integration/
 | **Amazon SQS** | 01-sqs/ (6 files) | ✅ Hoàn thành | Toàn diện |
 | **Amazon SNS** | 02-sns/ (5 files) | ✅ Hoàn thành | Toàn diện |
 | **Amazon EventBridge** | 03-eventbridge/ (6 files) | ✅ Hoàn thành | Toàn diện |
-| **AWS Step Functions** | 04-step-functions/ (6 files) | 🚧 Cần tạo | — |
+| **AWS Step Functions** | 04-step-functions/ (6 files) | ✅ Hoàn thành | Toàn diện |
 | **Amazon Kinesis** | 05-kinesis/ (6 files) | 🚧 Cần tạo | — |
 | **Amazon MQ** | 06-amazon-mq/ (3 files) | 🚧 Cần tạo | — |
 | **AWS AppSync** | 07-appsync/ (4 files) | 🚧 Cần tạo | — |
@@ -121,7 +121,7 @@ app-integration/
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
 
 - [x] `03-eventbridge/README.md` — EventBridge ngày càng quan trọng ✅
-- [ ] `04-step-functions/5-saga-orchestration.md` — Saga là pattern hot
+- [x] `04-step-functions/5-saga-orchestration.md` — Saga là pattern hot ✅
 - [ ] `05-kinesis/1-data-streams.md` — Streaming architecture
 - [ ] `08-patterns/2-saga-pattern.md` — Distributed transactions
 - [ ] `08-patterns/3-idempotency.md` — Luôn được hỏi trong phỏng vấn
@@ -353,5 +353,5 @@ Tài liệu này luôn được cập nhật. Chào đón đóng góp:
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-18
-**Phiên Bản:** 1.3 (Amazon SQS + Amazon SNS + Amazon EventBridge hoàn thành)
-**Trạng Thái:** ✅ README + INDEX + 01-sqs + 02-sns + 03-eventbridge hoàn thành | 🚧 Các module khác đang xây dựng
+**Phiên Bản:** 1.4 (Amazon SQS + Amazon SNS + Amazon EventBridge + AWS Step Functions hoàn thành)
+**Trạng Thái:** ✅ README + INDEX + 01-sqs + 02-sns + 03-eventbridge + 04-step-functions hoàn thành | 🚧 Các module khác đang xây dựng
