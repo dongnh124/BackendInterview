@@ -11,79 +11,79 @@ app-integration/
 │
 ├── 01-sqs/                                     Amazon SQS — Simple Queue Service
 │   ├── README.md                               Tổng quan SQS, khi nào dùng
-│   ├── standard-vs-fifo.md                     So sánh Standard và FIFO Queue
-│   ├── visibility-timeout.md                   Visibility Timeout & Idempotency
-│   ├── dead-letter-queue.md                    DLQ — Hàng Đợi Thư Chết
-│   ├── long-polling.md                         Long Polling vs Short Polling
-│   └── batch-processing.md                     Xử lý theo lô với SQS
+│   ├── 1-standard-vs-fifo.md                   So sánh Standard và FIFO Queue
+│   ├── 2-visibility-timeout.md                 Visibility Timeout & Idempotency
+│   ├── 3-dead-letter-queue.md                  DLQ — Hàng Đợi Thư Chết
+│   ├── 4-long-polling.md                       Long Polling vs Short Polling
+│   └── 5-batch-processing.md                   Xử lý theo lô với SQS
 │
 ├── 02-sns/                                     Amazon SNS — Simple Notification Service
 │   ├── README.md                               Tổng quan SNS, Pub/Sub model
-│   ├── topic-subscription.md                   Topic, Subscription, Protocol
-│   ├── message-filtering.md                    Message Filtering — Lọc Tin Nhắn
-│   ├── fanout-pattern.md                       Fan-out với SNS + SQS
-│   └── fifo-topic.md                           FIFO Topic — Thứ Tự & Exactly-Once
+│   ├── 1-topic-subscription.md                 Topic, Subscription, Protocol
+│   ├── 2-message-filtering.md                  Message Filtering — Lọc Tin Nhắn
+│   ├── 3-fanout-pattern.md                     Fan-out với SNS + SQS
+│   └── 4-fifo-topic.md                         FIFO Topic — Thứ Tự & Exactly-Once
 │
 ├── 03-eventbridge/                             Amazon EventBridge — Event Bus
 │   ├── README.md                               Tổng quan EventBridge, event-driven
-│   ├── event-bus.md                            Default, Custom, Partner Event Bus
-│   ├── event-rules-patterns.md                 Rule & Pattern — Lọc và Định Tuyến Sự Kiện
-│   ├── schema-registry.md                      Schema Registry — Quản Lý Lược Đồ
-│   ├── archive-replay.md                       Archive & Replay — Lưu Trữ và Phát Lại
-│   └── eventbridge-pipes.md                    EventBridge Pipes — Đường Ống Sự Kiện
+│   ├── 1-event-bus.md                          Default, Custom, Partner Event Bus
+│   ├── 2-event-rules-patterns.md               Rule & Pattern — Lọc và Định Tuyến Sự Kiện
+│   ├── 3-schema-registry.md                    Schema Registry — Quản Lý Lược Đồ
+│   ├── 4-archive-replay.md                     Archive & Replay — Lưu Trữ và Phát Lại
+│   └── 5-eventbridge-pipes.md                  EventBridge Pipes — Đường Ống Sự Kiện
 │
 ├── 04-step-functions/                          AWS Step Functions — Workflow Orchestration
 │   ├── README.md                               Tổng quan Step Functions, state machine
-│   ├── state-types.md                          Các loại State: Task, Choice, Parallel...
-│   ├── standard-vs-express.md                  Standard vs Express Workflow
-│   ├── error-handling.md                       Catch & Retry — Xử Lý Lỗi
-│   ├── callback-pattern.md                     Callback Pattern với waitForTaskToken
-│   └── saga-orchestration.md                   Saga Pattern với Step Functions
+│   ├── 1-state-types.md                        Các loại State: Task, Choice, Parallel...
+│   ├── 2-standard-vs-express.md                Standard vs Express Workflow
+│   ├── 3-error-handling.md                     Catch & Retry — Xử Lý Lỗi
+│   ├── 4-callback-pattern.md                   Callback Pattern với waitForTaskToken
+│   └── 5-saga-orchestration.md                 Saga Pattern với Step Functions
 │
 ├── 05-kinesis/                                 Amazon Kinesis — Real-time Streaming
 │   ├── README.md                               Tổng quan Kinesis, so sánh các loại
-│   ├── data-streams.md                         Kinesis Data Streams — KDS, Shard
-│   ├── firehose.md                             Kinesis Firehose — Near-realtime Delivery
-│   ├── data-analytics.md                       Kinesis Data Analytics — SQL/Flink
-│   ├── shard-management.md                     Quản Lý Shard, tính toán capacity
-│   └── enhanced-fanout.md                      Enhanced Fan-Out — Khuếch Tán Nâng Cao
+│   ├── 1-data-streams.md                       Kinesis Data Streams — KDS, Shard
+│   ├── 2-firehose.md                           Kinesis Firehose — Near-realtime Delivery
+│   ├── 3-data-analytics.md                     Kinesis Data Analytics — SQL/Flink
+│   ├── 4-shard-management.md                   Quản Lý Shard, tính toán capacity
+│   └── 5-enhanced-fanout.md                    Enhanced Fan-Out — Khuếch Tán Nâng Cao
 │
 ├── 06-amazon-mq/                               Amazon MQ — Managed Message Broker
 │   ├── README.md                               Tổng quan Amazon MQ, khi nào dùng
-│   ├── activemq-vs-rabbitmq.md                 ActiveMQ vs RabbitMQ — So Sánh
-│   └── migration-guide.md                      Di Chuyển Từ On-Premises sang MQ
+│   ├── 1-activemq-vs-rabbitmq.md               ActiveMQ vs RabbitMQ — So Sánh
+│   └── 2-migration-guide.md                    Di Chuyển Từ On-Premises sang MQ
 │
 ├── 07-appsync/                                 AWS AppSync — Managed GraphQL
 │   ├── README.md                               Tổng quan AppSync, GraphQL model
-│   ├── schema-resolvers.md                     Schema, Resolver, Data Sources
-│   ├── real-time-subscriptions.md              Real-time Subscription qua WebSocket
-│   └── caching-strategy.md                     Caching Strategy — Chiến Lược Bộ Nhớ Đệm
+│   ├── 1-schema-resolvers.md                   Schema, Resolver, Data Sources
+│   ├── 2-real-time-subscriptions.md            Real-time Subscription qua WebSocket
+│   └── 3-caching-strategy.md                   Caching Strategy — Chiến Lược Bộ Nhớ Đệm
 │
 ├── 08-patterns/                                Messaging Patterns — Mẫu Tích Hợp
 │   ├── README.md                               Tổng quan các mẫu, khi nào dùng gì
-│   ├── service-comparison.md                   So Sánh: SQS vs SNS vs EventBridge vs Kinesis
-│   ├── saga-pattern.md                         Saga Pattern — Choreography vs Orchestration
-│   ├── idempotency.md                          Idempotency — Tính Bất Biến
-│   ├── outbox-pattern.md                       Outbox Pattern — Nhất Quán DB + Messaging
-│   ├── event-sourcing.md                       Event Sourcing — Nguồn Sự Kiện
-│   ├── cqrs.md                                 CQRS — Phân Tách Lệnh và Truy Vấn
-│   ├── circuit-breaker.md                      Circuit Breaker — Cầu Dao Ngắt Lỗi
-│   └── competing-consumers.md                  Competing Consumers — Scale Song Song
+│   ├── 1-service-comparison.md                 So Sánh: SQS vs SNS vs EventBridge vs Kinesis
+│   ├── 2-saga-pattern.md                       Saga Pattern — Choreography vs Orchestration
+│   ├── 3-idempotency.md                        Idempotency — Tính Bất Biến
+│   ├── 4-outbox-pattern.md                     Outbox Pattern — Nhất Quán DB + Messaging
+│   ├── 5-event-sourcing.md                     Event Sourcing — Nguồn Sự Kiện
+│   ├── 6-cqrs.md                               CQRS — Phân Tách Lệnh và Truy Vấn
+│   ├── 7-circuit-breaker.md                    Circuit Breaker — Cầu Dao Ngắt Lỗi
+│   └── 8-competing-consumers.md                Competing Consumers — Scale Song Song
 │
 ├── 09-monitoring/                              Monitoring & Observability — Giám Sát
 │   ├── README.md                               Tổng quan monitoring cho integration
-│   ├── key-metrics.md                          Các Metrics Quan Trọng Theo Dịch Vụ
-│   ├── cloudwatch-alarms.md                    Cấu Hình CloudWatch Alarms
-│   ├── xray-tracing.md                         X-Ray Distributed Tracing — Theo Dõi Phân Tán
-│   └── dlq-monitoring.md                       Giám Sát DLQ — Phát Hiện Tin Nhắn Lỗi
+│   ├── 1-key-metrics.md                        Các Metrics Quan Trọng Theo Dịch Vụ
+│   ├── 2-cloudwatch-alarms.md                  Cấu Hình CloudWatch Alarms
+│   ├── 3-xray-tracing.md                       X-Ray Distributed Tracing — Theo Dõi Phân Tán
+│   └── 4-dlq-monitoring.md                     Giám Sát DLQ — Phát Hiện Tin Nhắn Lỗi
 │
 └── 10-interview-prep/                          Chuẩn Bị Phỏng Vấn
     ├── README.md                               Tổng quan, chiến lược phỏng vấn
-    ├── INTERVIEW_GUIDE.md                      Top 25 câu hỏi + gợi ý trả lời
-    ├── service-comparison.md                   Bảng So Sánh Dịch Vụ Đầy Đủ
-    ├── system-design-scenarios.md              Bài Toán Thiết Kế Hệ Thống
-    ├── star-stories.md                         Mẫu Câu Chuyện Theo Phương Pháp STAR
-    └── 90-day-study-plan.md                    Kế Hoạch Học 90 Ngày
+    ├── 1-INTERVIEW_GUIDE.md                    Top 25 câu hỏi + gợi ý trả lời
+    ├── 2-service-comparison.md                 Bảng So Sánh Dịch Vụ Đầy Đủ
+    ├── 3-system-design-scenarios.md            Bài Toán Thiết Kế Hệ Thống
+    ├── 4-star-stories.md                       Mẫu Câu Chuyện Theo Phương Pháp STAR
+    └── 5-90-day-study-plan.md                  Kế Hoạch Học 90 Ngày
 ```
 
 ---
@@ -112,28 +112,28 @@ app-integration/
 ### Ưu Tiên Cao — Kỹ Năng Cốt Lõi
 
 - [ ] `01-sqs/README.md` — Nền tảng SQS, thường hỏi nhất
-- [ ] `01-sqs/standard-vs-fifo.md` — Câu hỏi phỏng vấn phổ biến
-- [ ] `01-sqs/dead-letter-queue.md` — DLQ quan trọng trong production
-- [ ] `02-sns/fanout-pattern.md` — Fan-out pattern thực tế
-- [ ] `08-patterns/service-comparison.md` — Bảng so sánh dịch vụ
-- [ ] `10-interview-prep/INTERVIEW_GUIDE.md` — Top 25 câu hỏi
+- [ ] `01-sqs/1-standard-vs-fifo.md` — Câu hỏi phỏng vấn phổ biến
+- [ ] `01-sqs/3-dead-letter-queue.md` — DLQ quan trọng trong production
+- [ ] `02-sns/3-fanout-pattern.md` — Fan-out pattern thực tế
+- [ ] `08-patterns/1-service-comparison.md` — Bảng so sánh dịch vụ
+- [ ] `10-interview-prep/1-INTERVIEW_GUIDE.md` — Top 25 câu hỏi
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
 
 - [ ] `03-eventbridge/README.md` — EventBridge ngày càng quan trọng
-- [ ] `04-step-functions/saga-orchestration.md` — Saga là pattern hot
-- [ ] `05-kinesis/data-streams.md` — Streaming architecture
-- [ ] `08-patterns/saga-pattern.md` — Distributed transactions
-- [ ] `08-patterns/idempotency.md` — Luôn được hỏi trong phỏng vấn
-- [ ] `09-monitoring/key-metrics.md` — Giám sát production
+- [ ] `04-step-functions/5-saga-orchestration.md` — Saga là pattern hot
+- [ ] `05-kinesis/1-data-streams.md` — Streaming architecture
+- [ ] `08-patterns/2-saga-pattern.md` — Distributed transactions
+- [ ] `08-patterns/3-idempotency.md` — Luôn được hỏi trong phỏng vấn
+- [ ] `09-monitoring/1-key-metrics.md` — Giám sát production
 
 ### Ưu Tiên Thấp — Tham Khảo Nâng Cao
 
-- [ ] `06-amazon-mq/migration-guide.md` — Migration use case
-- [ ] `07-appsync/real-time-subscriptions.md` — GraphQL subscriptions
-- [ ] `05-kinesis/enhanced-fanout.md` — Advanced Kinesis
-- [ ] `10-interview-prep/system-design-scenarios.md` — Thiết kế hệ thống
-- [ ] `10-interview-prep/90-day-study-plan.md` — Kế hoạch học
+- [ ] `06-amazon-mq/2-migration-guide.md` — Migration use case
+- [ ] `07-appsync/2-real-time-subscriptions.md` — GraphQL subscriptions
+- [ ] `05-kinesis/5-enhanced-fanout.md` — Advanced Kinesis
+- [ ] `10-interview-prep/3-system-design-scenarios.md` — Thiết kế hệ thống
+- [ ] `10-interview-prep/5-90-day-study-plan.md` — Kế hoạch học
 
 ---
 
@@ -152,8 +152,8 @@ app-integration/
 ### Chuẩn Bị Phỏng Vấn
 
 ```
-1. Đọc 10-interview-prep/INTERVIEW_GUIDE.md
-2. Nắm vững 08-patterns/service-comparison.md
+1. Đọc 10-interview-prep/1-INTERVIEW_GUIDE.md
+2. Nắm vững 08-patterns/1-service-comparison.md
 3. Học sâu SQS (01-sqs/) và SNS (02-sns/) — luôn được hỏi
 4. Học EventBridge (03-eventbridge/) và Step Functions (04-step-functions/)
 5. Chuẩn bị câu chuyện tình huống theo phương pháp STAR
@@ -164,17 +164,17 @@ app-integration/
 
 ```
 Dùng như tài liệu tham khảo:
-- Chọn dịch vụ: Đọc 08-patterns/service-comparison.md
-- Xử lý lỗi: Đọc 01-sqs/dead-letter-queue.md
-- Thiết kế saga: Đọc 08-patterns/saga-pattern.md
-- Tối ưu hiệu năng: Đọc 09-monitoring/key-metrics.md
-- Tuân thủ idempotency: Đọc 08-patterns/idempotency.md
+- Chọn dịch vụ: Đọc 08-patterns/1-service-comparison.md
+- Xử lý lỗi: Đọc 01-sqs/3-dead-letter-queue.md
+- Thiết kế saga: Đọc 08-patterns/2-saga-pattern.md
+- Tối ưu hiệu năng: Đọc 09-monitoring/1-key-metrics.md
+- Tuân thủ idempotency: Đọc 08-patterns/3-idempotency.md
 ```
 
 ### Thiết Kế Hệ Thống
 
 ```
-1. Đọc 08-patterns/service-comparison.md để chọn đúng dịch vụ
+1. Đọc 08-patterns/1-service-comparison.md để chọn đúng dịch vụ
 2. Áp dụng messaging pattern phù hợp từ 08-patterns/
 3. Thiết kế error handling với DLQ và retry
 4. Cài đặt monitoring từ 09-monitoring/
@@ -241,15 +241,15 @@ Dùng như tài liệu tham khảo:
 | Nhu Cầu | Vị Trí |
 |---|---|
 | Tổng quan lộ trình | [README.md](README.md) |
-| So sánh SQS / SNS / EventBridge / Kinesis | [08-patterns/service-comparison.md](08-patterns/service-comparison.md) |
-| Thiết kế Fan-out Pattern | [02-sns/fanout-pattern.md](02-sns/fanout-pattern.md) |
-| DLQ — Xử lý tin nhắn lỗi | [01-sqs/dead-letter-queue.md](01-sqs/dead-letter-queue.md) |
-| Saga Pattern | [08-patterns/saga-pattern.md](08-patterns/saga-pattern.md) |
-| Idempotency | [08-patterns/idempotency.md](08-patterns/idempotency.md) |
-| Kinesis Shard tính toán | [05-kinesis/shard-management.md](05-kinesis/shard-management.md) |
-| Step Functions Saga | [04-step-functions/saga-orchestration.md](04-step-functions/saga-orchestration.md) |
-| Top 25 câu hỏi phỏng vấn | [10-interview-prep/INTERVIEW_GUIDE.md](10-interview-prep/INTERVIEW_GUIDE.md) |
-| Monitoring metrics | [09-monitoring/key-metrics.md](09-monitoring/key-metrics.md) |
+| So sánh SQS / SNS / EventBridge / Kinesis | [08-patterns/1-service-comparison.md](08-patterns/1-service-comparison.md) |
+| Thiết kế Fan-out Pattern | [02-sns/3-fanout-pattern.md](02-sns/3-fanout-pattern.md) |
+| DLQ — Xử lý tin nhắn lỗi | [01-sqs/3-dead-letter-queue.md](01-sqs/3-dead-letter-queue.md) |
+| Saga Pattern | [08-patterns/2-saga-pattern.md](08-patterns/2-saga-pattern.md) |
+| Idempotency | [08-patterns/3-idempotency.md](08-patterns/3-idempotency.md) |
+| Kinesis Shard tính toán | [05-kinesis/4-shard-management.md](05-kinesis/4-shard-management.md) |
+| Step Functions Saga | [04-step-functions/5-saga-orchestration.md](04-step-functions/5-saga-orchestration.md) |
+| Top 25 câu hỏi phỏng vấn | [10-interview-prep/1-INTERVIEW_GUIDE.md](10-interview-prep/1-INTERVIEW_GUIDE.md) |
+| Monitoring metrics | [09-monitoring/1-key-metrics.md](09-monitoring/1-key-metrics.md) |
 
 ---
 
