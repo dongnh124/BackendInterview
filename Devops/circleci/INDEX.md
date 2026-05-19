@@ -124,6 +124,11 @@ Devops/circleci/
 | **05 — Test Splitting**               | 05-optimization/3-test-splitting.md                     | ✅         | Toàn Diện  |
 | **05 — Parallelism**                  | 05-optimization/4-parallelism.md                        | ✅         | Toàn Diện  |
 | **05 — Pipeline Insights**            | 05-optimization/5-pipeline-insights.md                  | ✅         | Toàn Diện  |
+| **06 — Giới Thiệu Module Security**   | 06-security/README.md                                   | ✅         | Toàn Diện  |
+| **06 — Contexts**                     | 06-security/1-contexts.md                               | ✅         | Toàn Diện  |
+| **06 — OIDC Integration**             | 06-security/2-oidc-integration.md                       | ✅         | Toàn Diện  |
+| **06 — IP Ranges**                    | 06-security/3-ip-ranges.md                              | ✅         | Toàn Diện  |
+| **06 — Audit Log**                    | 06-security/4-audit-log.md                              | ✅         | Toàn Diện  |
 
 ---
 
@@ -150,7 +155,8 @@ Devops/circleci/
 - [x] ~~`05-optimization/3-test-splitting.md` — Test splitting theo timing/file~~ ✅
 - [x] ~~`05-optimization/4-parallelism.md` — Parallelism, resource class~~ ✅
 - [x] ~~`05-optimization/5-pipeline-insights.md` — Bottleneck, flaky tests~~ ✅
-- [ ] `06-security/contexts.md` — Contexts và quản lý secrets
+- [x] ~~`06-security/README.md` — Bảo mật pipeline toàn diện~~ ✅
+- [x] ~~`06-security/1-contexts.md` — Contexts và quản lý secrets~~ ✅
 - [ ] `10-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
@@ -170,7 +176,9 @@ Devops/circleci/
 
 - [ ] `09-advanced/self-hosted-runner.md` — Self-Hosted Runner on-premise
 - [ ] `09-advanced/matrix-jobs.md` — Matrix jobs cho multi-version testing
-- [ ] `06-security/oidc-integration.md` — OIDC với AWS/GCP
+- [x] ~~`06-security/2-oidc-integration.md` — OIDC với AWS/GCP~~ ✅
+- [x] ~~`06-security/3-ip-ranges.md` — IP Ranges cho firewall whitelist~~ ✅
+- [x] ~~`06-security/4-audit-log.md` — Audit Log và compliance~~ ✅
 - [ ] `07-integration/kubernetes-deploy.md` — Deploy lên Kubernetes
 - [ ] `10-interview-prep/system-design-scenarios.md` — Bài toán thiết kế
 
@@ -392,5 +400,5 @@ Tìm lỗi hoặc muốn bổ sung nội dung?
 ---
 
 **Cập Nhật Lần Cuối:** 2026-05-18
-**Phiên Bản:** 1.2
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-fundamentals Hoàn Thành | ✅ 02-configuration Hoàn Thành | ✅ 03-workflows Hoàn Thành | ✅ 04-orbs Hoàn Thành | ✅ 05-optimization Hoàn Thành | 🚧 Các Module Khác Đang Phát Triển
+**Phiên Bản:** 1.3
+**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-fundamentals Hoàn Thành | ✅ 02-configuration Hoàn Thành | ✅ 03-workflows Hoàn Thành | ✅ 04-orbs Hoàn Thành | ✅ 05-optimization Hoàn Thành | ✅ 06-security Hoàn Thành | 🚧 Các Module Khác Đang Phát Triển
