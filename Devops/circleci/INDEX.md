@@ -129,6 +129,29 @@ Devops/circleci/
 | **06 — OIDC Integration**             | 06-security/2-oidc-integration.md                       | ✅         | Toàn Diện  |
 | **06 — IP Ranges**                    | 06-security/3-ip-ranges.md                              | ✅         | Toàn Diện  |
 | **06 — Audit Log**                    | 06-security/4-audit-log.md                              | ✅         | Toàn Diện  |
+| **07 — Giới Thiệu Module Integration** | 07-integration/README.md                               | ✅         | Toàn Diện  |
+| **07 — Docker Build & Push**          | 07-integration/1-docker-build-push.md                   | ✅         | Toàn Diện  |
+| **07 — Kubernetes Deploy**            | 07-integration/2-kubernetes-deploy.md                   | ✅         | Toàn Diện  |
+| **07 — AWS Integration**              | 07-integration/3-aws-integration.md                       | ✅         | Toàn Diện  |
+| **07 — GCP Integration**              | 07-integration/4-gcp-integration.md                       | ✅         | Toàn Diện  |
+| **07 — Terraform Pipeline**           | 07-integration/5-terraform-pipeline.md                  | ✅         | Toàn Diện  |
+| **07 — Notifications**                | 07-integration/6-notifications.md                         | ✅         | Toàn Diện  |
+| **08 — Giới Thiệu Module Monitoring** | 08-monitoring/README.md                                   | ✅         | Toàn Diện  |
+| **08 — Pipeline Insights (Giám Sát)** | 08-monitoring/1-pipeline-insights.md                      | ✅         | Toàn Diện  |
+| **08 — SSH Debugging**                | 08-monitoring/2-ssh-debugging.md                          | ✅         | Toàn Diện  |
+| **08 — Common Errors**                | 08-monitoring/3-common-errors.md                          | ✅         | Toàn Diện  |
+| **08 — Flaky Tests**                  | 08-monitoring/4-flaky-tests.md                            | ✅         | Toàn Diện  |
+| **09 — Giới Thiệu Module Advanced**   | 09-advanced/README.md                                     | ✅         | Toàn Diện  |
+| **09 — Dynamic Config**               | 09-advanced/1-dynamic-config.md                           | ✅         | Toàn Diện  |
+| **09 — Path Filtering**               | 09-advanced/2-path-filtering.md                           | ✅         | Toàn Diện  |
+| **09 — Matrix Jobs**                  | 09-advanced/3-matrix-jobs.md                              | ✅         | Toàn Diện  |
+| **09 — Self-Hosted Runner**           | 09-advanced/4-self-hosted-runner.md                       | ✅         | Toàn Diện  |
+| **09 — Monorepo Strategy**            | 09-advanced/5-monorepo-strategy.md                        | ✅         | Toàn Diện  |
+| **10 — Giới Thiệu Interview Prep**    | 10-interview-prep/README.md                               | ✅         | Toàn Diện  |
+| **10 — Top 20 Câu Hỏi Phỏng Vấn**     | 10-interview-prep/1-INTERVIEW_GUIDE.md                    | ✅         | Toàn Diện  |
+| **10 — STAR Stories**                 | 10-interview-prep/2-star-stories.md                       | ✅         | Toàn Diện  |
+| **10 — System Design Scenarios**      | 10-interview-prep/3-system-design-scenarios.md            | ✅         | Toàn Diện  |
+| **10 — Tool Comparison**              | 10-interview-prep/4-tool-comparison.md                    | ✅         | Toàn Diện  |
 
 ---
 
@@ -157,7 +180,7 @@ Devops/circleci/
 - [x] ~~`05-optimization/5-pipeline-insights.md` — Bottleneck, flaky tests~~ ✅
 - [x] ~~`06-security/README.md` — Bảo mật pipeline toàn diện~~ ✅
 - [x] ~~`06-security/1-contexts.md` — Contexts và quản lý secrets~~ ✅
-- [ ] `10-interview-prep/INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn
+- [x] ~~`10-interview-prep/1-INTERVIEW_GUIDE.md` — Top 20 câu hỏi phỏng vấn~~ ✅
 
 ### Ưu Tiên Trung Bình — Kỹ Năng Nâng Cao
 
@@ -166,21 +189,35 @@ Devops/circleci/
 - [x] ~~`04-orbs/certified-orbs.md` — Các orb phổ biến: aws-cli, docker, node~~ ✅
 - [x] ~~`04-orbs/3-inline-orbs.md` — Inline Orb nội tuyến~~ ✅
 - [x] ~~`04-orbs/4-custom-orb-development.md` — Tạo, test và publish custom orb~~ ✅
-- [ ] `07-integration/docker-build-push.md` — CI/CD với Docker
-- [ ] `07-integration/aws-integration.md` — Tích hợp AWS toàn diện
+- [x] ~~`07-integration/README.md` — Tổng quan tích hợp cloud & tools~~ ✅
+- [x] ~~`07-integration/1-docker-build-push.md` — CI/CD với Docker~~ ✅
+- [x] ~~`07-integration/2-kubernetes-deploy.md` — Deploy EKS, GKE, AKS~~ ✅
+- [x] ~~`07-integration/3-aws-integration.md` — Tích hợp AWS toàn diện~~ ✅
+- [x] ~~`07-integration/4-gcp-integration.md` — GCR, Cloud Run, GKE~~ ✅
+- [x] ~~`07-integration/5-terraform-pipeline.md` — Terraform plan/apply~~ ✅
+- [x] ~~`07-integration/6-notifications.md` — Slack, email, webhook~~ ✅
 - [x] ~~`05-optimization/test-splitting.md` — Test splitting và parallelism~~ ✅
-- [ ] `09-advanced/dynamic-config.md` — Dynamic Config cho monorepo
-- [ ] `08-monitoring/ssh-debugging.md` — Debug pipeline qua SSH
+- [x] ~~`09-advanced/1-dynamic-config.md` — Dynamic Config cho monorepo~~ ✅
+- [x] ~~`08-monitoring/README.md` — Giám sát và xử lý sự cố pipeline~~ ✅
+- [x] ~~`08-monitoring/1-pipeline-insights.md` — Insights dashboard vận hành~~ ✅
+- [x] ~~`08-monitoring/2-ssh-debugging.md` — Debug pipeline qua SSH~~ ✅
+- [x] ~~`08-monitoring/3-common-errors.md` — OOM, timeout, exit code~~ ✅
+- [x] ~~`08-monitoring/4-flaky-tests.md` — Kiểm thử không ổn định~~ ✅
 
 ### Ưu Tiên Thấp — Tham Khảo
 
-- [ ] `09-advanced/self-hosted-runner.md` — Self-Hosted Runner on-premise
-- [ ] `09-advanced/matrix-jobs.md` — Matrix jobs cho multi-version testing
+- [x] ~~`09-advanced/2-path-filtering.md` — Path Filtering cho monorepo~~ ✅
+- [x] ~~`09-advanced/3-matrix-jobs.md` — Matrix jobs cho multi-version testing~~ ✅
+- [x] ~~`09-advanced/4-self-hosted-runner.md` — Self-Hosted Runner on-premise~~ ✅
+- [x] ~~`09-advanced/5-monorepo-strategy.md` — Chiến lược CI/CD cho monorepo~~ ✅
 - [x] ~~`06-security/2-oidc-integration.md` — OIDC với AWS/GCP~~ ✅
 - [x] ~~`06-security/3-ip-ranges.md` — IP Ranges cho firewall whitelist~~ ✅
 - [x] ~~`06-security/4-audit-log.md` — Audit Log và compliance~~ ✅
-- [ ] `07-integration/kubernetes-deploy.md` — Deploy lên Kubernetes
-- [ ] `10-interview-prep/system-design-scenarios.md` — Bài toán thiết kế
+- [x] ~~`07-integration/kubernetes-deploy.md` — Deploy lên Kubernetes~~ ✅ (xem `2-kubernetes-deploy.md`)
+- [x] ~~`10-interview-prep/README.md` — Tổng quan chuẩn bị phỏng vấn~~ ✅
+- [x] ~~`10-interview-prep/2-star-stories.md` — Câu chuyện STAR CI/CD~~ ✅
+- [x] ~~`10-interview-prep/3-system-design-scenarios.md` — Bài toán thiết kế~~ ✅
+- [x] ~~`10-interview-prep/4-tool-comparison.md` — So sánh CircleCI vs Jenkins vs GHA~~ ✅
 
 ---
 
@@ -199,7 +236,7 @@ Devops/circleci/
 ### Chuẩn Bị Phỏng Vấn — Interview Prep
 
 ```
-1. Đọc 10-interview-prep/INTERVIEW_GUIDE.md
+1. Đọc 10-interview-prep/1-INTERVIEW_GUIDE.md
 2. Ôn lại 02-configuration/ — cấu hình YAML (hay bị hỏi)
 3. Nắm vững 05-optimization/ — caching, parallelism
 4. Chuẩn bị câu chuyện STAR về pipeline bạn đã xây dựng
@@ -241,8 +278,9 @@ Dùng như tài liệu tham khảo nhanh:
 | Tích Hợp — Integration    | 6–10 giờ  | ⭐⭐⭐ | Theo Dự Án     |
 | Monitoring & Debug        | 3–4 giờ   | ⭐⭐   | Nên Học        |
 | Advanced Topics           | 8–12 giờ  | ⭐⭐⭐ | Tùy Chọn       |
+| Interview Prep            | 4–8 giờ   | ⭐⭐   | Trước phỏng vấn |
 
-**Tổng cộng: 40–60 giờ để thành thạo CircleCI**
+**Tổng cộng: 45–65 giờ để thành thạo CircleCI (kèm phỏng vấn)**
 
 ---
 
@@ -295,7 +333,7 @@ Dùng như tài liệu tham khảo nhanh:
 | Tích hợp AWS/GCP        | [07-integration/README.md](07-integration/README.md)                         |
 | Pipeline bị lỗi         | [08-monitoring/README.md](08-monitoring/README.md)                           |
 | Dynamic Config/Monorepo | [09-advanced/README.md](09-advanced/README.md)                               |
-| Câu hỏi phỏng vấn       | [10-interview-prep/INTERVIEW_GUIDE.md](10-interview-prep/INTERVIEW_GUIDE.md) |
+| Câu hỏi phỏng vấn       | [10-interview-prep/1-INTERVIEW_GUIDE.md](10-interview-prep/1-INTERVIEW_GUIDE.md) |
 
 ---
 
@@ -399,6 +437,6 @@ Tìm lỗi hoặc muốn bổ sung nội dung?
 
 ---
 
-**Cập Nhật Lần Cuối:** 2026-05-18
-**Phiên Bản:** 1.3
-**Trạng Thái:** ✅ README & INDEX Hoàn Thành | ✅ 01-fundamentals Hoàn Thành | ✅ 02-configuration Hoàn Thành | ✅ 03-workflows Hoàn Thành | ✅ 04-orbs Hoàn Thành | ✅ 05-optimization Hoàn Thành | ✅ 06-security Hoàn Thành | 🚧 Các Module Khác Đang Phát Triển
+**Cập Nhật Lần Cuối:** 2026-05-20
+**Phiên Bản:** 1.6
+**Trạng Thái:** ✅ Knowledge Base CircleCI HOÀN CHỈNH — README & INDEX | ✅ 01–09 modules | ✅ 10-interview-prep
