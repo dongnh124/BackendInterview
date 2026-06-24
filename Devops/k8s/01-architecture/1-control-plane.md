@@ -492,4 +492,4 @@ Mỗi cloud provider (AWS, GCP, Azure) có Cloud Controller Manager riêng.
 
 ---
 
-**Xem tiếp:** [worker-node.md](./worker-node.md) để hiểu các thành phần trên Worker Node.
+**Xem tiếp:** [worker-node.md](./2-worker-node.md) để hiểu các thành phần trên Worker Node.
