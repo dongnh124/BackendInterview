@@ -2,6 +2,15 @@
 
 > Bộ tài liệu ôn thi phỏng vấn Backend Node.js & JavaScript — câu hỏi lý thuyết, coding challenges, system design scenarios (tình huống thiết kế hệ thống), STAR stories (câu chuyện theo mô hình Situation-Task-Action-Result), và kế hoạch học 90 ngày.
 
+## Dành Cho Người Phỏng Vấn
+
+| Tài liệu | Mô tả |
+| -------- | ----- |
+| [INTERVIEWER_GUIDE.md](./INTERVIEWER_GUIDE.md) | Hướng dẫn phỏng vấn Node.js — câu hỏi, rubric Middle/Senior, live coding |
+| [INTERVIEWER_GUIDE_BACKEND.md](../../INTERVIEWER_GUIDE_BACKEND.md) | Hướng dẫn phỏng vấn Backend chung (API, DB, security, system design) |
+
+---
+
 ## Mục Lục
 
 1. [Tại Sao Cần Chuẩn Bị Riêng](#tại-sao-cần-chuẩn-bị-riêng)
@@ -89,16 +98,18 @@ Xem chi tiết tại [7-90-day-study-plan.md](./7-90-day-study-plan.md).
 
 ## Các Tài Liệu Chi Tiết
 
-| File | Nội Dung | Thời Gian Ôn |
-| ---- | -------- | ------------ |
-| [INTERVIEW_GUIDE.md](./INTERVIEW_GUIDE.md) | Top 50 câu hỏi + đáp án chi tiết | 4–6 giờ |
-| [1-event-loop-questions.md](./1-event-loop-questions.md) | Event Loop & async deep dive | 2–3 giờ |
-| [2-api-design-questions.md](./2-api-design-questions.md) | REST API, middleware, error handling | 2–3 giờ |
-| [3-database-questions.md](./3-database-questions.md) | ORM, N+1, transactions, caching | 2–3 giờ |
-| [4-security-questions.md](./4-security-questions.md) | JWT, OWASP, rate limiting | 1.5–2 giờ |
-| [5-system-design-scenarios.md](./5-system-design-scenarios.md) | Bài toán thiết kế hệ thống | 3–4 giờ |
-| [6-star-stories.md](./6-star-stories.md) | Template câu chuyện STAR | 2–3 giờ |
-| [7-90-day-study-plan.md](./7-90-day-study-plan.md) | Kế hoạch học 90 ngày | Tham khảo |
+| File | Nội Dung | Đối Tượng |
+| ---- | -------- | --------- |
+| [INTERVIEWER_GUIDE.md](./INTERVIEWER_GUIDE.md) | Hướng dẫn phỏng vấn Node.js + rubric đánh giá | **Interviewer** |
+| [INTERVIEWER_GUIDE_BACKEND.md](../../INTERVIEWER_GUIDE_BACKEND.md) | Hướng dẫn phỏng vấn Backend chung | **Interviewer** |
+| [INTERVIEW_GUIDE.md](./INTERVIEW_GUIDE.md) | Top 50 câu hỏi + đáp án chi tiết | Ứng viên |
+| [1-event-loop-questions.md](./1-event-loop-questions.md) | Event Loop & async deep dive | Ứng viên |
+| [2-api-design-questions.md](./2-api-design-questions.md) | REST API, middleware, error handling | Ứng viên |
+| [3-database-questions.md](./3-database-questions.md) | ORM, N+1, transactions, caching | Ứng viên |
+| [4-security-questions.md](./4-security-questions.md) | JWT, OWASP, rate limiting | Ứng viên |
+| [5-system-design-scenarios.md](./5-system-design-scenarios.md) | Bài toán thiết kế hệ thống | Ứng viên |
+| [6-star-stories.md](./6-star-stories.md) | Template câu chuyện STAR | Ứng viên |
+| [7-90-day-study-plan.md](./7-90-day-study-plan.md) | Kế hoạch học 90 ngày | Ứng viên |
 
 ---
 

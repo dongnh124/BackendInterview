@@ -107,6 +107,13 @@ A comprehensive collection of backend engineering interview questions and answer
 
 ## 🔗 Quick Links
 
+### Dành cho người phỏng vấn
+
+- [Backend Interviewer Guide](./Developer/INTERVIEWER_GUIDE_BACKEND.md) — Câu hỏi, rubric Middle/Senior, system design
+- [Node.js Interviewer Guide](./Developer/nodejs/11-interview-prep/INTERVIEWER_GUIDE.md) — Event Loop, async, Node.js production
+
+### Dành cho ứng viên
+
 - [System Design Questions](./Developer/01-system-design.md)
 - [DSA Questions](./Developer/02-data-structures-algorithms.md)
 - [Database Questions](./Developer/03-database.md)
