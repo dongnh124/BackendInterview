@@ -479,7 +479,7 @@ Hầu hết ứng dụng dùng Read Committed:
 
 - [ ] Database Internals (Chương 1-3)
 - [ ] Tài liệu PostgreSQL (Backup/Recovery, Replication)
-- [ ] MySQL High Availability
+- [ ] [MySQL High Availability](../08-mysql-kien-truc-trien-khai/4-kien-truc-ha.md)
 - [ ] Tech blog của công ty mục tiêu
 
 ### Thực Hành Thực Tế

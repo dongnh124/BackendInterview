@@ -2,7 +2,7 @@
 
 ## Nội Dung
 
-Phần này bao gồm kiến trúc HA, nhân bản và chiến lược failover.
+Phần này bao gồm kiến trúc HA, nhân bản và chiến lược failover. Topology triển khai riêng cho MySQL: [08-mysql-kien-truc-trien-khai](../08-mysql-kien-truc-trien-khai/README.md).
 
 ## Các Tài Liệu
 

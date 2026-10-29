@@ -4,11 +4,16 @@
 
 ## Mục Lục
 
-1. [Lộ Trình Học Tập](#lộ-trình-học-tập)
-2. [Các Năng Lực Cốt Lõi](#các-năng-lực-cốt-lõi)
-3. [Tổng Quan Chủ Đề](#tổng-quan-chủ-đề)
+1. [Checklist theo JD](#checklist-theo-jd)
+2. [Lộ Trình Học Tập](#lộ-trình-học-tập)
+3. [Các Năng Lực Cốt Lõi](#các-năng-lực-cốt-lõi)
+4. [Tổng Quan Chủ Đề](#tổng-quan-chủ-đề)
 
 ---
+
+## Checklist theo JD
+
+Ôn theo [checklist-jd.md](checklist-jd.md) khi mục tiêu là vị trí **DBA vận hành hệ thống** trong [JD.md](JD.md). Checklist xếp P0 (sự cố, backup, hiệu năng, HA, change, bảo mật, quy trình vận hành) trước điểm cộng distributed database và cloud, đồng thời đánh dấu phần repo chưa có tài liệu.
 
 ## Lộ Trình Học Tập
 
@@ -36,6 +41,7 @@
 ### **Giai Đoạn 4: Chuyên Sâu (Tuần 11+)**
 
 - [ ] Tìm hiểu sâu về từng nền tảng
+- [ ] Kiến trúc triển khai MySQL
 - [ ] Chiến lược nhân bản nâng cao
 - [ ] Các mẫu thiết kế CSDL
 - [ ] Tuân thủ & Quản trị
@@ -125,7 +131,17 @@
 - Quản lý & Vận hành: monitoring, scaling, maintenance, DR runbook
 - Tối ưu Chi phí: Reserved Instances, right-sizing, storage type, data transfer
 
-### **8. Phỏng Vấn** (`11-phong-van/`)
+### **8. Kiến Trúc Triển Khai MySQL** (`08-mysql-kien-truc-trien-khai/`)
+
+- Topology: standalone, primary–replica, Group Replication, InnoDB Cluster, Galera
+- Bố cục cài đặt: `my.cnf`, cổng, user, TLS, sizing
+- ProxySQL, MySQL Router, Orchestrator, ngăn split-brain
+- Mẫu HA 99.99% trên máy tự quản lý
+- Nâng cấp và đổi cấu hình theo kiểu rolling
+- Apply migration trên từng topology MySQL
+- Sổ cái: ưu tiên semisync hoặc Group Replication một primary; failover có người xác nhận
+
+### **9. Phỏng Vấn** (`11-phong-van/`)
 
 - Top 20 câu hỏi phỏng vấn DBA
 - Tình huống thiết kế hệ thống
@@ -189,6 +205,7 @@ Lý tưởng cho: Caching, sessions, rate limiting, pub/sub
 ### Nâng Cao (3-5+ năm)
 
 - [ ] Chiến lược multi-datacenter
+- [ ] Kiến trúc triển khai MySQL (topology, proxy, failover)
 - [ ] Kiến trúc sharding
 - [ ] Xử lý sự cố & Post-mortem
 - [ ] Mô hình lập kế hoạch dung lượng
@@ -215,5 +232,5 @@ Lý tưởng cho: Caching, sessions, rate limiting, pub/sub
 
 ---
 
-**Cập nhật lần cuối:** 2026-04-26
+**Cập nhật lần cuối:** 2026-10-29
 **Phiên bản:** 1.0

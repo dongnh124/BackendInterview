@@ -15,6 +15,8 @@ Thay đổi schema an toàn, không thời gian chết cho CSDL production.
 | [Testing Migration](testing-migration.md) | Staging data, automated tests, performance testing |
 | [Giao Tiếp Nhóm](giao-tiep-nhom.md) | Thông báo, review, war room, post-mortem |
 
+Đường apply trên từng topology MySQL: [Apply Migration](../08-mysql-kien-truc-trien-khai/6-apply-migration.md).
+
 ---
 
 ## Nguyên Tắc Cốt Lõi
